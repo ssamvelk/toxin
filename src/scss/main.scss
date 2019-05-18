@@ -3,18 +3,23 @@
 @import "utils/vars.scss";
 @import "utils/mixins.scss";
 
-html,
-body {
+html {
     font-size: $mainFontSize;
     font-family: $mainFont;
     line-height: $mainLineHeight; 
     background-color: purple;
+    box-sizing: border-box;
 } 
 
 .wrapper {
-        box-sizing: border-box;
-        width: 594px;
+        
+        width: 1440px;
         margin: 0 auto;
+}
+
+.elements-wrapper{
+    width: 1440px;
+    padding: 0 10%;
 }
 
 

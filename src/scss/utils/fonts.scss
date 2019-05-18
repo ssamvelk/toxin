@@ -1,3 +1,32 @@
+@font-face{
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.eot');
+    src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Montserrat-Regular.svg') format('svg'),
+    url('../fonts/Montserrat-Regular.ttf') format('truetype'),
+    url('../fonts/Montserrat-Regular.woff') format('woff');
+    //url('../fonts/Montserrat-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand-Regular.eot');
+    src: url('../fonts/Quicksand-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Quicksand-Regular.svg') format('svg'),
+    url('../fonts/Quicksand-Regular.ttf') format('truetype'),
+    url('../fonts/Quicksand-Regular.woff') format('woff');
+    //url('../fonts/Montserrat-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+
+
+
 /*
 @font-face{
     font-family: 'Lato Light';
