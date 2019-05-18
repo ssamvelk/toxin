@@ -1,0 +1,22 @@
+@import "utils/reset.scss";
+@import "utils/fonts.scss";
+@import "utils/vars.scss";
+@import "utils/mixins.scss";
+
+html,
+body {
+    font-size: $mainFontSize;
+    font-family: $mainFont;
+    line-height: $mainLineHeight; 
+    background-color: purple;
+} 
+
+.wrapper {
+        box-sizing: border-box;
+        width: 594px;
+        margin: 0 auto;
+}
+
+
+
+//@import "../blocks/btn/btn.scss";
