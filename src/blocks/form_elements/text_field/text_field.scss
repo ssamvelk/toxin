@@ -1,0 +1,19 @@
+//.text_field-wrp{}
+.text_field {
+    width: 320px;
+    height: 44px;
+    
+    border: 1px solid  rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    font-family: Montserrat;
+    padding: 0 15px;
+    font-size: 14px;
+    line-height: 18px;
+    color: $Dark25;
+    &:hover,
+    &:focus{
+        color: $Dark75;
+    }
+}

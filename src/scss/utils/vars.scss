@@ -1,11 +1,11 @@
 // Font
 //$mainFont                : 'MyriadPro', Arial, sans-serif;
-$mainFont                : 'Lato', Arial, sans-serif;
+$mainFont                : 'Montserrat', 'Quicksand', Arial, sans-serif;
 // Size
 
-$mainFontSize            : 16px;
+$mainFontSize            : 14px;
 $mainFontWeight          : 400;
-$mainLineHeight          : 1.4;
+$mainLineHeight          : 1.4 ;
 
 $bigDesktopWidth         : 1920px;
 $desktopWidth            : 1280px;
@@ -15,8 +15,10 @@ $phoneWidth              : 480px;
 $smPhoneWidth            : 320px;
 
 // Main color
-$mainFont-color          : #000000;
-$default-color           : #ffffff;
-$title-color             : #006cb4;
-$icon-color              : #0070ba;
-$gray-color              : #e7e7e7;
+$Dark          : #1F2041;
+$Dark75        : rgba(31, 32, 65, 0.75);
+$Dark50        : rgba(31, 32, 65, 0.5);
+$Dark25        : rgba(31, 32, 65, 0.25);
+$Dark55        : rgba(31, 32, 65, 0.05);
+$Purple        : #BC9CFF;
+$Green         : #6FCF97;
