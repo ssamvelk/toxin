@@ -1,5 +1,7 @@
+include ../static/sprite.svg
 //-include ../blocks/btn/btn.pug для подключения миксинов
 include ../blocks/form_elements/text_field/text_field.pug
+include ../blocks/form_elements/dropdown/dropdown.pug
 <!DOCTYPE html>
 html(lang="en")
     head
@@ -8,10 +10,20 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Toxin UI-KIT
     body
+        
         main.wrapper
             .elements-wrapper
                 h1 Form Elements
-                +text_field()
+                br
+                +text_field({})
+                br
+                +dropdown({})
+                br
+                +dropdownCompany({})
+                br
+                
+
+                
                 
 
 

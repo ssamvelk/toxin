@@ -33,6 +33,7 @@ h3 {
     text-transform: uppercase;
     color: #1F2041;
 } 
+br{ margin: 30px 0;}
 
 .wrapper {
         
@@ -49,4 +50,6 @@ h3 {
 
 
 @import "../blocks/form_elements/text_field/text_field.scss";
+
+@import "../blocks/form_elements/dropdown/dropdown.scss";
 //@import "../blocks/btn/btn.scss";

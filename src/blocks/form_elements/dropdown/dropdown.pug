@@ -1,0 +1,52 @@
+mixin drd-item
+    .item-value
+        <svg width="30" height="31" viewBox="0 0 30 31" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+        <use xlink:href="#img-group-"></use>
+        </svg>
+        span 0
+        <svg width="30" height="31" viewBox="0 0 30 31" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+        <use xlink:href="#img-group+"></use>
+        </svg>
+
+mixin dropdown(options)
+    - var Big = (options.isBig) ? '1': '2' //заглушка для width
+    
+    .dropdown-wrp 
+        p.dropdown-main 0 спальни, 0 кровати...
+            <svg width="12" height="12" viewBox="0 -4 12 12" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+            <use xlink:href="#img-expand-more"></use>   
+            </svg> 
+        ul.dropdown-list
+            li.dropdown-item 
+                span.item-name спальни
+                +drd-item
+
+            li.dropdown-item 
+                span.item-name кровати
+                +drd-item 
+            li.dropdown-item 
+                span.item-name ванные комнаты
+                +drd-item 
+
+mixin dropdownCompany(options)
+    - var Big = (options.isBig) ? '1': '2' //заглушка для width
+    
+    .dropdown-wrp.wrp320 
+        p.dropdown-main Сколько гостей
+            <svg width="12" height="12" viewBox="0 -4 12 12" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+            <use xlink:href="#img-expand-more"></use>   
+            </svg> 
+        ul.dropdown-list
+            li.dropdown-item 
+                span.item-name взрослые
+                +drd-item
+
+            li.dropdown-item 
+                span.item-name дети
+                +drd-item 
+            li.dropdown-item 
+                span.item-name младенцы
+                +drd-item
+            li.dropdown-item
+                a.dropdown-item__clean Очистить
+                a.dropdown-item__apply Применить
