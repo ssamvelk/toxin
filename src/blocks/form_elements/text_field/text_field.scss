@@ -1,9 +1,9 @@
 //.text_field-wrp{}
-.text_field {
+.text-field {
     width: 320px;
     height: 44px;
     
-    border: 1px solid  rgba(31, 32, 65, 0.25);
+    border: 1px solid  $Dark25;
     box-sizing: border-box;
     border-radius: 4px;
 
@@ -16,4 +16,8 @@
     &:focus{
         color: $Dark75;
     }
+}
+
+.text-field__date{
+    
 }

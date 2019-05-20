@@ -15,11 +15,18 @@ html(lang="en")
             .elements-wrapper
                 h1 Form Elements
                 br
-                +text_field({})
+                h3 Text Field
+                .flex-wrapper.fw.h150
+                    +text_field({type:'email'})
+                    +text_field({type:'text'})
+                    +text_field({type:'text', placeholder: 'Фамилия'})
+                    +text_field({type:'password'})
+                    +text_field({type:'date'})
                 br
-                +dropdown({})
-                br
-                +dropdownCompany({})
+                h3 Dropdown
+                .flex-wrapper 
+                    +dropdown({})
+                    +dropdownCompany({})
                 br
                 
 

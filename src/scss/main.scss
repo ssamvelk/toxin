@@ -16,6 +16,8 @@ h1 {
     font-size: 24px;
     line-height: 30px;
     color: #1F2041;
+    box-sizing: border-box;
+    margin: 30px 0;
 }
 h2 {
     font-family: Quicksand;
@@ -32,6 +34,7 @@ h3 {
     line-height: 15px;
     text-transform: uppercase;
     color: #1F2041;
+    margin: 5px 0;
 } 
 br{ margin: 30px 0;}
 
@@ -47,7 +50,16 @@ br{ margin: 30px 0;}
     padding: 0 10%;
     background: #fff;
 }
-
+.flex-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.fw{
+    flex-wrap: wrap; 
+}
+.h150{
+    min-height: 150px;
+}
 
 @import "../blocks/form_elements/text_field/text_field.scss";
 

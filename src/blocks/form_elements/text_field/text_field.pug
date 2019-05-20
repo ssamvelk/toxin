@@ -1,3 +1,15 @@
 mixin text_field(options)
-    //-.text_field-wrp
-    input(class="text_field" type="email" placeholder='Email')    
+    -
+        var isType = options.type
+        var placeHolder = ''
+        var className = ''
+        var regExp = "(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d"
+
+        if (isType == "email") {placeHolder = 'Email'}
+        else if (isType == 'password') placeHolder = 'Пароль'
+        else if (isType == 'date'){placeHolder = 'ДД.ММ.ГГГГ', isType = 'text', className = ' text-field__date'}
+        else if (isType == 'text') placeHolder = (options.placeholder) ? options.placeholder  : 'Имя'
+    if (options.type == 'date')
+        input(class="text-field"+className type=isType placeholder=placeHolder pattern="(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)[0-9][0-9]" )
+    else
+        input(class="text-field"+className type=isType placeholder=placeHolder)    
