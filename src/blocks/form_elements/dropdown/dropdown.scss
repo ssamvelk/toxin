@@ -33,7 +33,7 @@
 .dropdown-list{
     width: 100%;
     min-height: 119px;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-around;
     list-style: none;
@@ -55,7 +55,9 @@
     box-sizing: border-box;
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
-
+}
+.dropdown-list--expanded {
+    display: flex;
 }
 .dropdown-item{
     height: 30px;
@@ -88,3 +90,4 @@
         min-height: 159px;
     }
 }
+
