@@ -84,6 +84,11 @@
 .dropdown-item__apply{
     color: $Purple;
 }
+.dropdown-item__clean--disable{
+    display: none;
+}
+
+
 .wrp320{
     width: 320px;
     .dropdown-list{

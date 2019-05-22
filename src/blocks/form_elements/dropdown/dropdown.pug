@@ -1,52 +1,52 @@
-mixin drd-item
+mixin drd-item(options)
     .item-value
-        <svg width="30" height="31" viewBox="0 0 30 31" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+        <svg class='minusBtn' id='minusBtn' cl width="30" height="31" viewBox="0 0 30 31" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
         <use xlink:href="#img-group-"></use>
         </svg>
-        span 0
-        <svg width="30" height="31" viewBox="0 0 30 31" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
+        span(class='dropdown-item' id=options.id) 0
+        <svg class="plusBtn" width="30" height="31" viewBox="0 0 30 31" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
         <use xlink:href="#img-group+"></use>
         </svg>
 
 mixin dropdown(options)
     - var Big = (options.isBig) ? '1': '2' //заглушка для width
-    
+    - var Expanded = (options.expanded) ? ' dropdown-list--expanded' : ''
     .dropdown-wrp 
         p.dropdown-main 0 спальни, 0 кровати...
             <svg width="12" height="12" viewBox="0 -4 12 12"  version="1.1" preserveAspectRatio="xMinYMin">
             <use xlink:href="#img-expand-more"></use>   
             </svg> 
-        ul.dropdown-list
+        ul(class='dropdown-list'+Expanded)
             li.dropdown-item 
                 span.item-name спальни
-                +drd-item
+                +drd-item({})
 
             li.dropdown-item 
                 span.item-name кровати
-                +drd-item 
+                +drd-item({}) 
             li.dropdown-item 
                 span.item-name ванные комнаты
-                +drd-item 
+                +drd-item({}) 
 
 mixin dropdownCompany(options)
     - var Big = (options.isBig) ? '1': '2' //заглушка для width
+    - var Expanded = (options.expanded) ? ' dropdown-list--expanded' : ''
     
-    .dropdown-wrp.wrp320 
+    .dropdown-wrp.wrp320
         p.dropdown-main Сколько гостей
             <svg width="12" height="12" viewBox="0 -4 12 12"  version="1.1" preserveAspectRatio="xMinYMin">
             <use xlink:href="#img-expand-more"></use>   
             </svg> 
-        ul.dropdown-list
-            li.dropdown-item 
+        ul(class='dropdown-list'+Expanded)
+            li.dropdown-item.fadult-ui 
                 span.item-name взрослые
-                +drd-item
-
-            li.dropdown-item 
+                +drd-item({id:'fadult'})
+            li.dropdown-item.child-ui 
                 span.item-name дети
-                +drd-item 
-            li.dropdown-item 
+                +drd-item({id:'child'}) 
+            li.dropdown-item.baby-ui 
                 span.item-name младенцы
-                +drd-item
+                +drd-item({id:'baby'})
             li.dropdown-item
                 a.dropdown-item__clean Очистить
                 a.dropdown-item__apply Применить
