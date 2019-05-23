@@ -2,6 +2,7 @@ include ../static/sprite.svg
 //-include ../blocks/btn/btn.pug для подключения миксинов
 include ../blocks/form_elements/text_field/text_field.pug
 include ../blocks/form_elements/dropdown/dropdown.pug
+include ../blocks/form_elements/date/date.pug
 <!DOCTYPE html>
 html(lang="en")
     head
@@ -31,6 +32,15 @@ html(lang="en")
 
                     +dropdownCompany({expanded:'true'})
                 br
+                h3 Filter date dropdown
+                .flex-wrapper    
+                    +filter-date-dropdown({})
+                    
+                    +date-calendar({})
+                    
+                    +date-seach-filds({})
+                br
+
                 
 
                 
