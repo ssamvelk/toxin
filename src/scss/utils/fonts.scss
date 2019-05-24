@@ -9,6 +9,23 @@
     font-weight: 400;
     font-style: normal;
 }
+
+
+@font-face{
+    font-family: 'Quicksand';
+    src: url('../fonts/CeraPro-Medium.eot');
+    src: url('../fonts/CeraPro-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CeraPro-Medium.svg') format('svg'),
+    url('../fonts/CeraPro-Medium.ttf') format('truetype'),
+    url('../fonts/CeraPro-Medium.woff') format('woff');
+    //url('../fonts/Montserrat-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/*
+
 @font-face{
     font-family: 'Quicksand';
     src: url('../fonts/Quicksand-Regular.eot');
@@ -21,6 +38,8 @@
     font-style: normal;
 }
 
+
+*/
 
 
 

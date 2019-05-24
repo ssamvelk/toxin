@@ -1,3 +1,10 @@
+mixin date-calendar(options)
+    -var ClassName = (options.isDisable) ? ' datepicker--disable' : ' '
+    div(class='datepicker-here'+ClassName)
+        .date__datepicker-footer
+            a.date__clean Очистить
+            a.date__apply Применить
+
 mixin filter-date-dropdown(options)
     .date-wrp
         <svg class="date-dropdawn__svg" width="12" height="12" viewBox="0 -4 12 12"  version="1.1" preserveAspectRatio="xMinYMin">
@@ -7,27 +14,28 @@ mixin filter-date-dropdown(options)
             span.date__info-start 19 авг 
             |- 
             span.date__info-end 23 авг
+        +date-calendar({isDisable: false})
 
 mixin date-seach-filds(options)
+    
     .date__seach-wrp
-        //-h2 Въезд    
-        .date-wrp.date-wrp--w150
-            <svg class="date-dropdawn__svg" width="12" height="12" viewBox="0 -4 12 12"  version="1.1" preserveAspectRatio="xMinYMin">
-            <use xlink:href="#img-expand-more"></use>   
-            </svg>
-            +text_field({type:'date', class:'date__info'})
-            
-            //-h2 Выезд    
-        .date-wrp.date-wrp--w150
-            <svg class="date-dropdawn__svg" width="12" height="12" viewBox="0 -4 12 12"  version="1.1" preserveAspectRatio="xMinYMin">
-            <use xlink:href="#img-expand-more"></use>   
-            </svg>
-            +text_field({type:'date', class:'date__info'})
+        //-    
+        .date__seach-inner-wrp
+            h3 Прибытие
+            .date-wrp--w150
+                <svg class="date-dropdawn__svg" width="12" height="12" viewBox="0 -4 12 12"  version="1.1" preserveAspectRatio="xMinYMin">
+                <use xlink:href="#img-expand-more"></use>   
+                </svg>
+                +text_field({type:'date', class:'date__info'})
+        .date__seach-inner-wrp
+            h3 Выезд    
+            .date-wrp--w150
+                <svg class="date-dropdawn__svg" width="12" height="12" viewBox="0 -4 12 12"  version="1.1" preserveAspectRatio="xMinYMin">
+                <use xlink:href="#img-expand-more"></use>   
+                </svg>
+                +text_field({type:'date', class:'date__info'})
+        +date-calendar({isDisable: false})
+        
 
-mixin date-calendar(options)
-    //-.date__calendar   (data-range="true" )
-    .datepicker-here
-        .date__datepicker-footer
-            a.date__clean Очистить
-            a.date__apply Применить
+
     

@@ -9,6 +9,14 @@
     border-radius: 4px;
     position: relative;
     padding: 0 15px;
+    & > .datepicker-here{
+        position: absolute;
+        bottom: -375px;
+        left: 0;
+    }
+    & > .datepicker--disable{
+        display: none;
+    }
 }
 .date-dropdawn__svg{    
     position: absolute;
@@ -26,16 +34,32 @@
     color: $Dark75;
     padding-right: 44px;
 }
-
+//--------------------------------
 .date__seach-wrp{
     width: 320px;
+    height: 70px;
+    position: relative;
     display: flex;
     justify-content: space-between;
+
+    & > .datepicker-here{
+        position: absolute;
+        bottom: -375px;
+    }
+
+    & > .datepicker--disable{
+        display: none;
+    }
+
 }
 .date-wrp--w150{
     width: 150px;
+    height: 44px;
     border: none;
     padding: 0 ;
+    box-sizing: border-box;
+    position: relative;
+
 }
 
 //-----------------------------------------------------------air calendar
@@ -45,26 +69,30 @@
     box-sizing: border-box;
     position: relative;
     padding: 0 20px;
-    border: 1px solid red;
+    box-sizing: border-box;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    border-radius: 4px;
 }
-    .datepicker-inline{
-        //width: 320px;
-        //height: 369px;
-    }
-
-    .datepicker{
+.datepicker-inline{
         width: 280px;
-        height: 369px;
-        box-sizing: border-box;
-        border: 1px solid rgba(31, 32, 65, 0.25);
-        box-sizing: border-box;
-        box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-        border-radius: 4px;
+        height: 314px; // 314 приблизительно!!!
     }
 
-    .datepicker--nav{
+    .datepicker-inline > .datepicker { 
+        width: 280px;
+        height: 314px;
+        border: none;
+        //background-color:   rgb(204, 249, 252);
+
+        //height: 337px;
+ 
+    }
+
+    .datepicker > .datepicker--nav{
         height: 74px;
-        border: 0;
+        border: none;
         box-sizing: border-box;
         padding-bottom: 0;
 
@@ -77,25 +105,28 @@
 
     }
 
-    .datepicker--nav-action svg {//-----стрелки
+    .datepicker--nav > .datepicker--nav-action svg {//-----стрелки
         width: 17px;
         height: 18px;
     }
-    .datepicker--nav-action path {//-----стрелки
+    .datepicker--nav > .datepicker--nav-action path {//-----стрелки
         
         fill:#BC9CFF;
         stroke: none;
         stroke-width: 0;   
     }
-    .datepicker--content{
-
+    .datepicker > .datepicker--content{
+        min-height: 240px;
+        box-sizing: border-box;
+        padding: 0;
     }
 
 
-    .datepicker--days-names{// Пн Вт Ср Чт Пт
-
+    .datepicker--days > .datepicker--days-names{// Пн Вт Ср Чт Пт
+        height: 40px;
+        margin: 0;
     }
-    .datepicker--day-name{
+    .datepicker--days-names > .datepicker--day-name{
         text-transform: capitalize;
         color: $Purple;
         font-family: Montserrat;
@@ -105,81 +136,91 @@
         line-height: 15px;
     }
     .datepicker--cells.datepicker--cells-days{//diva с числами
-
+        min-height: 200px;
+        & > .-other-month-{//числа другого месяца
+            color: $Dark25;
+        }
     }
-    .datepicker--cell{//день
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 15px;
-        color: $Dark50;
-        &.-current-{
+    
+    //---------------------вставка
+    .datepicker--cells > .datepicker--cell{//день
             font-family: Montserrat;
             font-style: normal;
-            font-weight: bold;
+            font-weight: normal;
             font-size: 12px;
             line-height: 15px;
-            color: #fff;
-            /* Secondary Gradient */
-            background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
-            border-radius: 22px;
-            &.-focus-{
+            color: $Dark50;
+            &.-current-{
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 15px;
                 color: #fff;
+                /* Secondary Gradient */
+                background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+                border-radius: 22px;
+                &.-focus-{
+                    color: #fff;
+                }
+            }
+            &.-selected-,&.-selected-.-focus-,
+            &.-selected-.-current-, &.-selected-.-current-.-focus- {
+                color: #fff;
+                background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+                border-radius: 22px;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 15px;
+            }
+            &.-in-range- {
+    
+                //background: rgba(92,196,239,.1);
+                color: $Dark50;
+                border-radius: 0;
+                background: linear-gradient(180deg, rgba(188,156,255, 0.25) 0%, rgba(139,164,259, 0.25) 100%);
+                //background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+                //opacity: 0.25;
             }
         }
-        &.-selected-,&.-selected-.-focus-,
-        &.-selected-.-current-, &.-selected-.-current-.-focus- {
-            color: #fff;
-            background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-            border-radius: 22px;
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 12px;
-            line-height: 15px;
-        }
-        &.-in-range- {
 
-            //background: rgba(92,196,239,.1);
-            color: $Dark50;
-            border-radius: 0;
-            background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-            opacity: 0.25;
-        }
-    }
-    .datepicker--cell-day {//день
+    .datepicker--cells > .datepicker--cell-day {//день
         width: 40px;
         height: 40px;
         position: relative;
     }
-    .-other-month-{//числа другого месяца
-        color: $Dark25;
-    }
-    .-range-from-{//начало промежутка
-        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    
+    .datepicker--cells > .-range-from-{//начало промежутка
+        //background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        background: linear-gradient(180deg, rgba(188,156,255, 0.25) 0%, rgba(139,164,259, 0.25) 100%);
         border-radius: 22px;
+        color:red;
         &::after{
             content: '';
             width: 20px;
             height: 40px;
-            background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-            opacity: 0.25;
+            background: linear-gradient(180deg, rgba(188,156,255, 0.25) 0%, rgba(139,164,259, 0.25) 100%);
+            //background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+            //opacity: 0.25;
             position: absolute;
             top:0;
             right: 0;
             z-index: -1;
         }
     }
-    .-range-to-{//конец промежутка
-        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    .datepicker--cells > .-range-to-{//конец промежутка
+        //background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        background: linear-gradient(180deg, rgba(188,156,255, 0.25) 0%, rgba(139,164,259, 0.25) 100%);
         border-radius: 22px;
         &::before{
             content: '';
             width: 20px;
             height: 40px;
-            background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-            opacity: 0.25;
+            background: linear-gradient(180deg, rgba(188,156,255, 0.25) 0%, rgba(139,164,259, 0.25) 100%);
+            //background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+            //opacity: 0.25;
             position: absolute;
             top:0;
             left: 0;
@@ -192,6 +233,7 @@
     .-selected-{//выбранный
 
     }
+
     .date__datepicker-footer{
         width: 280px;
         height: 30px;
@@ -202,10 +244,24 @@
         bottom: 0;
     }
 
+.date__clean,.date__apply {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
 
-
-
-//-----------------------------------------------------------
-//.ui-datepicker-inline, .ui-datepicker, .ui-widget, .ui-widget-content, .ui-helper-clearfix, .ui-corner-all{
-//    display: none;
-//}
+    /* identical to box height */
+    text-transform: uppercase;
+    appearance: button;
+}
+.date__clean {
+    color: $Dark50;
+    
+}
+.date__apply {
+    color: $Purple;
+}
+.datepicker--disable{
+    display: none;
+}

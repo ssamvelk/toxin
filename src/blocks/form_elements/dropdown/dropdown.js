@@ -9,12 +9,12 @@ for (let i=0; i<el.length; i++){
     });
 }
 //---------------------------------Кнопки +\-
-var items = document.querySelectorAll('.item-value');
+var DropdownItems = document.querySelectorAll('.item-value');
 
     //console.log(items.length)
 
-    for (let i=0; i<items.length; i++){
-        items[i].addEventListener("click", function(event){
+    for (let i=0; i<DropdownItems.length; i++){
+        DropdownItems[i].addEventListener("click", function(event){
             let target = event.target,// где был клик?
                 value = this.querySelector('.dropdown-item__value').innerHTML 
   
