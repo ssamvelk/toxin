@@ -4,6 +4,7 @@ include ../blocks/form_elements/text_field/text_field.pug
 include ../blocks/form_elements/dropdown/dropdown.pug
 include ../blocks/form_elements/date/date.pug
 include ../blocks/form_elements/checkbox/checkbox.pug
+include ../blocks/form_elements/radio_buttons/radio_buttons.pug
 
 <!DOCTYPE html>
 html(lang="en")
@@ -49,9 +50,13 @@ html(lang="en")
                         +checkbox({text:'Petya'})
                         +checkbox({text:'Dima'})
 
-
                     +checkbox-list({})
                     +checkbox-additional-list({})
+                br
+                h3 Radio Buttons
+                .flex-wrapper
+                    +radio({})
+                br
                 br
                 br
 
