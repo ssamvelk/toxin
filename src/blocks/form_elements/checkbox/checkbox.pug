@@ -1,0 +1,28 @@
+mixin checkbox(options)
+    -var text = options.text, id = options.id
+    
+    .checkbox-wrp     
+        input(class="checkbox-item" type="checkbox" checked)
+        label(class="checkbox-item-name" for="checkbox-item")=text
+
+
+
+
+mixin checkbox-list(options)
+    .checkbox-list-wrp
+        h3 Checkbox Buttons 
+        +checkbox({text:'Можно курить'})
+        +checkbox({text:'Можно с питомцами'})
+        +checkbox({text:'Можно пригласить гостей (до 10 человек)'})
+
+mixin checkbox-additional-list(options)
+    .checkbox-list-wrp
+        h3 дополнительные удобства 
+        +checkbox({text:'Завтрак'})
+        +checkbox({text:'Письменный стол'})
+        +checkbox({text:'Стул для кормления'})
+        +checkbox({text:'Кроватка'})
+        +checkbox({text:'Телевизорл'})
+        +checkbox({text:'Шампунь'})
+        +checkbox({text:'Телевизор'})
+        +checkbox({text:'Шампунь'})

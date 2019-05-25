@@ -3,6 +3,8 @@ include ../static/sprite.svg
 include ../blocks/form_elements/text_field/text_field.pug
 include ../blocks/form_elements/dropdown/dropdown.pug
 include ../blocks/form_elements/date/date.pug
+include ../blocks/form_elements/checkbox/checkbox.pug
+
 <!DOCTYPE html>
 html(lang="en")
     head
@@ -40,8 +42,20 @@ html(lang="en")
                     
                     +date-seach-filds({})
                 br
+                h3 Checkbox Buttons
+                .flex-wrapper
+                    .block-wrapper
+                        +checkbox({text:'Vasya'})
+                        +checkbox({text:'Petya'})
+                        +checkbox({text:'Dima'})
+
+
+                    +checkbox-list({})
+                    +checkbox-additional-list({})
                 br
                 br
+
+
 
                 
 

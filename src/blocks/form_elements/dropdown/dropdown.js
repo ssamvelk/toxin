@@ -79,7 +79,7 @@ for(let i=0; i<Dropdowns.length; i++ ){
             if(   event.target.classList == 'plusBtn' || event.target.classList == 'minusBtn' ){
                 p.innerHTML = Bedroom.innerHTML + ' спальни, ' + Bed.innerHTML + ' кровати...';
             }
-            else console.log('мимо')
+            else return
             
         }
 
