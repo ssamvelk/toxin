@@ -1,0 +1,51 @@
+.toggle-wrp{
+    width: 260px;
+    height: 20px;
+    display: flex;
+}
+.toggle-item-name{
+    width: 260px;
+    display: flex;
+    flex-direction: row-reverse;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: $Dark75
+
+}
+.toggle-item{
+    width: 40px;
+    height: 20px;
+    position: relative;
+    appearance: none;
+    outline: none;
+    border: 1px solid $Dark25;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-right: 10px;
+    //transition: 0.5s;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        top: 3px;
+        left: 3px;
+        background: $Dark25;
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+    &:checked{
+        border-color: $Purple;   
+        &::before{
+            left: 23px;
+            background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+            transition: 0.5s;
+        }
+    }
+    
+}
