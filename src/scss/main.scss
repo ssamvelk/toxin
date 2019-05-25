@@ -36,7 +36,7 @@ h3 {
     color: #1F2041;
     margin: 5px 0;
 } 
-br{ margin: 30px 0;}
+br{ margin: 15px 0;}
 
 .wrapper {
         
@@ -60,7 +60,12 @@ br{ margin: 30px 0;}
 .h150{
     min-height: 150px;
 }
-
+.colomn-wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 50px;
+    justify-content: space-around;
+}
 
 @import "../blocks/form_elements/text_field/text_field.scss";
 
@@ -69,6 +74,7 @@ br{ margin: 30px 0;}
 @import "../blocks/form_elements/checkbox/checkbox.scss";
 @import "../blocks/form_elements/radio/radio.scss";
 @import "../blocks/form_elements/toggle/toggle.scss";
+@import "../blocks/form_elements/like/like.scss"
 
 //@import "../vendors/datepicker/css/datepicker.scss";
 //@import "../blocks/btn/btn.scss";

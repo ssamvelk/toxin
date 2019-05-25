@@ -6,7 +6,7 @@ include ../blocks/form_elements/date/date.pug
 include ../blocks/form_elements/checkbox/checkbox.pug
 include ../blocks/form_elements/radio/radio.pug
 include ../blocks/form_elements/toggle/toggle.pug
-
+include ../blocks/form_elements/like/like.pug
 <!DOCTYPE html>
 html(lang="en")
     head
@@ -44,28 +44,29 @@ html(lang="en")
                     
                     +date-seach-filds({})
                 br
+                br
                 h3 Checkbox Buttons
                 .flex-wrapper
-                    .block-wrapper
-                        +checkbox({text:'Vasya'})
-                        +checkbox({text:'Petya'})
-                        +checkbox({text:'Dima'})
-
+                    +checkbox({text:'Hello world!'})
                     +checkbox-list({})
                     +checkbox-additional-list({})
-                br
+                
                 h3 Radio Buttons
                 .flex-wrapper
                     +radio({})
                 br
                 h3 toggle
-                //-.flex-wrapper
-                +toggle({})
-                //-+toggle({}) 
+                .colomn-wrapper
+                    +toggle({checked: true})
+                    +toggle({})
+                br
+                h3 like button
+                .colomn-wrapper
+                    +like({})
+                    +like({liked: true})
                 br
                 br
-                br
-
+                
 
 
                 

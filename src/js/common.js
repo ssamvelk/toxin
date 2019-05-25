@@ -1,1 +1,0 @@
-console.log('PRIVET common.js тоже работает');

@@ -10,6 +10,7 @@ import '../vendors/datepicker/datepicker'
 import '../vendors/datepicker/css/datepicker.scss'
 import '../blocks/form_elements/dropdown/dropdown'
 import '../blocks/form_elements/date/date'
+import '../blocks/form_elements/like/like'
 
 //import { strict } from 'assert';
 

@@ -1,0 +1,40 @@
+.like-wrp{
+    width: 40px;
+    height: 20px;
+    display: flex;
+    //justify-content: space-around;
+    vertical-align: middle;
+    border: 1px solid $Dark25;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.like-heart{
+    margin-left: 5px;
+    margin-top: 6px;
+    
+}
+.like-value{    
+    margin-left: 4px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    color: $Dark25;
+}
+
+.heart-liked{
+    display: none;
+}
+.heart--liked{//------модификатор для SVG
+    border-color: $Purple;
+    .like-value{
+        color: $Purple;
+    }
+    .heart-liked{
+        display: block;
+    }
+}
