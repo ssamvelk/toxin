@@ -68,9 +68,10 @@ module.exports = {
                             loader:'file-loader',
                             options: {
                                 name: 'img/[name].[ext]',
-                                exclude: ['/src/fonts/'],
+                                exclude: ['src/fonts/'],
                                 //outputPath: 'img/'
                             },
+                            
                         },
                         {   
                             loader: 'image-webpack-loader',
@@ -99,13 +100,13 @@ module.exports = {
                 ]
             },
             {//--------------------------------FONTS
-                test: /\.(woff|woff2|eot|ttf|otf|svg)$/,
+                test: /\.(woff|woff2|eot|ttf|otf)$/,
                 use: [{
                     loader: 'file-loader',
                     options: {
                         name: '[name].[ext]',
                         outputPath: 'fonts/',
-                        exclude: ['/src/img/', '/src/blocks/']
+                        //exclude: ['src/static/', '/src/blocks/']
                     }
                 }]
             },

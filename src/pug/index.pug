@@ -7,6 +7,9 @@ include ../blocks/form_elements/checkbox/checkbox.pug
 include ../blocks/form_elements/radio/radio.pug
 include ../blocks/form_elements/toggle/toggle.pug
 include ../blocks/form_elements/like/like.pug
+include ../blocks/form_elements/rate/rate.pug
+
+
 <!DOCTYPE html>
 html(lang="en")
     head
@@ -65,16 +68,14 @@ html(lang="en")
                     +like({})
                     +like({liked: true})
                 br
+
+                h3 rate button
+                .flex-wrapper
+                    .colomn-wrapper
+                        h5 Dinamic
+                        +rate({isClickable:true})
+                    .colomn-wrapper
+                        h5 Static
+                        +rate({rating: '1'})
+                        +rate({rating: '5'})    
                 br
-                
-
-
-                
-
-                
-                
-
-
-
-
-            

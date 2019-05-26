@@ -1,0 +1,30 @@
+mixin rate(options)
+    -var value = (options.rating)? options.rating : '0'     //- Параметр для рейтинга (1-5)
+    -var k=0
+    if (options.isClickable)
+        .rate__wrp.rate__wrp--reverse
+            input.rate__star#star1(type="radio" name="stars")
+            label.rate__star-lbl(for="star1")
+
+            input.rate__star#star2(type="radio" name="stars")
+            label.rate__star-lbl(for="star2")
+
+            input.rate__star#star3(type="radio" name="stars")
+            label.rate__star-lbl(for="star3")
+
+            input.rate__star#star4(type="radio" name="stars")
+            label.rate__star-lbl(for="star4")
+
+            input.rate__star#star5(type="radio" name="stars")
+            label.rate__star-lbl(for="star5")
+    else
+        .rate__wrp
+            ul.rate__stars
+                while (k < value)
+                    li.rate__item.rate__item--full
+                    -k++
+                -var kk=0
+                while (kk < 5-value)
+                    li.rate__item
+                    -kk++
+                
