@@ -9,6 +9,8 @@ include ../blocks/form_elements/toggle/toggle.pug
 include ../blocks/form_elements/like/like.pug
 include ../blocks/form_elements/rate/rate.pug
 include ../blocks/form_elements/slider/slider.pug
+include ../blocks/form_elements/buttons/buttons.pug
+include ../blocks/form_elements/pagination/pagination.pug
 
 <!DOCTYPE html>
 html(lang="en")
@@ -84,5 +86,19 @@ html(lang="en")
                     
                     +slider({})
                 br
+                h3 buttons
+                .flex-wrapper
+                    //.colomn-wrapper(style="min-height: 150px;")
+                    +button({})
+                    +button({White:true})
+                    +button({Big:true})
+                    
                 br
+                h3 pagination
+                .flex-wrapper
+                    +pagination({})
+                br
+                h3 rich Checkbox Buttons
+                .flex-wrapper
+                    +richcheckbox({})
                 br

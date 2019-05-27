@@ -1,11 +1,8 @@
 mixin checkbox(options)
     -var text = options.text, id = options.id
-    
     .checkbox-wrp     
         input(class="checkbox-item" type="checkbox" checked)
         label(class="checkbox-item-name" for="checkbox-item")=text
-
-
 
 
 mixin checkbox-list(options)
@@ -26,3 +23,23 @@ mixin checkbox-additional-list(options)
         +checkbox({text:'Шампунь'})
         +checkbox({text:'Телевизор'})
         +checkbox({text:'Шампунь'})
+
+//----------------rich Checkbox Buttons
+mixin richcheckbox(options)
+    .richcheckbox-wrp
+        h3 доступность
+        .richcheckbox-item-wrp     
+            input(class="checkbox-item richcheckbox-item" type="checkbox" id="wideCorridor")
+            .richcheckbox-inner-wrp
+                label(class="checkbox-item-name richcheckbox-item-name" for="wideCorridor")
+                    h6.richcheckbox-title Широкий коридор
+                p.richcheckbox-info Ширина коридоров в номере<br>не менее 91 см.
+        .richcheckbox-item-wrp     
+            input(class="checkbox-item richcheckbox-item" type="checkbox" id="assistant")
+            .richcheckbox-inner-wrp
+                label(class="checkbox-item-name richcheckbox-item-name" for="assistant")
+                    h6.richcheckbox-title Помощник для инвалидов
+                p.richcheckbox-info На 1 этаже вас встретит специалист<br>и проводит до номера.
+
+ 
+
