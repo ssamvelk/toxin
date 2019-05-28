@@ -11,6 +11,8 @@ include ../blocks/form_elements/rate/rate.pug
 include ../blocks/form_elements/slider/slider.pug
 include ../blocks/form_elements/buttons/buttons.pug
 include ../blocks/form_elements/pagination/pagination.pug
+include ../blocks/form_elements/bullet_list/bullet_list.pug
+include ../blocks/form_elements/room_info/room_info.pug
 
 <!DOCTYPE html>
 html(lang="en")
@@ -67,9 +69,10 @@ html(lang="en")
                     +toggle({})
                 br
                 h3 like button
-                .colomn-wrapper
-                    +like({})
-                    +like({liked: true})
+                .center-wrapper
+                    .colomn-wrapper
+                        +like({})
+                        +like({liked: true})
                 br
 
                 h3 rate button
@@ -99,7 +102,10 @@ html(lang="en")
                 .flex-wrapper
                     +pagination({})
                 br
-                h3 rich Checkbox Buttons
-                .flex-wrapper
-                    
+                h3 bullet list
+                .center-wrapper
+                    +bullet({})
                 br
+
+                h3 Сведения о номере
+                .flex-wrapper

@@ -66,6 +66,12 @@ br{ margin: 15px 0;}
     min-height: 50px;
     justify-content: space-around;
 }
+.center-wrapper{
+    width: max-content;
+    margin: 0 auto;
+}
+
+
 
 @import "../blocks/form_elements/text_field/text_field.scss";
 
@@ -79,6 +85,7 @@ br{ margin: 15px 0;}
 @import "../blocks/form_elements/slider/slider.scss";
 @import "../blocks/form_elements/buttons/buttons.scss";
 @import "../blocks/form_elements/pagination/pagination.scss";
+@import "../blocks/form_elements/bullet_list/bullet_list.scss";
 
 //@import "../vendors/datepicker/css/datepicker.scss";
 //@import "../blocks/btn/btn.scss";
