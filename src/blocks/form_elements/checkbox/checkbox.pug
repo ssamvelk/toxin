@@ -1,28 +1,28 @@
 mixin checkbox(options)
-    -var text = options.text, id = options.id
+    -var text = options.text, id = (options.id)? options.id :''
     .checkbox-wrp     
-        input(class="checkbox-item" type="checkbox" checked)
-        label(class="checkbox-item-name" for="checkbox-item")=text
+        input(class="checkbox-item" id=id type="checkbox" )
+        label(class="checkbox-item-name" for=id)=text
 
 
 mixin checkbox-list(options)
     .checkbox-list-wrp
         h3 Checkbox Buttons 
-        +checkbox({text:'Можно курить'})
-        +checkbox({text:'Можно с питомцами'})
-        +checkbox({text:'Можно пригласить гостей (до 10 человек)'})
+        +checkbox({text:'Можно курить', id:'smoke'})
+        +checkbox({text:'Можно с питомцами', id:'pets'})
+        +checkbox({text:'Можно пригласить гостей (до 10 человек)', id:'frends'})
 
 mixin checkbox-additional-list(options)
     .checkbox-list-wrp
         h3 дополнительные удобства 
-        +checkbox({text:'Завтрак'})
-        +checkbox({text:'Письменный стол'})
-        +checkbox({text:'Стул для кормления'})
-        +checkbox({text:'Кроватка'})
-        +checkbox({text:'Телевизорл'})
-        +checkbox({text:'Шампунь'})
-        +checkbox({text:'Телевизор'})
-        +checkbox({text:'Шампунь'})
+        +checkbox({text:'Завтрак', id:'breackfast'})
+        +checkbox({text:'Письменный стол', id:'desk'})
+        +checkbox({text:'Стул для кормления', id:'chair'})
+        +checkbox({text:'Кроватка', id:'cot'})
+        +checkbox({text:'Телевизор', id:'tv'})
+        +checkbox({text:'Шампунь', id:'shampoo'})
+        +checkbox({text:'Телевизор', id:'tv1'})
+        +checkbox({text:'Шампунь', id:'shampoo1'})
 
 //----------------rich Checkbox Buttons
 mixin richcheckbox(options)
