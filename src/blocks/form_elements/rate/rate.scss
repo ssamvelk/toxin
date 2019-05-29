@@ -24,14 +24,14 @@
         width: 20px;
         height: 19px;
         position: absolute;
-        background: url(../static/source/star_border.svg);
+        background: url(../static/source/star_border.svg) no-repeat;
     }
     &::after{
         content: '';
         width: 20px;
         height: 19px;
         position: absolute;
-        background: url(../static/source/star.svg);
+        background: url(../static/source/star.svg) no-repeat;
         opacity: 0;
         transition: 0.5s
     }
@@ -52,10 +52,10 @@
 .rate__item{
     width: 20px;
     height: 20px;
-    background: url(../static/source/star_border.svg);
+    background: url(../static/source/star_border.svg) no-repeat;
 }
 .rate__item--full{
-    background: url(../static/source/star.svg);
+    background: url(../static/source/star.svg) no-repeat;
 }
 
 

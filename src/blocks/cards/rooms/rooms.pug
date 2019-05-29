@@ -1,0 +1,22 @@
+mixin carousel(options)
+    ul.carousel
+        li.carousel__item.carousel__item--active(id='carousel_1')
+        li.carousel__item(id='carousel_2')
+        li.carousel__item(id='carousel_3')
+        li.carousel__item(id='carousel_4')
+
+mixin rooms(options)
+    -var bg = ['../static/source/room_1.jpg', '../static/source/room_2.jpg'] //----2фона
+    .rooms-wrp
+        .rooms__img
+            img(width='270' height='150' src="../static/source/room_2.jpg" alt="bg")
+            +carousel
+        .rooms__info
+            span.reserve__number № 888 
+            span.reserve__type люкс 
+            span.reserve__cost <b>9 990₽</b> в сутки
+        .rooms__rating
+            +rate({rating: '5'}) 
+            span.rooms__rating-count 145 Отзывов
+        
+

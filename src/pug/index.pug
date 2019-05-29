@@ -17,6 +17,8 @@ include ../blocks/cards/search/search.pug
 include ../blocks/cards/registration/registration.pug
 include ../blocks/cards/reserve/reserve.pug
 include ../blocks/cards/inter/inter.pug
+include ../blocks/cards/rooms/rooms.pug
+
 
 <!DOCTYPE html>
 html(lang="en")
@@ -119,9 +121,12 @@ html(lang="en")
                     +search-card
                     +registration-card
                     +inter
+                    
                 br
                 .flex-wrapper
-                    
+                    +rooms
+                    +rooms
+                    +rooms
                 br
                 br
                 br
