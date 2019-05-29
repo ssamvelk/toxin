@@ -13,6 +13,9 @@ include ../blocks/form_elements/buttons/buttons.pug
 include ../blocks/form_elements/pagination/pagination.pug
 include ../blocks/form_elements/bullet_list/bullet_list.pug
 include ../blocks/form_elements/room_info/room_info.pug
+include ../blocks/cards/search/search.pug
+include ../blocks/cards/registration/registration.pug
+
 
 <!DOCTYPE html>
 html(lang="en")
@@ -49,7 +52,7 @@ html(lang="en")
                     
                     +date-calendar({})
                     
-                    +date-seach-filds({})
+                    +date-search-filds({})
                 br
                 br
                 h3 Checkbox Buttons
@@ -111,5 +114,13 @@ html(lang="en")
                 h3 Сведения о номере
                 .flex-wrapper
                     +room_info({})
+                br
+                .flex-wrapper
+                    +search-card
+                    +registration-card
+                br
+                .flex-wrapper
+                    
+                br
                 br
                 br

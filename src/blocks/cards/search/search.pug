@@ -1,0 +1,8 @@
+mixin search-card(options)
+    .search-wrp
+        h1 Найдём номера под ваши пожелания
+        +date-search-filds({})
+        h3.search- гости
+        +dropdownCompany({expanded: false})
+        +button({Big:true, text:'подобрать номер'})
+        

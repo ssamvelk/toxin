@@ -16,25 +16,25 @@ mixin filter-date-dropdown(options)
             span.date__info-end 23 авг
         +date-calendar({isDisable: false})
 
-mixin date-seach-filds(options)
+mixin date-search-filds(options)
     
-    .date__seach-wrp
+    .date__search-wrp
         //-    
-        .date__seach-inner-wrp
+        .date__search-inner-wrp
             h3 Прибытие
             .date-wrp--w150
                 <svg class="date-dropdawn__svg" width="12" height="12" viewBox="0 -4 12 12"  version="1.1" preserveAspectRatio="xMinYMin">
                 <use xlink:href="#img-expand-more"></use>   
                 </svg>
                 +text_field({type:'date', class:'date__info'})
-        .date__seach-inner-wrp
+        .date__search-inner-wrp
             h3 Выезд    
             .date-wrp--w150
                 <svg class="date-dropdawn__svg" width="12" height="12" viewBox="0 -4 12 12"  version="1.1" preserveAspectRatio="xMinYMin">
                 <use xlink:href="#img-expand-more"></use>   
                 </svg>
                 +text_field({type:'date', class:'date__info'})
-        +date-calendar({isDisable: false})
+        +date-calendar({isDisable: true})
         
 
 

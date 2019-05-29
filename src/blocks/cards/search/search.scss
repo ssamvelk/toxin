@@ -1,0 +1,31 @@
+.search-wrp{
+    width: 380px;
+    height: 374px;
+    padding: 0 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    //justify-content: space-around;
+    box-sizing: border-box;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    h1{
+        margin-top: 40px;
+    }
+    .date__search-wrp{
+        margin-top: 20px;
+    }
+    > h3{
+        margin-top: 20px;
+    }
+    .dropdown-wrp{
+        margin-top: 5px;
+    }
+    button {
+        margin-top: 31px;
+    }
+}

@@ -1,9 +1,11 @@
 mixin button(options)
     -var isBig = (options.Big)? ' button--big' : '',
-    -isWhite = (options.White)? ' button--white' : ''
+    -isWhite = (options.White)? ' button--white' : '',
+    -text = (options.text)? options.text : 'перейти к оплате'
     
     if (options.Big)
-        button(class='button'+isBig) <span>перейти к оплате</span>
+        button(class='button'+isBig)
+            span=text
             <svg class="btn-arrow-svg" width="18" height="18" viewBox="0 0 18 18"  version="1.1" preserveAspectRatio="xMinYMin">
             <use xlink:href="#img-arrow-right"></use>   
             </svg>
