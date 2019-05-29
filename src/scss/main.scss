@@ -41,6 +41,7 @@ br{ margin: 15px 0;}
         
         width: 1440px;
         margin: 0 auto;
+    
 }
 
 .elements-wrapper{
@@ -48,6 +49,11 @@ br{ margin: 15px 0;}
     box-sizing: border-box;
     padding: 0 10%;
     background: #fff;
+    > h1{margin: 20px 0;}
+    > h3{
+        font-size: 24px;
+        margin: 20px 0;
+    }
 }
 .flex-wrapper{
     display: flex;
@@ -88,5 +94,7 @@ br{ margin: 15px 0;}
 @import "../blocks/form_elements/room_info/room_info.scss";
 @import "../blocks/cards/search/search.scss";
 @import "../blocks/cards/registration/registration.scss";
+@import "../blocks/cards/reserve/reserve.scss";
+
 //@import "../vendors/datepicker/css/datepicker.scss";
 //@import "../blocks/btn/btn.scss";

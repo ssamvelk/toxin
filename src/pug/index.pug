@@ -15,7 +15,7 @@ include ../blocks/form_elements/bullet_list/bullet_list.pug
 include ../blocks/form_elements/room_info/room_info.pug
 include ../blocks/cards/search/search.pug
 include ../blocks/cards/registration/registration.pug
-
+include ../blocks/cards/reserve/reserve.pug
 
 <!DOCTYPE html>
 html(lang="en")
@@ -41,9 +41,6 @@ html(lang="en")
                 h3 Dropdown
                 .flex-wrapper 
                     +dropdown({expanded:'true'})
-
-                    //-+drd-item({id:'fadult'})
-
                     +dropdownCompany({expanded:'true'})
                 br
                 h3 Filter date dropdown
@@ -115,7 +112,9 @@ html(lang="en")
                 .flex-wrapper
                     +room_info({})
                 br
+                h1 Cards
                 .flex-wrapper
+                    +reserve-card
                     +search-card
                     +registration-card
                 br
