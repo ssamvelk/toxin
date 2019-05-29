@@ -1,0 +1,9 @@
+mixin inter(options)
+    .inter-wrp
+        h1 Войти
+        +text_field({type:'email'})
+        +text_field({type:'password'})
+        +button({Big:true, tex: 'Войти'})
+        p.inter__footer
+            span Нет аккаунт на Toxin
+            +button({White:true, text: 'Создать'})

@@ -16,6 +16,7 @@ include ../blocks/form_elements/room_info/room_info.pug
 include ../blocks/cards/search/search.pug
 include ../blocks/cards/registration/registration.pug
 include ../blocks/cards/reserve/reserve.pug
+include ../blocks/cards/inter/inter.pug
 
 <!DOCTYPE html>
 html(lang="en")
@@ -113,10 +114,11 @@ html(lang="en")
                     +room_info({})
                 br
                 h1 Cards
-                .flex-wrapper
+                .flex-wrapper(style="flex-wrap: wrap;")
                     +reserve-card
                     +search-card
                     +registration-card
+                    +inter
                 br
                 .flex-wrapper
                     
