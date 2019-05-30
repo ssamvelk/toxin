@@ -18,7 +18,8 @@ include ../blocks/cards/registration/registration.pug
 include ../blocks/cards/reserve/reserve.pug
 include ../blocks/cards/inter/inter.pug
 include ../blocks/cards/rooms/rooms.pug
-
+include ../blocks/header/header.pug
+include ../blocks/footer/footer.pug
 
 <!DOCTYPE html>
 html(lang="en")
@@ -29,9 +30,17 @@ html(lang="en")
         title Toxin UI-KIT
     body
         
+
         main.wrapper
+            h1 Headers & Footers
+            +mainheader({})
+            br
+            +mainheader({authorized: true}) 
+            br
+            +footer({})
+            h1 Form Elements
             .elements-wrapper
-                h1 Form Elements
+                
                 br
                 h3 Text Field
                 .flex-wrapper.fw.h150
@@ -40,6 +49,7 @@ html(lang="en")
                     +text_field({type:'text', placeholder: 'Фамилия'})
                     +text_field({type:'password'})
                     +text_field({type:'date'})
+                    +subscribe({})
                 br
                 h3 Dropdown
                 .flex-wrapper 
@@ -102,19 +112,26 @@ html(lang="en")
                     +button({Big:true})
                     
                 br
-                h3 pagination
+                //h3 pagination
+                //.flex-wrapper
+                //    +pagination({})
+                //br
+                //h3 bullet list
                 .flex-wrapper
-                    +pagination({})
-                br
-                h3 bullet list
-                .center-wrapper
-                    +bullet({})
+                    div 
+                        +bullet({})
+                    div
+                        h2 Сведения о номере
+                        +room_info({})
+                    div
+                        h2 pagination
+                        +pagination({})
                 br
 
-                h3 Сведения о номере
-                .flex-wrapper
-                    +room_info({})
-                br
+                //h3 Сведения о номере
+                //.flex-wrapper
+                //    +room_info({})
+                //br
                 h1 Cards
                 .flex-wrapper(style="flex-wrap: wrap;")
                     +reserve-card
@@ -128,8 +145,7 @@ html(lang="en")
                     +rooms({rating: 1, number: 840, cost: '7 777', likes: 12})
                     +rooms({number: 500, notlux: true, cost: '5 750', likes: 256})
                 br
-                h1 Headers & Footers
-                .flex-wrapper
+                   
                 
-                br
-                br
+            br
+            br

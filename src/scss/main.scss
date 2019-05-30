@@ -41,7 +41,8 @@ br{ margin: 15px 0;}
         
         width: 1440px;
         margin: 0 auto;
-    
+        h2{margin-bottom: 24px;}
+        h1{margin-left: 140px;}
 }
 
 .elements-wrapper{
@@ -97,5 +98,7 @@ br{ margin: 15px 0;}
 @import "../blocks/cards/reserve/reserve.scss";
 @import "../blocks/cards/inter/inter.scss";
 @import "../blocks/cards/rooms/rooms.scss";
+@import "../blocks/header/header.scss";
+@import "../blocks/footer/footer.scss";
 //@import "../vendors/datepicker/css/datepicker.scss";
 //@import "../blocks/btn/btn.scss";
