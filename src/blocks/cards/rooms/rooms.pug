@@ -7,16 +7,24 @@ mixin carousel(options)
 
 mixin rooms(options)
     -var bg = ['../static/source/room_1.jpg', '../static/source/room_2.jpg'] //----2фона
+    -var imageBG = (options.bg)? options.bg : '../static/source/room_1.jpg'
+    -var roomRating = (options.rating)? options.rating : '5'                //----options.rating -рейтинг комнаты
+    -var roomNumder = (options.number)? options.number : '888'              //----options.number
+    -var roomNotLux = (options.notlux)? '' : 'люкс'                         //---options.notlu
+    -var roomCost = (options.cost)? options.cost+'₽' : '9 999₽'
+    -var roomLikesNum = (options.likes)? options.likes: '145'                    //----options.cost
     .rooms-wrp
         .rooms__img
-            img(width='270' height='150' src="../static/source/room_2.jpg" alt="bg")
+            img(width='270' height='150' src=imageBG alt="bg")
             +carousel
         .rooms__info
-            span.reserve__number № 888 
-            span.reserve__type люкс 
-            span.reserve__cost <b>9 990₽</b> в сутки
+            span.reserve__number='№ '+roomNumder 
+            span.reserve__type=roomNotLux 
+            span.reserve__cost
+                b=roomCost
+                span=' в сутки'
         .rooms__rating
-            +rate({rating: '5'}) 
-            span.rooms__rating-count 145 Отзывов
+            +rate({rating: roomRating}) 
+            span.rooms__rating-count=roomLikesNum+' Отзывов'
         
 
