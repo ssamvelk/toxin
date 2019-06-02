@@ -42,7 +42,7 @@ html(lang="en")
             .elements-wrapper
                 
                 br
-                h3 Text Field
+                //h3 Text Field
                 .flex-wrapper.fw.h150
                     +text_field({type:'email'})
                     +text_field({type:'text'})
@@ -51,12 +51,12 @@ html(lang="en")
                     +text_field({type:'date'})
                     +subscribe({})
                 br
-                h3 Dropdown
-                .flex-wrapper 
+                //h3 Dropdown
+                .flex-wrapper(style="min-height: 210px;") 
                     +dropdown({expanded:false})
                     +dropdownCompany({expanded:'true'})
                 br
-                h3 Filter date dropdown
+                //h3 Filter date dropdown
                 .flex-wrapper    
                     +filter-date-dropdown({})
                     
@@ -65,23 +65,23 @@ html(lang="en")
                     +date-search-filds({})
                 br
                 br
-                h3 Checkbox Buttons
+                //h3 Checkbox Buttons
                 .flex-wrapper
                     +checkbox({text:'Hello world!', id:'wello-world'})
                     +checkbox-list({})
                     +checkbox-additional-list({})
                     +richcheckbox({})
                 
-                h3 Radio Buttons
+                //h3 Radio Buttons
                 .flex-wrapper
                     +radio({})
                 br
-                h3 toggle
+                //h3 toggle
                 .colomn-wrapper
                     +toggle({checked: true})
                     +toggle({})
                 br
-                h3 like button
+                //h3 like button
                 .flex-wrapper
                     .colomn-wrapper
                         +like({})
@@ -89,7 +89,7 @@ html(lang="en")
                     +comment({})
                 br
 
-                h3 rate button
+                //h3 rate button
                 .flex-wrapper
                     .colomn-wrapper
                         h5 Dinamic
@@ -99,12 +99,12 @@ html(lang="en")
                         +rate({rating: '1'})
                         +rate({rating: '5'})    
                 br
-                h3 Range Slider
+                // h3 Range Slider
                 .flex-wrapper
                     
                     +slider({})
                 br
-                h3 buttons
+                //h3 buttons
                 .flex-wrapper
                     +button({})
                     +button({White:true})

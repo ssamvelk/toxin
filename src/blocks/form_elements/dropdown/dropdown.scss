@@ -66,6 +66,9 @@
 }
 .dropdown-list--expanded {
     display: flex;
+    position: absolute;
+    background: white;
+    z-index: 111;
 }
 .dropdown-item{
     height: 30px;
