@@ -53,7 +53,7 @@ html(lang="en")
                 br
                 h3 Dropdown
                 .flex-wrapper 
-                    +dropdown({expanded:'true'})
+                    +dropdown({expanded:false})
                     +dropdownCompany({expanded:'true'})
                 br
                 h3 Filter date dropdown
@@ -106,17 +106,11 @@ html(lang="en")
                 br
                 h3 buttons
                 .flex-wrapper
-                    //.colomn-wrapper(style="min-height: 150px;")
                     +button({})
                     +button({White:true})
                     +button({Big:true})
                     
                 br
-                //h3 pagination
-                //.flex-wrapper
-                //    +pagination({})
-                //br
-                //h3 bullet list
                 .flex-wrapper
                     div 
                         +bullet({})
@@ -128,24 +122,16 @@ html(lang="en")
                         +pagination({})
                 br
 
-                //h3 Сведения о номере
-                //.flex-wrapper
-                //    +room_info({})
-                //br
                 h1 Cards
                 .flex-wrapper(style="flex-wrap: wrap;")
                     +reserve-card
                     +search-card
                     +registration-card
                     +inter
-                    
                 br
+
                 .flex-wrapper
                     +rooms({bg:'../static/source/room_2.jpg', rating: 4})
                     +rooms({rating: 1, number: 840, cost: '7 777', likes: 12})
                     +rooms({number: 500, notlux: true, cost: '5 750', likes: 256})
                 br
-                   
-                
-            br
-            br

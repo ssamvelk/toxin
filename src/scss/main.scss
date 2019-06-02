@@ -7,7 +7,7 @@ html {
     font-size: $mainFontSize;
     font-family: $mainFont;
     line-height: $mainLineHeight; 
-    background-color: rgb(229, 241, 227) ;
+    //background-color: rgb(229, 241, 227) ;
     box-sizing: border-box;
 }
 h1 {
@@ -37,14 +37,12 @@ h3 {
 } 
 br{ margin: 15px 0;}
 
-.wrapper {
-        
-        width: 1440px;
-        margin: 0 auto;
-        h2{margin-bottom: 24px;}
-        h1{margin-left: 140px;}
-}
-
+.wrapper {    
+    width: 1440px;
+    margin: 0 auto;
+    > h2{margin-bottom: 24px;}
+    > h1{margin-left: 140px;}
+} 
 .elements-wrapper{
     width: 1440px;
     box-sizing: border-box;

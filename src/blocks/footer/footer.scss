@@ -32,9 +32,16 @@
     font-size: 14px;
     line-height: 17px;
     color: $Dark50;
+    
+    
 }
 .footer__nav-item,.footer__about-item,.footer__support-item{
+    //position: relative;
     margin-bottom: 20px;
+    &:hover{
+        font-weight: bold;
+        color:$Dark75;
+    }
 }
 .footer__nav-title, .footer__about-title, .footer__support-title, .footer__subscribe-title{
     text-transform: uppercase;
@@ -43,6 +50,7 @@
     line-height: 15px;
     color: $Dark;
     margin-bottom: 21px;
+    
 }
 .footer__subscribe-info{
     width: rem(196);
