@@ -9,11 +9,13 @@
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
-    line-height: 15px;
+    line-height: 44px;
+    vertical-align: middle;
+    text-align: center;
     text-transform: uppercase;
     color: white;
     position: relative;
-    
+    cursor: pointer;
     //outline: none;
     //appearance: none;
     &:hover{
@@ -22,11 +24,12 @@
 
 }
 .button--big{
-    width: 320px;
+    width: rem(320);
 }
 .button--w196{
     width: rem(196);
     height: rem(34);
+    line-height: rem(34);
 }
 .button--w87{
     width: rem(87);
