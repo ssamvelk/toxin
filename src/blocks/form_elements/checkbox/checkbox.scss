@@ -28,22 +28,9 @@
             position: absolute;
             top: 2px;
             left: 5px;
-
-            //background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
             transform: rotate(45deg);
         }
-        /*
-        &::after{
-            content: '';
-            width: 8px;
-            height: 2px;
-            position: absolute;
-            top: 8px;
-            left: 8px;
-            background-color: $Purple;
-            transform: rotate(-45deg);
-        }
-        */
+     
     }
 }
 .checkbox-item-name{
@@ -100,4 +87,27 @@
     text-transform: none;
     color: $Dark50;
     br{margin: 0;}
+}
+//-------------------------------------checkbox-additional-list
+.checkbox__list-wrp{
+    width: rem(266);
+    box-sizing: border-box;
+}
+.checkbox__list-title{
+    
+    box-sizing: border-box;
+    position: relative;
+}
+.checkbox__list-svg{
+    position: absolute;
+    top:rem(-1);
+    right: rem(17);
+}
+.checkbox__list-body{
+    box-sizing: border-box;
+    width: rem(260);
+    z-index: 98;
+}
+.checkbox__list-body--disabled {
+    display: none;
 }

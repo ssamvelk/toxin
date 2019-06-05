@@ -127,8 +127,8 @@ module.exports = {
             //inject: false
         }),  
         new HtmlWebpackPlugin({
-            template: "pug/second.pug",
-            filename:  'second.html',
+            template: "pug/search_room.pug",
+            filename:  'search_room.html',
             //inject: false
         }),
         new MiniCssExtractPlugin({

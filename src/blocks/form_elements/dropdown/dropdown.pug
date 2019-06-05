@@ -8,7 +8,7 @@ mixin drd-item(options)
         <svg class="plusBtn" width="30" height="31" viewBox="0 0 30 31" xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMinYMin">
         <use xlink:href="#img-group+"></use>
         </svg>
-
+//-----------------------------svg
 mixin drd-main__svg
         <svg class="dropdown-main__svg" width="12" height="12" viewBox="0 -4 12 12"  version="1.1" preserveAspectRatio="xMinYMin">
         <use xlink:href="#img-expand-more"></use>   
@@ -34,10 +34,10 @@ mixin dropdown(options)
                 +drd-item({id:'bathroom'}) 
 
 mixin dropdownCompany(options)
-    - var Big = (options.isBig) ? '1': '2' //заглушка для width
+    - var small = (options.small) ? ' wrp266': '' //заглушка для width
     - var Expanded = (options.expanded) ? ' dropdown-list--expanded' : ''
     
-    .dropdown-wrp.wrp320.dropdown-company
+    div(class='dropdown-wrp wrp320 dropdown-company'+small)
         +drd-main__svg
         p.dropdown-main Сколько гостей
              

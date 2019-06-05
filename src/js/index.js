@@ -12,6 +12,7 @@ import '../blocks/form_elements/dropdown/dropdown';
 import '../blocks/form_elements/date/date';
 import '../blocks/form_elements/like/like';
 import '../blocks/form_elements/slider/slider';
+import '../blocks/form_elements/checkbox/checkbox';
 
 //import { strict } from 'assert';
 

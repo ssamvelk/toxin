@@ -13,16 +13,22 @@ mixin checkbox-list(options)
         +checkbox({text:'Можно пригласить гостей (до 10 человек)', id:'frends'})
 
 mixin checkbox-additional-list(options)
-    .checkbox-list-wrp
-        h3 дополнительные удобства 
-        +checkbox({text:'Завтрак', id:'breackfast'})
-        +checkbox({text:'Письменный стол', id:'desk'})
-        +checkbox({text:'Стул для кормления', id:'chair'})
-        +checkbox({text:'Кроватка', id:'cot'})
-        +checkbox({text:'Телевизор', id:'tv'})
-        +checkbox({text:'Шампунь', id:'shampoo'})
-        +checkbox({text:'Телевизор', id:'tv1'})
-        +checkbox({text:'Шампунь', id:'shampoo1'})
+    
+    .checkbox__list-wrp
+        .checkbox__list-title
+            h3 дополнительные удобства
+            <svg class="checkbox__list-svg" width="12" height="12" viewBox="0 -4 12 12"  version="1.1" preserveAspectRatio="xMinYMin">
+                <use xlink:href="#img-expand-more"></use>   
+            </svg>
+        .checkbox__list-body.checkbox__list-body--disabled
+            +checkbox({text:'Завтрак', id:'breackfast'})
+            +checkbox({text:'Письменный стол', id:'desk'})
+            +checkbox({text:'Стул для кормления', id:'chair'})
+            +checkbox({text:'Кроватка', id:'cot'})
+            +checkbox({text:'Телевизор', id:'tv'})
+            +checkbox({text:'Шампунь', id:'shampoo'})
+            +checkbox({text:'Телевизор', id:'tv1'})
+            +checkbox({text:'Шампунь', id:'shampoo1'})
 
 //----------------rich Checkbox Buttons
 mixin richcheckbox(options)

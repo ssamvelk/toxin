@@ -29,8 +29,8 @@ h2 {
 h3 {
     font-family: Montserrat;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: rem(12);
+    line-height: rem(15);
     text-transform: uppercase;
     color: #1F2041;
     //margin: 5px 0;
@@ -43,15 +43,24 @@ body{
     box-sizing: border-box;
     min-width: rem(1440);
     background: url('/src/static/source/bg_image.jpg') no-repeat 50% -70px, white;
+}
+.main--search{
+    background: white;
+
 } 
 .wrapper{
     width: rem(1160);
-    height: rem(830);
+    min-height: rem(1357);
     box-sizing: border-box;
     margin: 0 auto;
     padding-top: rem(70);
     padding-bottom: rem(18);
     position: relative;
+}
+.main--search-wrp{
+    padding-top: rem(30);
+    padding-bottom: rem(70);
+    display: flex;
 }
 .slogan{
     width: 297px;
@@ -69,8 +78,13 @@ body{
     right: -5.5px;
     bottom: 20px;
 }
+.search-left{
+    width: rem(326);
+    
+}
+.search-right{
 
-
+}
 @import "../blocks/form_elements/text_field/text_field.scss";
 
 @import "../blocks/form_elements/dropdown/dropdown.scss";
