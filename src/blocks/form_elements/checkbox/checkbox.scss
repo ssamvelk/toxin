@@ -103,6 +103,9 @@
     top:rem(-1);
     right: rem(17);
 }
+.checkbox__list-svg--opened{
+    transform: rotate(180deg);
+}
 .checkbox__list-body{
     box-sizing: border-box;
     width: rem(260);

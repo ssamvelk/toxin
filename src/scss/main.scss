@@ -78,10 +78,31 @@ body{
     right: -5.5px;
     bottom: 20px;
 }
+
+//----------------------------search
 .search-left{
     width: rem(326);
-    
+    >h3{
+        margin-bottom: rem(5);
+    }
+    .date-wrp{
+        margin-bottom: rem(20.44);
+    }
+    .dropdown-wrp{
+        margin-bottom: rem(30.44);
+    }
+    .slider-wrp{
+        margin-bottom: rem(30);
+    }
+    .checkbox-list-wrp{
+        margin-bottom: rem(30.88);
+    }
+    .richcheckbox-wrp{
+        margin-bottom: rem(30.44);
+    }
 }
+
+
 .search-right{
 
 }
