@@ -1,0 +1,138 @@
+include ../static/sprite.svg
+//-include ../blocks/btn/btn.pug для подключения миксинов
+include ../blocks/form_elements/text_field/text_field.pug
+include ../blocks/form_elements/dropdown/dropdown.pug
+include ../blocks/form_elements/date/date.pug
+include ../blocks/form_elements/checkbox/checkbox.pug
+include ../blocks/form_elements/radio/radio.pug
+include ../blocks/form_elements/toggle/toggle.pug
+include ../blocks/form_elements/like/like.pug
+include ../blocks/form_elements/rate/rate.pug
+include ../blocks/form_elements/slider/slider.pug
+include ../blocks/form_elements/buttons/buttons.pug
+include ../blocks/form_elements/pagination/pagination.pug
+include ../blocks/form_elements/bullet_list/bullet_list.pug
+include ../blocks/form_elements/room_info/room_info.pug
+include ../blocks/cards/search/search.pug
+include ../blocks/cards/registration/registration.pug
+include ../blocks/cards/reserve/reserve.pug
+include ../blocks/cards/inter/inter.pug
+include ../blocks/cards/rooms/rooms.pug
+include ../blocks/header/header.pug
+include ../blocks/footer/footer.pug
+
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="./src/scss/main-ui-kit.scss")
+        title Toxin UI-KIT
+    body
+        
+
+        main.wrapper
+            h1 Headers & Footers
+            +mainheader({})
+            br
+            +mainheader({authorized: true}) 
+            br
+            +footer({})
+            h1 Form Elements
+            .elements-wrapper
+                
+                br
+                //h3 Text Field
+                .flex-wrapper.fw.h150
+                    +text_field({type:'email'})
+                    +text_field({type:'text'})
+                    +text_field({type:'text', placeholder: 'Фамилия'})
+                    +text_field({type:'password'})
+                    +text_field({type:'date'})
+                    +subscribe({})
+                br
+                //h3 Dropdown
+                .flex-wrapper(style="min-height: 210px;") 
+                    +dropdown({expanded:false})
+                    +dropdownCompany({expanded:'true'})
+                br
+                //h3 Filter date dropdown
+                .flex-wrapper    
+                    +filter-date-dropdown({})
+                    
+                    +date-calendar({})
+                    
+                    +date-search-filds({})
+                br
+                br
+                //h3 Checkbox Buttons
+                .flex-wrapper
+                    +checkbox({text:'Hello world!', id:'wello-world'})
+                    +checkbox-list({})
+                    +checkbox-additional-list({})
+                    +richcheckbox({})
+                
+                //h3 Radio Buttons
+                .flex-wrapper
+                    +radio({})
+                br
+                //h3 toggle
+                .colomn-wrapper
+                    +toggle({checked: true})
+                    +toggle({})
+                br
+                //h3 like button
+                .flex-wrapper
+                    .colomn-wrapper
+                        +like({})
+                        +like({liked: true})
+                    +comment({})
+                br
+
+                //h3 rate button
+                .flex-wrapper
+                    .colomn-wrapper
+                        h5 Dinamic
+                        +rate({isClickable:true})
+                    .colomn-wrapper
+                        h5 Static
+                        +rate({rating: '1'})
+                        +rate({rating: '5'})    
+                br
+                // h3 Range Slider
+                .flex-wrapper
+                    
+                    +slider({})
+                br
+                //h3 buttons
+                .flex-wrapper
+                    +button({})
+                    +button({White:true})
+                    +button({Big:true})
+                    
+                br
+                .flex-wrapper
+                    div 
+                        +bullet({})
+                    div
+                        h2 Сведения о номере
+                        +room_info({})
+                    div
+                        h2 pagination
+                        +pagination({})
+                br
+
+                h1 Cards
+                .flex-wrapper(style="flex-wrap: wrap;")
+                    +reserve-card
+                    +search-card
+                    +registration-card
+                    +inter
+                br
+
+                .flex-wrapper
+                    +rooms({bg:'../static/source/room_2.jpg', rating: 4})
+                    +rooms({rating: 1, number: 840, cost: '7 777', likes: 12})
+                    +rooms({number: 500, notlux: true, cost: '5 750', likes: 256})
+                br

@@ -1,20 +1,29 @@
+.main__header{
+    box-sizing: border-box;
+    min-width: rem(1440);
+    height: rem(70);
+    background: white;
+    padding-top: rem(15);
+}
+
 .header-wrp{
     box-sizing: border-box;
-    width: rem(1440);
-    height: rem(70);
-    padding: 0 rem(140);
+    width: rem(1160);
+    position: relative;
+    //height: rem(70);
+    //padding: 0 rem(140);
     margin: 0 auto;
-    background: white;
+    //background: white;
     display: flex;
-    padding-top: rem(15);
-
+    justify-content: space-between;
     .button{
-        margin-left: rem(20);
+        //margin-left: rem(20);
     }
     .button--white{
-        margin-left: rem(30);
+        //margin-left: rem(30);
     }
 }
+
 .header--authorized{
     .button,
     .button--white{
@@ -28,14 +37,20 @@
     
 }
 .header__list{
-    width: rem(527);
+    width: rem(430);
     display: flex;
     justify-content: space-between;
     list-style: none;
-    margin-left: rem(297.31);
-    margin-top: rem(12);
-    
-
+    //margin-left: rem(297.31);
+    margin-top: rem(10);
+    box-sizing: border-box;
+    position: relative;
+    left: 127px;
+}
+.header__expand-svg{
+    position: relative;
+    top: 1px;
+    left: 6px;
 }
 .header__item{
     vertical-align: middle;
@@ -44,8 +59,8 @@
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: rem(14);
+    line-height: rem(17);
     color: $Dark50;
     vertical-align: middle;
     &:hover{
@@ -57,7 +72,14 @@
     font-weight: bold;
     color:$Dark75;
 }
-
+.header__btn-wrp{
+    box-sizing: border-box;
+    width: rem(303);
+    padding-top: 3px;
+    //border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+}
 .header__user{
     width: rem(145);
     display: none;

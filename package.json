@@ -14,8 +14,8 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@babel/core": "^7.4.4",
-    "@babel/preset-env": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
     "autoprefixer": "^9.5.1",
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^2.0.2",
@@ -34,9 +34,9 @@
     "pug-html-loader": "^1.1.5",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
-    "webpack": "^4.31.0",
+    "webpack": "^4.32.2",
     "webpack-cli": "^3.3.2",
-    "webpack-dev-server": "^3.4.0"
+    "webpack-dev-server": "^3.5.1"
   },
   "dependencies": {
     "jquery": "^3.4.1"

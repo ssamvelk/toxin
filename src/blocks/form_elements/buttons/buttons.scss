@@ -14,7 +14,6 @@
     color: white;
     position: relative;
     
-
     //outline: none;
     //appearance: none;
     &:hover{
@@ -24,7 +23,14 @@
 }
 .button--big{
     width: 320px;
-
+}
+.button--w196{
+    width: rem(196);
+    height: rem(34);
+}
+.button--w87{
+    width: rem(87);
+    height: rem(34);
 }
 .button--white{
     
@@ -43,22 +49,32 @@
         height: 40px;
         color: $Purple;
         line-height: 40px;
-        
+        box-sizing: border-box;
         border-radius: 22px;
         display: inline-block;
         background-color: white;
 
         position: relative;
-        top:2px;
+        top: 2px;
         opacity: 1;
     }
     .button.button--white:hover > span#rrr{
         opacity: 1;
     }
- 
+    &.button--w87{
+        &>span{
+            width: 84px;
+            height: 30px;
+            border-radius: 22px;
+            line-height: 30px;
+            top: 2px;
+        }
+    }
 }
+
 .btn-arrow-svg{
     position: absolute;
     right: 14px;
     top: 13px;
 }
+

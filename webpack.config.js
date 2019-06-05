@@ -121,12 +121,21 @@ module.exports = {
             filename:  'index.html',
             //inject: false
           }),
-
+        new HtmlWebpackPlugin({
+            template: "pug/ui-kit.pug",
+            filename:  'ui-kit.html',
+            //inject: false
+        }),  
+        new HtmlWebpackPlugin({
+            template: "pug/second.pug",
+            filename:  'second.html',
+            //inject: false
+        }),
         new MiniCssExtractPlugin({
             filename: '[name].css',
             //chunkFilename: "[id].css"
         }),
-
+        
         new CleanWebpackPlugin({}),
 
         new webpack.ProvidePlugin({

@@ -27,111 +27,24 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title Toxin UI-KIT
+        title index
     body
-        
+        +mainheader({})
 
-        main.wrapper
-            h1 Headers & Footers
-            +mainheader({})
-            br
-            +mainheader({authorized: true}) 
-            br
-            +footer({})
-            h1 Form Elements
-            .elements-wrapper
-                
-                br
-                //h3 Text Field
-                .flex-wrapper.fw.h150
-                    +text_field({type:'email'})
-                    +text_field({type:'text'})
-                    +text_field({type:'text', placeholder: 'Фамилия'})
-                    +text_field({type:'password'})
-                    +text_field({type:'date'})
-                    +subscribe({})
-                br
-                //h3 Dropdown
-                .flex-wrapper(style="min-height: 210px;") 
-                    +dropdown({expanded:false})
-                    +dropdownCompany({expanded:'true'})
-                br
-                //h3 Filter date dropdown
-                .flex-wrapper    
-                    +filter-date-dropdown({})
-                    
-                    +date-calendar({})
-                    
-                    +date-search-filds({})
-                br
-                br
-                //h3 Checkbox Buttons
-                .flex-wrapper
-                    +checkbox({text:'Hello world!', id:'wello-world'})
-                    +checkbox-list({})
-                    +checkbox-additional-list({})
-                    +richcheckbox({})
-                
-                //h3 Radio Buttons
-                .flex-wrapper
-                    +radio({})
-                br
-                //h3 toggle
-                .colomn-wrapper
-                    +toggle({checked: true})
-                    +toggle({})
-                br
-                //h3 like button
-                .flex-wrapper
-                    .colomn-wrapper
-                        +like({})
-                        +like({liked: true})
-                    +comment({})
-                br
+        main.main__wrapper
+            .wrapper
+                +search-card
+                p.slogan Лучшие номера для вашей работы, отдыха и просто вдохновения
 
-                //h3 rate button
-                .flex-wrapper
-                    .colomn-wrapper
-                        h5 Dinamic
-                        +rate({isClickable:true})
-                    .colomn-wrapper
-                        h5 Static
-                        +rate({rating: '1'})
-                        +rate({rating: '5'})    
-                br
-                // h3 Range Slider
-                .flex-wrapper
-                    
-                    +slider({})
-                br
-                //h3 buttons
-                .flex-wrapper
-                    +button({})
-                    +button({White:true})
-                    +button({Big:true})
-                    
-                br
-                .flex-wrapper
-                    div 
-                        +bullet({})
-                    div
-                        h2 Сведения о номере
-                        +room_info({})
-                    div
-                        h2 pagination
-                        +pagination({})
-                br
+        +footer({})
 
-                h1 Cards
-                .flex-wrapper(style="flex-wrap: wrap;")
-                    +reserve-card
-                    +search-card
-                    +registration-card
-                    +inter
-                br
 
-                .flex-wrapper
-                    +rooms({bg:'../static/source/room_2.jpg', rating: 4})
-                    +rooms({rating: 1, number: 840, cost: '7 777', likes: 12})
-                    +rooms({number: 500, notlux: true, cost: '5 750', likes: 256})
-                br
+
+
+
+    //-
+        h1 index
+        br
+        a(href="ui-kit.html") ссылка на  ui-kit.html
+        br
+        a(href="second.html") ссылка на  second.html
