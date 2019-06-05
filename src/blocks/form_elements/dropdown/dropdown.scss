@@ -68,7 +68,7 @@
     display: flex;
     position: absolute;
     background: white;
-    z-index: 111;
+    z-index: 99;
 }
 .dropdown-item{
     height: 30px;
@@ -109,3 +109,4 @@
     }
 }
 
+//.plusBtn, .minusBtn{cursor: pointer;}
