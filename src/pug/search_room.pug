@@ -32,7 +32,7 @@ html(lang="en")
         
         main.main__wrapper.main--search
             .wrapper.main--search-wrp
-                .search-left
+                .search__left
                     h3 даты пребывания в отеле
                     +filter-date-dropdown({})
                     h3 гости
@@ -45,6 +45,20 @@ html(lang="en")
                     h3 удобства номера
                     +dropdown({})
                     +checkbox-additional-list({})
-                .search-right
+                .search__right
                     h1 Номера, которые мы для вас подобрали
+                    .search__rooms
+                        +rooms({bg : '../static/source/room_1.jpg', number : '888', notlux: true, cost: '9 990'})
+                        +rooms({bg : '../static/source/room_2.png', rating : '4', number : '840', notlux: true, cost: '9 990',likes: '65'})
+                        +rooms({bg : '../static/source/room_3.png', rating : '3', number : '980', cost: '8 500', likes: '35'})
+                        +rooms({bg : '../static/source/room_4.png', rating : '5', number : '856', notlux: true, cost: '7 300',likes: '19'})
+                        +rooms({bg : '../static/source/room_5.png', rating : '4', number : '740', notlux: true, cost: '6 000', likes: '44'})
+                        +rooms({bg : '../static/source/room_6.png', rating : '3', number : '982', notlux: true, cost: '5 800',likes: '56'})
+                        +rooms({bg : '../static/source/room_7.png', number : '678', notlux: true, cost: '5 500',likes: '45'})
+                        +rooms({bg : '../static/source/room_8.png', rating : '4', number : '450', notlux: true, cost: '5 300',likes: '39'})
+                        +rooms({bg : '../static/source/room_9.png', rating : '3', number : '350', notlux: true, cost: '5 000',likes: '77'})
+                        +rooms({bg : '../static/source/room_10.png', number : '666', notlux: true, cost: '5 000',likes: '25'})
+                        +rooms({bg : '../static/source/room_11.png', rating : '3', number : '444', notlux: true, cost: '5 000',likes: '15'})
+                        +rooms({bg : '../static/source/room_12.png', rating : '3', number : '352', notlux: true, cost: '5 000',likes: '55'})
+                +pagination
         +footer({})

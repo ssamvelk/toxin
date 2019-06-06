@@ -53,11 +53,21 @@
     margin: 0 20px;
     display: flex;
 }
+.reserve__number{
+    font-family: 'Quicksand-Bold';
+    font-size: 17px;
+
+    line-height: 29px;
+}
+.reserve__type{
+    line-height: 33px;
+}
 .rooms__rating{
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    padding: 8px 20px 0;
+    padding: 13px 20px 0;
+    
 }
 .rooms__rating-count{
     font-family: Montserrat;

@@ -1,5 +1,5 @@
 .rate__wrp{
-    width: 100px;
+    width: 120px;
     height: 20px;
     display: flex;
     position: relative;
@@ -45,8 +45,9 @@
 }
 
 .rate__stars{
-    width: 100px;
+    width: 120px;
     display: flex;
+    justify-content: space-between;
     list-style: none;
 }
 .rate__item{
