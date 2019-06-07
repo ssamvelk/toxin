@@ -47,8 +47,6 @@ body{
 }
 .main--search{
     background: white;
-    
-    
 } 
 .wrapper{
     width: rem(1160);
@@ -82,6 +80,7 @@ body{
     padding-top: rem(30);
     height: rem(1357);
     //padding-bottom: rem(70);
+    
     display: flex;
     position: relative;
     .pagination-wrp{
@@ -90,6 +89,7 @@ body{
         bottom: rem(77);
         //margin: 0 auto;
     }
+
 }
 .search__left{
     width: rem(326);
@@ -128,9 +128,45 @@ body{
         margin-bottom: rem(20);
     }
 }
-
-
-
+//----------------------------rooms_details
+.main--room-det{
+    background: white;
+}
+.room-det__img{
+    width: rem(1440);
+    height: rem(485);
+    //border: 1px solid red;
+    margin:  0 auto;
+    display: flex;
+}
+.room-det__main-img{
+    width: rem(981);
+    height: rem(485);
+}
+.room-det__small-img{
+    width: rem(459);
+    height: rem(242.5);
+}
+.room-det-wrp{
+    min-height: rem(1187);
+    display: flex;
+    justify-content: space-between;
+}
+.room-det__right{
+    width: rem(711); 
+    
+    //border: 1px solid red;
+    h2{
+        margin-bottom: rem(20);
+    }
+}
+.room-det__flex-wrp{
+    display: flex;
+    justify-content: space-between;
+}        
+.room-det__left{
+    //border: 1px solid red;
+}
 
 
 
@@ -155,5 +191,6 @@ body{
 @import "../blocks/cards/rooms/rooms.scss";
 @import "../blocks/header/header.scss";
 @import "../blocks/footer/footer.scss";
+@import "../blocks/form_elements/percent_pie/percent_pie.scss";
 //@import "../vendors/datepicker/css/datepicker.scss";
 //@import "../blocks/btn/btn.scss";

@@ -7,10 +7,14 @@
 .room-info__item{
     width: 280px;
     height: 68px;
-    border-bottom: 1px solid $Dark25;
+    border-bottom: 1px solid rgba(31, 32, 65, 0.1);
     display: flex;
     margin-bottom: 20px;
     box-sizing: border-box;
+
+    &:last-child{
+        border: none;
+    }
     
 }
 .room-info__information{

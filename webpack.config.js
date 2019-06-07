@@ -131,6 +131,11 @@ module.exports = {
             filename:  'search_room.html',
             //inject: false
         }),
+        new HtmlWebpackPlugin({
+            template: "pug/room_details.pug",
+            filename:  'room_details.html',
+            //inject: false
+        }),
         new MiniCssExtractPlugin({
             filename: '[name].css',
             //chunkFilename: "[id].css"

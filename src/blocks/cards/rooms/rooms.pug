@@ -8,6 +8,7 @@ mixin carousel(options)
 mixin rooms(options)
     -var bg = ['../static/source/room_1.jpg', '../static/source/room_2.jpg'] //----2фона
     -var imageBG = (options.bg)? options.bg : '../static/source/room_1.jpg'
+    -var hreFF = (options.href) ? options.href: 'room_details.html'
     -var roomRating = (options.rating)? options.rating : '5'                //----options.rating -рейтинг комнаты
     -var roomNumder = (options.number)? options.number : '888'              //----options.number
     -var roomNotLux = (options.notlux)? '' : 'люкс'                         //---options.notlu
@@ -18,7 +19,7 @@ mixin rooms(options)
             img(width='270' height='150' src=imageBG alt="bg")
             +carousel
         .rooms__info
-            span.reserve__number='№ '+roomNumder 
+            a(class='reserve__number' href=hreFF)='№ '+roomNumder 
             span.reserve__type=roomNotLux 
             span.reserve__cost
                 b=roomCost
