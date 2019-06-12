@@ -8,14 +8,23 @@ mixin like(options)
         span(class='like-value')=value
 
 mixin comment(options)
+    -var img=(options.img) ? options.img : '../static/source/image_murad48.png'
+    -var name=(options.name) ? options.name : 'Мурад Сарафанов'
+    -var days=(options.days) ? options.days : '5'
+    -var comment=(options.comment) ? options.comment : 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'
     .comment-wrp
         .comment-user-wrp
-            .comment-user__foto
-            p.comment-user__name <span>Мурад Сарафанов</span><br>5 дней назад
+            img(class="comment-user__foto" src=img)
+            p.comment-user__name 
+                span(class='comment-user__name-fild')=name
+                <br>
+                if (days==7)
+                   span неделю назад 
+                else 
+                    span=days+' дней назад'
         
         .comment-info-wrp
             +like({liked: true, value: '12'})
-            p.comment-info__text Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.    
-        
+            p.comment-info__text #{comment}      
 
         
