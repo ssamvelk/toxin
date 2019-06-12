@@ -21,13 +21,29 @@ mixin circle-pie(options)
 mixin circle-pie2(options)
     -   let percents= []
     -   percents[0] = options.percents[0]*3.455
-    -   for (let i=1; i < 4; i++){percents[i]= options.percents[i]*3.61;}  
+    -   for (let i=1; i < 4; i++){percents[i]= options.percents[i]*3.61 - 2.15; if(percents[i]<0) percents[i] = 0;}  
     .c2
         <svg width=120 height=120 percent="#{percents}">
-            <circle class="circle-pie" id="pie4" cx="50%" cy="50%" r="57.5" style="stroke-dasharray: #{percents[3]} 1 0 1000; stroke:black;"/>
-            <circle class="circle-pie" id="pie3" cx="50%" cy="50%" r="57.5" style="stroke-dasharray: #{percents[2]} 1 0 1000; stroke:yellow;"/>
-            <circle class="circle-pie" id="pie2" cx="50%" cy="50%" r="57.5" style="stroke-dasharray: #{percents[1]} 1 0 1000; stroke:green;"/>
-            <circle class="circle-pie circle-pie--bold" id="pie1" cx="50%" cy="50%" r="55" style="stroke-dasharray: #{percents[0]} 1 0 1000; stroke:#e5e5e5;"/>
+            <linearGradient id="gradient--0" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#BC9CFF" />
+                <stop offset="100%" stop-color="#8BA4F9" />
+            </linearGradient>
+            <linearGradient id="gradient--1" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#6FCF97" />
+                <stop offset="100%" stop-color="#66D2EA" />
+            </linearGradient>
+            <linearGradient id="gradient--2" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#FFE39C" />
+                <stop offset="100%" stop-color="#FFBA9C" />
+            </linearGradient>
+            <linearGradient id="gradient--3" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#919191" />
+                <stop offset="100%" stop-color="#3D4975" />
+            </linearGradient>
+            <circle class="circle-pie" id="pie4" cx="50%" cy="50%" r="57.5" style="stroke-dasharray: #{percents[3]} 1000; stroke:black;"/>
+            <circle class="circle-pie" id="pie3" cx="50%" cy="50%" r="57.5" style="stroke-dasharray: #{percents[2]} 1 0 1000;" stroke="url(#gradient--2)"/>
+            <circle class="circle-pie" id="pie2" cx="50%" cy="50%" r="57.5" style="stroke-dasharray: #{percents[1]} 1 0 1000;" stroke="url(#gradient--1)"/>
+            <circle class="circle-pie circle-pie--bold" id="pie1" cx="50%" cy="50%" r="55" style="stroke-dasharray: #{percents[0]} 1 0 1000;" stroke="url(#gradient--0)"/>
             
             <text id="text1" class="circle__text2" x="30%" y="50%">260</text>
             <text id="text2" class="circle__text2" x="24%" y="70%">голосов</text>

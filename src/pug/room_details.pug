@@ -39,18 +39,31 @@ html(lang="en")
                 img(class='room-det__small-img', src="../static/source/room-det-2.jpg", alt="img2")
         
         .wrapper.room-det-wrp
-            .room-det__right
+            .room-det__left
                 .room-det__flex-wrp
                     div
                         h2 Сведения о номере
                         +room_info
-                    div
+                    .room-det__pie-wrp
                         h2 Впечатления от номера
-                        +circle-pie2({percents: [25, 25, 50, 0]}) 
-                        //- 345.5 - 100% для первого
-                        //- 361 - 100% для второго
-            .room-det__left
+                        .room-det__flex-wrp
+                            +circle-pie2({percents: [25, 25, 50, 0]}) 
+                            ul.room-det__list
+                                li.room-det__item.room-det__item--best Великолепно 
+                                li.room-det__item.room-det__item--good Хорошо
+                                li.room-det__item.room-det__item--passably Удовлетворительно 
+                                li.room-det__item.room-det__item--poorly Разочарован
+                h2 Отзывы посетителей номера
+                +comment({})
+                +comment({})
+                
+                .room-det__flex-wrp
+                    p 122121
+                    p 21312312
+
+            .room-det__right
                 +reserve-card({})
+                
 
     +footer({})
 
