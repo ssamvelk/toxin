@@ -42,10 +42,10 @@ html(lang="en")
             .room-det__left
                 .room-det__flex-wrp
                     div
-                        h2 Сведения о номере
+                        h2.room-det__left-info-title Сведения о номере
                         +room_info
                     .room-det__pie-wrp
-                        h2 Впечатления от номера
+                        h2.room-det__left-waaay-title Впечатления от номера
                         .room-det__flex-wrp
                             +circle-pie2({percents: [25, 25, 50, 0]}) 
                             ul.room-det__list
@@ -58,8 +58,15 @@ html(lang="en")
                 +comment({img:'../static/source/image_patrisia48.png', days: 7, comment: 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент'})
                 
                 .room-det__flex-wrp
-                    p 122121
-                    p 21312312
+                    .room-det__rools
+                        h2.room-det__rools-title Правила
+                        ul.room-det__rools-list
+                            li.room-det__rools-item Нельзя с питомцами
+                            li.room-det__rools-item Без вечеринок и мероприятий
+                            li.room-det__rools-item Время прибытия — после 13:00, а выезд до 12:00
+                    .room-det__cancel
+                        h2 Отмена
+                        p Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
 
             .room-det__right
                 +reserve-card({})

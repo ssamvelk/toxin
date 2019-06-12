@@ -148,7 +148,7 @@ body{
     height: rem(242.5);
 }
 .room-det-wrp{
-    min-height: rem(1187);
+    min-height: rem(940);
     display: flex;
     justify-content: space-between;
 }
@@ -159,6 +159,12 @@ body{
     h2{
         margin-bottom: rem(20);
     }
+    .room-det__left-info-title{
+        letter-spacing: 0.5;
+    }
+    .room-det__left-waaay-title{
+        letter-spacing: 0.7;
+    }
 }
 .room-det__pie-wrp{
     width: rem(349);
@@ -166,6 +172,7 @@ body{
 .room-det__flex-wrp{
     display: flex;
     justify-content: space-between;
+    position: relative;
 }        
 .room-det__right{
     //border: 1px solid red;
@@ -176,7 +183,9 @@ body{
     line-height: 24px;
     color: $Dark75;
     list-style: none;
-    
+    position: relative;
+    top: rem(27);
+    right: rem(38);
 }
 .room-det__item{
     position: relative;
@@ -210,8 +219,44 @@ body{
         background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
     }
 }
+.room-det__rools{
+    width: rem(292);
+}
+.room-det__rools-title{
+    margin-left: rem(20.43);
+}
+.room-det__rools-list{
+    list-style: none;
+    padding-left: rem(20.86);
+    font-family: Montserrat;
 
+    font-size: 14px;
+    line-height: 24px;
+    color: $Dark75;
+}
+.room-det__rools-item{
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        width: rem(10.43);
+        height: rem(10);
+        border-radius: 50%;
+        background: $Dark25;
+        top: rem(7);
+        left: rem(-20.43);
+    }
+}
+.room-det__cancel{
+    width: rem(341);
+    p {
+        font-family: Montserrat;
 
+        font-size: 14px;
+        line-height: 24px;
+        color: $Dark75;
+    }
+}
 
 @import "../blocks/form_elements/text_field/text_field.scss";
 
