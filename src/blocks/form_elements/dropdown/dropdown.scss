@@ -91,11 +91,13 @@
 
 .dropdown-item__clean{
     color: $Dark50;
+    cursor: pointer;
 }
 .dropdown-item__apply{
     color: $Purple;
     position: absolute;
     right: 0;
+    cursor: pointer;
 }
 .dropdown-item__clean--disable{
     display: none;

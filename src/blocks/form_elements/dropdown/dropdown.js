@@ -1,3 +1,6 @@
+document.addEventListener('DOMContentLoaded', function(){
+
+    
 var el = document.querySelectorAll('.dropdown-main__svg');
 var el2 = document.querySelectorAll('.dropdown-list');
 
@@ -85,4 +88,9 @@ for(let i=0; i<Dropdowns.length; i++ ){
 
     })
 }
+
+
+
+
+})
 

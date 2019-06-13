@@ -233,6 +233,11 @@
             z-index: -1;
         }
     }
+    .datepicker--cell.datepicker--cell-day.-range-from-.-range-to-.-selected-{
+        border-radius: 22px;
+        &::after,
+        &::before{content: none;}
+    }
     .-in-range-{//выбранный промежуток
 
     }
@@ -256,7 +261,7 @@
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
-
+    cursor: pointer;
     /* identical to box height */
     text-transform: uppercase;
     appearance: button;
