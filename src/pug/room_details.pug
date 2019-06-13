@@ -53,11 +53,11 @@ html(lang="en")
                                 li.room-det__item.room-det__item--good Хорошо
                                 li.room-det__item.room-det__item--passably Удовлетворительно 
                                 li.room-det__item.room-det__item--poorly Разочарован
-                h2 Отзывы посетителей номера
+                h2.room-det__recall Отзывы посетителей номера
                 +comment({})
-                +comment({img:'../static/source/image_patrisia48.png', days: 7, comment: 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент'})
+                +comment({name: 'Патрисия Стёклышкова', img:'../static/source/image_patrisia48.png', days: 7, comment: 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент'})
                 
-                .room-det__flex-wrp
+                .room-det__flex-wrp.room-det__flex-wrp--mtop
                     .room-det__rools
                         h2.room-det__rools-title Правила
                         ul.room-det__rools-list
@@ -65,7 +65,7 @@ html(lang="en")
                             li.room-det__rools-item Без вечеринок и мероприятий
                             li.room-det__rools-item Время прибытия — после 13:00, а выезд до 12:00
                     .room-det__cancel
-                        h2 Отмена
+                        h2.room-det__cancel-title Отмена
                         p Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
 
             .room-det__right

@@ -6,9 +6,7 @@
 html {
     font-size: $mainFontSize;
     font-family: $mainFont;
-    line-height: $mainLineHeight; 
-    //background-color: rgb(229, 241, 227) ;
-    box-sizing: border-box;
+    line-height: $mainLineHeight;
 }
 h1 {
     font-family: Quicksand;
@@ -23,7 +21,6 @@ h2 {
     font-weight: bold;
     font-size: 19px;
     line-height: 24px;
-
     color: #1F2041;
 }
 h3 {
@@ -33,12 +30,10 @@ h3 {
     line-height: rem(15);
     text-transform: uppercase;
     color: #1F2041;
-    //margin: 5px 0;
 } 
-//br{ margin: 15px 0;}
-body{
-    position: relative;
-}
+
+body{position: relative;}
+
 .main__wrapper {    
     box-sizing: border-box;
     min-width: rem(1440);
@@ -130,7 +125,10 @@ body{
 }
 //----------------------------rooms_details
 .main--room-det{
+    position: relative;
     background: white;
+    
+    //border-bottom: 1px solid red;
 }
 .room-det__img{
     width: rem(1440);
@@ -151,6 +149,16 @@ body{
     min-height: rem(940);
     display: flex;
     justify-content: space-between;
+    position: relative;
+    &::after{
+        content: '';
+        width: rem(1440);
+        height: rem(1);
+        position: absolute;
+        bottom: 0;
+        left: rem(-140);
+        background: $Dark25;
+    }
 }
 .room-det__left{
     width: rem(711); 
@@ -165,6 +173,9 @@ body{
     .room-det__left-waaay-title{
         letter-spacing: 0.7;
     }
+    .comment-wrp{margin-bottom: 21px;}
+    .room-det__rools-title{margin-bottom: rem(18);}
+    .room-det__cancel-title{margin-bottom: rem(18);letter-spacing: 0.9px;}
 }
 .room-det__pie-wrp{
     width: rem(349);
@@ -199,6 +210,7 @@ body{
         border-radius: 50%;
     }
 }
+
 .room-det__item--best{
     &::before{
         background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
@@ -219,11 +231,34 @@ body{
         background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
     }
 }
+.room-det__recall{
+    margin-top: rem(14);
+    letter-spacing: rem(0.9);
+    position: relative;
+    &::after{
+        content: '2 отзыва';
+        position: absolute;
+        right: 0;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 30px;
+        letter-spacing: 0;
+        color: $Dark25;
+    }
+    //line-height: 20px;
+}
+.room-det__flex-wrp--mtop{
+    margin-top: rem(30);
+}
 .room-det__rools{
     width: rem(292);
 }
 .room-det__rools-title{
+    letter-spacing: 0.9px;
     margin-left: rem(20.43);
+    //margin-bottom: rem(18);
 }
 .room-det__rools-list{
     list-style: none;
@@ -236,6 +271,7 @@ body{
 }
 .room-det__rools-item{
     position: relative;
+    margin-bottom: rem(10);
     &::before{
         content: '';
         position: absolute;
@@ -248,7 +284,8 @@ body{
     }
 }
 .room-det__cancel{
-    width: rem(341);
+    width: rem(349);
+    padding-right: rem(8);
     p {
         font-family: Montserrat;
 
@@ -257,6 +294,7 @@ body{
         color: $Dark75;
     }
 }
+
 
 @import "../blocks/form_elements/text_field/text_field.scss";
 

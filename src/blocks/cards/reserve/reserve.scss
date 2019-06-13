@@ -21,22 +21,32 @@
         margin-bottom: 5px;
     }
     .dropdown-company{
-        margin-bottom: 20px;
+        margin-bottom: 17px;
+    }
+    .date__search-wrp{
+        margin-bottom: 14px;
     }
 }
 .reserve__header{
     display: flex;
     //justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
+    margin-top: 43px;
+    
 }
-.reserve__number{
+.reserve__number-i,
+.reserve__num{
     font-family: Quicksand;
-    font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 30px;
-
     color: $Dark;
+}
+.reserve__number-i{
+    font-size: 24px;
+    line-height: 21px;
+    letter-spacing: 0.9px;
+    margin-left: 2px;
 }
 .reserve__type{
     font-family: Montserrat;
@@ -49,26 +59,28 @@
     margin-left: 5px;
 }
 .reserve__cost{
-    
     font-family: Montserrat;
-    font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 30px;
     color: $Dark50;
     margin-left: auto;
-    b{font-weight: 900;}
+    &::after{
+        content: 'в сутки';
+        font-weight: normal;
+        font-size: 12px;
+    }    
 }
+
 .reserve__info-wrp{
     width: 320px;
-    box-sizing: border-box;
+    
 }
 .reserve__info-item {
     display: flex;
     justify-content: space-between;
     font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
+    
     font-size: 14px;
     line-height: 24px;
     color: $Dark75;
@@ -95,8 +107,8 @@
     font-size: 19px;
     line-height: 24px;
     color: $Dark;
-    margin-top: 30px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .info-summury{
     position: relative;

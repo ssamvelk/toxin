@@ -42,7 +42,7 @@
 
 .comment-wrp{
     width: 712px;
-    box-sizing: border-box;
+    
     //border: 1px solid fuchsia;
     //min-height: 133px;
 }
@@ -51,8 +51,8 @@
     //border: 1px solid darkcyan;
 }
 .comment-user__foto{
-    width: 48px;
-    height: 48px;
+    width: 52px;
+    height: 52px;
     //background-image: url(../static/source/image_murad48.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -68,16 +68,16 @@
     font-size: 14px;
     line-height: 24px;
     color: $Dark75;
-    margin-left: 10px;
+    margin-left: 5px;
     br{ margin: 0;}
     .comment-user__name-fild{font-weight: bold;}
 }
 .comment-info-wrp{
     display: flex;
     //border: 1px solid brown;
-    margin-top: 12px;
+    margin-top: 9px;
     .like-wrp{
-        margin-left: 4px;
+        margin-left: 3px;
     }
 }
 

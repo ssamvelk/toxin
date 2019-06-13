@@ -1,8 +1,9 @@
 .room-info__wrp{
     width: 280px;
     min-height: 207px;
-
-    box-sizing: border-box;
+    :last-child{
+        margin-bottom: 0;
+    }
 }
 .room-info__item{
     width: 280px;
