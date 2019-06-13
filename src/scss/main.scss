@@ -40,12 +40,10 @@ body{position: relative;}
     
     background: url('/src/static/source/bg_image.jpg') no-repeat 50% -70px, white;
 }
-.main--search{
-    background: white;
-} 
+
 .wrapper{
     width: rem(1160);
-    //height: rem(1357);
+    min-height: rem(830);
     box-sizing: border-box;
     margin: 0 auto;
     padding-top: rem(70);
@@ -71,13 +69,28 @@ body{position: relative;}
 }
 
 //----------------------------search
+
+.main--search{
+    background: white;
+    
+}
 .main--search-wrp{
     padding-top: rem(30);
-    height: rem(1357);
+    min-height: rem(1357);
     //padding-bottom: rem(70);
     
     display: flex;
     position: relative;
+    
+    &::after{
+        content: '';
+        width: rem(1440);
+        height: rem(1);
+        position: absolute;
+        bottom: 0;
+        left: rem(-140);
+        background: $Dark25;
+    }
     .pagination-wrp{
         position: absolute;
         left: 53%;
@@ -247,7 +260,6 @@ body{position: relative;}
         letter-spacing: 0;
         color: $Dark25;
     }
-    //line-height: 20px;
 }
 .room-det__flex-wrp--mtop{
     margin-top: rem(30);
@@ -294,6 +306,49 @@ body{position: relative;}
         color: $Dark75;
     }
 }
+
+//------------------------registration
+.main__reg-wrapper {    
+    min-width: rem(1440);
+    
+    background: url('/src/static/source/bg_reg.jpg') no-repeat 50% -70px, white;
+}
+.reg-wrapper{
+    width: rem(1160);
+    //height: rem(1357);
+    
+    margin: 0 auto;
+    
+    padding-top: rem(30);
+    padding-bottom: rem(26);
+    
+    position: relative;
+    .registration-wrp{
+        margin: 0 auto ;
+    }
+}
+
+//------------------------Sign in
+.main__sign-in-wrapper{
+    min-width: rem(1440);
+    
+    background: url('/src/static/source/bg_reg.jpg') no-repeat 50% -70px, white;
+}
+.sign-in-wrapper{
+    width: rem(1160);
+    min-height: rem(684);
+    
+    margin: 0 auto;
+    
+    padding-top: rem(163);
+    padding-bottom: rem(162);
+    
+    position: relative;
+    .inter-wrp{
+        margin: 0 auto;
+    }
+}
+
 
 
 @import "../blocks/form_elements/text_field/text_field.scss";

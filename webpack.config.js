@@ -136,6 +136,16 @@ module.exports = {
             filename:  'room_details.html',
             //inject: false
         }),
+        new HtmlWebpackPlugin({
+            template: "pug/registration.pug",
+            filename:  'registration.html',
+            //inject: false
+        }),
+        new HtmlWebpackPlugin({
+            template: "pug/sign_in.pug",
+            filename:  'sign_in.html',
+            //inject: false
+        }),
         new MiniCssExtractPlugin({
             filename: '[name].css',
             //chunkFilename: "[id].css"
