@@ -16,20 +16,57 @@ document.addEventListener('DOMContentLoaded', function(){
   var dateBtns = document.querySelectorAll('.date-dropdawn__svg'),
       filterDate = document.querySelectorAll('.date-wrp'),
       RangeFilterDate = document.querySelectorAll('.date__search-wrp'),
+      
       fff = function(event){
 
         let target = event.target,// где был клик?
-            calendar = this.querySelector('.datepicker-here')
-        if (target.classList == 'date-dropdawn__svg') {
+            calendar = this.querySelector('.datepicker-here'),
+            myDatepicker = $('.datepicker-here').data('datepicker');
+        
+        let rangeFrom = new Date(myDatepicker.selectedDates[0]),
+            rangeTo = new Date(myDatepicker.selectedDates[1]),
+            options = {
+              day: 'numeric',
+              month: 'numeric',
+              year: 'numeric'
+            },
+            options2 = {
+              day: 'numeric',
+              month: 'short'
+            };
+
+        if (target.classList == 'date-dropdawn__svg') {//кнопка стрелочка открыть
           calendar.classList.toggle("datepicker--disable")
           //console.log(' this  - ' + this)
         }
-        if(target.classList == 'date__clean'){
-          this.querySelectorAll('.datepicker-here').clear();
-          console.log("this.querySelectorAll('.datepicker-here')   "+ this.querySelectorAll('.datepicker-here') )
+        else if(target.classList == 'date__clean'){//кнопка очистки
+          //myDatepicker.show();
+          myDatepicker.clear();
+        }
+        else if(target.classList == 'date__apply'){//кнопка применить
+          //console.log('selectedDates   ' + myDatepicker.selectedDates[0] +'       ' + myDatepicker.selectedDates[1] );
+          
+          if( this.querySelector(".-range-from-") && this.querySelector(".-range-to-")  ){
+            console.log(' rangeFrom = '+rangeFrom + '  rangeTo ='+rangeTo)
+            
+            
+            if(this.querySelector("#date__prib") && this.querySelector("#date__viezd")){
+              this.querySelector("#date__prib").value=rangeFrom.toLocaleString("ru", options)
+              this.querySelector("#date__viezd").value=rangeTo.toLocaleString("ru", options)
+            }
+            else if ( this.querySelector(".date__info") ){
+              
+              this.querySelector(".date__info-start").innerHTML = rangeFrom.toLocaleString("ru", options2) + ' ';
+              this.querySelector(".date__info-end").innerHTML = rangeTo.toLocaleString("ru", options2);
+              //console.log(' rangeFrom  ' + rangeFrom.toLocaleString("ru", options2))
+            }
+            
           }
-        else{ return}
+          calendar.classList.toggle("datepicker--disable")
+        }
+        else{ return }
       }
+
   for(let i=0; i<filterDate.length; i++){
     filterDate[i].addEventListener('click', fff )
   }
