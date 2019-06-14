@@ -38,7 +38,8 @@ body{position: relative;}
     box-sizing: border-box;
     min-width: rem(1440);
     
-    background: url('/src/static/source/bg_image.jpg') no-repeat 50% -70px, white;
+    //background: url('/src/static/source/bg_image.jpg') no-repeat 50% -70px, white;
+    background: url('../static/source/bg_image.jpg') no-repeat 50% -70px, white;
 }
 
 .wrapper{

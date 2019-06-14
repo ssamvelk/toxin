@@ -42,6 +42,12 @@ document.addEventListener('DOMContentLoaded', function(){
         else if(target.classList == 'date__clean'){//кнопка очистки
           //myDatepicker.show();
           myDatepicker.clear();
+
+          if(this.querySelector("#date__prib") && this.querySelector("#date__viezd")){
+            this.querySelector("#date__prib").value = ''
+            this.querySelector("#date__viezd").value = ''
+          }
+
         }
         else if(target.classList == 'date__apply'){//кнопка применить
           //console.log('selectedDates   ' + myDatepicker.selectedDates[0] +'       ' + myDatepicker.selectedDates[1] );
