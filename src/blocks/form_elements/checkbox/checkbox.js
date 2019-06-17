@@ -1,6 +1,6 @@
 var checkboxAdditionalList = document.querySelectorAll(".checkbox__list-wrp"),
     checkboxListBody = document.querySelectorAll(".checkbox__list-body")
-console.log("checkboxAdditionalList =" + checkboxAdditionalList)
+//console.log("checkboxAdditionalList =" + checkboxAdditionalList)
 
 for(let i=0; i<checkboxAdditionalList.length; i++){
     checkboxAdditionalList[i].addEventListener('click' , function(event){

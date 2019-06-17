@@ -11,16 +11,16 @@ html {
 h1 {
     font-family: Quicksand;
     font-weight: bold;
-    font-size: 25px;
-    line-height: 30px;
+    font-size: rem(25);
+    line-height: rem(30);
     color: #1F2041;
     box-sizing: border-box;
 }
 h2 {
     font-family: Quicksand;
     font-weight: bold;
-    font-size: 19px;
-    line-height: 24px;
+    font-size: rem(19);
+    line-height: rem(24);
     color: #1F2041;
 }
 h3 {
@@ -31,21 +31,20 @@ h3 {
     text-transform: uppercase;
     color: #1F2041;
 } 
+body{position: relative; width: 100vw;}
 
-body{position: relative;}
 
 .main__wrapper {    
     box-sizing: border-box;
     min-width: rem(1440);
     
     //background: url('/src/static/source/bg_image.jpg') no-repeat 50% -70px, white;
-    background: url('../static/source/bg_image.jpg') no-repeat 50% -70px, white;
+    background: url('../static/source/bg_image.jpg') no-repeat 50% rem(-70), white;
 }
 
 .wrapper{
     width: rem(1160);
     min-height: rem(830);
-    box-sizing: border-box;
     margin: 0 auto;
     padding-top: rem(70);
     padding-bottom: rem(18);
@@ -53,20 +52,20 @@ body{position: relative;}
 }
 
 .slogan{
-    width: 297px;
-    height: 48px;
+    width: rem(297);
+    height: rem(48);
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: rem(14);
+    line-height: rem(24);
 
     text-align: right;
     color: $Dark75;
     position: absolute;
     bottom: rem(18);
-    right: -5.5px;
-    bottom: 20px;
+    right: rem(-5.5);
+    bottom: rem(20);
 }
 
 //----------------------------search
@@ -182,14 +181,14 @@ body{position: relative;}
         margin-bottom: rem(20);
     }
     .room-det__left-info-title{
-        letter-spacing: 0.5;
+        letter-spacing: rem(0.5);
     }
     .room-det__left-waaay-title{
-        letter-spacing: 0.7;
+        letter-spacing: rem(0.7);
     }
-    .comment-wrp{margin-bottom: 21px;}
+    .comment-wrp{margin-bottom: rem(21);}
     .room-det__rools-title{margin-bottom: rem(18);}
-    .room-det__cancel-title{margin-bottom: rem(18);letter-spacing: 0.9px;}
+    .room-det__cancel-title{margin-bottom: rem(18);letter-spacing: rem(0.9);}
 }
 .room-det__pie-wrp{
     width: rem(349);
@@ -204,8 +203,8 @@ body{position: relative;}
 }
 .room-det__list{
     font-family: Montserrat;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: rem(14);
+    line-height: rem(24);
     color: $Dark75;
     list-style: none;
     position: relative;
@@ -217,8 +216,8 @@ body{position: relative;}
     &::before{
         content: '';
         position: absolute;
-        top: 7px;
-        left: -16px;
+        top: rem(7);
+        left: rem(-16);
         width: rem(10);
         height: rem(10);
         border-radius: 50%;
@@ -256,8 +255,8 @@ body{position: relative;}
         font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
-        font-size: 14px;
-        line-height: 30px;
+        font-size: rem(14);
+        line-height: rem(30);
         letter-spacing: 0;
         color: $Dark25;
     }
@@ -269,7 +268,7 @@ body{position: relative;}
     width: rem(292);
 }
 .room-det__rools-title{
-    letter-spacing: 0.9px;
+    letter-spacing: rem(0.9);
     margin-left: rem(20.43);
     //margin-bottom: rem(18);
 }
@@ -278,8 +277,8 @@ body{position: relative;}
     padding-left: rem(20.86);
     font-family: Montserrat;
 
-    font-size: 14px;
-    line-height: 24px;
+    font-size: rem(14);
+    line-height: rem(24);
     color: $Dark75;
 }
 .room-det__rools-item{
@@ -302,8 +301,8 @@ body{position: relative;}
     p {
         font-family: Montserrat;
 
-        font-size: 14px;
-        line-height: 24px;
+        font-size: rem(14);
+        line-height: rem(24);
         color: $Dark75;
     }
 }
@@ -312,7 +311,7 @@ body{position: relative;}
 .main__reg-wrapper {    
     min-width: rem(1440);
     
-    background: url('/src/static/source/bg_reg.jpg') no-repeat 50% -70px, white;
+    background: url('/src/static/source/bg_reg.jpg') no-repeat 50% rem(-70), white;
 }
 .reg-wrapper{
     width: rem(1160);
@@ -333,7 +332,7 @@ body{position: relative;}
 .main__sign-in-wrapper{
     min-width: rem(1440);
     
-    background: url('/src/static/source/bg_reg.jpg') no-repeat 50% -70px, white;
+    background: url('/src/static/source/bg_reg.jpg') no-repeat 50% rem(-70), white;
 }
 .sign-in-wrapper{
     width: rem(1160);
@@ -376,3 +375,49 @@ body{position: relative;}
 @import "../blocks/form_elements/percent_pie/percent_pie.scss";
 //@import "../vendors/datepicker/css/datepicker.scss";
 //@import "../blocks/btn/btn.scss";
+
+
+
+@media screen and (max-width: 1440px){
+    .main__wrapper {
+        width: 100vw;
+        min-width: rem(380);
+        //background: red;
+        padding: 0 10px;
+    }
+    .wrapper{
+        width: 100vw;
+        max-width: rem(1160);
+        min-width: rem(380);
+        min-height: 420px;
+        padding-top: rem(50);
+    }
+    
+    .slogan{
+       position: static;
+       margin-top: 22.5vw;
+       margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .wrapper{
+        padding-top: rem(25);
+    }
+}
+
+/*
+
+//---------------------------------------------------480px;
+//@media screen and (min-width: $phoneWidth){}
+//---------------------------------------------------768px;
+@media screen and (min-width:$tableWidth){
+
+}
+//---------------------------------------------------1280px
+@media screen and (min-width:$desktopWidth ){}
+//---------------------------------------------------1920px; bigDesktopWidth :
+@media screen and (min-width:$bigDesktopWidth){
+
+}
+*/
