@@ -72,7 +72,6 @@ body{position: relative; width: 100vw;}
 
 .main--search{
     background: white;
-    
 }
 .main--search-wrp{
     padding-top: rem(30);
@@ -91,14 +90,15 @@ body{position: relative; width: 100vw;}
         left: rem(-140);
         background: $Dark25;
     }
-    .pagination-wrp{
-        position: absolute;
-        left: 53%;
-        bottom: rem(77);
-        //margin: 0 auto;
-    }
-
 }
+
+.pagination-wrp{
+    position: absolute;
+    left: 53%;
+    bottom: rem(77);
+    //margin: 0 auto;
+}
+
 .search__left{
     width: rem(326);
     >h3{
@@ -398,12 +398,52 @@ body{position: relative; width: 100vw;}
        margin-top: 22.5vw;
        margin-left: auto;
     }
-}
 
+    .search__rooms{
+        justify-content: space-around;
+        &:last-child{
+            margin-bottom: 100px;
+        }
+    }
+
+    .search__right{
+        padding: 0 10px;
+    }
+
+    .pagination-wrp{
+        //position: static;
+        //width: 100%;
+        //flex-basis: 100%;
+        bottom: rem(20);
+    }
+    
+}
+@media screen and (max-width: 1200px){
+    
+    
+    
+}
 @media screen and (max-width: 950px){
     .wrapper{
         padding-top: rem(25);
     }
+}
+@media screen and (max-width: 600px){
+    .main--search-wrp{
+        display: block;
+        //padding: 0 5px;
+    }
+    .search__left{
+        margin: 0 auto;
+    }
+    .search__right{
+        width: 100%;
+        padding: 0;
+    }
+    .pagination-wrp{
+        left: 30%;
+    }
+    
 }
 
 /*
