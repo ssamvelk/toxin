@@ -4,7 +4,7 @@
     height: rem(70);
     background: white;
     padding-top: rem(15);
-    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    box-shadow: 0 rem(10) rem(20) rgba(31, 32, 65, 0.05);
 }
 
 .header-wrp{
@@ -46,12 +46,12 @@
     margin-top: rem(10);
     
     position: relative;
-    left: 127px;
+    left: rem(127);
 }
 .header__expand-svg{
     position: relative;
-    top: 1px;
-    left: 6px;
+    top: rem(1);
+    left: rem(6);
 }
 .header__item{
     vertical-align: middle;
@@ -76,7 +76,7 @@
 .header__btn-wrp{
     box-sizing: border-box;
     width: rem(303);
-    padding-top: 3px;
+    padding-top: rem(3);
     //border: 1px solid red;
     display: flex;
     justify-content: space-between;
@@ -87,20 +87,20 @@
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: rem(14);
+    line-height: rem(17);
 
     //border-left: 1px solid rgba(31, 32, 65, 0.1);
     margin-left: auto;
-    margin-top: 12px;
+    margin-top: rem(12);
     position: relative;
     &::before{
         content:'';
-        width: 1px;
-        height: 30px;
+        width: rem(1);
+        height: rem(30);
         position: absolute;
-        top: -5px;
-        left:-30px;
+        top: rem(-5);
+        left:rem(-30);
         background: rgba(31, 32, 65, 0.1);
     } 
 }
@@ -118,14 +118,16 @@
         //margin-left: 37%;
     }
     .search-wrp{
-        margin-left: 10px;
+        margin-left: rem(10);
     }
-    .slogan{margin-right: 25px;}
+    .slogan{margin-right: rem(25);}
 }
 
 @media screen and (max-width: 950px){
     .main__header{
-        height: 100px;
+        padding-left:rem(5);
+        padding-right: rem(5);
+        height: rem(100);
     }
     .header-wrp{
         flex-wrap: wrap;
@@ -139,6 +141,9 @@
     }
     .header__logo,
     .header__btn-wrp{
-        margin-top: 10px;
+        margin-top: rem(10);
+    }
+    .header__btn-wrp{
+        width: rem(290);
     }
 }

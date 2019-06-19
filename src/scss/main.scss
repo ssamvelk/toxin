@@ -383,13 +383,13 @@ body{position: relative; width: 100vw;}
         width: 100vw;
         min-width: rem(380);
         //background: red;
-        padding: 0 10px;
+        padding: 0 rem(10);
     }
     .wrapper{
         width: 100vw;
         max-width: rem(1160);
         min-width: rem(380);
-        min-height: 420px;
+        min-height: rem(420);
         padding-top: rem(50);
     }
     
@@ -402,12 +402,12 @@ body{position: relative; width: 100vw;}
     .search__rooms{
         justify-content: space-around;
         &:last-child{
-            margin-bottom: 100px;
+            margin-bottom: rem(100);
         }
     }
 
     .search__right{
-        padding: 0 10px;
+        padding: 0 rem(10);
     }
 
     .pagination-wrp{
@@ -416,10 +416,76 @@ body{position: relative; width: 100vw;}
         //flex-basis: 100%;
         bottom: rem(20);
     }
+
+    //--------------
+    .room-det__img{
+        width: 100%;
+        height: auto;
+    }
+    .room-det__main-img-wrp{
+        width: 68.125%;
+    }
+    .room-det__main-img{
+        width: 100%;
+        height: auto;
+    }
+    .room-det__img-small{
+        width: 31.875%;
+    }
+    .room-det__small-img{
+        width: 100%;
+        height: auto;
+    }
+    .room-det__left{
+
+    }
+    .room-det-wrp{
+        width: 100%;
+        min-height: 100%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+    }
     
+    .room-det__flex-wrp{
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+
+    //-----------------------
+    .room-det__left{
+        //width: 61.29%;
+        min-width: rem(420);
+        padding-left: rem(10);
+        padding-right: rem(10);
+        .room-det__cancel-title{
+            margin-left: rem(20);
+        }
+    }
+    .comment-wrp{
+        width: 100%;
+        min-width: rem(420);
+    }
+    .room-det__right{
+       width: 32.75%;
+       min-width: rem(380);
+       margin: rem(10) auto 0;
+
+    }
+
+    //-----------------------
+    .main__sign-in-wrapper,
+    .main__reg-wrapper{
+        min-width: 100%;
+    }
+    .reg-wrapper,
+    .sign-in-wrapper{
+        width: 100%;
+        min-width: rem(420);
+    }
+
 }
 @media screen and (max-width: 1200px){
-    
     
     
 }

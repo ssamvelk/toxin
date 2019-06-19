@@ -33,7 +33,8 @@ html(lang="en")
     +mainheader({})
     main.main__wrapper.main--room-det
         .room-det__img
-            img(class='room-det__main-img',  src="../static/source/room-det-big.jpg", alt="img-big")
+            div.room-det__main-img-wrp
+                img(class='room-det__main-img',  src="../static/source/room-det-big.jpg", alt="img-big")
             .room-det__img-small
                 img(class='room-det__small-img', src="../static/source/room-det-1.jpg",  alt="img1")
                 img(class='room-det__small-img', src="../static/source/room-det-2.jpg", alt="img2")
@@ -53,9 +54,10 @@ html(lang="en")
                                 li.room-det__item.room-det__item--good Хорошо
                                 li.room-det__item.room-det__item--passably Удовлетворительно 
                                 li.room-det__item.room-det__item--poorly Разочарован
-                h2.room-det__recall Отзывы посетителей номера
-                +comment({})
-                +comment({name: 'Патрисия Стёклышкова', img:'../static/source/image_patrisia48.png', days: 7, comment: 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент'})
+                .room-det__recall-wrp
+                    h2.room-det__recall Отзывы посетителей номера
+                    +comment({})
+                    +comment({name: 'Патрисия Стёклышкова', img:'../static/source/image_patrisia48.png', days: 7, comment: 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент'})
                 
                 .room-det__flex-wrp.room-det__flex-wrp--mtop
                     .room-det__rools

@@ -25,8 +25,8 @@
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: rem(14);
+    line-height: rem(24);
     color: $Dark75;
     margin-top: rem(20);
 }
@@ -35,8 +35,8 @@
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: rem(14);
+    line-height: rem(17);
     color: $Dark50;
     cursor: pointer;
     margin-top: rem(5);
@@ -56,7 +56,7 @@
 }
 .footer__nav-item,.footer__about-item,.footer__support-item{
     //position: relative;
-    margin-bottom: 20px;
+    margin-bottom: rem(20);
     &:hover{
         font-weight: bold;
         color:$Dark75;
@@ -65,10 +65,10 @@
 .footer__nav-title, .footer__about-title, .footer__support-title, .footer__subscribe-title{
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: rem(12);
+    line-height: rem(15);
     color: $Dark;
-    margin-bottom: 21px;
+    margin-bottom: rem(21);
     cursor: default;
 }
 
@@ -77,18 +77,18 @@
     margin-top: rem(5);
 }
 .footer__subscribe-title{
-    margin-bottom: 18px;
+    margin-bottom: rem(18);
 }
 .footer__subscribe-info{
     width: rem(260);
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: rem(14);
+    line-height: rem(24);
     color: $Dark75;
 
-    margin-bottom: 21px;
+    margin-bottom: rem(21);
 }
 
 //------------------------------------copyright
@@ -107,8 +107,8 @@
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: rem(14);
+    line-height: rem(17);
     color: $Dark75;
 
 }
@@ -119,11 +119,11 @@
 }
 .footer-line{
 
-    height: 1px;
-    width: 1440px;
+    height: rem(1);
+    width: rem(1440);
     margin: 0 auto;
     position: relative;
-    bottom: 70px;
+    bottom: rem(70);
 
     background-color:#E5E5E5;
 }
@@ -132,7 +132,7 @@
 @media screen and (max-width: 1440px){
     .main-footer{
         min-width: rem(380);
-
+        padding: 0 rem(5);
     }
 
     .footer-wrp{
@@ -143,7 +143,8 @@
         min-height: rem(372);
         height: max-content;
         max-height: 100%;
-        padding-top: 25px;
+        padding: 0 rem(5);
+        //padding-top: 25px;
     }
     .footer__nav, .footer__about, .footer__support, .footer__subscribe{
         width: auto;
@@ -159,7 +160,7 @@
 
 @media screen and (max-width: 950px){
     .footer-wrp{
-        padding-top: 10px;
+        padding-top: rem(10);
     }
     .footer__logo-wrp{
         flex-basis: 100%;
@@ -170,8 +171,8 @@
     .footer__logo-info{
         width: auto;
         margin: 0;
-        margin-left: 5px;
-        margin-top: 7px;
+        margin-left: rem(5);
+        margin-top: rem(7);
     }
 
 }
@@ -183,16 +184,16 @@
         flex-wrap: wrap;
     }
     .footer__subscribe-info{
-        margin-left: 5px;
+        margin-left: rem(5);
         flex-basis: 70%;
-        line-height: 24px;
-        margin-top: -5px
+        line-height: rem(24);
+        margin-top: rem(-5);
     }
     
     .subscribe-wrp{
         //flex-basis: 100%;
     }
     .footer-socials{
-        margin-left: 5px;
+        margin-left: rem(5);
     }
 }
