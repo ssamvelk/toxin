@@ -1,43 +1,42 @@
-.room-info__wrp{
-    width: 280px;
-    min-height: 207px;
-    :last-child{
-        margin-bottom: 0;
-    }
+.room-info {
+  width: 280px;
+  min-height: 207px;
+  :last-child {
+    margin-bottom: 0;
+  }
 }
-.room-info__item{
-    width: 280px;
-    height: 68px;
-    border-bottom: 1px solid rgba(31, 32, 65, 0.1);
-    display: flex;
-    margin-bottom: 20px;
-    box-sizing: border-box;
+.room-info__item {
+  display: flex;
+  box-sizing: border-box;
+  width: 280px;
+  height: 68px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(31, 32, 65, 0.1);
 
-    &:last-child{
-        border: none;
-    }   
+  &:last-child {
+    border: none;
+  }
 }
-.room-info__smile{
-    margin-top: 4px;
-    margin-left: 4px;
+.room-info__smile {
+  margin-top: 4px;
+  margin-left: 4px;
 }
-.room-info__house{
-    margin-top: 5px;
-    margin-left: 6px;
+.room-info__house {
+  margin-top: 5px;
+  margin-left: 6px;
 }
-.room-info__fire{
-    margin-top: 3px;
-    margin-left: 6px;
+.room-info__fire {
+  margin-top: 3px;
+  margin-left: 6px;
 }
-.room-info__information{
-    margin-left: 10px;
-    span{ 
-    font-family: Montserrat;
-    font-style: normal;
+.room-info__information {
+  margin-left: 10px;
+  span {
+    color: $Dark75;
     font-weight: bold;
     font-size: 14px;
+    font-family: Montserrat;
+    font-style: normal;
     line-height: 24px;
-    color: $Dark75;
-
-    }
+  }
 }

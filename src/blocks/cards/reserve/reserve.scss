@@ -1,126 +1,130 @@
-.reserve-wrp{
-    width: 380px;
-    height: 511px;
-    padding: 0 30px;
-
+.reserve {
     position: relative;
     display: flex;
     flex-direction: column;
-    //justify-content: space-around;
     box-sizing: border-box;
-
+    width: 380px;
+    height: 511px;
+    padding: 0 30px;
     background: white;
     border: 1px solid rgba(0, 0, 0, 0.12);
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-
-    .date__search-wrp{
-        margin-bottom: 20px;
-    }
-    h3{
-        margin-bottom: 5px;
-    }
-    .dropdown-company{
-        margin-bottom: 17px;
-    }
-    .date__search-wrp{
-        margin-bottom: 14px;
-    }
-}
-.reserve__header{
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .reserve__header {
     display: flex;
-    //justify-content: space-between;
-    margin-bottom: 14px;
     margin-top: 43px;
-    
-}
-.reserve__number-i,
-.reserve__num{
-    font-family: Quicksand;
+    margin-bottom: 14px;
+  }
+  
+  .reserve__num {
+    color: $Dark;
     font-weight: bold;
     font-size: 14px;
+    font-family: Quicksand;
     line-height: 30px;
+  }
+  
+  .reserve__number-i {
+    margin-left: 2px;
     color: $Dark;
-}
-.reserve__number-i{
+    font-weight: bold;
     font-size: 24px;
+    font-family: Quicksand;
     line-height: 21px;
     letter-spacing: 0.9px;
-    margin-left: 2px;
-}
-.reserve__type, .reserve__type-i{
-    font-family: Montserrat;
-    font-style: normal;
+  }
+  
+  .reserve__type,
+  .reserve__type-i {
+    margin-left: 5px;
+    color: $Purple;
     font-weight: bold;
     font-size: 12px;
+    font-family: Montserrat;
+    font-style: normal;
     line-height: 30px;
     text-transform: uppercase;
-    color: $Purple;
-    margin-left: 5px;
-}
-.reserve__cost{
-    font-family: Montserrat;
+  }
+  
+  .reserve__cost {
+    margin-left: auto;
+    color: $Dark50;
     font-weight: bold;
     font-size: 14px;
+    font-family: Montserrat;
     line-height: 30px;
-    color: $Dark50;
-    margin-left: auto;
-    &::after{
-        content: 'в сутки';
-        font-weight: normal;
-        font-size: 12px;
-    }    
-}
+    &::after {
+      font-weight: normal;
+      font-size: 12px;
+      content: "в сутки";
+    }
+  }
 
-.reserve__info-wrp{
+  .reserve__date-search {
+    margin-bottom: 14px;
+  }
+  
+  .reserve__company-title {
+    margin-bottom: 5px;
+  }
+  
+  .reserve__company-count {
+    margin-bottom: 17px;
+  }
+  
+  .reserve__info-wrp {
     width: 320px;
-    
-}
-.reserve__info-item {
+  }
+
+  .reserve__info-item {
     display: flex;
     justify-content: space-between;
-    font-family: Montserrat;
-    
-    font-size: 14px;
-    line-height: 24px;
-    color: $Dark75;
     margin-bottom: 10px;
-}
-.reserve__info{
+    color: $Dark75;
+    font-size: 14px;
+    font-family: Montserrat;
+    line-height: 24px;
+  }
+
+  .reserve__info {
+    position: relative;
     box-sizing: border-box;
     width: 239px;
     padding-right: 25px;
-
-    position: relative;
-    .info-icon{
-        position: absolute;
-        top:0;
-        right: 0;
-    }
-}
-.reserve__info-item__summury{
+  }
+  
+  .reserve__info-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  .reserve__summury-info-item {
     display: flex;
     justify-content: space-between;
-    font-family: Quicksand;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 19px;
-    line-height: 24px;
-    color: $Dark;
     margin-top: 20px;
     margin-bottom: 20px;
-}
-.info-summury{
+    color: $Dark;
+    font-weight: bold;
+    font-size: 19px;
+    font-family: Quicksand;
+    font-style: normal;
+    line-height: 24px;
+  }
+  
+  .reserve__summury-info {
     position: relative;
-    
-    &::after{
-        content: '';
-        width: 182px;
-        height: 0px;
-        //background: red;
-        border-top: 1px dotted $Dark25;
-        position: absolute;
-        bottom: 6px;
-        left: 62px;
+  
+    &::after {
+      position: absolute;
+      bottom: 6px;
+      left: 62px;
+      width: 182px;
+      height: 0px;
+      border-top: 1px dotted $Dark25;
+      content: "";
     }
-}
+  }
+  

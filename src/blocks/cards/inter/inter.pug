@@ -1,9 +1,12 @@
 mixin inter(options)
-    .inter-wrp
-        h1 Войти
-        +text_field({type:'email'})
-        +text_field({type:'password'})
-        +button({Big:true, text: 'Войти'})
-        p.inter__footer
-            span Нет аккаунт на Toxin?
-            +button({White:true, text: 'Создать', href: 'registration.html'})
+  .inter
+    h1.inter__title Войти
+    .inter__text-field-wrp
+      +text_field({type:'email'})
+    .inter__text-field-wrp
+      +text_field({type:'password'})
+    .inter__button-wrp
+      +button({big: true, text: 'Войти'})
+    p.inter__footer
+      span.inter__question Нет аккаунт на Toxin?
+      +button({white: true, text: 'Создать', href: 'registration.html'})

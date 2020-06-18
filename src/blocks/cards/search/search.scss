@@ -1,33 +1,42 @@
-.search-wrp{
-    width: 380px;
-    height: 374px;
-    padding: 0 30px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    //justify-content: space-around;
-    box-sizing: border-box;
+.search {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 380px;
+  height: 374px;
+  padding: 0 30px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+}
 
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.12);
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
+.search__title {
+  box-sizing: border-box;
+  margin: 0;
+  margin-top: 40px;
+  color: #1f2041;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: Quicksand;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
 
-    .search__title{ 
-        margin: 0;
-        margin-top: 40px;
-    }
-    .date__search-wrp{
-        margin-top: 20px;
-    }
-    .search-company{
-        margin: 0;
-        margin-top: 14px;
-    }
-    .dropdown-wrp{
-        margin-top: 5px;
-    }
-    .button {
-        margin-top: 31px;
-    }
+.search__date {
+  margin-top: 20px;
+}
+
+.search-company {
+  margin: 0;
+  margin-top: 14px;
+}
+
+.search__company {
+  margin-top: 5px;
+}
+
+.search__button {
+  margin-top: 31px;
 }

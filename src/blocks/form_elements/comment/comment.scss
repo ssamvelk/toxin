@@ -1,0 +1,54 @@
+.comment {
+  width: 712px;
+}
+
+.comment__user-wrp {
+  display: flex;
+}
+
+.comment__user-foto {
+  box-sizing: border-box;
+  width: 52px;
+  height: 52px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid white;
+  border-radius: 32px;
+}
+
+.comment__user {
+  margin-left: 5px;
+  color: $Dark75;
+  font-weight: normal;
+  font-size: 14px;
+  font-family: Montserrat;
+  font-style: normal;
+  line-height: 24px;
+
+  br {
+    margin: 0;
+  }
+}
+.comment__user-name {
+  font-weight: bold;
+}
+
+.comment__info-wrp {
+  display: flex;
+  margin-top: 9px;
+}
+
+.comment__info-like {
+  margin-left: 3px;
+}
+
+.comment__info-text {
+  width: 653px;
+  margin-left: 14.31px;
+  color: $Dark75;
+  font-weight: normal;
+  font-size: 14px;
+  font-family: Montserrat;
+  font-style: normal;
+  line-height: 24px;
+}

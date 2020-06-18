@@ -1,5 +1,4 @@
 include ../static/sprite.svg
-//-include ../blocks/btn/btn.pug для подключения миксинов
 include ../blocks/form_elements/text_field/text_field.pug
 include ../blocks/form_elements/dropdown/dropdown.pug
 include ../blocks/form_elements/date/date.pug
@@ -23,28 +22,17 @@ include ../blocks/footer/footer.pug
 
 <!DOCTYPE html>
 html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title index
-    body
-        +mainheader({})
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Toxin
+  body
+    +mainheader({})
 
-        main.main__wrapper
-            .wrapper
-                +search-card
-                p.slogan Лучшие номера для вашей работы, отдыха и просто вдохновения
+    main.main__wrapper
+      .wrapper
+        +search-card
+        p.slogan Лучшие номера для вашей работы, отдыха и просто вдохновения
 
-        +footer({})
-
-
-
-
-
-    //-
-        h1 index
-        br
-        a(href="ui-kit.html") ссылка на  ui-kit.html
-        br
-        a(href="second.html") ссылка на  second.html
+    +footer({})

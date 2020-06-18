@@ -2,7 +2,9 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+
+const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
     context: path.resolve(__dirname, 'src'),
@@ -23,7 +25,7 @@ module.exports = {
 
     module: {
         rules: [
-            {//--------------------------------JS
+            {
               test: /\.m?js$/,
               exclude: /(node_modules|bower_components)/,
               use: {
@@ -33,18 +35,18 @@ module.exports = {
                 }
               }
             },
-            {//--------------------------------PUG
+            {
                 test: /\.pug$/,
                 use:[
                     {loader: 'html-loader',},
                     {loader: 'pug-html-loader', options: { data: {} }}
                 ]
             },
-            {//--------------------------------CSS
+            {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader'],
             },
-            {//-------------------------------SCSS
+            {
                 test: /\.scss$/,
                 use: [
                     'style-loader',
@@ -61,7 +63,7 @@ module.exports = {
                     }
                 ]
             },
-            {//-------------------------------IMAGE
+            {
                 test: /\.(gif|png|jpe?g|svg)$/i,
                 use: [
                         {
@@ -69,9 +71,7 @@ module.exports = {
                             options: {
                                 name: 'img/[name].[ext]',
                                 exclude: ['src/fonts/'],
-                                //outputPath: 'img/'
                             },
-                            
                         },
                         {   
                             loader: 'image-webpack-loader',
@@ -80,18 +80,16 @@ module.exports = {
                                 progressive: true,
                                 quality: 65
                               },
-                              // optipng.enabled: false will disable optipng
                               optipng: {
                                 enabled: false,
                               },
                               pngquant: {
-                                quality: '65-90',
+                                quality: [0.6, 0.9],
                                 speed: 4
                               },
                               gifsicle: {
                                 interlaced: false,
                               },
-                              // the webp option will enable WEBP
                               webp: {
                                 quality: 75
                               }
@@ -99,56 +97,41 @@ module.exports = {
                         },
                 ]
             },
-            {//--------------------------------FONTS
+            {
                 test: /\.(woff|woff2|eot|ttf|otf)$/,
                 use: [{
                     loader: 'file-loader',
                     options: {
                         name: '[name].[ext]',
                         outputPath: 'fonts/',
-                        //exclude: ['src/static/', '/src/blocks/']
                     }
                 }]
             },
         ]
-    },  //-----------module
-    devServer: {
-        overlay: true
     },
     plugins: [
         new HtmlWebpackPlugin({
             template: "pug/index.pug",
             filename:  'index.html',
-            //inject: false
-          }),
-        new HtmlWebpackPlugin({
-            template: "pug/ui-kit.pug",
-            filename:  'ui-kit.html',
-            //inject: false
-        }),  
+          }), 
         new HtmlWebpackPlugin({
             template: "pug/search_room.pug",
             filename:  'search_room.html',
-            //inject: false
         }),
         new HtmlWebpackPlugin({
             template: "pug/room_details.pug",
             filename:  'room_details.html',
-            //inject: false
         }),
         new HtmlWebpackPlugin({
             template: "pug/registration.pug",
             filename:  'registration.html',
-            //inject: false
         }),
         new HtmlWebpackPlugin({
             template: "pug/sign_in.pug",
             filename:  'sign_in.html',
-            //inject: false
         }),
         new MiniCssExtractPlugin({
             filename: '[name].css',
-            //chunkFilename: "[id].css"
         }),
         
         new CleanWebpackPlugin({}),
@@ -161,6 +144,8 @@ module.exports = {
         }),
 
     ],
-    devtool: 'eval'
-
+    devtool: isDev ? 'source-map' : '',
+    devServer: {
+        overlay: true
+    },
 };

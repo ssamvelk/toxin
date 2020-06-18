@@ -5,15 +5,18 @@
 	border: 0;
 	box-sizing: border-box;
 	}
+
 a {
 	text-decoration: none;
-	//appearance: button;
 }
 
- button:active, button::-moz-focus-inner //input, input[type=range], input:active, input:focus, input:hover, input::-moz-focus-inner,a,a:active,
-{
-    border: 0;
+ button:active,
+ button::-moz-focus-inner {
+  border: 0;
 	outline: none;
 }
-svg{cursor: pointer;}
+
+svg {
+	cursor: pointer;
+}
 

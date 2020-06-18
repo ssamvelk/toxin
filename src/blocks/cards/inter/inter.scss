@@ -1,35 +1,36 @@
-.inter-wrp{
-    width: 380px;
-    height: 358px;
-    padding: 0 30px;
-
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    //justify-content: space-around;
-    box-sizing: border-box;
-
-    background: white;
-    border: 1px solid rgba(0, 0, 0, 0.12);
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-
-    h1{
-        margin-top: 40px;
-        margin-bottom: 10px;
-    }
-    .text-field{
-        margin-top: 10px;
-    }
-    .button--big{
-        margin-top: 20px;
-    }
+.inter {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 380px;
+  height: 358px;
+  padding: 0 30px;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
 }
-.inter__footer{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-    span{
-        line-height: 44px;
-    }
+
+.inter__text-field-wrp {
+  margin-top: 10px;
+}
+
+.inter__button-wrp {
+  margin-top: 20px;
+}
+
+.inter__title {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.inter__footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+  
+.inter__question {
+  line-height: 44px;
 }

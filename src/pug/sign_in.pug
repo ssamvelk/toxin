@@ -1,5 +1,4 @@
 include ../static/sprite.svg
-//-include ../blocks/btn/btn.pug для подключения миксинов
 include ../blocks/form_elements/text_field/text_field.pug
 include ../blocks/form_elements/dropdown/dropdown.pug
 include ../blocks/form_elements/date/date.pug
@@ -23,17 +22,17 @@ include ../blocks/footer/footer.pug
 
 <!DOCTYPE html>
 html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title Sign in 
-    body
-        +mainheader({})
-
-        main.main__sign-in-wrapper
-            .sign-in-wrapper
-                +inter({})
-
-
-        +footer({})
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Sign in 
+  body
+    +mainheader({})
+    
+    main.main__sign-in-wrapper
+      .sign-in-wrapper
+        .sign-in__inter-card  
+          +inter({})
+    
+    +footer({})

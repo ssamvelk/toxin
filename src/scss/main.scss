@@ -4,41 +4,42 @@
 @import "utils/mixins.scss";
 
 html {
-    font-size: $mainFontSize;
-    font-family: $mainFont;
-    line-height: $mainLineHeight;
+  font-size: $mainFontSize;
+  font-family: $mainFont;
+  line-height: $mainLineHeight;
 }
+
+body{
+  position: relative; width: 100vw;
+}
+
 h1 {
-    font-family: Quicksand;
-    font-weight: bold;
-    font-size: rem(25);
-    line-height: rem(30);
-    color: #1F2041;
-    box-sizing: border-box;
+  font-family: Quicksand;
+  font-weight: bold;
+  font-size: rem(25);
+  line-height: rem(30);
+  color: #1F2041;
+  box-sizing: border-box;
 }
 h2 {
-    font-family: Quicksand;
-    font-weight: bold;
-    font-size: rem(19);
-    line-height: rem(24);
-    color: #1F2041;
+  font-family: Quicksand;
+  font-weight: bold;
+  font-size: rem(19);
+  line-height: rem(24);
+  color: #1F2041;
 }
 h3 {
-    font-family: Montserrat;
-    font-weight: bold;
-    font-size: rem(12);
-    line-height: rem(15);
-    text-transform: uppercase;
-    color: #1F2041;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: rem(12);
+  line-height: rem(15);
+  text-transform: uppercase;
+  color: #1F2041;
 } 
-body{position: relative; width: 100vw;}
-
 
 .main__wrapper {    
     box-sizing: border-box;
     min-width: rem(1440);
-    
-    //background: url('/src/static/source/bg_image.jpg') no-repeat 50% -70px, white;
     background: url('../static/source/bg_image.jpg') no-repeat 50% rem(-70), white;
 }
 
@@ -63,7 +64,6 @@ body{position: relative; width: 100vw;}
     text-align: right;
     color: $Dark75;
     position: absolute;
-    bottom: rem(18);
     right: rem(-5.5);
     bottom: rem(20);
 }
@@ -92,7 +92,7 @@ body{position: relative; width: 100vw;}
     }
 }
 
-.pagination-wrp{
+.pagination{
     position: absolute;
     left: 53%;
     bottom: rem(77);
@@ -113,10 +113,13 @@ body{position: relative; width: 100vw;}
     .slider-wrp{
         margin-bottom: rem(30);
     }
+
+    .checkbox-list,
     .checkbox-list-wrp{
         margin-bottom: rem(30.88);
     }
-    .richcheckbox-wrp{
+    
+    .checkbox-accessibility{
         margin-bottom: rem(30.44);
     }
 }
@@ -132,7 +135,7 @@ body{position: relative; width: 100vw;}
     padding-top: rem(20.5);
     flex-wrap: wrap;
     justify-content: space-between;
-    .rooms-wrp{
+    .rooms{
         margin-bottom: rem(20);
     }
 }
@@ -186,7 +189,7 @@ body{position: relative; width: 100vw;}
     .room-det__left-waaay-title{
         letter-spacing: rem(0.7);
     }
-    .comment-wrp{margin-bottom: rem(21);}
+    .comment{margin-bottom: rem(21);}
     .room-det__rools-title{margin-bottom: rem(18);}
     .room-det__cancel-title{margin-bottom: rem(18);letter-spacing: rem(0.9);}
 }
@@ -198,9 +201,9 @@ body{position: relative; width: 100vw;}
     justify-content: space-between;
     position: relative;
 }        
-.room-det__right{
-    //border: 1px solid red;
-}
+// .room-det__right{
+//     //border: 1px solid red;
+// }
 .room-det__list{
     font-family: Montserrat;
     font-size: rem(14);
@@ -309,47 +312,44 @@ body{position: relative; width: 100vw;}
 
 //------------------------registration
 .main__reg-wrapper {    
-    min-width: rem(1440);
-    
-    background: url('/src/static/source/bg_reg.jpg') no-repeat 50% rem(-70), white;
+  min-width: rem(1440); 
+  background: url('../static/source/bg_reg.jpg') no-repeat 50% rem(-70), white;
 }
+
 .reg-wrapper{
-    width: rem(1160);
-    //height: rem(1357);
-    
-    margin: 0 auto;
-    
-    padding-top: rem(30);
-    padding-bottom: rem(26);
-    
-    position: relative;
-    .registration-wrp{
-        margin: 0 auto ;
-    }
+  width: rem(1160);    
+  margin: 0 auto;    
+  padding-top: rem(30);
+  padding-bottom: rem(26);
+  position: relative;
+ 
+}
+
+.reg-wrapper__registration-card {
+    width: max-content;
+    margin: 0 auto ;
 }
 
 //------------------------Sign in
 .main__sign-in-wrapper{
     min-width: rem(1440);
     
-    background: url('/src/static/source/bg_reg.jpg') no-repeat 50% rem(-70), white;
+    background: url('../static/source/bg_reg.jpg') no-repeat 50% rem(-70), white;
 }
 .sign-in-wrapper{
     width: rem(1160);
     min-height: rem(684);
-    
     margin: 0 auto;
-    
     padding-top: rem(163);
     padding-bottom: rem(162);
-    
     position: relative;
-    .inter-wrp{
-        margin: 0 auto;
-    }
+
 }
-
-
+.sign-in__inter-card {
+  width: max-content;
+  margin: 0 auto;
+}
+//------------------------Sign in
 
 @import "../blocks/form_elements/text_field/text_field.scss";
 
@@ -359,9 +359,11 @@ body{position: relative; width: 100vw;}
 @import "../blocks/form_elements/radio/radio.scss";
 @import "../blocks/form_elements/toggle/toggle.scss";
 @import "../blocks/form_elements/like/like.scss";
+@import "../blocks/form_elements/comment/comment.scss";
 @import "../blocks/form_elements/rate/rate.scss";
 @import "../blocks/form_elements/slider/slider.scss";
 @import "../blocks/form_elements/buttons/buttons.scss";
+@import "../blocks/form_elements/carousel/carousel.scss";
 @import "../blocks/form_elements/pagination/pagination.scss";
 @import "../blocks/form_elements/bullet_list/bullet_list.scss";
 @import "../blocks/form_elements/room_info/room_info.scss";
@@ -436,9 +438,9 @@ body{position: relative; width: 100vw;}
         width: 100%;
         height: auto;
     }
-    .room-det__left{
+    // .room-det__left{
 
-    }
+    // }
     .room-det-wrp{
         width: 100%;
         min-height: 100%;
@@ -527,3 +529,15 @@ body{position: relative; width: 100vw;}
 
 }
 */
+
+
+// @media screen and (max-width: 1440px) {
+
+//   .search-wrp {
+//     margin-left: rem(10);
+//   }
+
+//   .slogan {
+//     margin-right: rem(25);
+//   }
+// }

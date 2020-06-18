@@ -1,62 +1,59 @@
-.rate__wrp{
-    width: 120px;
-    height: 20px;
-    display: flex;
-    position: relative;
-    
-}
-.rate__wrp--reverse{
+.rate {
+  position: relative;
+  display: flex;
+  width: 120px;
+  height: 20px;
+
+  &_reverse {
     flex-direction: row-reverse;
-}
-.rate__star{
-    display: none;
+  }
 }
 
-.rate__star-lbl{
+.rate__star {
+  display: none;
+}
+
+.rate__star-lbl {
+  display: block;
+  width: 20px;
+  height: 19px;
+  cursor: pointer;
+  &::before {
+    position: absolute;
     width: 20px;
     height: 19px;
-    display: block;
-    
-    //background-color: gold;
-    cursor: pointer;
-    &::before{
-        content: '';
-        width: 20px;
-        height: 19px;
-        position: absolute;
-        background: url(../static/source/star_border.svg) no-repeat;
-    }
-    &::after{
-        content: '';
-        width: 20px;
-        height: 19px;
-        position: absolute;
-        background: url(../static/source/star.svg) no-repeat;
-        opacity: 0;
-        transition: 0.5s
-    }
-    &:hover::after{
-        opacity: 1;
-    }
-}
-.rate__wrp .rate__star-lbl:hover ~ .rate__star-lbl::after,
-.rate__wrp .rate__star:checked ~ .rate__star-lbl::after{
-    opacity: 1;
-}
-
-.rate__stars{
-    width: 120px;
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-}
-.rate__item{
-    width: 20px;
-    height: 20px;
     background: url(../static/source/star_border.svg) no-repeat;
-}
-.rate__item--full{
+    content: "";
+  }
+  &::after {
+    position: absolute;
+    width: 20px;
+    height: 19px;
     background: url(../static/source/star.svg) no-repeat;
+    opacity: 0;
+    transition: 0.5s;
+    content: "";
+  }
+  &:hover::after {
+    opacity: 1;
+  }
+}
+.rate .rate__star-lbl:hover ~ .rate__star-lbl::after,
+.rate .rate__star:checked ~ .rate__star-lbl::after {
+  opacity: 1;
 }
 
-
+.rate__stars {
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+  list-style: none;
+}
+.rate__item {
+  width: 20px;
+  height: 20px;
+  background: url(../static/source/star_border.svg) no-repeat;
+}
+.rate__item--full {
+  background: url(../static/source/star.svg) no-repeat;
+}

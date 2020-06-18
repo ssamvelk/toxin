@@ -1,0 +1,23 @@
+include ../like/like.pug
+
+mixin comment(options)
+  -var img=(options.img) ? options.img : '../static/source/image_murad48.png'
+  -var name=(options.name) ? options.name : 'Мурад Сарафанов'
+  -var days=(options.days) ? options.days : '5'
+  -var comment=(options.comment) ? options.comment : 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'
+  .comment
+
+    .comment__user-wrp
+      img(class="comment__user-foto" src=img)
+      p.comment__user 
+        span(class='comment__user-name')=name
+        <br>
+        if (days==7)
+          span неделю назад 
+        else 
+          span=days+' дней назад'
+
+    .comment__info-wrp
+      .comment__info-like
+        +like({liked: true, value: '12'})
+      p.comment__info-text #{comment}

@@ -1,66 +1,69 @@
-.pagination-wrp{
-    width: 240px;
-    min-height: 65px;
+.pagination {
+  width: 240px;
+  min-height: 65px;
 }
-.pagination-list{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 15px;
-    //align-items: center;
-    text-align: center;
-    //vertical-align: middle;
-    color: $Dark50;
 
-
+.pagination__list {
+  display: flex;
+  justify-content: space-between;
+  color: $Dark50;
+  font-weight: normal;
+  font-size: 12px;
+  font-family: Montserrat;
+  font-style: normal;
+  line-height: 15px;
+  text-align: center;
+  list-style: none;
 }
-.pagination-item{
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    //background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    border-radius: 22px;
-    position: relative;
-    
-    .pagination-arrow-svg{
-        position: absolute;
-        top: 12px;
-        left: 12px;
-        cursor: pointer;
+
+.pagination__item {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 22px;
+
+  .pagination-arrow-svg {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    cursor: pointer;
+  }
+}
+
+.pagination__first-item {
+  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+  a {
+    display: none;
+  }
+  svg {
+    transform: rotate(180deg);
+  }
+  &.pagination__item_active {
+    a {
+      display: block;
     }
-}
-.pagination-first-item{
-    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
-    a{display: none;}
-    svg{
-        transform: rotate(180deg);
-    }
-    &.pagination-item--active{
-        a{
-            display: block;
-        }
-    } 
+  }
 }
 
-.pagination-first-item,
-.pagination-last-item{
-    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+.pagination__first-item,
+.pagination__last-item {
+  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
 }
 
-.pagination-item--active{
-    font-weight: bold;
-    color:white;
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    a{
-        color:white;
-    }
-    svg{display: none;}
+.pagination__item_active {
+  color: white;
+  font-weight: bold;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  a {
+    color: white;
+  }
+  svg {
+    display: none;
+  }
 }
-.pagination-footer{
-    margin-left: 5px;
-    margin-top: rem(10.56);
+
+.pagination__footer {
+  margin-top: rem(10.56);
+  margin-left: 5px;
 }

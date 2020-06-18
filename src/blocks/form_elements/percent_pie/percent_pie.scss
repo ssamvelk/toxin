@@ -1,23 +1,23 @@
-.pie-chart__wrap{
+.pie-chart__wrap {
   display: flex;
   justify-content: space-between;
 }
-.c1{
+
+.c1 {
   width: 100px;
   height: 100px;
 }
-.circle{
-    stroke: #e75735;
-    fill: none;
-    stroke-width: 5px;
-    //stroke-dasharray: calc(50*283/100) 300; // 283 - 100%   38*100/283
-    stroke-dashoffset: 0;
-    
-    transform-origin: center center;
-    transform: rotate(-90deg);
-    animation: dash 2s linear; //  forwards;
-    //stroke-linecap: round;
-  }
+
+.circle {
+  transform: rotate(-90deg);
+
+  transform-origin: center center;
+  animation: dash 2s linear;
+  fill: none;
+  stroke: #e75735;
+  stroke-width: 5px;
+  stroke-dashoffset: 0;
+}
 
 @keyframes dash {
   from {
@@ -28,60 +28,63 @@
   }
 }
 
-.circle__text{
+.circle__text {
+  display: inline;
   font-size: 24px;
   font-family: Lato-Light;
   fill: #9d9d9d;
-  display: inline;
-  //text-align: center;
-  //vertical-align: middle;
   text-anchor: middle;
 }
-.circle-pie{//---------361 - 100%
-  stroke: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  stroke-width: 4px;
-  fill: none;
-  //stroke-dasharray: calc(50*283/100) 300; // 283 - 100%   38*100/283
-  stroke-dashoffset: 0;
-     
-  transform-origin: center center;
+
+.circle-pie {
   transform: rotate(-90deg);
+  transform-origin: center center;
   animation: dash 2s linear;
+  fill: none;
+  //---------361 - 100%
+  stroke: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  stroke-width: 4px;
+  stroke-dashoffset: 0;
 }
 
-//---------------------------------------------
-.c2{
+.c2 {
   width: 120px;
   height: 120px;
 }
 
-.circle-pie--bold{//---------345 - 100%
+.circle-pie--bold {
+  //---------345 - 100%
   stroke-width: 10px;
 }
-#pie1{
-  //transform: rotate(1deg);
-}
-#pie2{
-  transform: rotate(1deg);
+
+// #pie1{
+//   //transform: rotate(1deg);
+// }
+
+#pie2 {
   border: 1px solid black;
+  transform: rotate(1deg);
 }
-#pie3{
+
+#pie3 {
   transform: rotate(90deg);
 }
-#pie4{
+
+#pie4 {
   transform: rotate(270deg);
 }
-.circle__text2{
-  font-family: Quicksand;
+
+.circle__text2 {
+  position: relative;
   font-weight: bold;
   font-size: 24px;
-  fill: #BC9CFF;
-  position: relative;
+  font-family: Quicksand;
+  fill: #bc9cff;
 }
-#text2{
 
-  font-family: Montserrat;
+#text2 {
   font-weight: bold;
   font-size: 12px;
+  font-family: Montserrat;
   text-transform: uppercase;
 }

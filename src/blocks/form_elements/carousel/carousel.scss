@@ -1,0 +1,22 @@
+.carousel{
+  width: 41.25px;
+  height: 7.5px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.carousel__item{
+  width: 7.5px;
+  height: 7.5px;
+  border: 1px solid white;
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 5px rgba(31, 32, 65, 0.3);
+}
+
+.carousel__item_active{
+  background: white;
+}
