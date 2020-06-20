@@ -57,7 +57,14 @@
     margin-bottom: 5px;
   }
 }
-
+.date__search-title {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: rem(12);
+  line-height: rem(15);
+  text-transform: uppercase;
+  color: #1F2041;
+}
 .date-wrp--w150 {
   position: relative;
   box-sizing: border-box;

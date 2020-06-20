@@ -1,5 +1,5 @@
 mixin registration-card(options)
-  .registration
+  article.registration
     h1.registration__title Регистрация аккаунта
     .registration__text-field
       +text_field({type:'text'})
@@ -7,10 +7,10 @@ mixin registration-card(options)
       +text_field({type:'text', placeholder: 'Фамилия'})
     .registration__radio
       +radio({})
-    h3.registration__small-title дата рождения
+    h2.registration__small-title дата рождения
     .registration__date-field
       +text_field({type:'date'})
-    h3.registration__small-title данные для входа в сервис
+    h2.registration__small-title данные для входа в сервис
     .registration__text-field
       +text_field({type:'email'})
     .registration__text-field

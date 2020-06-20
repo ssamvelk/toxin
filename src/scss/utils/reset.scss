@@ -20,3 +20,21 @@ svg {
 	cursor: pointer;
 }
 
+html {
+  font-size: $mainFontSize;
+  font-family: $mainFont;
+  line-height: $mainLineHeight;
+}
+
+body{
+  position: relative; 
+  width: 100vw;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}

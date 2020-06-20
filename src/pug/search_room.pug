@@ -26,27 +26,29 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    meta(name="keywords" content="Toxin, отель, отдых")
+    meta(name="description" content="Toxin - Лучшие номера для вашей работы, отдыха и просто вдохновения.")
+    link(rel="icon", href="img/favicon.ico" type="image/ico")
     title Search room
   body
     +mainheader({})
 
-    main.main__wrapper.main--search
-      .wrapper.main--search-wrp
-        .search__left
-          h3 даты пребывания в отеле
+    main.main__search-wrapper
+      .search__wrapper      
+        section.search__left
+          h3.search__date-title даты пребывания в отеле
           +filter-date-dropdown({})
-          h3 гости
+          h3.search__guests-title гости
           +dropdownCompany({small:true,})
           +slider
-          //h3 Checkbox Buttons
           +checkbox-list
-          //h3 доступность
           +checkbox-accessibility({})
-          h3 удобства номера
+          h3.search__comfort-title удобства номера
           +dropdown({})
           +checkbox-additional-list({})
-        .search__right
-          h1 Номера, которые мы для вас подобрали
+        
+        section.search__right
+          h1.search__rooms-title Номера, которые мы для вас подобрали
           .search__rooms
             +rooms({bg : '../static/source/room_1.jpg', number : '888', notlux: false, cost: '9 990'})
             +rooms({bg : '../static/source/room_2.png', rating : '4', number : '840', notlux: true, cost: '9 990',likes: '65'})
@@ -60,5 +62,7 @@ html(lang="en")
             +rooms({bg : '../static/source/room_10.png', number : '666', notlux: true, cost: '5 000',likes: '25'})
             +rooms({bg : '../static/source/room_11.png', rating : '3', number : '444', notlux: true, cost: '5 000',likes: '15'})
             +rooms({bg : '../static/source/room_12.png', rating : '3', number : '352', notlux: true, cost: '5 000',likes: '55'})
-        +pagination()
+        .search__pagination
+          +pagination()
+    
     +footer({})

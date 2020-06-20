@@ -16,13 +16,18 @@
   margin: 0;
   margin-top: 40px;
   margin-bottom: 20px;
-  font-weight: 700;
   font-family: Quicksand;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: #1F2041;
+  box-sizing: border-box;
 }
 
 .registration__text-field {
   margin-bottom: 10px;
 }
+
 .registration__radio {
   margin-bottom: 23px;
 }
@@ -30,14 +35,23 @@
 .registration__date-field {
   margin-bottom: 20px;
 }
+
 .registration__toggle-field {
   margin-bottom: 24px;
 }
+
 .registration__button-field {
   margin-bottom: 30px;
 }
+
 .registration__small-title {
   margin-bottom: 5px;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: rem(12);
+  line-height: rem(15);
+  text-transform: uppercase;
+  color: #1F2041;
 }
 
 .registration__footer {
@@ -47,6 +61,7 @@
   width: 320px;
   height: 44px;
 }
+
 .registration__have-account {
   display: flex;
   align-items: center;

@@ -1,5 +1,4 @@
 include ../static/sprite.svg
-//-include ../blocks/btn/btn.pug для подключения миксинов
 include ../blocks/form_elements/text_field/text_field.pug
 include ../blocks/form_elements/dropdown/dropdown.pug
 include ../blocks/form_elements/date/date.pug
@@ -25,56 +24,59 @@ include ../blocks/form_elements/percent_pie/percent_pie.pug
 
 <!DOCTYPE html>
 html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title Room details
-    body
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    meta(name="keywords" content="Toxin, отель, отдых")
+    meta(name="description" content="Toxin - Лучшие номера для вашей работы, отдыха и просто вдохновения.")
+    link(rel="icon", href="img/favicon.ico" type="image/ico")
+    title Room details
+  body
     +mainheader({})
-    main.main__wrapper.main--room-det
-        .room-det__img
-            div.room-det__main-img-wrp
-                img(class='room-det__main-img',  src="../static/source/room-det-big.jpg", alt="img-big")
-            .room-det__img-small
-                img(class='room-det__small-img', src="../static/source/room-det-1.jpg",  alt="img1")
-                img(class='room-det__small-img', src="../static/source/room-det-2.jpg", alt="img2")
-        
-        .wrapper.room-det-wrp
-            .room-det__left
-                .room-det__flex-wrp
-                    div
-                        h2.room-det__left-info-title Сведения о номере
-                        +room_info
-                    .room-det__pie-wrp
-                        h2.room-det__left-waaay-title Впечатления от номера
-                        .room-det__flex-wrp
-                            +circle-pie2({percents: [25, 25, 50, 0]}) 
-                            ul.room-det__list
-                                li.room-det__item.room-det__item--best Великолепно 
-                                li.room-det__item.room-det__item--good Хорошо
-                                li.room-det__item.room-det__item--passably Удовлетворительно 
-                                li.room-det__item.room-det__item--poorly Разочарован
-                .room-det__recall-wrp
-                    h2.room-det__recall Отзывы посетителей номера
-                    +comment({})
-                    +comment({name: 'Патрисия Стёклышкова', img:'../static/source/image_patrisia48.png', days: 7, comment: 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент'})
-                
-                .room-det__flex-wrp.room-det__flex-wrp--mtop
-                    .room-det__rools
-                        h2.room-det__rools-title Правила
-                        ul.room-det__rools-list
-                            li.room-det__rools-item Нельзя с питомцами
-                            li.room-det__rools-item Без вечеринок и мероприятий
-                            li.room-det__rools-item Время прибытия — после 13:00, а выезд до 12:00
-                    .room-det__cancel
-                        h2.room-det__cancel-title Отмена
-                        p Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+    
+    main.main__room-det-wrapper
+      section.room-det__img
+        .room-det__main-img-wrp
+          img(class='room-det__main-img',  src="../static/source/room-det-big.jpg", alt="img-big")
+        .room-det__img-small
+          img(class='room-det__small-img', src="../static/source/room-det-1.jpg",  alt="img1")
+          img(class='room-det__small-img', src="../static/source/room-det-2.jpg", alt="img2")
 
-            .room-det__right
-                +reserve-card({})
-                
+      section.wrapper.room-det-wrp
+        .room-det__left
+          .room-det__flex-wrp
+            div
+              h2.room-det__left-info-title Сведения о номере
+              +room_info
+            .room-det__pie-wrp
+              h2.room-det__left-waaay-title Впечатления от номера
+              .room-det__flex-wrp
+                +circle-pie2({percents: [25, 25, 50, 0]}) 
+                ul.room-det__list
+                  li.room-det__item.room-det__item--best Великолепно 
+                  li.room-det__item.room-det__item--good Хорошо
+                  li.room-det__item.room-det__item--passably Удовлетворительно 
+                  li.room-det__item.room-det__item--poorly Разочарован
+          .room-det__recall-wrp
+            h2.room-det__recall Отзывы посетителей номера
+            .room-det__comment
+              +comment({})
+            .room-det__comment
+              +comment({name: 'Патрисия Стёклышкова', img:'../static/source/image_patrisia48.png', days: 7, comment: 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент'})
+
+          .room-det__flex-wrp.room-det__flex-wrp--mtop
+            .room-det__rools
+              h2.room-det__rools-title Правила
+              ul.room-det__rools-list
+                li.room-det__rools-item Нельзя с питомцами
+                li.room-det__rools-item Без вечеринок и мероприятий
+                li.room-det__rools-item Время прибытия — после 13:00, а выезд до 12:00
+            .room-det__cancel
+              h2.room-det__cancel-title Отмена
+              p.room-det__cancel-info Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+
+        .room-det__right
+          +reserve-card({})
 
     +footer({})
-
-    

@@ -1,0 +1,28 @@
+.main__reg-wrapper {
+  min-width: rem(1440);
+  background: url("../static/source/bg_reg.jpg") no-repeat 50% rem(-70), white;
+}
+@media screen and (max-width: 1440px) {
+  .main__reg-wrapper{
+      min-width: 100%;
+  }
+}
+
+.reg-wrapper {
+  position: relative;
+  width: rem(1160);
+  margin: 0 auto;
+  padding-top: rem(30);
+  padding-bottom: rem(26);
+}
+@media screen and (max-width: 1440px){
+  .reg-wrapper {
+    width: 100%;
+    min-width: rem(420);
+  }
+}
+
+.reg-wrapper__registration-card {
+  width: max-content;
+  margin: 0 auto;
+}

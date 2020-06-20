@@ -1,0 +1,30 @@
+.main__sign-in-wrapper{
+  min-width: rem(1440);
+  background: url('../static/source/bg_reg.jpg') no-repeat 50% rem(-70), white;
+}
+@media screen and (max-width: 1440px){
+  .main__sign-in-wrapper {
+    min-width: 100%;
+  }
+}
+
+.sign-in__wrapper{
+  width: rem(1160);
+  min-height: rem(684);
+  margin: 0 auto;
+  padding-top: rem(163);
+  padding-bottom: rem(162);
+  position: relative;
+
+}
+@media screen and (max-width: 1440px) {
+  .sign-in-wrapper {
+    width: 100%;
+    min-width: rem(420);
+  }
+}
+
+.sign-in__inter-card {
+  width: max-content;
+  margin: 0 auto;
+}

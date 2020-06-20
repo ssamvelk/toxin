@@ -1,53 +1,57 @@
 .slider-wrp {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 266px;
-    min-height: 72px;
-  }
-  
-  .slider-info-wrp {
-    display: flex;
-    justify-content: space-between;
-    height: 15px;
-    h3 {
-      margin: 0;
-    }
-    .slider-info {
-      text-transform: uppercase;
-    }
-  }
-  
-  .slider-info {
-    color: $Dark50;
-    font-weight: normal;
-    font-size: 12px;
-    font-family: Montserrat;
-    font-style: normal;
-    line-height: 15px;
-  }
-  
-  .slider {
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 266px;
+  min-height: 72px;
+}
+
+.slider-info-wrp {
+  display: flex;
+  justify-content: space-between;
+  height: 15px;
+}
+
+.slider-info-title {
+  margin: 0;
+  color: #1f2041;
+  font-weight: bold;
+  font-size: rem(12);
+  font-family: Montserrat;
+  line-height: rem(15);
+  text-transform: uppercase;
+}
+
+.slider-info {
+  color: $Dark50;
+  font-weight: normal;
+  font-size: 12px;
+  font-family: Montserrat;
+  font-style: normal;
+  line-height: 15px;
+}
+
+// - переоределение стилей плагина slider
+.slider {
+  position: relative;
+  box-sizing: border-box;
+  width: 266px;
+  height: 6px;
+
+  .ui-slider-handle.ui-corner-all.ui-state-default {
+    //---handele
     box-sizing: border-box;
-    width: 266px;
-    height: 6px;
-  
-    .ui-slider-handle.ui-corner-all.ui-state-default {
-      //---handele
-      box-sizing: border-box;
-      width: 14px;
-      height: 14px;
-      background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
-      border: 2px solid #ffffff;
-      border-radius: 10px;
-    }
-    .ui-slider-range.ui-corner-all.ui-widget-header {
-      position: relative;
-      top: -1;
-      //------range
-      height: 6px;
-      background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
-    }
+    width: 14px;
+    height: 14px;
+    background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+    border: 2px solid #ffffff;
+    border-radius: 10px;
   }
-  
+  .ui-slider-range.ui-corner-all.ui-widget-header {
+    //------range
+    position: relative;
+    top: -1;
+    height: 6px;
+    background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+  }
+}

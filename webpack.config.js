@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const isDev = process.env.NODE_ENV === 'development';
 
@@ -98,6 +99,15 @@ module.exports = {
                 ]
             },
             {
+                test: /\.(ico)$/i,
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        name: '[path][name].[ext]',
+                    }
+                }]
+            },
+            {
                 test: /\.(woff|woff2|eot|ttf|otf)$/,
                 use: [{
                     loader: 'file-loader',
@@ -136,15 +146,23 @@ module.exports = {
         
         new CleanWebpackPlugin({}),
 
+        new CopyWebpackPlugin({
+          patterns: [
+            { from: 'static/favicon.ico', to: 'img' },
+          ],
+        }),
+
         new webpack.ProvidePlugin({
             $: "jquery",
             jQuery: "jquery",
             "window.jQuery": "jquery'",
             "window.$": "jquery"
-        }),
+        })
 
     ],
+
     devtool: isDev ? 'source-map' : '',
+
     devServer: {
         overlay: true
     },
