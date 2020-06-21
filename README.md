@@ -2,7 +2,7 @@
   Верстка сайта для поиска номеров в отеле "Toxin" по макету.
 
 # GitHub Pages
-  <a href="https://ssamvelk.github.io/toxin/">отель Toxin</a>
+  <a href="https://ssamvelk.github.io/toxin/">https://ssamvelk.github.io/toxin</a>
 
 # Развертывание 
   $ git clone https://github.com/ssamvelk/toxin.git <br>
