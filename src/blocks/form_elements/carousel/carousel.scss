@@ -1,6 +1,6 @@
-.carousel{
-  width: 41.25px;
-  height: 7.5px;
+.carousel {
+  width: rem(41.25);
+  height: rem(7.5);
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -9,12 +9,12 @@
 }
 
 .carousel__item{
-  width: 7.5px;
-  height: 7.5px;
-  border: 1px solid white;
+  width: rem(7.5);
+  height: rem(7.5);
+  border: rem(1) solid white;
   border-radius: 50%;
   box-sizing: border-box;
-  box-shadow: 0px 5px 5px rgba(31, 32, 65, 0.3);
+  box-shadow: 0 rem(5) rem(5) rgba(31, 32, 65, 0.3);
 }
 
 .carousel__item_active{

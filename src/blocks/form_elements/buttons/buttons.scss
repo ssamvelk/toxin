@@ -2,25 +2,26 @@
   position: relative;
   display: block;
   box-sizing: border-box;
-  width: 99px;
-  height: 44px;
+  width: rem(99);
+  height: rem(44);
   color: white;
   font-weight: bold;
-  font-size: 12px;
+  font-size: rem(12);
 
   font-family: Montserrat;
   font-style: normal;
-  line-height: 44px;
+  line-height: rem(44);
   text-align: center;
   text-transform: uppercase;
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  border-radius: 22px;
+  border-radius: rem(22);
   cursor: pointer;
 
   &:hover {
     opacity: 0.5;
   }
 }
+
 .button_big {
   width: rem(320);
 }
@@ -51,31 +52,31 @@
 
   & > span {
     position: relative;
-    top: 2px;
+    top: rem(2);
     display: inline-block;
     box-sizing: border-box;
-    width: 95px;
-    height: 40px;
+    width: rem(95);
+    height: rem(40);
     color: $Purple;
-    line-height: 40px;
+    line-height: rem(40);
     background-color: white;
-    border-radius: 22px;
+    border-radius: rem(22);
     opacity: 1;
   }
 
   &.button_w87 {
     & > span {
-      top: 2px;
-      width: 84px;
-      height: 30px;
-      line-height: 30px;
-      border-radius: 22px;
+      top: rem(2);
+      width: rem(84);
+      height: rem(30);
+      line-height: rem(30);
+      border-radius: rem(22);
     }
   }
 }
 
 .button__arrow-svg {
   position: absolute;
-  top: 13px;
-  right: 14px;
+  top: rem(13);
+  right: rem(14);
 }

@@ -3,49 +3,49 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  width: 380px;
-  height: 646px;
-  padding: 0 30px;
+  width: rem(380);
+  height: rem(646);
+  padding: 0 rem(30);
   background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border: rem(1) solid rgba(0, 0, 0, 0.12);
+  border-radius: rem(4);
+  box-shadow: 0 0 rem(25)rgba(0, 0, 0, 0.2);
 }
 
 .registration__title {
   margin: 0;
-  margin-top: 40px;
-  margin-bottom: 20px;
+  margin-top: rem(40);
+  margin-bottom: rem(20);
   font-family: Quicksand;
   font-weight: bold;
-  font-size: 25px;
-  line-height: 30px;
+  font-size: rem(25);
+  line-height: rem(30);
   color: #1F2041;
   box-sizing: border-box;
 }
 
 .registration__text-field {
-  margin-bottom: 10px;
+  margin-bottom: rem(10);
 }
 
 .registration__radio {
-  margin-bottom: 23px;
+  margin-bottom: rem(23);
 }
 
 .registration__date-field {
-  margin-bottom: 20px;
+  margin-bottom: rem(20);
 }
 
 .registration__toggle-field {
-  margin-bottom: 24px;
+  margin-bottom: rem(24);
 }
 
 .registration__button-field {
-  margin-bottom: 30px;
+  margin-bottom: rem(30);
 }
 
 .registration__small-title {
-  margin-bottom: 5px;
+  margin-bottom: rem(5);
   font-family: Montserrat;
   font-weight: bold;
   font-size: rem(12);
@@ -58,8 +58,8 @@
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-  width: 320px;
-  height: 44px;
+  width: rem(320);
+  height: rem(44);
 }
 
 .registration__have-account {
@@ -67,9 +67,9 @@
   align-items: center;
   color: black;
   font-weight: normal;
-  font-size: 14px;
+  font-size: rem(14);
   font-family: Montserrat;
   font-style: normal;
-  line-height: 18px;
+  line-height: rem(18);
   text-align: center;
 }

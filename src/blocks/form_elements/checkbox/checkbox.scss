@@ -1,31 +1,31 @@
 .checkbox {
   position: relative;
   display: flex;
-  min-height: 20px;
-  margin: 10px 0;
+  min-height: rem(20);
+  margin: rem(10) 0;
 }
 
 .checkbox__item {
   box-sizing: border-box;
-  width: 20px;
-  height: 20px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  border-radius: 4px;
+  width: rem(20);
+  height: rem(20);
+  border: rem(1) solid rgba(31, 32, 65, 0.25);
+  border-radius: rem(4);
   outline: none;
   appearance: none;
 
   &:checked {
     position: relative;
-    border: 1px solid $Purple;
+    border: rem(1) solid $Purple;
 
     &::before {
       position: absolute;
-      top: 2px;
-      left: 5px;
-      width: 6px;
-      height: 8px;
-      border-right: 2px solid transparent;
-      border-bottom: 2px solid transparent;
+      top: rem(2);
+      left: rem(5);
+      width: rem(6);
+      height: rem(8);
+      border-right: rem(2) solid transparent;
+      border-bottom: rem(2) solid transparent;
       border-image: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
       border-image-slice: 1;
       transform: rotate(45deg);
@@ -35,14 +35,14 @@
 }
 
 .checkbox__item-name {
-  max-width: 192px;
-  margin-left: 9px;
+  max-width: rem(192);
+  margin-left: rem(9);
   color: $Dark50;
   font-weight: normal;
-  font-size: 14px;
+  font-size: rem(14);
   font-family: Montserrat;
   font-style: normal;
-  line-height: 20px;
+  line-height: rem(20);
 }
 
 // -------------------------------------checkbox-list
@@ -102,14 +102,14 @@
 
 // ----------------checkbox-accessibility
 .checkbox-accessibility {
-  width: 266px;
-  min-height: 125px;
+  width: rem(266);
+  min-height: rem(125);
 }
 
 .checkbox-accessibility__title {
   box-sizing: border-box;
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: rem(16);
   color: #1f2041;
   font-weight: 700;
   font-size: 0.85714rem;
@@ -121,12 +121,12 @@
 .checkbox-accessibility__item {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: rem(10);
 }
 
 .checkbox-accessibility__inner-wrp {
-  width: 236px;
-  margin-bottom: 5px;
+  width: rem(236);
+  margin-bottom: rem(5);
 }
 
 .checkbox-accessibility__item-name {
@@ -136,19 +136,19 @@
 .checkbox-accessibility__inner-title {
   color: $Dark75;
   font-weight: bold;
-  font-size: 14px;
+  font-size: rem(14);
   font-family: Montserrat;
   font-style: normal;
-  line-height: 18px;
+  line-height: rem(18);
   text-transform: none;
 }
 
 .checkbox-accessibility__inner-info {
   color: $Dark50;
   font-weight: normal;
-  font-size: 12px;
+  font-size: rem(12);
   font-family: Montserrat;
   font-style: normal;
-  line-height: 14px;
+  line-height: rem(14);
   text-transform: none;
 }

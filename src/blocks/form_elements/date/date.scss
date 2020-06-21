@@ -2,15 +2,15 @@
 .date-wrp {
   position: relative;
   box-sizing: border-box;
-  width: 266px;
-  height: 44px;
-  padding: 0 15px;
-  border: 1px solid $Dark25;
-  border-radius: 4px;
+  width: rem(266);
+  height: rem(44);
+  padding: 0 rem(15);
+  border: rem(1) solid $Dark25;
+  border-radius: rem(4);
 
   & > .datepicker-here {
     position: absolute;
-    bottom: -375px;
+    bottom: rem(-375);
     left: 0;
   }
 
@@ -21,19 +21,19 @@
 
 .date-dropdawn__svg {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: rem(15);
+  right: rem(15);
 }
 
 .date__info {
-  width: 150px;
-  padding-right: 10px;
+  width: rem(150);
+  padding-right: rem(10);
   color: $Dark75;
   font-weight: normal;
-  font-size: 14px;
+  font-size: rem(14);
   font-family: Montserrat;
   font-style: normal;
-  line-height: 44px;
+  line-height: rem(44);
 }
 
 //--------------------------------
@@ -41,12 +41,12 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  width: 320px;
-  height: 70px;
+  width: rem(320);
+  height: rem(70);
 
   & > .datepicker-here {
     position: absolute;
-    bottom: -375px;
+    bottom: rem(-375);
   }
 
   & > .datepicker--disable {
@@ -54,7 +54,7 @@
   }
 
   h3 {
-    margin-bottom: 5px;
+    margin-bottom: rem(5);
   }
 }
 .date__search-title {
@@ -68,8 +68,8 @@
 .date-wrp--w150 {
   position: relative;
   box-sizing: border-box;
-  width: 150px;
-  height: 44px;
+  width: rem(150);
+  height: rem(44);
   padding: 0;
   border: none;
 }
@@ -79,44 +79,43 @@
   position: relative;
   z-index: 100;
   box-sizing: border-box;
-  width: 320px;
-  height: 369px;
-  padding: 0 20px;
+  width: rem(320);
+  height: rem(369);
+  padding: 0 rem(20);
   background: white;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  border-radius: 4px;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  border: rem(1) solid rgba(31, 32, 65, 0.25);
+  border-radius: rem(4);
+  box-shadow: 0 rem(10) rem(20) rgba(31, 32, 65, 0.05);
 }
 
 .datepicker-inline {
-  width: 280px;
-  height: 314px; // 314 приблизительно!!!
+  width: rem(280);
+  height: rem(314); // 314 приблизительно!!!
 }
 
 .datepicker-inline > .datepicker {
-  width: 280px;
-  height: 314px;
+  width: rem(280);
+  height: rem(314);
   border: none;
 }
 
 .datepicker > .datepicker--nav {
   box-sizing: border-box;
-  height: 74px;
+  height: rem(74);
   padding-bottom: 0;
   color: $Dark;
   font-weight: bold;
-  font-size: 19px;
-
+  font-size: rem(19);
   font-family: Quicksand;
   font-style: normal;
-  line-height: 24px;
+  line-height: rem(24);
   border: none;
 }
 
 .datepicker--nav > .datepicker--nav-action svg {
   //-----стрелки
-  width: 17px;
-  height: 18px;
+  width: rem(17);
+  height: rem(18);
 }
 
 .datepicker--nav > .datepicker--nav-action path {
@@ -129,29 +128,29 @@
 
 .datepicker > .datepicker--content {
   box-sizing: border-box;
-  min-height: 240px;
+  min-height: rem(240);
   padding: 0;
 }
 
 .datepicker--days > .datepicker--days-names {
   // Пн Вт Ср Чт Пт
-  height: 40px;
+  height: rem(40);
   margin: 0;
 }
 
 .datepicker--days-names > .datepicker--day-name {
   color: $Purple;
   font-weight: bold;
-  font-size: 12px;
+  font-size: rem(12);
   font-family: Montserrat;
   font-style: normal;
-  line-height: 15px;
+  line-height: rem(15);
   text-transform: capitalize;
 }
 
 .datepicker--cells.datepicker--cells-days {
   //diva с числами
-  min-height: 200px;
+  min-height: rem(200);
   & > .-other-month- {
     //числа другого месяца
     color: $Dark25;
@@ -162,21 +161,21 @@
 .datepicker--cells > .datepicker--cell {
   color: $Dark50;
   font-weight: normal;
-  font-size: 12px;
+  font-size: rem(12);
   //день
   font-family: Montserrat;
   font-style: normal;
-  line-height: 15px;
+  line-height: rem(15);
 
   &.-current- {
     color: #fff;
     font-weight: bold;
-    font-size: 12px;
+    font-size: rem(12);
     font-family: Montserrat;
     font-style: normal;
-    line-height: 15px;
+    line-height: rem(15);
     background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
-    border-radius: 22px;
+    border-radius: rem(22);
 
     &.-focus- {
       color: #fff;
@@ -189,12 +188,12 @@
   &.-selected-.-current-.-focus- {
     color: #fff;
     font-weight: bold;
-    font-size: 12px;
+    font-size: rem(12);
     font-family: Montserrat;
     font-style: normal;
-    line-height: 15px;
+    line-height: rem(15);
     background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-    border-radius: 22px;
+    border-radius: rem(22);
   }
 
   &.-in-range- {
@@ -211,8 +210,8 @@
 .datepicker--cells > .datepicker--cell-day {
   position: relative;
   //день
-  width: 40px;
-  height: 40px;
+  width: rem(40);
+  height: rem(40);
 }
 
 .datepicker--cells > .-range-from- {
@@ -222,15 +221,15 @@
     rgba(188, 156, 255, 0.25) 0%,
     rgba(139, 164, 259, 0.25) 100%
   );
-  border-radius: 22px;
+  border-radius: rem(22);
 
   &::after {
     position: absolute;
     top: 0;
     right: 0;
     z-index: -1;
-    width: 20px;
-    height: 40px;
+    width: rem(20);
+    height: rem(40);
     background: linear-gradient(
       180deg,
       rgba(188, 156, 255, 0.25) 0%,
@@ -247,15 +246,15 @@
     rgba(188, 156, 255, 0.25) 0%,
     rgba(139, 164, 259, 0.25) 100%
   );
-  border-radius: 22px;
+  border-radius: rem(22);
 
   &::before {
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
-    width: 20px;
-    height: 40px;
+    width: rem(20);
+    height: rem(40);
     background: linear-gradient(
       180deg,
       rgba(188, 156, 255, 0.25) 0%,
@@ -266,7 +265,7 @@
 }
 
 .datepicker--cell.datepicker--cell-day.-range-from-.-range-to-.-selected- {
-  border-radius: 22px;
+  border-radius: rem(22);
   &::after,
   &::before {
     content: none;
@@ -282,20 +281,20 @@
 .date__datepicker-footer {
   position: absolute;
   bottom: 0;
-  left: 20px;
+  left: rem(20);
   display: flex;
   justify-content: space-between;
-  width: 280px;
-  height: 30px;
+  width: rem(280);
+  height: rem(30);
 }
 
 .date__clean,
 .date__apply {
   font-weight: bold;
-  font-size: 12px;
+  font-size: rem(12);
   font-family: Montserrat;
   font-style: normal;
-  line-height: 15px;
+  line-height: rem(15);
   text-transform: uppercase;
   cursor: pointer;
   appearance: button;

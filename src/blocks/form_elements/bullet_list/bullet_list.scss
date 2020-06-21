@@ -1,35 +1,35 @@
 .bullet {
-    width: 290px;
-    padding-left: 20.86px;
+    width: rem(290);
+    padding-left: rem(20.86);
   }
   
   .bullet__title {
-    margin-bottom: 24px;
+    margin-bottom: rem(24);
   }
   
   .bullet__list {
     position: relative;
     color: $Dark75;
     font-weight: normal;
-    font-size: 14px;
+    font-size: rem(14);
     font-family: Montserrat;
     font-style: normal;
-    line-height: 24px;
+    line-height: rem(24);
     list-style: none;
   }
   
   .bullet__item {
     position: relative;
-    margin-bottom: 5px;
+    margin-bottom: rem(5);
   
     &::before {
       position: absolute;
-      top: 7px;
-      left: -21px;
-      width: 10.43px;
-      height: 10px;
+      top: rem(7);
+      left: rem(-21);
+      width: rem(10.43);
+      height: rem(10);
       background-color: $Dark25;
-      border-radius: 10px;
+      border-radius: rem(10);
       content: "";
     }
   }

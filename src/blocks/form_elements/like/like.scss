@@ -2,28 +2,29 @@
   display: flex;
   flex-shrink: 0;
   box-sizing: border-box;
-  width: 40px;
-  height: 20px;
+  width: rem(40);
+  height: rem(20);
   vertical-align: middle;
-  border: 1px solid $Dark25;
-  border-radius: 10px;
+  border: rem(1) solid $Dark25;
+  border-radius: rem(10);
 }
 
 .like__heart {
-  margin-top: 6px;
-  margin-left: 5px;
+  margin-top: rem(6);
+  margin-left: rem(5);
 }
 
 .like__value {
   box-sizing: border-box;
-  margin-left: 4px;
+  margin-left: rem(4);
   color: $Dark25;
   font-weight: normal;
-  font-size: 10px;
+  font-size: rem(10);
   font-family: Montserrat;
   font-style: normal;
-  line-height: 20px;
+  line-height: rem(20);
   text-align: center;
+  user-select: none;
 }
 
 .heart-liked {

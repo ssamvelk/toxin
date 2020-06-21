@@ -4,8 +4,8 @@
 }
 
 .c1 {
-  width: 100px;
-  height: 100px;
+  width: rem(100);
+  height: rem(100);
 }
 
 .circle {
@@ -15,7 +15,7 @@
   animation: dash 2s linear;
   fill: none;
   stroke: #e75735;
-  stroke-width: 5px;
+  stroke-width: rem(5);
   stroke-dashoffset: 0;
 }
 
@@ -30,7 +30,7 @@
 
 .circle__text {
   display: inline;
-  font-size: 24px;
+  font-size: rem(24);
   font-family: Lato-Light;
   fill: #9d9d9d;
   text-anchor: middle;
@@ -43,18 +43,18 @@
   fill: none;
   //---------361 - 100%
   stroke: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  stroke-width: 4px;
+  stroke-width: rem(4);
   stroke-dashoffset: 0;
 }
 
 .c2 {
-  width: 120px;
-  height: 120px;
+  width: rem(120);
+  height: rem(120);
 }
 
 .circle-pie--bold {
   //---------345 - 100%
-  stroke-width: 10px;
+  stroke-width: rem(10);
 }
 
 // #pie1{
@@ -62,7 +62,7 @@
 // }
 
 #pie2 {
-  border: 1px solid black;
+  border: rem(1) solid black;
   transform: rotate(1deg);
 }
 
@@ -77,14 +77,14 @@
 .circle__text2 {
   position: relative;
   font-weight: bold;
-  font-size: 24px;
+  font-size: rem(24);
   font-family: Quicksand;
   fill: #bc9cff;
 }
 
 #text2 {
   font-weight: bold;
-  font-size: 12px;
+  font-size: rem(12);
   font-family: Montserrat;
   text-transform: uppercase;
 }

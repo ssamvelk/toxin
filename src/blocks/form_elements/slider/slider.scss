@@ -2,14 +2,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 266px;
-  min-height: 72px;
+  width: rem(266);
+  min-height: rem(72);
 }
 
 .slider-info-wrp {
   display: flex;
   justify-content: space-between;
-  height: 15px;
+  height: rem(15);
 }
 
 .slider-info-title {
@@ -25,33 +25,33 @@
 .slider-info {
   color: $Dark50;
   font-weight: normal;
-  font-size: 12px;
+  font-size: rem(12);
   font-family: Montserrat;
   font-style: normal;
-  line-height: 15px;
+  line-height: rem(15);
 }
 
 // - переоределение стилей плагина slider
 .slider {
   position: relative;
   box-sizing: border-box;
-  width: 266px;
-  height: 6px;
+  width: rem(266);
+  height: rem(6);
 
   .ui-slider-handle.ui-corner-all.ui-state-default {
     //---handele
     box-sizing: border-box;
-    width: 14px;
-    height: 14px;
+    width: rem(14);
+    height: rem(14);
     background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
-    border: 2px solid #ffffff;
-    border-radius: 10px;
+    border: rem(2) solid #ffffff;
+    border-radius: rem(10);
   }
   .ui-slider-range.ui-corner-all.ui-widget-header {
     //------range
     position: relative;
     top: -1;
-    height: 6px;
+    height: rem(6);
     background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
   }
 }

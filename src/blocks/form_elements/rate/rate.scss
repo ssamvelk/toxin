@@ -1,8 +1,8 @@
 .rate {
   position: relative;
   display: flex;
-  width: 120px;
-  height: 20px;
+  width: rem(120);
+  height: rem(20);
 
   &_reverse {
     flex-direction: row-reverse;
@@ -15,20 +15,20 @@
 
 .rate__star-lbl {
   display: block;
-  width: 20px;
-  height: 19px;
+  width: rem(20);
+  height: rem(19);
   cursor: pointer;
   &::before {
     position: absolute;
-    width: 20px;
-    height: 19px;
+    width: rem(20);
+    height: rem(19);
     background: url(../static/source/star_border.svg) no-repeat;
     content: "";
   }
   &::after {
     position: absolute;
-    width: 20px;
-    height: 19px;
+    width: rem(20);
+    height: rem(19);
     background: url(../static/source/star.svg) no-repeat;
     opacity: 0;
     transition: 0.5s;
@@ -46,12 +46,12 @@
 .rate__stars {
   display: flex;
   justify-content: space-between;
-  width: 120px;
+  width: rem(120);
   list-style: none;
 }
 .rate__item {
-  width: 20px;
-  height: 20px;
+  width: rem(20);
+  height: rem(20);
   background: url(../static/source/star_border.svg) no-repeat;
 }
 .rate__item--full {

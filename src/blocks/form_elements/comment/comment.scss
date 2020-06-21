@@ -1,5 +1,5 @@
 .comment {
-  width: 712px;
+  width: rem(712);
 }
 
 .comment__user-wrp {
@@ -8,22 +8,22 @@
 
 .comment__user-foto {
   box-sizing: border-box;
-  width: 52px;
-  height: 52px;
+  width: rem(52);
+  height: rem(52);
   background-repeat: no-repeat;
   background-position: center;
-  border: 2px solid white;
-  border-radius: 32px;
+  border: rem(2) solid white;
+  border-radius: rem(32);
 }
 
 .comment__user {
-  margin-left: 5px;
+  margin-left: rem(5);
   color: $Dark75;
   font-weight: normal;
-  font-size: 14px;
+  font-size: rem(14);
   font-family: Montserrat;
   font-style: normal;
-  line-height: 24px;
+  line-height: rem(24);
 
   br {
     margin: 0;
@@ -35,20 +35,20 @@
 
 .comment__info-wrp {
   display: flex;
-  margin-top: 9px;
+  margin-top: rem(9);
 }
 
 .comment__info-like {
-  margin-left: 3px;
+  margin-left: rem(3);
 }
 
 .comment__info-text {
-  width: 653px;
-  margin-left: 14.31px;
+  width: rem(653);
+  margin-left: rem(14.31);
   color: $Dark75;
   font-weight: normal;
-  font-size: 14px;
+  font-size: rem(14);
   font-family: Montserrat;
   font-style: normal;
-  line-height: 24px;
+  line-height: rem(24);
 }

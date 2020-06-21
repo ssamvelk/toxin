@@ -1,6 +1,6 @@
 .pagination {
-  width: 240px;
-  min-height: 65px;
+  width: rem(240);
+  min-height: rem(65);
 }
 
 .pagination__list {
@@ -8,25 +8,25 @@
   justify-content: space-between;
   color: $Dark50;
   font-weight: normal;
-  font-size: 12px;
+  font-size: rem(12);
   font-family: Montserrat;
   font-style: normal;
-  line-height: 15px;
+  line-height: rem(15);
   text-align: center;
   list-style: none;
 }
 
 .pagination__item {
   position: relative;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  border-radius: 22px;
+  width: rem(40);
+  height: rem(40);
+  line-height: rem(40);
+  border-radius: rem(22);
 
   .pagination-arrow-svg {
     position: absolute;
-    top: 12px;
-    left: 12px;
+    top: rem(12);
+    left: rem(12);
     cursor: pointer;
   }
 }
@@ -65,5 +65,5 @@
 
 .pagination__footer {
   margin-top: rem(10.56);
-  margin-left: 5px;
+  margin-left: rem(5);
 }

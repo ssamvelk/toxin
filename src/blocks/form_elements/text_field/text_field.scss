@@ -1,14 +1,14 @@
 .text-field {
   box-sizing: border-box;
-  width: 320px;
-  height: 44px;
-  padding: 0 15px;
+  width: rem(320);
+  height: rem(44);
+  padding: 0 rem(15);
   color: $Dark25;
-  font-size: 14px;
+  font-size: rem(14);
   font-family: Montserrat;
-  line-height: 18px;
-  border: 1px solid $Dark25;
-  border-radius: 4px;
+  line-height: rem(18);
+  border: rem(1) solid $Dark25;
+  border-radius: rem(4);
 
   &:hover,
   &:focus {
@@ -26,13 +26,13 @@
     position: relative;
     box-sizing: border-box;
     width: rem(260);
-    padding-right: 44px;
+    padding-right: rem(44);
   }
   
   .subscribe-send-svg {
     position: absolute;
-    top: 12px;
-    right: 13px;
+    top: rem(12);
+    right: rem(13);
     box-sizing: border-box;
   }
   

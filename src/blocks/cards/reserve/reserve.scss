@@ -1,136 +1,137 @@
 .reserve {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    width: 380px;
-    height: 511px;
-    padding: 0 30px;
-    background: white;
-    border: 1px solid rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  }
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: rem(380);
+  height: rem(511);
+  padding: 0 rem(30);
+  background: white;
+  border: rem(1) solid rgba(0, 0, 0, 0.12);
+  border-radius: rem(4);
+  box-shadow: 0 0 rem(25) rgba(0, 0, 0, 0.2);
+}
   
-  .reserve__header {
-    display: flex;
-    margin-top: 43px;
-    margin-bottom: 14px;
-  }
+.reserve__header {
+  display: flex;
+  margin-top: rem(43);
+  margin-bottom: rem(14);
+}
   
-  .reserve__num {
-    color: $Dark;
-    font-weight: bold;
-    font-size: 14px;
-    font-family: Quicksand;
-    line-height: 30px;
-  }
-  
-  .reserve__number-i {
-    margin-left: 2px;
-    color: $Dark;
-    font-weight: bold;
-    font-size: 24px;
-    font-family: Quicksand;
-    line-height: 21px;
-    letter-spacing: 0.9px;
-  }
-  
-  .reserve__type,
-  .reserve__type-i {
-    margin-left: 5px;
-    color: $Purple;
-    font-weight: bold;
-    font-size: 12px;
-    font-family: Montserrat;
-    font-style: normal;
-    line-height: 30px;
-    text-transform: uppercase;
-  }
-  
-  .reserve__cost {
-    margin-left: auto;
-    color: $Dark50;
-    font-weight: bold;
-    font-size: 14px;
-    font-family: Montserrat;
-    line-height: 30px;
-    &::after {
-      font-weight: normal;
-      font-size: 12px;
-      content: "в сутки";
-    }
-  }
+.reserve__num {
+  color: $Dark;
+  font-weight: bold;
+  font-size: rem(14);
+  font-family: Quicksand;
+  line-height: rem(30);
+}
 
-  .reserve__date-search {
-    margin-bottom: 14px;
-  }
+.reserve__number-i {
+  margin-left: rem(2);
+  color: $Dark;
+  font-weight: bold;
+  font-size: rem(24);
+  font-family: Quicksand;
+  line-height: rem(21);
+  letter-spacing: rem(0.9);
+}
   
-  .reserve__company-title {
-    margin-bottom: 5px;
-    font-family: Montserrat;
-    font-weight: bold;
+.reserve__type,
+.reserve__type-i {
+  margin-left: rem(5);
+  color: $Purple;
+  font-weight: bold;
+  font-size: rem(12);
+  font-family: Montserrat;
+  font-style: normal;
+  line-height: rem(30);
+  text-transform: uppercase;
+}
+
+.reserve__cost {
+  margin-left: auto;
+  color: $Dark50;
+  font-weight: bold;
+  font-size: rem(14);
+  font-family: Montserrat;
+  line-height: rem(30);
+
+  &::after {
+    font-weight: normal;
     font-size: rem(12);
-    line-height: rem(15);
-    text-transform: uppercase;
-    color: #1F2041;
+    content: "в сутки";
   }
-  
-  .reserve__company-count {
-    margin-bottom: 17px;
-  }
-  
-  .reserve__info-wrp {
-    width: 320px;
-  }
+}
 
-  .reserve__info-item {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    color: $Dark75;
-    font-size: 14px;
-    font-family: Montserrat;
-    line-height: 24px;
-  }
+.reserve__date-search {
+  margin-bottom: rem(14);
+}
 
-  .reserve__info {
-    position: relative;
-    box-sizing: border-box;
-    width: 239px;
-    padding-right: 25px;
-  }
-  
-  .reserve__info-icon {
+.reserve__company-title {
+  margin-bottom: rem(5);
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: rem(12);
+  line-height: rem(15);
+  text-transform: uppercase;
+  color: #1F2041;
+}
+
+.reserve__company-count {
+  margin-bottom: rem(17);
+}
+
+.reserve__info-wrp {
+  width: rem(320);
+}
+
+.reserve__info-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: rem(10);
+  color: $Dark75;
+  font-size: rem(14);
+  font-family: Montserrat;
+  line-height: rem(24);
+}
+
+.reserve__info {
+  position: relative;
+  box-sizing: border-box;
+  width: rem(239);
+  padding-right: rem(25);
+}
+
+.reserve__info-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.reserve__summury-info-item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: rem(20);
+  margin-bottom: rem(20);
+  color: $Dark;
+  font-weight: bold;
+  font-size: rem(19);
+  font-family: Quicksand;
+  font-style: normal;
+  line-height: rem(24);
+}
+
+.reserve__summury-info {
+  position: relative;
+
+  &::after {
     position: absolute;
-    top: 0;
-    right: 0;
+    bottom: rem(6);
+    left: rem(62);
+    width: rem(182);
+    height: rem(0);
+    border-top: rem(1) dotted $Dark25;
+    content: "";
   }
-  
-  .reserve__summury-info-item {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: $Dark;
-    font-weight: bold;
-    font-size: 19px;
-    font-family: Quicksand;
-    font-style: normal;
-    line-height: 24px;
-  }
-  
-  .reserve__summury-info {
-    position: relative;
-  
-    &::after {
-      position: absolute;
-      bottom: 6px;
-      left: 62px;
-      width: 182px;
-      height: 0px;
-      border-top: 1px dotted $Dark25;
-      content: "";
-    }
-  }
+}
   

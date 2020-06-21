@@ -1,6 +1,6 @@
 .room-info {
-  width: 280px;
-  min-height: 207px;
+  width: rem(280);
+  min-height: rem(207);
   :last-child {
     margin-bottom: 0;
   }
@@ -9,10 +9,10 @@
 .room-info__item {
   display: flex;
   box-sizing: border-box;
-  width: 280px;
-  height: 68px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+  width: rem(280);
+  height: rem(68);
+  margin-bottom: rem(20);
+  border-bottom: rem(1) solid rgba(31, 32, 65, 0.1);
 
   &:last-child {
     border: none;
@@ -20,28 +20,29 @@
 }
 
 .room-info__smile {
-  margin-top: 4px;
-  margin-left: 4px;
+  margin-top: rem(4);
+  margin-left: rem(4);
 }
 
 .room-info__house {
-  margin-top: 5px;
-  margin-left: 6px;
+  margin-top: rem(5);
+  margin-left: rem(6);
 }
 
 .room-info__fire {
-  margin-top: 3px;
-  margin-left: 6px;
+  margin-top: rem(3);
+  margin-left: rem(6);
 }
 
 .room-info__information {
-  margin-left: 10px;
+  margin-left: rem(10);
+
   span {
     color: $Dark75;
     font-weight: bold;
-    font-size: 14px;
+    font-size: rem(14);
     font-family: Montserrat;
     font-style: normal;
-    line-height: 24px;
+    line-height: rem(24);
   }
 }
