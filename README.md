@@ -1,15 +1,29 @@
 # Toxin
-  Верстка сайта для поиска номеров в отеле "Toxin" по макету.
+
+Верстка сайта для поиска номеров в отеле "Toxin" по макету.
 
 # GitHub Pages
-  <a href="https://ssamvelk.github.io/toxin/">https://ssamvelk.github.io/toxin</a>
 
-# Развертывание 
-  $ git clone https://github.com/ssamvelk/toxin.git <br>
-  $ npm install
+<a href="https://ssamvelk.github.io/toxin/">Демонстрационная страница</a>
 
-# Все используемые библиотеки и зависимости описаны в файле package.json
-  $ npm run dev - разработка проекта <br>
-  $ npm run build - собрать готовый продукт
+# Развертывание
 
-Данный сайт демонстрирует навыки разработки автора. В ходе разработки использовались следующие технологии HTML, CSS, JS, PUG, SASS, SVG, БЭМ.
+### Клонировать репозиторий
+
+`$ git clone https://github.com/ssamvelk/toxin.git`
+
+### Установка модулей и зависимостей
+
+В каталоге проекта
+
+`$ npm install`
+
+### Команды
+
+`npm run dev` - разработка в режиме development
+
+`npm run build` - разработка в режиме production
+
+# Сторонние библиотеки
+
+<a href="https://jqueryui.com/download/">jquery-ui datepicker</a> - календарь, слайдер и иконки
