@@ -1,5 +1,5 @@
 mixin date-calendar(options)
-  -var ClassName = (options.isDisable) ? ' datepicker--disable' : ' '
+  -var ClassName = (options.isDisable) ? ' datepicker--disable' : ' ';
   div(class='datepicker-here'+ClassName)
     .date__datepicker-footer
       a.date__clean Очистить
@@ -10,7 +10,7 @@ mixin filter-date-dropdown(options)
     <svg class="date-dropdawn__svg" width="12" height="12" viewBox="0 -4 12 12"  version="1.1" preserveAspectRatio="xMinYMin">
     <use xlink:href="#img-expand-more"></use>   
     </svg>
-    p.date__info
+    p.date__info.date__info_no-padding
       span.date__info-start 19 авг 
       |-  
       span.date__info-end 23 авг

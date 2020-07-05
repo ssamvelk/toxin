@@ -62,7 +62,9 @@
     display: none;
   }
 }
-
+.pagination__item-link {
+  color: $Dark50;
+}
 .pagination__footer {
   margin-top: rem(10.56);
   margin-left: rem(5);

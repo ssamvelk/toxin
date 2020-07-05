@@ -27,7 +27,7 @@
 
 .date__info {
   width: rem(150);
-  padding-right: rem(10);
+  padding-right: rem(45);
   color: $Dark75;
   font-weight: normal;
   font-size: rem(14);
@@ -36,6 +36,9 @@
   line-height: rem(44);
 }
 
+.date__info_no-padding {
+  padding-right: rem(0);
+}
 //--------------------------------
 .date__search-wrp {
   position: relative;

@@ -28,7 +28,7 @@
     height: max-content;
     min-height: rem(372);
     max-height: 100%;
-    padding: 0 rem(5);
+    padding: rem(100) rem(5) 0;
   }
 }
 
@@ -79,15 +79,18 @@
 }
 
 .footer__nav {
+  min-width: rem(146);
   width: rem(240);
   padding-left: rem(38);
 }
 
 .footer__about {
+  min-width: rem(111);
   width: rem(200);
 }
 
 .footer__support {
+  min-width: rem(147);
   width: rem(200);
 }
 
@@ -165,6 +168,10 @@
     margin-left: rem(5);
     line-height: rem(24);
   }
+}
+
+.footer__item-link {
+  color: rgba(31,32,65,.5);
 }
 
 .footer__copyright {
