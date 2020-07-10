@@ -6,8 +6,9 @@ mixin checkbox(options)
 
 mixin checkbox-list(options)
   .checkbox-list
-    h3.checkbox-list__title Checkbox Buttons 
-    +checkbox({text:'Можно курить', id:'smoke'})
+    h3.checkbox-list__title Checkbox Buttons
+    .checkbox-list__item-wrp 
+      +checkbox({text:'Можно курить', id:'smoke'})
     +checkbox({text:'Можно с питомцами', id:'pets'})
     +checkbox({text:'Можно пригласить гостей (до 10 человек)', id:'frends'})
 
