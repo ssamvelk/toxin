@@ -15,7 +15,9 @@ mixin rooms(options)
       .rooms__carousel
         +carousel
     .rooms__info
-      a(class='rooms__room-number' href=hreFF)='№ '+roomNumder 
+      a(class='rooms__room-number' href=hreFF)
+        span.rooms__symbol №
+        span=' '+roomNumder
       span.rooms__room-type=roomNotLux 
       span.rooms__room-cost
         b=roomCost

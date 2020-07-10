@@ -1,8 +1,8 @@
 .main__reg-wrapper {
-  min-width: rem(1440);
+  min-width: rem(1160);
   background: url("../static/source/bg_reg.jpg") no-repeat 50% rem(-70), white;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1200px) {
   .main__reg-wrapper{
       min-width: 100%;
   }
@@ -12,10 +12,10 @@
   position: relative;
   width: rem(1160);
   margin: 0 auto;
-  padding-top: rem(30);
-  padding-bottom: rem(26);
+  padding-top: rem(19);
+  padding-bottom: rem(19);
 }
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 1200px){
   .reg-wrapper {
     width: 100%;
     min-width: rem(420);

@@ -1,6 +1,6 @@
 mixin inter(options)
   form.inter
-    h1.inter__title Войти
+    h2.inter__title Войти
     .inter__text-field-wrp
       +text_field({type:'email'})
     .inter__text-field-wrp
@@ -8,5 +8,5 @@ mixin inter(options)
     .inter__button-wrp
       +button({big: true, text: 'Войти'})
     p.inter__footer
-      span.inter__question Нет аккаунт на Toxin?
+      span.inter__question Нет аккаунта на Toxin?
       +button({white: true, text: 'Создать', href: 'registration.html'})

@@ -1,12 +1,12 @@
 .header {
-  min-width: rem(1440);
+  min-width: rem(1160);
   height: rem(70);
   padding-top: rem(15);
   background: white;
   box-shadow: 0 rem(10) rem(20) rgba(31, 32, 65, 0.05);
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1200px) {
   .header {
     min-width: rem(380);
   }
@@ -39,7 +39,7 @@
   }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1200px) {
   .header__wrp {
     justify-content: space-around;
     width: 100%;
@@ -48,22 +48,34 @@
 
 @media screen and (max-width: 950px) {
   .header__wrp {
+    width: 100%;
     flex-wrap: wrap;
     justify-content: space-around;
   }
 }
 
+// @media screen and (max-width: 950px) {
+//   .header__logotype {
+//     flex-basis: 50%;
+//   }
+// }
+
 .header__list {
   position: relative;
-  left: rem(127);
+  left: rem(124);
   display: flex;
   justify-content: space-between;
   width: rem(430);
   margin-top: rem(10);
   list-style: none;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1200px) {
   .header__list {
     position: static;
   }
@@ -72,6 +84,7 @@
 @media screen and (max-width: 950px) {
   .header__list {
     flex-basis: 100%;
+    // flex-basis: content;
     justify-content: space-around;
     order: -1;
   }
@@ -79,6 +92,7 @@
 
 .header__item {
   vertical-align: middle;
+  position: relative;
 }
 
 .header__item-link {
@@ -96,6 +110,22 @@
     font-weight: bold;
   }
 }
+// .header__about,
+.header__service {
+  left: -1px;
+}
+
+.header__vacancy {
+  left: 8px;
+}
+
+.header__news {
+  left: 6px;
+}
+
+.header__agreement {
+  left: 4px;
+}
 
 .header__expand-svg {
   position: relative;
@@ -112,14 +142,15 @@
 }
 
 @media screen and (max-width: 950px) {
-  .header__logo,
+  .header__logotype,
   .header__btns-wrp {
+    // flex-basis: 50%;
     margin-top: rem(10);
   }
 
-  .header__btns-wrp {
-    width: rem(290);
-  }
+  // .header__btns-wrp {
+  //   width: rem(290);
+  // }
 }
 
 .header__user {

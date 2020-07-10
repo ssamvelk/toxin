@@ -18,11 +18,19 @@
 }
 
 @font-face{
-  font-family: 'Quicksand-Bold';
-  src: url('../fonts/Quicksand-Bold.woff') format('woff'),
-  url('../fonts/Quicksand-Bold.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Quicksand-Bold.svg') format('svg'),
-  url('../fonts/Quicksand-Bold.ttf') format('truetype');
-  font-weight: 400;
+  font-family: 'Quicksand';
+  src: url('/src/fonts/CeraPro-Bold.woff2') format('woff2'),
+  url('/src/fonts/CeraPro-Medium.woff') format('woff');
+  font-weight: 500;
   font-style: normal;
 }
+
+// @font-face{
+//   font-family: 'Quicksand-Bold';
+//   src: url('../fonts/Quicksand-Bold.woff') format('woff'),
+//   url('../fonts/Quicksand-Bold.eot?#iefix') format('embedded-opentype'),
+//   url('../fonts/Quicksand-Bold.svg') format('svg'),
+//   url('../fonts/Quicksand-Bold.ttf') format('truetype');
+//   font-weight: 400;
+//   font-style: normal;
+// }

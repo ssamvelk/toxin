@@ -4,7 +4,7 @@
   min-width: rem(1440);
   background: white;
 }
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 1200px){
   .main__room-det-wrapper {
     width: 100vw;
     min-width: rem(380);
@@ -18,7 +18,7 @@
   height: rem(485);
   margin: 0 auto;
 }
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 1200px){
   .room-det__img{
     width: 100%;
     height: auto;
@@ -34,7 +34,7 @@
   width: rem(459);
   height: rem(242.5);
 }
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 1200px){
   .room-det__main-img-wrp{
     width: 68.125%;
   }
@@ -68,7 +68,7 @@
     content: "";
   }
 }
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 1200px){
   .room-det-wrp{
     width: 100%;
     min-height: 100%;
@@ -80,7 +80,7 @@
 .room-det__left {
   width: rem(711);
 }
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 1200px){
   .room-det__left{
     //width: 61.29%;
     min-width: rem(420);
@@ -95,7 +95,7 @@
 .room-det__comment {
   margin-bottom: rem(21);
 }
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 1200px){
   .comment-wrp{
     width: 100%;
     min-width: rem(420);
@@ -135,7 +135,7 @@
   display: flex;
   justify-content: space-between;
 }
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 1200px){
   .room-det__flex-wrp{
     margin: 0 auto;
     flex-wrap: wrap;
@@ -280,7 +280,7 @@
   font-family: Montserrat;
   line-height: rem(24);
 }
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 1200px){
   .room-det__right{
     width: 32.75%;
     min-width: rem(380);

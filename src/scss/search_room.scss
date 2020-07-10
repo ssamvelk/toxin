@@ -1,9 +1,9 @@
 .main__search-wrapper {
   box-sizing: border-box;
-  min-width: rem(1440);
+  min-width: rem(1160);
   background: white;
 }
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 1200px){
   .main__search-wrapper {
     width: 100vw;
     min-width: rem(380);
@@ -33,7 +33,7 @@
     content: "";
   }
 }
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 1200px){
   .search__wrapper{
     width: 100vw;
     max-width: rem(1160);
@@ -61,7 +61,7 @@
     margin-bottom: rem(20.44);
   }
 
-  .dropdown-wrp {
+  .dropdown__wrp {
     margin-bottom: rem(30.44);
   }
 
@@ -100,7 +100,7 @@
 .search__right {
   width: rem(834);
 }
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 1200px){
   .search__right{
     padding: 0 rem(10);
 }
@@ -131,7 +131,7 @@
     margin-bottom: rem(20);
   }
 }
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 1200px){
   .search__rooms{
     justify-content: space-around;
     
@@ -147,7 +147,7 @@
   left: 53%;
 }
 
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 1200px){
   .search__pagination {
     bottom: rem(20);
   }

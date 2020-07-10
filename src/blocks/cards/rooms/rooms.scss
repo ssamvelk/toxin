@@ -34,8 +34,14 @@
 .rooms__room-number {
   color: $Dark;
   font-size: rem(17);
-  font-family: "Quicksand-Bold";
+  font-family: "Quicksand";
+  font-weight: 500;
   line-height: rem(29);
+}
+.rooms__symbol {
+  font-size: rem(17);
+  font-family: "Quicksand";
+  font-weight: 400;
 }
 
 .rooms__room-type {

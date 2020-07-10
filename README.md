@@ -26,4 +26,6 @@
 
 # Сторонние библиотеки
 
-<a href="https://jqueryui.com/download/">jquery-ui datepicker</a> - календарь, слайдер и иконки
+<a href="https://jquery.com">jquery</a> - 
+<a href="https://jqueryui.com">jquery-ui</a> - 
+<a href="http://t1m0n.name/air-datepicker/docs/index-ru.html">air datepicker</a>

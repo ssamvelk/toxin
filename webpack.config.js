@@ -161,7 +161,8 @@ module.exports = {
 
     ],
 
-    devtool: isDev ? 'source-map' : '',
+    devtool: 'source-map',
+    // devtool: isDev ? 'source-map' : '',
 
     devServer: {
         overlay: true
