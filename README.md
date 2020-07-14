@@ -24,8 +24,10 @@
 
 `npm run build` - разработка в режиме production
 
-# Сторонние библиотеки
+# Сторонние npm пакеты
 
-<a href="https://jquery.com">jquery</a> - 
-<a href="https://jqueryui.com">jquery-ui</a> - 
-<a href="http://t1m0n.name/air-datepicker/docs/index-ru.html">air datepicker</a>
+<a href="https://www.npmjs.com/package/air-datepicker">air-datepicker</a>
+
+<a href="https://www.npmjs.com/package/jquery">jquery</a>
+
+<a href="https://www.npmjs.com/package/webpack-jquery-ui">webpack-jquery-ui</a>
