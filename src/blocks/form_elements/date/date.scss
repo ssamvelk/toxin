@@ -21,8 +21,8 @@
 
 .date-dropdawn__svg {
   position: absolute;
-  top: rem(15);
-  right: rem(15);
+  top: rem(16);
+  right: rem(17);
 }
 
 .date__info {
@@ -49,7 +49,7 @@
 
   & > .datepicker-here {
     position: absolute;
-    bottom: rem(-375);
+    top: 69px;
   }
 
   & > .datepicker--disable {
@@ -105,7 +105,7 @@
 .datepicker > .datepicker--nav {
   box-sizing: border-box;
   height: rem(74);
-  padding-bottom: 0;
+  padding-bottom: 13px;
   color: $Dark;
   font-weight: bold;
   font-size: rem(19);
@@ -113,6 +113,8 @@
   font-style: normal;
   line-height: rem(24);
   border: none;
+  position: relative;
+
 }
 
 .datepicker--nav > .datepicker--nav-action svg {
@@ -123,10 +125,17 @@
 
 .datepicker--nav > .datepicker--nav-action path {
   //-----стрелки
-
   fill: #bc9cff;
   stroke: none;
   stroke-width: 0;
+}
+.datepicker__left-arrow {
+  position: relative;
+  left: -10px;
+}
+.datepicker__right-arrow {
+  position: relative;
+  left: 5px;
 }
 
 .datepicker > .datepicker--content {

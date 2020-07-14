@@ -5,7 +5,7 @@
   box-sizing: border-box;
   width: rem(380);
   height: rem(374);
-  padding: 0 rem(30);
+  padding: 0 rem(29);
   background: #ffffff;
   border: rem(1) solid rgba(0, 0, 0, 0.12);
   border-radius: rem(4);
@@ -15,22 +15,22 @@
 .search__title {
   box-sizing: border-box;
   margin: 0;
-  margin-top: rem(40);
+  margin-top: rem(39);
   color: #1f2041;
-  font-weight: 500;
+  font-weight: 600;
   font-size: rem(25);
   font-family: Quicksand;
-  line-height: rem(30);
-  letter-spacing: rem(0.7);
+  line-height: rem(29);
+  letter-spacing: rem(0.35);
 }
 
 .search__date {
-  margin-top: rem(20);
+  margin-top: rem(22);
 }
 
 .search__company-title {
   margin: 0;
-  margin-top: rem(14);
+  margin-top: rem(16);
   font-family: Montserrat;
   font-weight: bold;
   font-size: rem(12);
@@ -40,9 +40,9 @@
 }
 
 .search__company {
-  margin-top: rem(5);
+  margin-top: rem(4);
 }
 
 .search__button {
-  margin-top: rem(31);
+  margin-top: rem(30);
 }

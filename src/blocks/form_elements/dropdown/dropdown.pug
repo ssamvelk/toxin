@@ -43,15 +43,15 @@ mixin dropdownCompany(options)
     p.dropdown__main Сколько гостей
 
     ul(class='dropdown__list'+isExpanded)
-      li.dropdown__item.fadult-ui 
+      li.dropdown__item.dropdown__item-fadult 
         span.dropdown__item-name взрослые
         +dropdownItem({id:'js-fadult'})
-      li.dropdown__item.child-ui 
+      li.dropdown__item.dropdown__item-child 
         span.dropdown__item-name дети
         +dropdownItem({id:'js-child'}) 
-      li.dropdown__item.baby-ui 
+      li.dropdown__item.dropdown__item-baby 
         span.dropdown__item-name младенцы
         +dropdownItem({id:'js-baby'})
-      li.dropdown__item
+      li.dropdown__item.dropdown__list-footer
         a.dropdown__item-clean.dropdown__item-clean_disable Очистить
         a.dropdown__item-apply Применить

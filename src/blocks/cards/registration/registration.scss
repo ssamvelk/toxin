@@ -5,7 +5,7 @@
   box-sizing: border-box;
   width: rem(380);
   height: rem(646);
-  padding: 0 rem(30);
+  padding: 0 rem(29);
   background: #ffffff;
   border: rem(1) solid rgba(0, 0, 0, 0.12);
   border-radius: rem(4);
@@ -14,11 +14,12 @@
 
 .registration__title {
   margin: 0;
-  margin-top: rem(40);
-  margin-bottom: rem(20);
+  margin-top: rem(38);
+  margin-bottom: rem(21);
   font-family: Quicksand;
-  font-weight: bold;
+  font-weight: 600;
   font-size: rem(25);
+  letter-spacing: 0.1px;
   line-height: rem(30);
   color: #1F2041;
   box-sizing: border-box;
