@@ -31,17 +31,25 @@
   border-bottom: rem(1) solid rgba(31, 32, 65, 0.1);
 }
 
-.rooms__room-number {
+.rooms__room-link {
   color: $Dark;
   font-size: rem(17);
   font-family: "Quicksand";
   font-weight: 500;
   line-height: rem(29);
 }
+
 .rooms__symbol {
-  font-size: rem(17);
+  font-size: rem(14);
   font-family: "Quicksand";
-  font-weight: 400;
+  font-weight: 600;
+}
+.rooms__room-number {
+  font-size: rem(18);
+  font-family: "Quicksand";
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.4px;
 }
 
 .rooms__room-type {
@@ -74,7 +82,7 @@
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-  padding: rem(13) rem(20) 0;
+  padding: rem(12) rem(20) 0;
 }
 
 .rooms__rating-count {

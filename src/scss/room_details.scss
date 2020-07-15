@@ -200,7 +200,7 @@
   font-size: rem(19);
   font-family: Quicksand;
   line-height: rem(24);
-  letter-spacing: 1px;
+  letter-spacing: 0.65px;
 
   &::after {
     position: absolute;
@@ -242,6 +242,8 @@
   font-family: Montserrat;
   line-height: rem(24);
   list-style: none;
+  position: relative;
+  top: -2px;
 }
 
 .room-det__rools-item {

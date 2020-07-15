@@ -11,14 +11,14 @@ mixin rooms(options)
   -var roomLikesNum = (options.likes) ? options.likes: '145'
   .rooms
     .rooms__img-wrp
-      img.rooms__img.js-rooms__img(width='270' height='150' src=imageBG alt="bg")
+      img.rooms__img.js-rooms__img(width='270' height='151' src=imageBG alt="bg")
       .rooms__carousel
         +carousel
     .rooms__info
-      a(class='rooms__room-number' href=hreFF)
+      a(class='rooms__room-link' href=hreFF)
         span.rooms__symbol №
-        span=' '+roomNumder
-      span.rooms__room-type=roomNotLux 
+        span.rooms__room-number=' '+roomNumder
+      span.rooms__symbol.rooms__room-type=roomNotLux 
       span.rooms__room-cost
         b=roomCost
     .rooms__rating
