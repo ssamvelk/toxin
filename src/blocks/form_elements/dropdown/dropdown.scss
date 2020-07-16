@@ -19,8 +19,8 @@
   
 .dropdown__main-svg {
   position: absolute;
-  top: rem(14);
-  right: rem(17);
+  top: rem(15);
+  right: rem(16);
 }
   
 .dropdown__main {
@@ -29,6 +29,7 @@
   box-sizing: border-box;
   width: 100%;
   min-height: rem(44);
+  height: rem(44);
   padding-right: rem(7);
   padding-left: rem(15);
   color: $Dark75;
@@ -37,9 +38,9 @@
   font-family: Montserrat;
   font-style: normal;
   line-height: rem(43);
-  border: rem(1) solid $Dark25;
-  // border-top-left-radius: rem(2);
-  // border-top-right-radius: rem(2);
+  border: rem(1) solid $Dark50;
+  border-top-left-radius: rem(2);
+  border-top-right-radius: rem(2);
 
   svg {
     margin-top: rem(15);
@@ -50,7 +51,7 @@
   display: none;
   box-sizing: border-box;
   width: 100%;
-  min-height: rem(159);
+  min-height: rem(119);
   padding-right: rem(7);
   padding-left: rem(15);
   color: $Dark;
@@ -65,6 +66,7 @@
   border-top: none;
   border-bottom-right-radius: rem(2);
   border-bottom-left-radius: rem(2);
+  
 }
 
 .dropdown__list_expanded {

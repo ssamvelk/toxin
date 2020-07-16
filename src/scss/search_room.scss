@@ -65,15 +65,20 @@
     margin-bottom: rem(30.44);
   }
 
-  .slider-wrp {
+  .slider__wrp {
+    margin-bottom: rem(29);
+  }
+
+  .checkbox-list {
     margin-bottom: rem(30);
   }
 
-  .checkbox-list,
   .checkbox-list-wrp {
     margin-bottom: rem(30.88);
   }
-
+  .search__dropdown-list {
+    margin-bottom: rem(32);
+  }
   .checkbox-accessibility {
     margin-bottom: rem(25);
   }
@@ -95,6 +100,9 @@
   font-family: Montserrat;
   line-height: rem(15);
   text-transform: uppercase;
+}
+.search__comfort-title {
+  margin-bottom: rem(4);
 }
 
 .search__right {

@@ -51,7 +51,7 @@
   width: rem(266);
 }
 .checkbox-list__item-wrp {
-  margin-top: 14px;
+  margin-top: rem(16);
 }
 
 .checkbox-list__title {
@@ -87,17 +87,20 @@
 .checkbox-additional-list__svg {
   position: absolute;
   top: rem(-1);
-  right: rem(17);
+  right: rem(16);
 }
 
 .checkbox-additional-list__svg_opened {
   transform: rotate(180deg);
+  top: 4px;
 }
 
 .checkbox-additional-list__body {
   z-index: 98;
   box-sizing: border-box;
   width: rem(260);
+  position: relative;
+  top: rem(7);
 }
 .checkbox-additional-list__body_disabled {
   display: none;
