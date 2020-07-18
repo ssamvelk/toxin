@@ -24,11 +24,15 @@ html {
   font-size: $mainFontSize;
   font-family: $mainFont;
   line-height: $mainLineHeight;
+  background: #fff;
+  width: 100%;
 }
 
 body{
-  position: relative; 
-  width: 100vw;
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto; 
+  // width: 100vw;
 }
 
 .visually-hidden {

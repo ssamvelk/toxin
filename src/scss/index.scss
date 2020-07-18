@@ -1,6 +1,8 @@
 .main__wrapper {
   box-sizing: border-box;
   min-width: rem(1160);
+  max-width: rem(1440);
+  margin: 0 auto;
   background: url("../static/source/bg_image.jpg") no-repeat 50% rem(-70), white;
 }
 
