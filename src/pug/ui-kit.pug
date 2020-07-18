@@ -7,6 +7,7 @@ include ../blocks/form_elements/checkbox/checkbox.pug
 include ../blocks/form_elements/radio/radio.pug
 include ../blocks/form_elements/toggle/toggle.pug
 include ../blocks/form_elements/like/like.pug
+include ../blocks/form_elements/comment/comment.pug
 include ../blocks/form_elements/rate/rate.pug
 include ../blocks/form_elements/slider/slider.pug
 include ../blocks/form_elements/buttons/buttons.pug
@@ -27,18 +28,23 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        link(rel="stylesheet", href="./src/scss/main-ui-kit.scss")
+        //- link(rel="stylesheet", href="./src/scss/main-ui-kit.scss")
         title Toxin UI-KIT
     body
         
 
         main.wrapper
-            h1 Headers & Footers
+            h1 Header
+            br
             +mainheader({})
             br
             +mainheader({authorized: true}) 
             br
+            
+            h1 Footer
             +footer({})
+            br
+
             h1 Form Elements
             .elements-wrapper
                 
@@ -71,7 +77,7 @@ html(lang="en")
                     +checkbox({text:'Hello world!', id:'wello-world'})
                     +checkbox-list({})
                     +checkbox-additional-list({})
-                    +richcheckbox({})
+                    +checkbox-accessibility({})
                 
                 //h3 Radio Buttons
                 .flex-wrapper
@@ -108,8 +114,8 @@ html(lang="en")
                 //h3 buttons
                 .flex-wrapper
                     +button({})
-                    +button({White:true})
-                    +button({Big:true})
+                    +button({white:true})
+                    +button({big:true, text: 'Нажми меня'})
                     
                 br
                 .flex-wrapper
