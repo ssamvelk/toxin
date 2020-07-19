@@ -1,7 +1,7 @@
 .dropdown__wrp {
   position: relative;
   box-sizing: border-box;
-  width: rem(266);
+  min-width: rem(266);
   background: white;
   border-radius: rem(4);
 }

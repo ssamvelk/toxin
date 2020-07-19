@@ -24,121 +24,137 @@ include ../blocks/footer/footer.pug
 
 <!DOCTYPE html>
 html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        //- link(rel="stylesheet", href="./src/scss/main-ui-kit.scss")
-        title Toxin UI-KIT
-    body
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Toxin UI-KIT
+  body
+    main.ui-kit__wrapper
+      h1.ui-kit__title Header
+
+      +mainheader({})
+
+      br
+      br
+
+      +mainheader({authorized: true})
+
+      h1.ui-kit__title Footer
+      +footer({})
+      
+      br
+
+      .ui-kit__wrap-for-elements
+        h1.ui-kit__title Form Elements
+
+        //h3 Text Field
+        .ui-kit__simple-flex-wrap.fw.h150
+          +text_field({type:'email'})
+          +text_field({type:'text'})
+          +text_field({type:'text', placeholder: 'Фамилия'})
+          +text_field({type:'password'})
+          +text_field({type:'date'})
+          +subscribe({})
+
+        br
+
+        //h3 Dropdown
+        .ui-kit__simple-flex-wrap.mh210.fw 
+          +dropdown({expanded:false})
+          +dropdownCompany({expanded:'true'})
         
+        br
 
-        main.ui-kit__wrapper
-            h1 Header
-            br
-            +mainheader({})
-            br
-            +mainheader({authorized: true}) 
-            br
-            
-            h1 Footer
-            +footer({})
-            br
+        //h3 Filter date dropdown
+        .ui-kit__simple-flex-wrap.fw 
+          +filter-date-dropdown({})
+          +date-calendar({})
+          +date-search-filds({})
+        
+        br
 
-            h1 Form Elements
-            .elements-wrapper
-                
-                br
-                //h3 Text Field
-                .flex-wrapper.fw.h150
-                    +text_field({type:'email'})
-                    +text_field({type:'text'})
-                    +text_field({type:'text', placeholder: 'Фамилия'})
-                    +text_field({type:'password'})
-                    +text_field({type:'date'})
-                    +subscribe({})
-                br
-                //h3 Dropdown
-                .flex-wrapper(style="min-height: 210px;") 
-                    +dropdown({expanded:false})
-                    +dropdownCompany({expanded:'true'})
-                br
-                //h3 Filter date dropdown
-                .flex-wrapper    
-                    +filter-date-dropdown({})
-                    
-                    +date-calendar({})
-                    
-                    +date-search-filds({})
-                br
-                br
-                //h3 Checkbox Buttons
-                .flex-wrapper
-                    +checkbox({text:'Hello world!', id:'wello-world'})
-                    +checkbox-list({})
-                    +checkbox-additional-list({})
-                    +checkbox-accessibility({})
-                
-                //h3 Radio Buttons
-                .flex-wrapper
-                    +radio({})
-                br
-                //h3 toggle
-                .colomn-wrapper
-                    +toggle({checked: true})
-                    +toggle({})
-                br
-                //h3 like button
-                .flex-wrapper
-                    .colomn-wrapper
-                        +like({})
-                        +like({liked: true})
-                    +comment({})
-                br
+        //h3 Checkbox Buttons
+        .ui-kit__simple-flex-wrap
+          +checkbox({text:'Hello world!', id:'wello-world'})
+          +checkbox-list({})
+          +checkbox-additional-list({})
+          +checkbox-accessibility({})
+        
+        br
 
-                //h3 rate button
-                .flex-wrapper
-                    .colomn-wrapper
-                        h5 Dinamic
-                        +rate({isClickable:true})
-                    .colomn-wrapper
-                        h5 Static
-                        +rate({rating: '1'})
-                        +rate({rating: '5'})    
-                br
-                // h3 Range Slider
-                .flex-wrapper
-                    
-                    +slider({})
-                br
-                //h3 buttons
-                .flex-wrapper
-                    +button({})
-                    +button({white:true})
-                    +button({big:true, text: 'Нажми меня'})
-                    
-                br
-                .flex-wrapper
-                    div 
-                        +bullet({})
-                    div
-                        h2 Сведения о номере
-                        +room_info({})
-                    div
-                        h2 pagination
-                        +pagination({})
-                br
+        //h3 Radio Buttons
+        .ui-kit__simple-flex-wrap
+          +radio({})
+        
+        br
 
-                h1 Cards
-                .flex-wrapper(style="flex-wrap: wrap;")
-                    +reserve-card
-                    +search-card
-                    +registration-card
-                    +inter
-                br
+        //h3 toggle
+        .ui-kit__simple-colomn-wrap
+          +toggle({checked: true})
+          +toggle({})
+        
+        br
 
-                .flex-wrapper
-                    +rooms({bg:'../static/source/room_2.jpg', rating: 4})
-                    +rooms({rating: 1, number: 840, cost: '7 777', likes: 12})
-                    +rooms({number: 500, notlux: true, cost: '5 750', likes: 256})
-                br
+        //h3 like button
+        .ui-kit__simple-flex-wrap
+          .ui-kit__simple-colomn-wrap
+            +like({})
+            +like({liked: true})
+          +comment({})
+
+        br
+
+        //h3 rate button
+        .ui-kit__simple-flex-wrap
+          .ui-kit__simple-colomn-wrap
+            h5 Dinamic
+            +rate({isClickable:true})
+          .ui-kit__simple-colomn-wrap
+            h5 Static
+            +rate({rating: '1'})
+            +rate({rating: '5'})    
+        
+        br
+
+        // h3 Range Slider
+        .ui-kit__simple-flex-wrap
+          +slider({})
+
+        br
+
+        //h3 buttons
+        .ui-kit__simple-flex-wrap
+          +button({})
+          +button({white:true})
+          +button({big:true, text: 'Нажми меня'})
+        
+        br
+
+        .ui-kit__simple-flex-wrap
+          div 
+            +bullet({})
+          div
+            h2 Сведения о номере
+            +room_info({})
+          div
+            h2 pagination
+            +pagination({})
+        br
+
+      .ui-kit__wrap-for-cards
+        h1.ui-kit__title Cards
+
+        .ui-kit__simple-flex-wrap(style="flex-wrap: wrap;")
+          +reserve-card
+          +search-card
+          +registration-card
+          +inter
+
+        br
+
+        .ui-kit__simple-flex-wrap
+          +rooms({bg:'../static/source/room_2.jpg', rating: 4})
+          +rooms({rating: 1, number: 840, cost: '7 777', likes: 12})
+          +rooms({number: 500, notlux: true, cost: '5 750', likes: 256})
+        br
