@@ -10,19 +10,16 @@
     padding: 0 rem(10);
   }
 }
-
 .search__wrapper {
   position: relative;
+  display: flex;
   width: rem(1160);
+  min-height: rem(1357);
   // min-height: rem(830);
   margin: 0 auto;
+  padding-top: rem(30);
   // padding-top: rem(70);
   padding-bottom: rem(18);
-
-  display: flex;
-  min-height: rem(1357);
-  padding-top: rem(30);
-
   &::after {
     position: absolute;
     bottom: 0;
@@ -36,8 +33,8 @@
 @media screen and (max-width: 1200px){
   .search__wrapper{
     width: 100vw;
-    max-width: rem(1160);
     min-width: rem(380);
+    max-width: rem(1160);
     min-height: rem(420);
     padding-top: rem(50);
   }
@@ -52,27 +49,20 @@
     display: block;
   }
 }
-
-
 .search__left {
   width: rem(326);
-
   .date-wrp {
     margin-bottom: rem(20.44);
   }
-
   .dropdown__wrp {
     margin-bottom: rem(30.44);
   }
-
   .slider__wrp {
     margin-bottom: rem(29);
   }
-
   .checkbox-list {
     margin-bottom: rem(30);
   }
-
   .checkbox-list-wrp {
     margin-bottom: rem(30.88);
   }
@@ -89,7 +79,6 @@
     margin: 0 auto;
   }
 }
-
 .search__date-title,
 .search__guests-title,
 .search__comfort-title {
@@ -104,14 +93,13 @@
 .search__comfort-title {
   margin-bottom: rem(4);
 }
-
 .search__right {
   width: rem(834);
 }
 @media screen and (max-width: 1200px){
   .search__right{
     padding: 0 rem(10);
-}
+  }
 }
 @media screen and (max-width: 600px){
   .search__right{
@@ -119,7 +107,6 @@
     padding: 0;
   }
 }
-
 .search__rooms-title {
   box-sizing: border-box;
   color: #1f2041;
@@ -128,7 +115,6 @@
   font-family: Quicksand;
   line-height: rem(30);
 }
-
 .search__rooms {
   display: flex;
   flex-wrap: wrap;
@@ -142,13 +128,11 @@
 @media screen and (max-width: 1200px){
   .search__rooms{
     justify-content: space-around;
-    
     &:last-child{
       margin-bottom: rem(100);
     }
   }
 }
-
 .search__pagination {
   position: absolute;
   bottom: rem(77);

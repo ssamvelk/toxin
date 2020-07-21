@@ -121,29 +121,38 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: "pug/index.pug",
+            template: 'pug/index.pug',
             filename:  'index.html',
-          }), 
+          }),
         new HtmlWebpackPlugin({
-            template: "pug/search_room.pug",
+          template: 'pug/main.pug',
+          filename:  'main.html',
+        }),
+        new HtmlWebpackPlugin({
+            template: 'pug/colors-and-types.pug',
+            filename:  'colors-and-types.html',
+          }),  
+        new HtmlWebpackPlugin({
+            template: 'pug/search_room.pug',
             filename:  'search_room.html',
         }),
         new HtmlWebpackPlugin({
-            template: "pug/room_details.pug",
+            template: 'pug/room_details.pug',
             filename:  'room_details.html',
         }),
         new HtmlWebpackPlugin({
-            template: "pug/registration.pug",
+            template: 'pug/registration.pug',
             filename:  'registration.html',
         }),
         new HtmlWebpackPlugin({
-            template: "pug/sign_in.pug",
+            template: 'pug/sign_in.pug',
             filename:  'sign_in.html',
         }),
         new HtmlWebpackPlugin({
-            template: "pug/ui-kit.pug",
+            template: 'pug/ui-kit.pug',
             filename:  'ui-kit.html',
         }),
+
         new MiniCssExtractPlugin({
             filename: '[name].css',
         }),

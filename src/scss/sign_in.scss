@@ -7,14 +7,13 @@
     min-width: 100%;
   }
 }
-
 .sign-in__wrapper{
+  position: relative;
   width: 100%;
   min-height: rem(684);
   margin: 0 auto;
   padding-top: rem(172);
   padding-bottom: rem(172);
-  position: relative;
 
 }
 @media screen and (max-width: 1200px) {
@@ -23,7 +22,6 @@
     min-width: rem(420);
   }
 }
-
 .sign-in__inter-card {
   width: max-content;
   margin: 0 auto;
