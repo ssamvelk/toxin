@@ -3,9 +3,11 @@
 @import "utils/fonts.scss";
 @import "utils/mixins.scss";
 
-@import "index.scss";
 @import "demo-page.scss";
+@import "index.scss";
 @import "colors-and-types.scss";
+@import "headers-and-footers.scss";
+@import "cards.scss";
 @import "registration.scss";
 @import "room_details.scss";
 @import "search_room.scss";

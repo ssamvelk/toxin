@@ -131,7 +131,19 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: 'pug/colors-and-types.pug',
             filename:  'colors-and-types.html',
-          }),  
+          }),
+        new HtmlWebpackPlugin({
+            template: 'pug/cards.pug',
+            filename:  'cards.html',
+        }),   
+        new HtmlWebpackPlugin({
+            template: 'pug/headers-and-footers.pug',
+            filename:  'headers-and-footers.html',
+        }), 
+        new HtmlWebpackPlugin({
+            template: 'pug/form-elements.pug',
+            filename:  'form-elements.html',
+        }), 
         new HtmlWebpackPlugin({
             template: 'pug/search_room.pug',
             filename:  'search_room.html',

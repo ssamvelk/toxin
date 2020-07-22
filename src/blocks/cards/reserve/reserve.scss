@@ -15,7 +15,7 @@
 .reserve__header {
   display: flex;
   margin-top: rem(43);
-  margin-bottom: rem(14);
+  margin-bottom: rem(15);
 }
   
 .reserve__num {
@@ -92,7 +92,9 @@
   color: $Dark75;
   font-size: rem(14);
   font-family: Montserrat;
-  line-height: rem(24);
+  line-height: rem(18);
+  margin-top: rem(5);
+  margin-bottom: rem(15);
 }
 
 .reserve__info {
@@ -111,7 +113,7 @@
 .reserve__summury-info-item {
   display: flex;
   justify-content: space-between;
-  margin-top: rem(20);
+  margin-top: rem(31);
   margin-bottom: rem(20);
   color: $Dark;
   font-weight: bold;
@@ -134,4 +136,8 @@
     content: "";
   }
 }
-  
+
+.reserve__button {
+  position: relative;
+  left: rem(-1);
+}

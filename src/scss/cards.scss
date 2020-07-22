@@ -1,0 +1,34 @@
+// .cards__wrap {
+
+// }
+
+.cards__inner-wrap {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 150px 140px;
+}
+
+.cards__registration-wrap {
+  position: relative;
+  top: -97px;
+}
+
+.cards__inter-wrap {
+  position: relative;
+  top: 40px;
+  left: -25px;
+}
+
+.cards__rooms-wrap {
+  position: relative;
+  top: -102px;
+  left: -50px;
+}
+
+.cards__first-room {
+  margin-bottom: 40px;
+}

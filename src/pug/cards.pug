@@ -1,0 +1,41 @@
+include ../blocks/cards/search/search.pug
+include ../blocks/cards/reserve/reserve.pug
+include ../blocks/cards/registration/registration.pug
+include ../blocks/cards/inter/inter.pug
+include ../blocks/cards/rooms/rooms.pug
+include ../blocks/form_elements/date/date.pug
+
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    meta(name="keywords" content="Toxin, отель, отдых")
+    meta(name="description" content="Toxin - Лучшие номера для вашей работы, отдыха и просто вдохновения.")
+    link(rel="icon", href="img/favicon.ico" type="image/ico")
+    title Cards
+  body
+    main.cards__wrap
+      .cards__inner-wrap
+        +search-card()
+
+        +reserve-card()
+
+        +date-calendar({isDisable: false})
+
+        .cards__registration-wrap
+          +registration-card()
+        
+        .cards__inter-wrap
+          +inter()
+
+        .cards__rooms-wrap
+          .cards__first-room
+            +rooms({bg : '../static/source/room_1.jpg', number : '888', notlux: false, cost: '9 990'})
+          +rooms({bg : '../static/source/room_2.jpg', number : '840', notlux: true, cost: '9 990', likes: 65, rating: 4})
+
+
+
+
+      

@@ -1,8 +1,12 @@
-mixin mainheader(options)
-  -var isAuthorized = (options.authorized) ? 'header__wrp_authorized': ''
+include ../form_elements/buttons/buttons.pug
+include ../../static/sprite.svg
 
-  header.header
-    div(class="header__wrp "+isAuthorized )
+mixin mainheader(options)
+  -var isAuthorized = (options.authorized) ? 'header__inner-wrap_authorized': ''
+  -var isName = options.name ? options.name : 'Cosmin Negoita'
+
+  header.header__wrap
+    div(class="header__inner-wrap "+isAuthorized )
       
       a.header__logotype(href='main.html')
         <svg  class="header__logo" width="106" height="40" viewBox="0 0 106 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -32,7 +36,7 @@ mixin mainheader(options)
       
       ul.header__list
         li.header__item.header__about
-          a.header__item-link(href="ui-kit.html") О нас     
+          a.header__item-link(href="/mock-address/change-me") О нас     
         li.header__item.header__service
           a.header__item-link(href="/mock-address/change-me") Услуги
           <svg class="header__expand-svg" width="12" height="12" viewBox="0 -4 12 12"  version="1.1" preserveAspectRatio="xMinYMin">
@@ -53,4 +57,5 @@ mixin mainheader(options)
           +button({white:true, text: 'Войти', w87: true, href: 'sign_in.html'})
         .header__registration-btn
           +button({text:'зарегистрироваться', w196: true, href: 'registration.html'})
-        span.header__user Cosmin Negoita
+      
+      span.header__user= isName

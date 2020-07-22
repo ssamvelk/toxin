@@ -1,44 +1,47 @@
 * {
-	padding: 0;
-	margin: 0;
-	outline: 0;
-	border: 0;
-	box-sizing: border-box;
-	}
-
-a {
-	text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
 }
 
- button:active,
- button::-moz-focus-inner {
+a,
+a:hover,
+a:active {
+  color: #000000;
+  text-decoration: none;
+}
+
+button:active,
+button::-moz-focus-inner {
   border: 0;
-	outline: none;
+  outline: none;
 }
 
 svg {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 html {
+  width: 100%;
   font-size: $mainFontSize;
   font-family: $mainFont;
   line-height: $mainLineHeight;
   background: #fff;
-  width: 100%;
 }
 
-body{
+body {
   position: relative;
   max-width: 1440px;
-  margin: 0 auto; 
+  margin: 0 auto;
   // width: 100vw;
 }
 
 .visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
+  clip: rect(0 0 0 0);
 }
