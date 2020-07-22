@@ -39,13 +39,13 @@ html(lang="en")
           h3.search__date-title даты пребывания в отеле
           +filter-date-dropdown({})
           h3.search__guests-title гости
-          +dropdownCompany({small:true,})
+          +dropdownCompany({small:true, count1: 3, count3: 1})
           +slider
           +checkbox-list
           +checkbox-accessibility({})
           h3.search__comfort-title удобства номера
           .search__dropdown-list
-            +dropdown({})
+            +dropdown({small: true, count1: 2, count2: 2})
           +checkbox-additional-list({})
         
         section.search__right

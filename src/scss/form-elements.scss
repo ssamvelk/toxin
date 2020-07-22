@@ -41,14 +41,14 @@
 }
 
 .form-elements__items-tytle {
-  font-family: Montserrat;
-  font-style: normal;
+  margin-bottom: 5px;
+  color: #1F2041;
   font-weight: bold;
   font-size: 12px;
+  font-family: Montserrat;
+  font-style: normal;
   line-height: 15px;
   text-transform: uppercase;
-  color: #1F2041;
-  margin-bottom: 5px;
 }
 
 .form-elements__date-search-filds-wrap {
@@ -99,22 +99,22 @@
   margin-top: -15px;
 }
 .form-elements__blue-buttons-wrap {
-  margin-top: 15px;
   display: flex;
+  margin-top: 15px;
 }
 .form-elements__blue-button-wrap {
   margin-right: 19px;
 }
 .form-elements__white-buttons-wrap {
-  margin-top: 30px;
   display: flex;
+  margin-top: 30px;
 }
 .form-elements__white-button-wrap {
   margin-right: 20px;
 }
 .form-elements__white-emptybuttons-wrap {
-  margin-top: 31px;
   display: flex;
+  margin-top: 31px;
 }
 .form-elements__emptybutton-wrap {
   margin-right: 15px;
@@ -141,8 +141,8 @@
   margin-top: 50px;
 }
 .form-elements__checkbox-accessibility-wrap {
-  margin-left: 27px;
   margin-top: 2px;
+  margin-left: 27px;
 }
 .form-elements__bullet-wrap {
   margin-top: 2px;

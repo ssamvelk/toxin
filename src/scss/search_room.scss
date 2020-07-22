@@ -107,22 +107,25 @@
     padding: 0;
   }
 }
+
 .search__rooms-title {
   box-sizing: border-box;
+  margin-top: -rem(-1);
   color: #1f2041;
   font-weight: 700;
   font-size: rem(25);
   font-family: Quicksand;
   line-height: rem(30);
 }
+
 .search__rooms {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   box-sizing: border-box;
-  padding-top: rem(20.5);
+  padding-top: rem(22);
   .rooms {
-    margin-bottom: rem(20);
+    margin-bottom: rem(21);
   }
 }
 @media screen and (max-width: 1200px){
@@ -135,7 +138,7 @@
 }
 .search__pagination {
   position: absolute;
-  bottom: rem(77);
+  bottom: rem(75);
   left: 53%;
 }
 
