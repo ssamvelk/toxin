@@ -20,11 +20,12 @@ mixin dropdownMainSVG
 //------------------кол-во удобств
 mixin dropdown(options)
   - var isExpanded = (options.expanded) ? ' dropdown__list_expanded' : ''
+  - var small = (options.small) ? ' dropdown__wrp_266': '' 
   - var count1 = options.count1 ? options.count1.toString() : '0'
   - var count2 = options.count2 ? options.count2.toString() : '0'
   - var count3 = options.count3 ? options.count3.toString() : '0'
 
-  .dropdown__wrp.js-dropdown__wrp-comfort 
+  .dropdown__wrp.js-dropdown__wrp-comfort(class= small)
     +dropdownMainSVG
     p.dropdown__main <span class="dropdown-bedroom">#{count1}<span> спальни, <span class="dropdown-bed">#{count2}<span> кровати...
 
@@ -47,6 +48,7 @@ mixin dropdownCompany(options)
   - var count2 = options.count2 ? options.count2 : 0
   - var count3 = options.count3 ? options.count3 : 0
   - var text = (count1 > 0 || count2 > 0 || count3 > 0) ? count1+count2+count3 + ' гостей' : 'Сколько гостей'
+  - var cleanButtonClass = (count1 > 0 || count2 > 0 || count3 > 0) ? '' : 'dropdown__item-clean_disable'
   div(class='dropdown__wrp dropdown__wrp_320 js-dropdown__wrp-company'+small)
     +dropdownMainSVG
     p.dropdown__main #{text}
@@ -62,5 +64,5 @@ mixin dropdownCompany(options)
         span.dropdown__item-name младенцы
         +dropdownItem({id:'js-baby', value: count3})
       li.dropdown__item.dropdown__list-footer
-        a.dropdown__item-clean.dropdown__item-clean_disable Очистить
+        a.dropdown__item-clean(class= cleanButtonClass) Очистить
         a.dropdown__item-apply Применить
