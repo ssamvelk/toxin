@@ -1,10 +1,12 @@
+//- include ../../../static/sprite.svg
 //-----------------------------кнопочки + -
 mixin dropdownItem(options)
+  -var value = options.value ? options.value.toString() : '0'
   .dropdown__item-box
     <svg class='js-minus-btn' cl width="30" height="31" viewBox="0 0 30 31" version="1.1" preserveAspectRatio="xMinYMin">
     <use xlink:href="#img-group-"></use>
     </svg>
-    span(class='dropdown__item-value' id=options.id) 0
+    span(class='dropdown__item-value' id=options.id) #{value}
     <svg class="js-plus-btn" width="30" height="31" viewBox="0 0 30 31" version="1.1" preserveAspectRatio="xMinYMin">
     <use xlink:href="#img-group+"></use>
     </svg>
@@ -18,40 +20,47 @@ mixin dropdownMainSVG
 //------------------кол-во удобств
 mixin dropdown(options)
   - var isExpanded = (options.expanded) ? ' dropdown__list_expanded' : ''
+  - var count1 = options.count1 ? options.count1.toString() : '0'
+  - var count2 = options.count2 ? options.count2.toString() : '0'
+  - var count3 = options.count3 ? options.count3.toString() : '0'
+
   .dropdown__wrp.js-dropdown__wrp-comfort 
     +dropdownMainSVG
-    p.dropdown__main <span class="dropdown-bedroom">0<span> спальни, <span class="dropdown-bed">0<span> кровати...
+    p.dropdown__main <span class="dropdown-bedroom">#{count1}<span> спальни, <span class="dropdown-bed">#{count2}<span> кровати...
 
     ul(class='dropdown__list'+isExpanded)
       li.dropdown__item 
         span.dropdown__item-name спальни
-        +dropdownItem({id:'js-bedroom'})
+        +dropdownItem({id:'js-bedroom', value: count1})
       li.dropdown__item 
         span.dropdown__item-name кровати
-        +dropdownItem({id:'js-bed'}) 
+        +dropdownItem({id:'js-bed', value: count2}) 
       li.dropdown__item 
         span.dropdown__item-name ванные комнаты
-        +dropdownItem({id:'js-bathroom'}) 
+        +dropdownItem({id:'js-bathroom', value: count3}) 
 
 //------------------------кол-во людей
 mixin dropdownCompany(options)
   - var small = (options.small) ? ' dropdown__wrp_266': '' //заглушка для width
   - var isExpanded = (options.expanded) ? ' dropdown__list_expanded' : ''
-
+  - var count1 = options.count1 ? options.count1 : 0
+  - var count2 = options.count2 ? options.count2 : 0
+  - var count3 = options.count3 ? options.count3 : 0
+  - var text = (count1 > 0 || count2 > 0 || count3 > 0) ? count1+count2+count3 + ' гостей' : 'Сколько гостей'
   div(class='dropdown__wrp dropdown__wrp_320 js-dropdown__wrp-company'+small)
     +dropdownMainSVG
-    p.dropdown__main Сколько гостей
+    p.dropdown__main #{text}
 
     ul(class='dropdown__list'+isExpanded)
       li.dropdown__item.dropdown__item-fadult 
         span.dropdown__item-name взрослые
-        +dropdownItem({id:'js-fadult'})
+        +dropdownItem({id:'js-fadult', value: count1})
       li.dropdown__item.dropdown__item-child 
         span.dropdown__item-name дети
-        +dropdownItem({id:'js-child'}) 
+        +dropdownItem({id:'js-child', value: count2}) 
       li.dropdown__item.dropdown__item-baby 
         span.dropdown__item-name младенцы
-        +dropdownItem({id:'js-baby'})
+        +dropdownItem({id:'js-baby', value: count3})
       li.dropdown__item.dropdown__list-footer
         a.dropdown__item-clean.dropdown__item-clean_disable Очистить
         a.dropdown__item-apply Применить

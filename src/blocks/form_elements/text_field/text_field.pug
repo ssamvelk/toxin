@@ -1,6 +1,8 @@
+//- include ../../../static/sprite.svg
+
 mixin text_field(options)
     -
-        var isType = options.type
+        var isType = options.type ? options.type : 'text'
         var placeHolder = ''
         var className = ''
         var isClassName = options.class

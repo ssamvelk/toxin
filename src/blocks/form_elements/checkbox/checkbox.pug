@@ -5,22 +5,25 @@ mixin checkbox(options)
     label(class="checkbox__item-name" for=id)=text
 
 mixin checkbox-list(options)
+  //- -var t = (options.t)? '111' : 'Checkbox Buttons'
   .checkbox-list
     h3.checkbox-list__title Checkbox Buttons
     .checkbox-list__item-wrp 
       +checkbox({text:'Можно курить', id:'smoke'})
-    +checkbox({text:'Можно с питомцами', id:'pets'})
-    +checkbox({text:'Можно пригласить гостей (до 10 человек)', id:'frends'})
+      +checkbox({text:'Можно с питомцами', id:'pets'})
+      +checkbox({text:'Можно пригласить гостей (до 10 человек)', id:'frends'})
 
 mixin checkbox-additional-list(options)
-  -var opened = (options.opened)? 'checkbox__list-svg--opened' : ''
+  -var opened = (options.opened)? 'checkbox-additional-list__body' : 'checkbox-additional-list__body checkbox-additional-list__body_disabled'
+  -var svgClass = (options.opened)? 'checkbox-additional-list__svg checkbox-additional-list__svg_opened' : 'checkbox-additional-list__svg'
   .checkbox-additional-list.js-checkbox-additional-list
     .checkbox-additional-list__header
       h3.checkbox-additional-list__title дополнительные удобства
-      <svg class='checkbox-additional-list__svg' width="12" height="12" viewBox="0 -4 12 12"  version="1.1" preserveAspectRatio="xMinYMin">
+      <svg class="#{svgClass}" width="12" height="12" viewBox="0 -4 12 12"  version="1.1" preserveAspectRatio="xMinYMin">
         <use xlink:href="#img-expand-more"></use>   
       </svg>
-    .checkbox-additional-list__body.checkbox-additional-list__body_disabled
+    //- .checkbox-additional-list__body.checkbox-additional-list__body_disabled
+    div(class=opened)
       +checkbox({text:'Завтрак', id:'breackfast'})
       +checkbox({text:'Письменный стол', id:'desk'})
       +checkbox({text:'Стул для кормления', id:'chair'})

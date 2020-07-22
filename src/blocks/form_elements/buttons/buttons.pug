@@ -16,7 +16,12 @@ mixin button(options)
     a(class="button"+isBig+isWhite+w196+w87 href=href)
       span(class="button__text")=text2
 
+mixin emptybutton(options)
+  -var text = (options.text) ? options.text : 'click me';
 
+  a(class="button_empty" href='mock')
+      span(class="button__text")=text
+  
 
 
 
