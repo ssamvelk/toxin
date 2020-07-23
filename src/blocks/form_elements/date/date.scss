@@ -1,12 +1,12 @@
-//@import "../vendors/datepicker/css/datepicker.min.css";
 .date-wrp {
   position: relative;
   box-sizing: border-box;
   width: rem(266);
   height: rem(44);
   padding: 0 rem(15);
-  border: rem(1) solid $Dark25;
-  border-radius: rem(4);
+  // border: rem(1) solid $Dark25;
+  // border-radius: rem(4);
+  ;
 
   & > .datepicker-here {
     position: absolute;
@@ -83,29 +83,37 @@
   z-index: 100;
   box-sizing: border-box;
   width: rem(320);
-  height: rem(369);
+  // min-height: rem(369);
+  // max-height: rem(400);
+  height: max-content;
   padding: 0 rem(20);
   background: white;
   border: rem(1) solid rgba(31, 32, 65, 0.25);
   border-radius: rem(4);
   box-shadow: 0 rem(10) rem(20) rgba(31, 32, 65, 0.05);
+  border-bottom: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .datepicker-inline {
   width: rem(280);
-  height: rem(314); // 314 приблизительно!!!
+  // height: rem(314); // 314 приблизительно!!!
 }
 
 .datepicker-inline > .datepicker {
   width: rem(280);
-  height: rem(314);
+  // height: rem(314);
   border: none;
 }
 
+// 
 .datepicker > .datepicker--nav {
   box-sizing: border-box;
   height: rem(74);
-  padding-bottom: 13px;
+  padding: 0 3px 13px 5px;
+  // padding-top: 0;
+  // padding-bottom: 13px;
   color: $Dark;
   font-weight: bold;
   font-size: rem(19);
@@ -227,7 +235,7 @@
 }
 
 .datepicker--cells > .-range-from- {
-  color: red;
+  // color: red;
   background: linear-gradient(
     180deg,
     rgba(188, 156, 255, 0.25) 0%,
@@ -292,12 +300,19 @@
 
 .date__datepicker-footer {
   position: absolute;
-  bottom: 0;
-  left: rem(20);
+  bottom: -54px;
+  left: rem(-1);
+  padding: 20px 20px 0;
   display: flex;
   justify-content: space-between;
-  width: rem(280);
-  height: rem(30);
+  width: calc(100% + 2px);
+  height: rem(54);
+  background-color: #fff;
+  border: rem(1) solid rgba(31, 32, 65, 0.25);
+  border-radius: rem(4);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top: none;
 }
 
 .date__clean,
@@ -318,8 +333,48 @@
 
 .date__apply {
   color: $Purple;
+  &:hover {
+    color: rgba(31, 32, 65, 0.5);
+  }
 }
  
 .datepicker--disable {
   display: none;
 }
+
+.datepicker--cell.datepicker--cell-day.-range-to-,
+.datepicker--cell.datepicker--cell-day.-range-from-,
+.datepicker--cell.datepicker--cell-day.-in-range-.-current- {
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-radius: rem(22);
+  color: #fff;
+  font-weight: bold;
+}
+.datepicker--cell.datepicker--cell-day.-in-range-.-current- {
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: rem(20);
+    height: rem(40);
+    background: linear-gradient(
+      180deg,
+      rgba(188, 156, 255, 0.25) 0%,
+      rgba(139, 164, 259, 0.25) 100%
+    );
+    content: "";
+  }
+}
+
+.datepicker--cells > .datepicker--cell.-in-range-.-disabled-,
+.datepicker--cells > .datepicker--cell.-range-from-.-disabled-,
+.datepicker--cells > .datepicker--cell.-range-from-.-focus-.-disabled-{
+  color: #aeaeae;
+  font-weight: normal;
+  border: none;
+  background: #fff;
+  &::after{ display: none;}
+  &::before{ display: none;}
+}
+

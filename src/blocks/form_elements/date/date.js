@@ -5,48 +5,70 @@ const changeDate = function (event) {
 
   let rangeFrom = new Date(myDatepicker.selectedDates[0]);
   let rangeTo = new Date(myDatepicker.selectedDates[1]);
-  
+
   const options = {
     day: "numeric",
     month: "numeric",
     year: "numeric",
   };
-  
+
   const options2 = {
     day: "numeric",
     month: "short",
   };
 
-  if (target.classList == "date-dropdawn__svg") { // стрелочка открыть
+  if (target.classList == "date-dropdawn__svg") {
+    // стрелочка открыть
     calendar.classList.toggle("datepicker--disable");
-  } else if (target.classList == "date__clean") { // кнопка очистки
+  } else if (target.classList == "date__clean") {
+    // кнопка очистки
     myDatepicker.clear();
-    if (this.querySelector("#date__prib") && this.querySelector("#date__viezd")) {
+    if (
+      this.querySelector("#date__prib") &&
+      this.querySelector("#date__viezd")
+    ) {
       this.querySelector("#date__prib").value = "";
       this.querySelector("#date__viezd").value = "";
     }
-  } else if (target.classList == "date__apply") { // кнопка применить
+  } else if (target.classList == "date__apply") {
+    // кнопка применить
 
-    if (this.querySelector(".-range-from-") && this.querySelector(".-range-to-")) {
-
-      if (this.querySelector("#date__prib") && this.querySelector("#date__viezd")) {
-        this.querySelector("#date__prib").value = rangeFrom.toLocaleString("ru", options);
-        this.querySelector("#date__viezd").value = rangeTo.toLocaleString("ru", options);
+    if (
+      this.querySelector(".-range-from-") &&
+      this.querySelector(".-range-to-")
+    ) {
+      if (
+        this.querySelector("#date__prib") &&
+        this.querySelector("#date__viezd")
+      ) {
+        this.querySelector("#date__prib").value = rangeFrom.toLocaleString(
+          "ru",
+          options
+        );
+        this.querySelector("#date__viezd").value = rangeTo.toLocaleString(
+          "ru",
+          options
+        );
       } else if (this.querySelector(".date__info")) {
-        this.querySelector(".date__info-start").innerHTML = rangeFrom.toLocaleString("ru", options2) + " ";
-        this.querySelector(".date__info-end").innerHTML = rangeTo.toLocaleString("ru", options2);
+        this.querySelector(".date__info-start").innerHTML =
+          rangeFrom.toLocaleString("ru", options2) + " ";
+        this.querySelector(
+          ".date__info-end"
+        ).innerHTML = rangeTo.toLocaleString("ru", options2);
       }
     }
     calendar.classList.toggle("datepicker--disable");
   }
 };
 
-$(function(){
+$(function () {
   $(".datepicker-here").datepicker({
     range: true,
     minDate: new Date(),
     toggleSelected: true,
     // keyboardNav: true,
+    // clearButton: true,
+    // todayButton: true,
     navTitles: {
       days: "MM yyyy",
     },
@@ -55,6 +77,7 @@ $(function(){
     nextHtml:
       '<svg class="datepicker__right-arrow" width="17" height="18" viewBox="0 0 17 18" fill="none"><path d="M8.36301 0.984375L16.3786 9L8.36301 17.0156L6.95676 15.6094L12.5349 9.98438H0.347383V8.01562H12.5349L6.95676 2.39062L8.36301 0.984375Z" fill="#BC9CFF"/></svg>',
     // onSelect: changeDate
+    
   });
 
   const filterDate = document.querySelectorAll(".date-wrp");
