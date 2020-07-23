@@ -11,13 +11,13 @@
   border-radius: rem(4);
   box-shadow: 0 0 rem(25) rgba(0, 0, 0, 0.2);
 }
-  
+
 .reserve__header {
   display: flex;
   margin-top: rem(43);
   margin-bottom: rem(15);
 }
-  
+
 .reserve__num {
   color: $Dark;
   font-weight: bold;
@@ -35,7 +35,7 @@
   line-height: rem(21);
   letter-spacing: rem(0.9);
 }
-  
+
 .reserve__type,
 .reserve__type-i {
   margin-left: rem(5);
@@ -69,12 +69,12 @@
 
 .reserve__company-title {
   margin-bottom: rem(5);
-  font-family: Montserrat;
+  color: #1f2041;
   font-weight: bold;
   font-size: rem(12);
+  font-family: Montserrat;
   line-height: rem(15);
   text-transform: uppercase;
-  color: #1F2041;
 }
 
 .reserve__company-count {
@@ -88,13 +88,12 @@
 .reserve__info-item {
   display: flex;
   justify-content: space-between;
-  margin-bottom: rem(10);
+  margin-top: rem(5);
+  margin-bottom: rem(15);
   color: $Dark75;
   font-size: rem(14);
   font-family: Montserrat;
   line-height: rem(18);
-  margin-top: rem(5);
-  margin-bottom: rem(15);
 }
 
 .reserve__info {

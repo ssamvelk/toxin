@@ -160,10 +160,10 @@ module.exports = {
             template: 'pug/sign_in.pug',
             filename:  'sign_in.html',
         }),
-        new HtmlWebpackPlugin({
-            template: 'pug/ui-kit.pug',
-            filename:  'ui-kit.html',
-        }),
+        // new HtmlWebpackPlugin({
+        //     template: 'pug/ui-kit.pug',
+        //     filename:  'ui-kit.html',
+        // }),
 
         new MiniCssExtractPlugin({
             filename: '[name].css',

@@ -14,25 +14,25 @@
   &:focus {
     color: $Dark75;
   }
-  }
+}
   
-  .subscribe {
-    position: relative;
-    box-sizing: border-box;
-    width: rem(260);
-  }
+.subscribe {
+  position: relative;
+  box-sizing: border-box;
+  width: rem(260);
+}
   
-  .footer__subscribe-send {
-    position: relative;
-    box-sizing: border-box;
-    width: rem(260);
-    padding-right: rem(44);
-  }
+.footer__subscribe-send {
+  position: relative;
+  box-sizing: border-box;
+  width: rem(260);
+  padding-right: rem(44);
+}
   
-  .subscribe-send-svg {
-    position: absolute;
-    top: rem(12);
-    right: rem(13);
-    box-sizing: border-box;
-  }
+.subscribe-send-svg {
+  position: absolute;
+  top: rem(12);
+  right: rem(13);
+  box-sizing: border-box;
+}
   

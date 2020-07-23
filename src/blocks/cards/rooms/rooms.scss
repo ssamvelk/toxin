@@ -33,21 +33,21 @@
 
 .rooms__room-link {
   color: $Dark;
+  font-weight: 500;
   font-size: rem(17);
   font-family: "Quicksand";
-  font-weight: 500;
   line-height: rem(29);
 }
 
 .rooms__symbol {
+  font-weight: 600;
   font-size: rem(14);
   font-family: "Quicksand";
-  font-weight: 600;
 }
 .rooms__room-number {
+  font-weight: 600;
   font-size: rem(18);
   font-family: "Quicksand";
-  font-weight: 600;
   line-height: 24px;
   letter-spacing: 0.4px;
 }

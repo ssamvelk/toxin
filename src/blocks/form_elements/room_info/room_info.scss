@@ -1,6 +1,7 @@
 .room-info {
   width: rem(280);
   min-height: rem(207);
+
   :last-child {
     margin-bottom: 0;
   }
@@ -48,11 +49,10 @@
   }
 }
 
-// .room-info__information-comfort
 .room-info__information-facilities {
-  margin-left: 16px;
+  margin-left: rem(16);
 }
 .room-info__information-cosiness {
-  margin-top: 1px;
-  margin-left: 17px;
+  margin-top: rem(1);
+  margin-left: rem(17);
 }

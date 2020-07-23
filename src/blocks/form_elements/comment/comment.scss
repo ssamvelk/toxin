@@ -1,6 +1,6 @@
 .comment {
-  width: rem(712);
   position: relative;
+  width: rem(712);
 }
 
 .comment__user-wrp {
@@ -8,7 +8,9 @@
 }
 
 .comment__user-foto {
-
+  position: relative;
+  top: rem(-2);
+  left: rem(-3);
   box-sizing: border-box;
   width: rem(52);
   height: rem(52);
@@ -16,10 +18,7 @@
   background-position: center;
   border: rem(2) solid white;
   border-radius: rem(32);
-  position: relative;
-  top: -2px;
-  left: -3px;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.1);
+  box-shadow: 0 rem(10) rem(20) rgba(31, 32, 65, 0.1);
 }
 
 .comment__user {
@@ -49,6 +48,8 @@
 }
 
 .comment__info-text {
+  position: relative;
+  top: rem(-1);
   width: rem(653);
   margin-left: rem(14.31);
   color: $Dark75;
@@ -57,6 +58,4 @@
   font-family: Montserrat;
   font-style: normal;
   line-height: rem(24);
-  position: relative;
-  top: -1px;
 }

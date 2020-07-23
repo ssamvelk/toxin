@@ -5,7 +5,6 @@ mixin checkbox(options)
     label(class="checkbox__item-name" for=id)=text
 
 mixin checkbox-list(options)
-  //- -var t = (options.t)? '111' : 'Checkbox Buttons'
   .checkbox-list
     h3.checkbox-list__title Checkbox Buttons
     .checkbox-list__item-wrp 
@@ -22,7 +21,6 @@ mixin checkbox-additional-list(options)
       <svg class="#{svgClass}" width="12" height="12" viewBox="0 -4 12 12"  version="1.1" preserveAspectRatio="xMinYMin">
         <use xlink:href="#img-expand-more"></use>   
       </svg>
-    //- .checkbox-additional-list__body.checkbox-additional-list__body_disabled
     div(class=opened)
       +checkbox({text:'Завтрак', id:'breackfast'})
       +checkbox({text:'Письменный стол', id:'desk'})
@@ -30,8 +28,6 @@ mixin checkbox-additional-list(options)
       +checkbox({text:'Кроватка', id:'cot'})
       +checkbox({text:'Телевизор', id:'tv'})
       +checkbox({text:'Шампунь', id:'shampoo'})
-      //- +checkbox({text:'Телевизор', id:'tv1'})
-      //- +checkbox({text:'Шампунь', id:'shampoo1'})
 
 mixin checkbox-accessibility(options)
   .checkbox-accessibility

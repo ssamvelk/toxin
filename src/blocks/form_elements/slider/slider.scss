@@ -35,7 +35,7 @@
 // - переоределение стилей плагина slider
 .slider {
   position: relative;
-  top: 3px;
+  top: rem(3);
   box-sizing: border-box;
   width: rem(266);
   height: rem(6);
@@ -46,7 +46,7 @@
     width: rem(14);
     height: rem(14);
     background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
-    border: rem(2) solid #ffffff;
+    border: rem(2) solid #fff;
     border-radius: rem(10);
   }
   .ui-slider-range.ui-corner-all.ui-widget-header {

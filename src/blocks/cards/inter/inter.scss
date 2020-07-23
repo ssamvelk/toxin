@@ -1,7 +1,5 @@
 .inter {
   position: relative;
-  // display: flex;
-  // flex-direction: column;
   box-sizing: border-box;
   width: rem(380);
   height: rem(358);
@@ -13,14 +11,14 @@
 }
 
 .inter__title {
+  box-sizing: border-box;
   margin-top: rem(38);
   margin-bottom: rem(21);
-  font-family: Quicksand;
+  color: #1f2041;
   font-weight: 600;
   font-size: rem(25);
+  font-family: Quicksand;
   line-height: rem(30);
-  color: #1F2041;
-  box-sizing: border-box;
   letter-spacing: rem(1);
 }
 
@@ -37,7 +35,7 @@
   justify-content: space-between;
   margin-top: rem(30);
 }
-  
+
 .inter__question {
   line-height: rem(44);
 }

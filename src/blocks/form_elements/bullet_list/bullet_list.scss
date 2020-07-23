@@ -1,46 +1,42 @@
 .bullet {
-    width: rem(290);
-    padding-left: rem(20.86);
-  }
+  width: rem(290);
+  padding-left: rem(20.86);
+}
   
-  .bullet__title {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-      
-    /* identical to box height */
-    text-transform: uppercase;
-      
-    /* Dark 100% */
-    color: #1F2041;
-  }
+.bullet__title {
+  color: #1F2041;
+  font-weight: bold;
+  font-size: rem(12);
+  font-family: Montserrat;
+  font-style: normal;
+  line-height: rem(15);
+  text-transform: uppercase;
+}
   
-  .bullet__list {
-    position: relative;
-    color: $Dark75;
-    font-weight: normal;
-    font-size: rem(14);
-    font-family: Montserrat;
-    font-style: normal;
-    line-height: rem(24);
-    list-style: none;
-  }
+.bullet__list {
+  position: relative;
+  color: $Dark75;
+  font-weight: normal;
+  font-size: rem(14);
+  font-family: Montserrat;
+  font-style: normal;
+  line-height: rem(24);
+  list-style: none;
+}
   
-  .bullet__item {
-    position: relative;
-    margin-bottom: rem(5);
+.bullet__item {
+  position: relative;
+  margin-bottom: rem(5);
   
-    &::before {
-      position: absolute;
-      top: rem(7);
-      left: rem(-21);
-      width: rem(10.43);
-      height: rem(10);
-      background-color: $Dark25;
-      border-radius: rem(10);
-      content: "";
-    }
+  &::before {
+    position: absolute;
+    top: rem(7);
+    left: rem(-21);
+    width: rem(10.43);
+    height: rem(10);
+    background-color: $Dark25;
+    border-radius: rem(10);
+    content: "";
   }
+}
   

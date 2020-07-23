@@ -28,8 +28,8 @@
   justify-content: space-between;
   box-sizing: border-box;
   width: 100%;
-  min-height: rem(44);
   height: rem(44);
+  min-height: rem(44);
   padding-right: rem(7);
   padding-left: rem(15);
   color: $Dark75;
@@ -72,9 +72,6 @@
 .dropdown__list_expanded {
   position: absolute;
   z-index: 99;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-around;
   display: block;
   background: white;
 }
@@ -84,12 +81,12 @@
   display: flex;
   justify-content: space-between;
   height: rem(30);
+  margin-top: rem(7);
   line-height: rem(30);
-  margin-top: 7px;
 }
 
 .dropdown__list-footer {
-  margin-top: 14px;
+  margin-top: rem(14);
 }
 
 .dropdown__item-name {

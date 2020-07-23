@@ -18,6 +18,7 @@
   width: rem(20);
   height: rem(19);
   cursor: pointer;
+
   &::before {
     position: absolute;
     width: rem(20);
@@ -25,6 +26,7 @@
     background: url(../static/source/star_border.svg) no-repeat;
     content: "";
   }
+
   &::after {
     position: absolute;
     width: rem(20);
@@ -34,6 +36,7 @@
     transition: 0.5s;
     content: "";
   }
+  
   &:hover::after {
     opacity: 1;
   }
