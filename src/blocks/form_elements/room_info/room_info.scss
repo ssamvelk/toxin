@@ -15,7 +15,7 @@
   margin-bottom: rem(20);
   border-bottom: rem(1) solid rgba(31, 32, 65, 0.1);
 
-  &:last-child {
+  &_without-border {
     border: none;
   }
 }

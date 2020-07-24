@@ -17,12 +17,14 @@ html(lang="en")
     title Cards
   body
     main.cards__wrap
+      img.cards__logo(src='../static/source/logo-gray.png' alt='logo' width=48 height=48)
       .cards__inner-wrap
         +search-card()
 
         +reserve-card()
 
-        +date-calendar({isDisable: false})
+        .cards__calendar-wrap
+          +date-calendar({isDisable: false})
 
         .cards__registration-wrap
           +registration-card()

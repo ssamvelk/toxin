@@ -5,8 +5,16 @@
   margin: 0 auto;
 }
 
+.form-elements__logo {
+  position: absolute;
+  top: rem(30);
+  left: rem(30);
+  z-index: 100;
+}
+
 .form-elements__inner-wrap {
   max-width: 1160px;
+  height: 1853px;
   margin: 0 auto;
   padding-top: 145px;
 }
@@ -50,11 +58,22 @@
   line-height: 15px;
   text-transform: uppercase;
 }
-
-.form-elements__date-search-filds-wrap {
-  margin-top: 40px;
+.form-elements__text-field-default-wrap {
+  position: relative;
+  top: -2px;
+  margin-bottom: 18.5px;
 }
-
+.form-elements__masked-text-field-wrap {
+  position: relative;
+  top: 2px;
+}
+.form-elements__date-search-filds-wrap {
+  margin-top: 42px;
+}
+.form-elements__checkbox-list-wrap {
+  position: relative;
+  top: -1px;
+}
 .form-elements__filter-date-dropdown-wrap {
   margin-top: 35px;
 }
@@ -106,8 +125,10 @@
   margin-right: 19px;
 }
 .form-elements__white-buttons-wrap {
+  position: relative;
   display: flex;
   margin-top: 30px;
+  left: -1px;
 }
 .form-elements__white-button-wrap {
   margin-right: 20px;
@@ -121,6 +142,8 @@
 }
 .form-elements__big-button-wrap {
   margin-top: 30px;
+  position: relative;
+  left: -1px;
 }
 .form-elements__pagination-wrap {
   margin-top: 40px;
@@ -129,10 +152,16 @@
   margin-top: 17px;
 }
 .form-elements__dropdown-wrap {
-  margin-top: 20px;
+  margin-top: 19px;
 }
 .form-elements__dropdown-company-wrap {
   margin-left: 53px;
+  position: relative;
+  top: -2px;
+}
+.form-elements__dropdown-expanded-company-wrap {
+  position: relative;
+  top: -2px;
 }
 .form-elements__checkbox-additional-list-wrap {
   margin-top: 2px;
@@ -158,15 +187,7 @@
     margin-top: 10px;
   }
 }
+
 .form-elements__comment-wrap {
   margin-top: 9px;
 }
-
-
-
-
-
-// .form-elements__flex-wrap {
-//   display: flex;
-//   justify-content: space-between;
-// }

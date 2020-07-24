@@ -23,6 +23,7 @@ const changeDate = function (event) {
   } else if (target.classList == "date__clean") {
     // кнопка очистки
     myDatepicker.clear();
+
     if (
       this.querySelector("#date__prib") &&
       this.querySelector("#date__viezd")
@@ -32,7 +33,6 @@ const changeDate = function (event) {
     }
   } else if (target.classList == "date__apply") {
     // кнопка применить
-
     if (
       this.querySelector(".-range-from-") &&
       this.querySelector(".-range-to-")
@@ -58,6 +58,8 @@ const changeDate = function (event) {
       }
     }
     calendar.classList.toggle("datepicker--disable");
+  } else if (target.classList == "cards__calendar-wrap") {
+    console.log('1111')
   }
 };
 
@@ -77,8 +79,15 @@ $(function () {
     nextHtml:
       '<svg class="datepicker__right-arrow" width="17" height="18" viewBox="0 0 17 18" fill="none"><path d="M8.36301 0.984375L16.3786 9L8.36301 17.0156L6.95676 15.6094L12.5349 9.98438H0.347383V8.01562H12.5349L6.95676 2.39062L8.36301 0.984375Z" fill="#BC9CFF"/></svg>',
     // onSelect: changeDate
-    
   });
+
+  const calendarInCardsPage = document.querySelector('.cards__calendar-wrap')
+  // console.log('calendarInCardsPage ', calendarInCardsPage);
+  if(calendarInCardsPage) {
+    calendarInCardsPage.addEventListener("click", changeDate);
+  }
+
+  // calendars.forEach(el => el.addEventListener('click', changeDate));
 
   const filterDate = document.querySelectorAll(".date-wrp");
   const RangeFilterDate = document.querySelectorAll(".date__search-wrp");

@@ -40,8 +40,8 @@ html(lang="en")
           +date-filter-dropdown({})
           h3.search__guests-title гости
           +dropdownCompany({small:true, count1: 3, count3: 1})
-          +slider
-          +checkbox-list
+          +slider({})
+          +checkbox-list({})
           +checkbox-accessibility({})
           h3.search__comfort-title удобства номера
           .search__dropdown-list
@@ -64,6 +64,6 @@ html(lang="en")
             +rooms({bg : '../static/source/room_11.png', rating : '3', number : '444', notlux: true, cost: '5 000',likes: '15'})
             +rooms({bg : '../static/source/room_12.png', rating : '3', number : '352', notlux: true, cost: '5 000',likes: '55'})
         .search__pagination
-          +pagination()
+          +pagination({})
     
     +footer({})

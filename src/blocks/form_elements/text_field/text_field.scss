@@ -20,6 +20,16 @@
   position: relative;
   box-sizing: border-box;
   width: rem(260);
+  
+  &_w267 {
+    position: relative;
+    top: -1px;
+    width: rem(267);
+
+    & > .text-field.footer__subscribe-send {
+      width: rem(267);
+    }
+  }
 }
   
 .footer__subscribe-send {

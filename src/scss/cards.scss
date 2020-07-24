@@ -1,30 +1,44 @@
+.cards__wrap {
+  position: relative;
+}
+.cards__logo {
+  position: absolute;
+  top: rem(30);
+  left: rem(30);
+  z-index: 100;
+}
 .cards__inner-wrap {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 1440px;
+  max-width: rem(1440);
+  height: rem(1350);
   margin: 0 auto;
-  padding: 150px 140px;
+  padding: rem(150) rem(140) 0;
+  background: #F4F4F6;
 }
 
 .cards__registration-wrap {
   position: relative;
-  top: -97px;
+  top: rem(-119);
 }
 
 .cards__inter-wrap {
   position: relative;
-  top: 40px;
-  left: -25px;
+  height: max-content;
+  top: rem(18);
+  left: rem(-25);
 }
 
 .cards__rooms-wrap {
+  height: max-content;
   position: relative;
-  top: -102px;
-  left: -50px;
+  top: rem(-124);
+  left: rem(-50);
 }
 
 .cards__first-room {
-  margin-bottom: 40px;
+  height: max-content;
+  margin-bottom: rem(40);
 }

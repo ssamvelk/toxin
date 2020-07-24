@@ -30,8 +30,9 @@ mixin checkbox-additional-list(options)
       +checkbox({text:'Шампунь', id:'shampoo'})
 
 mixin checkbox-accessibility(options)
+  -var tytle = options.tytle ? options.tytle : 'доступность'
   .checkbox-accessibility
-    h3.checkbox-accessibility__title доступность
+    h3.checkbox-accessibility__title #{tytle}
 
     .checkbox-accessibility__item     
       input(class="checkbox__item checkbox-accessibility__item" type="checkbox" id="wideCorridor")
