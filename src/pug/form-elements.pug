@@ -129,9 +129,9 @@ html(lang="en")
        
         section.form-elements__section.form-elements__section-2
           .form-elements__col
-            .form-elements__item
+            .form-elements__dropdowns-wrap
               h6.form-elements__items-tytle dropdown
-              +dropdown({small: true})
+              +dropdown({small: true, count1: 2, count2: 2})
               .form-elements__dropdown-wrap
                 h6.form-elements__items-tytle dropdown
                 +dropdown({expanded: true, small: true, count1: 2, count2: 2})
@@ -151,10 +151,10 @@ html(lang="en")
         section.form-elements__section.form-elements__section-3
           .form-elements__col
             .form-elements__checkbox-additional-list-wrap
-              +checkbox-additional-list({})
+              +checkbox-additional-list({tytle: 'expandable checkbox list'})
 
             .form-elements__opened-checkbox-additional-list-wrap
-              +checkbox-additional-list({opened: true})
+              +checkbox-additional-list({opened: true, tytle: 'expandable checkbox list'})
               
           .form-elements__col
             .form-elements__checkbox-accessibility-wrap

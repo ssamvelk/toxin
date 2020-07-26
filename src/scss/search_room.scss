@@ -49,6 +49,7 @@
     display: block;
   }
 }
+
 .search__left {
   width: rem(326);
   .date-wrp {
@@ -56,6 +57,9 @@
   }
   .dropdown__wrp {
     margin-bottom: rem(30.44);
+  }
+  .search__guests-title {
+    margin-top: rem(20);
   }
   .slider__wrp {
     margin-bottom: rem(29);

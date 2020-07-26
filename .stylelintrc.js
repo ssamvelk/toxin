@@ -11,10 +11,9 @@ module.exports = {
   rules:{
     "indentation": 2,
     "block-no-empty": true,
-    // "color-hex-case": "lower",
     "color-hex-length": "short",
     "color-no-invalid-hex": true,
     "declaration-colon-space-after": "always",
-    "max-empty-lines": 2,
+    "max-empty-lines": 2
   }
 };

@@ -11,11 +11,9 @@
     "airbnb"
   ],
   "rules": {
-    "allowTernary": true,
-    "indentation": 2
-    // "indent": ["error", "tab"],
-    // "linebreak-style": ["error", "unix"],
-    // "quotes": ["error", "single"],
-    // "semi": ["error", "always"]
+    "linebreak-style": 0,
+    "func-names": 0,
+    "no-unused-vars": 1,
+    "no-multiple-empty-lines": [2, {"max": 2, "maxEOF": 0}]
   }
 }

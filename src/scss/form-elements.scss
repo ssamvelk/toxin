@@ -29,7 +29,7 @@
   }
 
   &-3 {
-    margin-top: 150px;
+    margin-top: 170px;
   }
 
   &-4 {
@@ -126,9 +126,9 @@
 }
 .form-elements__white-buttons-wrap {
   position: relative;
+  left: -1px;
   display: flex;
   margin-top: 30px;
-  left: -1px;
 }
 .form-elements__white-button-wrap {
   margin-right: 20px;
@@ -141,9 +141,9 @@
   margin-right: 15px;
 }
 .form-elements__big-button-wrap {
-  margin-top: 30px;
   position: relative;
   left: -1px;
+  margin-top: 30px;
 }
 .form-elements__pagination-wrap {
   margin-top: 40px;
@@ -151,13 +151,27 @@
 .form-elements__pagination-element-wrap {
   margin-top: 17px;
 }
+.form-elements__dropdowns-wrap {
+  position: relative;
+  & > .dropdown__wrp {
+    position: relative;
+    top: -2px;
+  }
+}
+
 .form-elements__dropdown-wrap {
+  position: relative;
   margin-top: 19px;
+
+  & > .dropdown__wrp {
+    position: relative;
+    top: -1px;
+  }
 }
 .form-elements__dropdown-company-wrap {
-  margin-left: 53px;
   position: relative;
   top: -2px;
+  margin-left: 53px;
 }
 .form-elements__dropdown-expanded-company-wrap {
   position: relative;

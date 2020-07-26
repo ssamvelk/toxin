@@ -38,12 +38,16 @@
   font-family: Montserrat;
   font-style: normal;
   line-height: rem(43);
-  border: rem(1) solid $Dark50;
+  border: rem(1) solid $Dark25;
   border-top-left-radius: rem(2);
   border-top-right-radius: rem(2);
 
   svg {
     margin-top: rem(15);
+  }
+
+  &_expanded {
+    border-color: $Dark50;
   }
 }
 
@@ -63,7 +67,7 @@
   text-transform: uppercase;
   list-style: none;
   border: rem(1) solid $Dark25;
-  border-top: none;
+  border-top: 0;
   border-bottom-right-radius: rem(2);
   border-bottom-left-radius: rem(2);
   
@@ -74,6 +78,7 @@
   z-index: 99;
   display: block;
   background: white;
+  border-color: $Dark50;
 }
 
 .dropdown__item {
@@ -117,6 +122,5 @@
 .dropdown__item-clean_disable {
   display: none;
 }
-
 
   

@@ -12,24 +12,31 @@ mixin dropdownItem(options)
     </svg>
 
 //-----------------------------стрелочка svg
-mixin dropdownMainSVG
-  <svg class="dropdown__main-svg" width="12" height="12" viewBox="0 -4 12 12"  version="1.1" preserveAspectRatio="xMinYMin">
-  <use xlink:href="#img-expand-more"></use>   
-  </svg>
+mixin dropdownMainSVG(options)
+  -var opacity = options.opacity ? options.opacity : 50
+  if (opacity === 50)
+    <svg class="dropdown__main-svg" width="12" height="12" viewBox="0 -4 12 12"  version="1.1" preserveAspectRatio="xMinYMin">
+    <use xlink:href="#img-expand-more"></use>   
+    </svg>
+  else if (opacity === 75)
+    <svg class="dropdown__main-svg" width="12" height="12" viewBox="0 -4 12 12"  version="1.1" preserveAspectRatio="xMinYMin">
+    <use xlink:href="#img-expand-more-75"></use>   
+    </svg>
 
 //------------------кол-во удобств
 mixin dropdown(options)
-  - var isExpanded = (options.expanded) ? ' dropdown__list_expanded' : ''
+  - var isExpandedList = (options.expanded) ? ' dropdown__list_expanded' : ''
+  - var isExpandedMain = (options.expanded) ? ' dropdown__main_expanded' : ''
   - var small = (options.small) ? ' dropdown__wrp_266': '' 
   - var count1 = options.count1 ? options.count1.toString() : '0'
   - var count2 = options.count2 ? options.count2.toString() : '0'
   - var count3 = options.count3 ? options.count3.toString() : '0'
 
-  .dropdown__wrp.js-dropdown__wrp-comfort(class= small)
-    +dropdownMainSVG
-    p.dropdown__main <span class="dropdown-bedroom">#{count1}<span> спальни, <span class="dropdown-bed">#{count2}<span> кровати...
+  .dropdown__wrp.dropdown__wrp-comfort.js-dropdown__wrp-comfort(class= small)
+    +dropdownMainSVG({opacity: 75})
+    p(class='dropdown__main'+isExpandedMain) <span class="dropdown-bedroom">#{count1}<span> спальни, <span class="dropdown-bed">#{count2}<span> кровати...
 
-    ul(class='dropdown__list'+isExpanded)
+    ul(class='dropdown__list'+isExpandedList)
       li.dropdown__item 
         span.dropdown__item-name спальни
         +dropdownItem({id:'js-bedroom', value: count1})
@@ -40,20 +47,21 @@ mixin dropdown(options)
         span.dropdown__item-name ванные комнаты
         +dropdownItem({id:'js-bathroom', value: count3}) 
 
-//------------------------кол-во людей
+//------------------------кол-во гостей
 mixin dropdownCompany(options)
   - var small = (options.small) ? ' dropdown__wrp_266': '' //заглушка для width
-  - var isExpanded = (options.expanded) ? ' dropdown__list_expanded' : ''
+  - var isExpandedList = (options.expanded) ? ' dropdown__list_expanded' : ''
+  - var isExpandedMain = (options.expanded) ? ' dropdown__main_expanded' : ''
   - var count1 = options.count1 ? options.count1 : 0
   - var count2 = options.count2 ? options.count2 : 0
   - var count3 = options.count3 ? options.count3 : 0
   - var text = (count1 > 0 || count2 > 0 || count3 > 0) ? count1+count2+count3 + ' гостей' : 'Сколько гостей'
   - var cleanButtonClass = (count1 > 0 || count2 > 0 || count3 > 0) ? '' : 'dropdown__item-clean_disable'
-  div(class='dropdown__wrp dropdown__wrp_320 js-dropdown__wrp-company'+small)
-    +dropdownMainSVG
-    p.dropdown__main #{text}
+  div(class='dropdown__wrp dropdown__wrp_320 dropdown__wrp-company js-dropdown__wrp-company'+small)
+    +dropdownMainSVG({opacity: 75})
+    p(class='dropdown__main'+isExpandedMain) #{text}
 
-    ul(class='dropdown__list'+isExpanded)
+    ul(class='dropdown__list'+isExpandedList)
       li.dropdown__item.dropdown__item-fadult 
         span.dropdown__item-name взрослые
         +dropdownItem({id:'js-fadult', value: count1})

@@ -13,11 +13,12 @@ mixin checkbox-list(options)
       +checkbox({text:'Можно пригласить гостей (до 10 человек)', id:'frends'})
 
 mixin checkbox-additional-list(options)
+  -var tytle = options.tytle ? options.tytle : 'дополнительные удобства'
   -var opened = (options.opened)? 'checkbox-additional-list__body' : 'checkbox-additional-list__body checkbox-additional-list__body_disabled'
   -var svgClass = (options.opened)? 'checkbox-additional-list__svg checkbox-additional-list__svg_opened' : 'checkbox-additional-list__svg'
   .checkbox-additional-list.js-checkbox-additional-list
     .checkbox-additional-list__header
-      h3.checkbox-additional-list__title дополнительные удобства
+      h3.checkbox-additional-list__title #{tytle}
       <svg class="#{svgClass}" width="12" height="12" viewBox="0 -4 12 12"  version="1.1" preserveAspectRatio="xMinYMin">
         <use xlink:href="#img-expand-more"></use>   
       </svg>
