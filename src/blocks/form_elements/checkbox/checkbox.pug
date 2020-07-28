@@ -1,8 +1,9 @@
 mixin checkbox(options)
   -var text = options.text, id = (options.id)? options.id :''
-  .checkbox    
-    input(class="checkbox__item" id=id type="checkbox" )
-    label(class="checkbox__item-name" for=id)=text
+  .checkbox
+    label(class="checkbox__item-name")=text
+      input(class="checkbox__item" type="checkbox")
+    
 
 mixin checkbox-list(options)
   .checkbox-list

@@ -1,21 +1,37 @@
 .checkbox {
   position: relative;
-  display: flex;
+  // display: flex;
   min-height: rem(20);
   margin: rem(10) 0;
+  padding-left: rem(30);
+}
+
+.checkbox__item-name {
+  position: relative;
+  max-width: rem(192);
+  // margin-left: rem(9);
+  color: $Dark50;
+  font-weight: normal;
+  font-size: rem(14);
+  font-family: Montserrat;
+  font-style: normal;
+  line-height: rem(20);
+  cursor: pointer;
 }
 
 .checkbox__item {
+  position: absolute;
+  top: rem(-1);
+  left: rem(-30);
   box-sizing: border-box;
   width: rem(20);
   height: rem(20);
   border: rem(1) solid rgba(31, 32, 65, 0.25);
   border-radius: rem(4);
   outline: none;
+  cursor: pointer;
   appearance: none;
-
   &:checked {
-    position: relative;
     border: rem(1) solid $Purple;
 
     &::before {
@@ -32,17 +48,6 @@
       content: "";
     }
   }
-}
-
-.checkbox__item-name {
-  max-width: rem(192);
-  margin-left: rem(9);
-  color: $Dark50;
-  font-weight: normal;
-  font-size: rem(14);
-  font-family: Montserrat;
-  font-style: normal;
-  line-height: rem(20);
 }
 
 // -------------------------------------checkbox-list
@@ -108,6 +113,7 @@
 
 // ----------------checkbox-accessibility
 .checkbox-accessibility {
+  position: relative;
   width: rem(266);
   min-height: rem(125);
   margin-bottom: rem(25);
@@ -126,6 +132,9 @@
 }
 
 .checkbox-accessibility__item {
+  position: relative;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: space-between;
   margin-bottom: rem(6);
@@ -141,6 +150,7 @@
 }
 
 .checkbox-accessibility__inner-title {
+  margin-top: rem(1);
   color: $Dark75;
   font-weight: bold;
   font-size: rem(14);
