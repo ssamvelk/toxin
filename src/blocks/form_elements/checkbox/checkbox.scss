@@ -6,6 +6,10 @@
   padding-left: rem(30);
 }
 
+.checkbox_first {
+  margin-bottom: rem(10.56);
+}
+
 .checkbox__item-name {
   position: relative;
   max-width: rem(192);
@@ -55,8 +59,10 @@
   box-sizing: border-box;
   width: rem(266);
 }
+
 .checkbox-list__item-wrp {
   margin-top: rem(16);
+  padding-right: rem(20);
 }
 
 .checkbox-list__title {
@@ -137,7 +143,7 @@
   left: 0;
   display: flex;
   justify-content: space-between;
-  margin-bottom: rem(6);
+  margin-bottom: rem(5);
 }
 
 .checkbox-accessibility__inner-wrp {

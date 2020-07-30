@@ -1,12 +1,15 @@
 .cards__wrap {
   position: relative;
+  background: #F4F4F6;
 }
+
 .cards__logo {
   position: absolute;
   top: rem(30);
   left: rem(30);
   z-index: 100;
 }
+
 .cards__inner-wrap {
   position: relative;
   display: flex;
@@ -16,7 +19,7 @@
   height: rem(1350);
   margin: 0 auto;
   padding: rem(150) rem(140) 0;
-  background: #F4F4F6;
+  
 }
 
 .cards__registration-wrap {

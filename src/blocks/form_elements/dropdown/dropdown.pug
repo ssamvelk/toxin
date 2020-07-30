@@ -55,7 +55,9 @@ mixin dropdownCompany(options)
   - var count1 = options.count1 ? options.count1 : 0
   - var count2 = options.count2 ? options.count2 : 0
   - var count3 = options.count3 ? options.count3 : 0
-  - var text = (count1 > 0 || count2 > 0 || count3 > 0) ? count1+count2+count3 + ' гостей' : 'Сколько гостей'
+  //- - var text = (count1 > 0 || count2 > 0) ? count1+count2 + ' гостя' + (options.count3 > 0) ? options.count3 + ', младенец' : 0 : 'Сколько гостей'
+  - var text = options.text ? options.text : 'Сколько гостей'
+
   - var cleanButtonClass = (count1 > 0 || count2 > 0 || count3 > 0) ? '' : 'dropdown__item-clean_disable'
   div(class='dropdown__wrp dropdown__wrp_320 dropdown__wrp-company js-dropdown__wrp-company'+small)
     +dropdownMainSVG({opacity: 75})

@@ -107,6 +107,13 @@
 .form-elements__rate-wrap {
   margin-top: 40px;
 }
+.form-elements__slider-wrap {
+  margin-bottom: rem(29);
+
+  .slider {
+    top: rem(2);
+  }
+}
 .form-elements__rate-elements-wrap {
   display: flex;
   margin-top: 18px;
@@ -138,7 +145,7 @@
   margin-top: 31px;
 }
 .form-elements__emptybutton-wrap {
-  margin-right: 15px;
+  margin-right: 20px;
 }
 .form-elements__big-button-wrap {
   position: relative;

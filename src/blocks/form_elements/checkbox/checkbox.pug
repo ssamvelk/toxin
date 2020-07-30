@@ -1,17 +1,21 @@
 mixin checkbox(options)
+  -var checked = options.checked ? options.checked : false
+  -var first = options.first ? 'checkbox_first' : ''
   -var text = options.text, id = (options.id)? options.id :''
-  .checkbox
+  .checkbox(class=first)
     label(class="checkbox__item-name")=text
-      input(class="checkbox__item" type="checkbox")
-    
+      if (checked)
+        input(class="checkbox__item" type="checkbox" checked='checked')
+      else 
+        input(class="checkbox__item" type="checkbox")
 
 mixin checkbox-list(options)
   .checkbox-list
     h3.checkbox-list__title Checkbox Buttons
     .checkbox-list__item-wrp 
-      +checkbox({text:'Можно курить', id:'smoke'})
-      +checkbox({text:'Можно с питомцами', id:'pets'})
-      +checkbox({text:'Можно пригласить гостей (до 10 человек)', id:'frends'})
+      +checkbox({text:'Можно курить', id:'smoke', first: true})
+      +checkbox({text:'Можно с питомцами', id:'pets', checked: true})
+      +checkbox({text:'Можно пригласить гостей (до 10 человек)', id:'frends', checked: true})
 
 mixin checkbox-additional-list(options)
   -var tytle = options.tytle ? options.tytle : 'дополнительные удобства'
@@ -24,10 +28,10 @@ mixin checkbox-additional-list(options)
         <use xlink:href="#img-expand-more"></use>   
       </svg>
     div(class=opened)
-      +checkbox({text:'Завтрак', id:'breackfast'})
-      +checkbox({text:'Письменный стол', id:'desk'})
-      +checkbox({text:'Стул для кормления', id:'chair'})
-      +checkbox({text:'Кроватка', id:'cot'})
+      +checkbox({text:'Завтрак', id:'breackfast', first: true})
+      +checkbox({text:'Письменный стол', id:'desk', checked: true})
+      +checkbox({text:'Стул для кормления', id:'chair', checked: true})
+      +checkbox({text:'Кроватка', id:'cot', checked: true})
       +checkbox({text:'Телевизор', id:'tv'})
       +checkbox({text:'Шампунь', id:'shampoo'})
 

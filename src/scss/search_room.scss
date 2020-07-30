@@ -1,4 +1,5 @@
 .main__search-wrapper {
+  position: relative;
   box-sizing: border-box;
   min-width: rem(1160);
   background: white;
@@ -52,6 +53,14 @@
 
 .search__left {
   width: rem(326);
+  .dropdown__wrp-company {
+    position: relative;
+    top: rem(1);
+  }
+  .slider__info-title {
+    position: relative;
+    top: rem(1);
+  }
   .date-wrp {
     margin-bottom: rem(20.44);
   }
@@ -59,19 +68,21 @@
     margin-bottom: rem(30.44);
   }
   .search__guests-title {
+    position: relative;
+    top: rem(1);
     margin-top: rem(20);
   }
   .slider__wrp {
-    margin-bottom: rem(29);
+    margin-bottom: rem(30);
   }
   .checkbox-list {
-    margin-bottom: rem(30);
+    margin-bottom: rem(28);
   }
   .checkbox-list-wrp {
     margin-bottom: rem(30.88);
   }
   .search__dropdown-list {
-    margin-bottom: rem(32);
+    margin-bottom: rem(30);
   }
   .checkbox-accessibility {
     margin-bottom: rem(25);
@@ -114,12 +125,13 @@
 
 .search__rooms-title {
   box-sizing: border-box;
-  margin-top: -rem(-1);
+  // margin-top: -rem(-1);
   color: #1f2041;
   font-weight: 700;
   font-size: rem(25);
   font-family: Quicksand;
-  line-height: rem(30);
+  line-height: rem(29);
+  margin-bottom: 0.5px;
 }
 
 .search__rooms {

@@ -15,8 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const itemCounts = currentTarget.querySelectorAll('.dropdown__item-value');
 
     let value = Number(itemCounts[0].innerHTML)
-      + Number(itemCounts[1].innerHTML)
-      + Number(itemCounts[2].innerHTML);
+      + Number(itemCounts[1].innerHTML);
+
+    const babiesValue = Number(itemCounts[2].innerHTML);
 
     if (currentTarget.classList.contains('js-dropdown__wrp-company')) {
       const cleanBtn = currentTarget.querySelector('.dropdown__item-clean');
@@ -26,7 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (value === 0) mainFild.innerHTML = 'Cколько гостей';
       else if (value === 1) mainFild.innerHTML = '1 гость';
+      else if (value === 2) mainFild.innerHTML = '2 гостя';
+      else if (value === 3) mainFild.innerHTML = '3 гостя';
       else mainFild.innerHTML = `${value} гостей`;
+
+      if (babiesValue === 1) mainFild.innerHTML += `, ${babiesValue} младенец`;
+      else if (babiesValue > 1 && babiesValue < 5) mainFild.innerHTML += `, ${babiesValue} младенцa`;
+      else if (babiesValue > 4) mainFild.innerHTML += `, ${babiesValue} младенцев`;
 
       cleanBtn.onclick = function () {
         value = 0;

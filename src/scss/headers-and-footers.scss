@@ -1,5 +1,6 @@
 .headers-and-footers__wrap {
   position: relative;
+  background: #F4F4F6;
 }
 
 .headers-and-footers__logo {
@@ -12,10 +13,10 @@
 .headers-and-footers__inner-wrap {
   position: relative;
   max-width: rem(1440);
-  height: rem(1350);
+  // height: rem(1350);
   margin: 0 auto;
   padding: rem(140) 0;
-  background: #F4F4F6;
+  
 }
 
 .headers-and-footers__header-wrap,

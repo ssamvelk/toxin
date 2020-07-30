@@ -16,10 +16,24 @@
   border-top-right-radius: rem(4);
 }
 
+.rooms__img-prev {
+  position: absolute;
+  top: 69.5px;
+  left: 18px;
+  transform: rotate(90deg);
+}
+
+.rooms__img-next {
+  position: absolute;
+  top: 69.5px;
+  right: 18px;
+  transform: rotate(-90deg);
+}
+
 .rooms__carousel {
   position: absolute;
   right: rem(15);
-  bottom: rem(15);
+  bottom: rem(14);
 }
 
 .rooms__info {
