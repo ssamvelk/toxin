@@ -1,15 +1,15 @@
 .demo-page__wrap {
   width: 100vw;
-  max-width: 1440px;
-  padding: 50px 50px 0;
+  max-width: rem(1440);
+  padding: rem(50) rem(50) 0;
 }
 .demo-page__list {
-  min-width: 380px;
+  min-width: rem(380);
   list-style: none;
 }
 .demo-page__item {
-  margin-top: 30px;
-  font-size: 30px;
-  line-height: 45px;
+  margin-top: rem(30);
+  font-size: rem(30);
+  line-height: rem(45);
   text-align: center;
 }

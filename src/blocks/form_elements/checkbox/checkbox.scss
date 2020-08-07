@@ -1,6 +1,5 @@
 .checkbox {
   position: relative;
-  // display: flex;
   min-height: rem(20);
   margin: rem(10) 0;
   padding-left: rem(30);
@@ -13,7 +12,6 @@
 .checkbox__item-name {
   position: relative;
   max-width: rem(192);
-  // margin-left: rem(9);
   color: $Dark50;
   font-weight: normal;
   font-size: rem(14);
@@ -40,10 +38,10 @@
 
     &::before {
       position: absolute;
-      top: rem(2);
-      left: rem(5);
-      width: rem(6);
-      height: rem(8);
+      top: rem(4);
+      left: rem(6);
+      width: rem(4);
+      height: rem(6);
       border-right: rem(2) solid transparent;
       border-bottom: rem(2) solid transparent;
       border-image: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
@@ -97,12 +95,13 @@
 
 .checkbox-additional-list__svg {
   position: absolute;
-  top: rem(-1);
-  right: rem(16);
+  top: rem(0);
+  right: rem(15);
 }
 
 .checkbox-additional-list__svg_opened {
   top: rem(4);
+  right: rem(16);
   transform: rotate(180deg);
 }
 

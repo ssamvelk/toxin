@@ -1,13 +1,22 @@
 .rate {
   position: relative;
   display: flex;
-  width: rem(120);
   height: rem(20);
-
+  padding-right: rem(2);
+  padding-left: rem(2);
+  
   &_reverse {
     flex-direction: row-reverse;
   }
 }
+
+.rate__stars {
+  display: flex;
+  justify-content: space-between;
+  width: rem(116);
+  list-style: none;
+}
+
 
 .rate__star {
   display: none;
@@ -46,12 +55,7 @@
   opacity: 1;
 }
 
-.rate__stars {
-  display: flex;
-  justify-content: space-between;
-  width: rem(120);
-  list-style: none;
-}
+
 .rate__item {
   width: rem(20);
   height: rem(20);

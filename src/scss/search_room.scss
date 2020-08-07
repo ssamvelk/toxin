@@ -16,10 +16,8 @@
   display: flex;
   width: rem(1160);
   min-height: rem(1357);
-  // min-height: rem(830);
   margin: 0 auto;
   padding-top: rem(30);
-  // padding-top: rem(70);
   padding-bottom: rem(18);
   &::after {
     position: absolute;
@@ -105,9 +103,7 @@
   line-height: rem(15);
   text-transform: uppercase;
 }
-.search__comfort-title {
-  margin-bottom: rem(4);
-}
+
 .search__right {
   width: rem(834);
 }
@@ -125,13 +121,12 @@
 
 .search__rooms-title {
   box-sizing: border-box;
-  // margin-top: -rem(-1);
+  margin-bottom: rem(0.5);
   color: #1f2041;
   font-weight: 700;
   font-size: rem(25);
   font-family: Quicksand;
   line-height: rem(29);
-  margin-bottom: 0.5px;
 }
 
 .search__rooms {

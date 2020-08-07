@@ -24,7 +24,7 @@
   
   &_w267 {
     position: relative;
-    top: -1px;
+    top: rem(-1);
     width: rem(267);
 
     & > .text-field.footer__subscribe-send {
@@ -42,7 +42,7 @@
   
 .subscribe-send-svg {
   position: absolute;
-  top: rem(14);
+  top: rem(13);
   right: rem(13);
   box-sizing: border-box;
 }

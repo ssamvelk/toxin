@@ -30,88 +30,80 @@ html(lang="en")
       .form-elements__inner-wrap
 
         section.form-elements__section.form-elements__section-1
-          .form-elements__col
-            .form-elements__item.form-elements__text-field-default-wrap
+          .form-elements__col.form-elements__col-11
+            .form-elements__text-field-default-wrap
               h6.form-elements__items-tytle text Field
               +text_field({type: 'email'})
             
-            .form-elements__item
-              h6.form-elements__items-tytle text Field
+            .form-elements__text-field-hover-wrap
+              h6.form-elements__items-tytle.form-elements__text-field-hover-tytle text Field
               +text_field({type: 'text', placeholder: 'This is pretty awesome'})
             
-            .form-elements__item 
+            .form-elements__upper-dropdown-company-wrap 
               h6.form-elements__items-tytle dropdown
               +dropdownCompany({})
             
-            .form-elements__item.form-elements__masked-text-field-wrap
+            .form-elements__masked-text-field-wrap
               h6.form-elements__items-tytle masked text field
               +text_field({type: 'date'})
             
-            .form-elements__item
-              .form-elements__date-search-filds-wrap
-                +date-search-filds({tytle1: 'date Dropdown',  tytle2: 'date Dropdown'})
-            
-            .form-elements__item 
-              .form-elements__filter-date-dropdown-wrap
-                h6.form-elements__items-tytle filter date dropdown
-                +date-filter-dropdown({})
-            
-            .form-elements__item 
-              .form-elements__subscribe-wrap
-                h6.form-elements__items-tytle subscription text field
-                +subscribe({w267: true})
+            .form-elements__date-search-filds-wrap
+              +date-search-filds({tytle1: 'date Dropdown',  tytle2: 'date Dropdown'})
+             
+            .form-elements__filter-date-dropdown-wrap
+              h6.form-elements__items-tytle filter date dropdown
+              +date-filter-dropdown({})
+             
+            .form-elements__subscribe-wrap
+              h6.form-elements__items-tytle subscription text field
+              +subscribe({w267: true})
 
           .form-elements__col.form-elements__col-12
-            .form-elements__item.form-elements__checkbox-list-wrap
+            .form-elements__checkbox-list-wrap
               +checkbox-list({})
             
-            .form-elements__item
-              .form-elements__radio-wrap  
-                h6.form-elements__items-tytle Radio Buttons
-                .form-elements__radio-element-wrap
-                  +radio({})
+            .form-elements__radio-wrap  
+              h6.form-elements__items-tytle Radio Buttons
+              .form-elements__radio-element-wrap
+                +radio({})
+                        
+            .form-elements__toggle-wrap  
+              h6.form-elements__items-tytle toggle
+              .form-elements__toggle-element-wrap 
+                +toggle({checked: true})
+              .form-elements__toggle-element-wrap.form-elements__toggle-element-wrap_second-el
+                +toggle({})
             
-            .form-elements__item
-              .form-elements__toggle-wrap  
-                h6.form-elements__items-tytle toggle
-                .form-elements__toggle-element-wrap 
-                  +toggle({checked: true})
-                .form-elements__toggle-element-wrap
-                  +toggle({})
-            
-            .form-elements__item
-              .form-elements__like-wrap
-                h6.form-elements__items-tytle like button
-                .form-elements__like-elements-wrap 
-                  .form-elements__like-element-wrap 
-                    +like({value: 2})
-                  +like({liked: true, value: 12})
+            .form-elements__like-wrap
+              h6.form-elements__items-tytle like button
+              .form-elements__like-elements-wrap 
+                .form-elements__like-element-wrap 
+                  +like({value: 2})
+                +like({liked: true, value: 12})
 
-            .form-elements__item
-              .form-elements__rate-wrap
-                h6.form-elements__items-tytle rate button
-                .form-elements__rate-elements-wrap
-                  .form-elements__rate-element-wrap
-                    +rate({rating: 4})
-                  +rate({rating: 5})
+            
+            .form-elements__rate-wrap
+              h6.form-elements__items-tytle rate button
+              .form-elements__rate-elements-wrap
+                .form-elements__rate-element-wrap
+                  +rate({rating: 4})
+                +rate({rating: 5})
 
           .form-elements__col
             .form-elements__slider-wrap
               +slider({tytle : 'Range Slider'})
 
-            .form-elements__item
-              .form-elements__buttons-wrap
-                h6.form-elements__items-tytle buttons
-                .form-elements__blue-buttons-wrap
-                  .form-elements__blue-button-wrap
-                    +button({})
+            .form-elements__buttons-wrap
+              h6.form-elements__items-tytle buttons
+              .form-elements__blue-buttons-wrap
+                .form-elements__blue-button-wrap
                   +button({})
+                +button({})
 
               .form-elements__white-buttons-wrap
                 .form-elements__white-button-wrap
                   +button({white:true})
                 +button({white:true})
-              
               
               .form-elements__white-emptybuttons-wrap
                 .form-elements__emptybutton-wrap
@@ -120,33 +112,29 @@ html(lang="en")
 
               .form-elements__big-button-wrap
                 +button({big: true})
-
-            .form-elements__item
-              .form-elements__pagination-wrap
-                h6.form-elements__items-tytle pagination
-                .form-elements__pagination-element-wrap
-                  +pagination({})
+            
+            .form-elements__pagination-wrap
+              h6.form-elements__items-tytle.form-elements__pagination-tytle pagination
+              +pagination({})
        
         section.form-elements__section.form-elements__section-2
           .form-elements__col
             .form-elements__dropdowns-wrap
-              h6.form-elements__items-tytle dropdown
+              h6.form-elements__items-tytle.form-elements__dropdowns-tytle dropdown
               +dropdown({small: true, count1: 2, count2: 2})
               .form-elements__dropdown-wrap
                 h6.form-elements__items-tytle dropdown
                 +dropdown({expanded: true, small: true, count1: 2, count2: 2})
               
           .form-elements__col
-            .form-elements__item
-              .form-elements__dropdown-company-wrap  
-                h6.form-elements__items-tytle dropdown
-                +dropdownCompany({expanded: true})
+            .form-elements__dropdown-company-wrap  
+              h6.form-elements__items-tytle dropdown
+              +dropdownCompany({expanded: true})
 
           .form-elements__col
-            .form-elements__item
-              h6.form-elements__items-tytle dropdown
-              .form-elements__dropdown-expanded-company-wrap 
-                +dropdownCompany({expanded: true, count1: 2, count2: 1, text: '3 гостя'})
+            .form-elements__dropdown-company-filled-wrap
+              h6.form-elements__items-tytle.form-elements__dropdown-company-filled-tytle dropdown
+              +dropdownCompany({expanded: true, count1: 2, count2: 1, text: '3 гостя'})
         
         section.form-elements__section.form-elements__section-3
           .form-elements__col
@@ -166,8 +154,7 @@ html(lang="en")
 
         section.form-elements__section.form-elements__section-4
           .form-elements__col
-            .form-elements__item
-              +room_info({num: 2})
+            +room_info({num: 2})
 
           .form-elements__col
             .form-elements__comment-wrap

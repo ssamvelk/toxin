@@ -38,9 +38,15 @@
 
 .date-dropdawn__svg {
   position: absolute;
-  top: rem(16);
-  right: rem(17);
+  top: rem(15);
+  right: rem(16);
 }
+
+.date-dropdawn__svg_in-filter {
+  top: rem(14);
+  right: rem(15);
+}
+
 
 .date__info {
   width: rem(150);
@@ -56,6 +62,7 @@
 .date__info_no-padding {
   padding-right: rem(0);
 }
+
 //--------------------------------
 .date__search-wrp {
   position: relative;
@@ -86,6 +93,7 @@
   line-height: rem(15);
   text-transform: uppercase;
 }
+
 //-----------------------------------------------------------air calendar
 .datepicker-here {
   position: relative;
@@ -297,7 +305,7 @@
 
 .date__datepicker-footer {
   position: absolute;
-  bottom: -53px;
+  bottom: rem(-53);
   left: rem(-1);
   display: flex;
   justify-content: space-between;
@@ -312,7 +320,7 @@
   border-top-right-radius: 0;
 }
 .date__clean-wrap {
-  min-width: rem(72px);
+  min-width: rem(72);
 }
 
 .date__clean,
@@ -396,9 +404,14 @@
 }
 
 .datepicker--cell.-disabled-.-focus- {
+  color: $Dark50;
   background: none;
 }
 
 .datepicker--cell.-focus- {
   border-radius: 50%;
+}
+
+.-disabled-.-focus-.datepicker--cell-day.-other-month- {
+  color: $Dark25;
 }

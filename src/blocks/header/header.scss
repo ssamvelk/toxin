@@ -8,7 +8,7 @@
 
   @media screen and (max-width: 1200px) {
     min-width: rem(380);
-    padding: 15px 50px;
+    padding: rem(15) rem(50);
   }
 
   @media screen and (max-width: 950px) {
@@ -35,7 +35,6 @@
   }
 
   &_authorized {
-    
     .header__btns-wrp {
       display: none;
     }
@@ -58,7 +57,7 @@
   width: rem(430);
   margin-top: rem(10);
   font-weight: normal;
-  font-size: 14px;
+  font-size: rem(14);
 
   font-family: Montserrat;
   font-style: normal;
@@ -100,19 +99,19 @@
 }
 
 .header__service {
-  left: -1px;
+  left: rem(-1);
 }
 
 .header__vacancy {
-  left: 8px;
+  left: rem(8);
 }
 
 .header__news {
-  left: 6px;
+  left: rem(6);
 }
 
 .header__agreement {
-  left: 4px;
+  left: rem(4);
 }
 
 .header__expand-svg {
@@ -139,10 +138,10 @@
 .header__user {
   position: relative;
   display: none;
-  height: 30px;
+  height: rem(30);
   margin-top: rem(5);
-  margin-left: 70px;
-  padding-left: 20px;
+  margin-left: rem(70);
+  padding-left: rem(20);
   font-weight: normal;
   font-size: rem(14);
   font-family: Montserrat;

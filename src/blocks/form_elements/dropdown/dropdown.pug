@@ -61,9 +61,9 @@ mixin dropdownCompany(options)
   - var cleanButtonClass = (count1 > 0 || count2 > 0 || count3 > 0) ? '' : 'dropdown__item-clean_disable'
   div(class='dropdown__wrp dropdown__wrp_320 dropdown__wrp-company js-dropdown__wrp-company'+small)
     +dropdownMainSVG({opacity: 75})
-    p(class='dropdown__main'+isExpandedMain) #{text}
+    p(class='dropdown__main dropdown__main_company'+isExpandedMain) #{text}
 
-    ul(class='dropdown__list'+isExpandedList)
+    ul(class='dropdown__list dropdown__list-company'+isExpandedList)
       li.dropdown__item.dropdown__item-fadult 
         span.dropdown__item-name взрослые
         +dropdownItem({id:'js-fadult', value: count1})
@@ -73,6 +73,6 @@ mixin dropdownCompany(options)
       li.dropdown__item.dropdown__item-baby 
         span.dropdown__item-name младенцы
         +dropdownItem({id:'js-baby', value: count3})
-      li.dropdown__item.dropdown__list-footer
-        a.dropdown__item-clean(class= cleanButtonClass) Очистить
-        a.dropdown__item-apply Применить
+      li.dropdown__item.dropdown__item-footer
+        a.dropdown__item-clean-btn.js-dropdown__item-clean-btn(class= cleanButtonClass) Очистить
+        a.dropdown__item-apply-btn.js-dropdown__item-apply-btn Применить

@@ -8,9 +8,6 @@
 
 .dropdown__wrp_320 {
   width: rem(320);
-  .dropdown__list {
-    min-height: rem(159);
-  }
 }
 
 .dropdown__wrp_266 {
@@ -19,7 +16,7 @@
   
 .dropdown__main-svg {
   position: absolute;
-  top: rem(15);
+  top: rem(14);
   right: rem(16);
 }
   
@@ -56,7 +53,8 @@
   box-sizing: border-box;
   width: 100%;
   min-height: rem(119);
-  padding-right: rem(7);
+  padding-top: rem(5);
+  padding-right: rem(6);
   padding-left: rem(15);
   color: $Dark;
   font-weight: bold;
@@ -72,7 +70,6 @@
   border-bottom-left-radius: rem(2);
   
 }
-
 .dropdown__list_expanded {
   position: absolute;
   z-index: 99;
@@ -80,18 +77,23 @@
   background: white;
   border-color: $Dark50;
 }
+.dropdown__list-company {
+  min-height: rem(158);
+}
+
 
 .dropdown__item {
   position: relative;
   display: flex;
   justify-content: space-between;
   height: rem(30);
-  margin-top: rem(7);
+  margin-bottom: rem(7);
   line-height: rem(30);
 }
 
-.dropdown__list-footer {
+.dropdown__item-footer {
   margin-top: rem(14);
+  margin-bottom: 0;
 }
 
 .dropdown__item-name {
@@ -107,12 +109,12 @@
   vertical-align: middle;
 }
 
-.dropdown__item-clean {
+.dropdown__item-clean-btn {
   color: $Dark50;
   cursor: pointer;
 }
 
-.dropdown__item-apply {
+.dropdown__item-apply-btn {
   position: absolute;
   right: 0;
   color: $Purple;
@@ -123,4 +125,15 @@
   display: none;
 }
 
-  
+.dropdown__wrp-company {
+
+  .dropdown__main-svg {
+    top: rem(14);
+    right: rem(16);
+  }
+
+  .dropdown__main_company {
+    padding-left: rem(14);
+    line-height: rem(40);
+  }
+}

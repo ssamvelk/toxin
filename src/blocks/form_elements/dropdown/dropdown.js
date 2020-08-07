@@ -14,14 +14,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // подсчет
     const itemCounts = currentTarget.querySelectorAll('.dropdown__item-value');
 
-    let value = Number(itemCounts[0].innerHTML)
-      + Number(itemCounts[1].innerHTML);
+    let value = Number(itemCounts[0].innerHTML) + Number(itemCounts[1].innerHTML);
 
     const babiesValue = Number(itemCounts[2].innerHTML);
 
     if (currentTarget.classList.contains('js-dropdown__wrp-company')) {
-      const cleanBtn = currentTarget.querySelector('.dropdown__item-clean');
-      const applyBtn = currentTarget.querySelector('.dropdown__item-apply');
+      const cleanBtn = currentTarget.querySelector('.js-dropdown__item-clean-btn');
+      const applyBtn = currentTarget.querySelector('.js-dropdown__item-apply-btn');
 
       if (value !== 0) cleanBtn.classList.remove('dropdown__item-clean_disable');
 
@@ -55,7 +54,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const bed = currentTarget.querySelector('#js-bed');
       // const bathroom = currentTarget.querySelector('#js-bathroom');
 
-      if (target.classList.contains('js-plus-btn') || target.classList.contains('js-minus-btn')) {
+      if (
+        target.classList.contains('js-plus-btn')
+        || target.classList.contains('js-minus-btn')
+      ) {
         mainFild.innerHTML = `${bedroom.innerHTML} спальни, ${bed.innerHTML} кровати...`;
       }
     }
@@ -67,26 +69,28 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // ---------------------------------кнопки +\-
-const dropdownItems = document.querySelectorAll('.dropdown__item-box');
+document.addEventListener('DOMContentLoaded', () => {
+  const dropdownItems = document.querySelectorAll('.dropdown__item-box');
 
-for (let i = 0; i < dropdownItems.length; i += 1) {
-  dropdownItems[i].addEventListener('click', function (event) {
-    const { target } = event;
-    const item = this.querySelector('.dropdown__item-value');
-    let itemValue = item.innerHTML;
+  for (let i = 0; i < dropdownItems.length; i += 1) {
+    dropdownItems[i].addEventListener('click', function (event) {
+      const { target } = event;
+      const item = this.querySelector('.dropdown__item-value');
+      let itemValue = item.innerHTML;
 
-    if (target.tagName !== 'svg') return;
+      if (target.tagName !== 'svg') return;
 
-    if (target.classList.contains('js-minus-btn')) {
-      if (itemValue > 0) {
-        itemValue--;
+      if (target.classList.contains('js-minus-btn')) {
+        if (itemValue > 0) {
+          itemValue--;
+          item.innerHTML = itemValue;
+        }
+      }
+
+      if (target.classList.contains('js-plus-btn')) {
+        itemValue++;
         item.innerHTML = itemValue;
       }
-    }
-
-    if (target.classList.contains('js-plus-btn')) {
-      itemValue++;
-      item.innerHTML = itemValue;
-    }
-  });
-}
+    });
+  }
+});

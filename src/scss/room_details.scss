@@ -75,7 +75,6 @@
 }
 @media screen and (max-width: 1200px){
   .room-det__left{
-    //width: 61.29%;
     min-width: rem(420);
     padding-right: rem(10);
     padding-left: rem(10);
@@ -100,7 +99,7 @@
   font-size: rem(19);
   font-family: Quicksand;
   line-height: rem(24);
-  letter-spacing: 1px;
+  letter-spacing: rem(0.5);
 }
 .room-det__left-waaay-title {
   margin-bottom: rem(20);
@@ -109,7 +108,7 @@
   font-size: rem(19);
   font-family: Quicksand;
   line-height: rem(24);
-  letter-spacing: 1px;
+  letter-spacing: rem(0.5);
 }
 .room-det__rools-title {
   margin-bottom: rem(18);
@@ -207,11 +206,11 @@
   font-size: rem(19);
   font-family: Quicksand;
   line-height: rem(24);
-  letter-spacing: 1px;
+  letter-spacing: rem(1);
 }
 .room-det__rools-list {
   position: relative;
-  top: -2px;
+  top: rem(-2);
   padding-left: rem(20.86);
   color: $Dark75;
 
@@ -245,7 +244,7 @@
   font-size: rem(19);
   font-family: Quicksand;
   line-height: rem(24);
-  letter-spacing: 1px;
+  letter-spacing: rem(1);
 }
 .room-det__cancel-info {
   color: $Dark75;

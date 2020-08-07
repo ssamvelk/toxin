@@ -6,7 +6,7 @@
   width: rem(380);
   height: rem(646);
   padding: 0 rem(29);
-  background: #ffffff;
+  background: #fff;
   border: rem(1) solid rgba(0, 0, 0, 0.12);
   border-radius: rem(4);
   box-shadow: 0 0 rem(25)rgba(0, 0, 0, 0.2);
@@ -22,7 +22,7 @@
   font-size: rem(25);
   font-family: Quicksand;
   line-height: rem(30);
-  letter-spacing: 0.1px;
+  letter-spacing: rem(0.1);
 }
 
 .registration__text-field {

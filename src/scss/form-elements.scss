@@ -13,202 +13,221 @@
 }
 
 .form-elements__inner-wrap {
-  max-width: 1160px;
-  height: 1853px;
+  max-width: rem(1160);
+  height: rem(1853);
   margin: 0 auto;
-  padding-top: 145px;
+  padding-top: rem(143);
 }
 
 .form-elements__section {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: rem(45);
 
   &-2 {
-    margin-top: 80px;
+    margin-top: rem(80);
   }
 
   &-3 {
-    margin-top: 170px;
+    margin-top: rem(69);
   }
 
   &-4 {
-    margin-top: 98px;
+    margin-top: rem(98);
   }
 }
 
 .form-elements__col {
-  min-width: 320px;
+  min-width: rem(320);
   
-  &-12 {
-    padding-left: 26px;
+  &-11 {
+    padding-left: rem(1);
   }
-}
-.form-elements__item {
-  margin-bottom: 20px;
+
+  &-12 {
+    padding-left: rem(26);
+  }
 }
 
 .form-elements__items-tytle {
-  margin-bottom: 5px;
+  margin-bottom: rem(5);
   color: #1F2041;
   font-weight: bold;
-  font-size: 12px;
+  font-size: rem(12);
   font-family: Montserrat;
   font-style: normal;
-  line-height: 15px;
+  line-height: rem(15);
   text-transform: uppercase;
 }
+
+// section 1
 .form-elements__text-field-default-wrap {
-  position: relative;
-  top: -2px;
-  margin-bottom: 18.5px;
+  margin-bottom: rem(20);
 }
+
+.form-elements__text-field-hover-wrap{
+  margin-bottom: rem(21);
+}
+.form-elements__text-field-hover-tytle {
+  margin-bottom: rem(5);
+}
+
+.form-elements__upper-dropdown-company-wrap {
+  margin-bottom: rem(22);
+}
+
 .form-elements__masked-text-field-wrap {
-  position: relative;
-  top: 2px;
+  margin-bottom: rem(40);
 }
+
 .form-elements__date-search-filds-wrap {
-  margin-top: 42px;
+  margin-bottom: rem(35);
 }
-.form-elements__checkbox-list-wrap {
-  position: relative;
-  top: -1px;
-}
+
 .form-elements__filter-date-dropdown-wrap {
-  margin-top: 35px;
+  margin-bottom: rem(42);
 }
+
 .form-elements__subscribe-wrap {
-  margin-top: 42px;
+  margin-bottom: rem(20);
+  .subscribe {
+    position: relative;
+    left: rem(-1);
+  }
+}
+
+.form-elements__checkbox-list-wrap {
+  margin-bottom: rem(39);
 }
 
 .form-elements__radio-wrap  {
-  margin-top: 37px;
+  margin-bottom: rem(42);
 }
 .form-elements__radio-element-wrap {
-  margin-top: 15px;
+  margin-top: rem(15);
 }
+
+
 .form-elements__toggle-wrap {
-  margin-top: 42px;
+  position: relative;
+  margin-bottom: rem(44);
+
+  .form-elements__toggle-element-wrap {
+    position: relative;
+    left: rem(-1);
+
+    &_second-el {
+      top: rem(-1);
+    }
+  }
 }
 .form-elements__toggle-element-wrap {
-  margin-top: 15px;
+  margin-top: rem(15);
 }
+
 .form-elements__like-wrap  {
-  
-  margin-top: 45px;
+  margin-bottom: rem(40);
 }
 .form-elements__like-elements-wrap {
   display: flex;
-  margin-top: 15px;
+  margin-top: rem(15);
 }
 .form-elements__like-element-wrap {
-  margin-right: 10px;
+  margin-right: rem(10);
 }
-.form-elements__rate-wrap {
-  margin-top: 40px;
-}
-.form-elements__slider-wrap {
-  margin-bottom: rem(29);
 
-  .slider {
-    top: rem(2);
-  }
+.form-elements__rate-wrap {
+  margin-bottom: rem(20);
 }
 .form-elements__rate-elements-wrap {
   display: flex;
-  margin-top: 18px;
+  margin-top: rem(18);
 }
 .form-elements__rate-element-wrap {
-  margin-right: 20px;
+  margin-right: rem(20);
 }
+
+.form-elements__slider-wrap {
+  margin-bottom: rem(16);
+}
+
 .form-elements__buttons-wrap {
-  margin-top: -15px;
+  margin-bottom: rem(40);
 }
 .form-elements__blue-buttons-wrap {
   display: flex;
-  margin-top: 15px;
+  margin-top: rem(15);
 }
 .form-elements__blue-button-wrap {
-  margin-right: 19px;
+  margin-right: rem(19);
 }
 .form-elements__white-buttons-wrap {
   position: relative;
-  left: -1px;
+  left: rem(-1);
   display: flex;
-  margin-top: 30px;
+  margin-top: rem(30);
 }
 .form-elements__white-button-wrap {
-  margin-right: 20px;
+  margin-right: rem(20);
 }
 .form-elements__white-emptybuttons-wrap {
   display: flex;
-  margin-top: 31px;
+  margin-top: rem(31);
 }
 .form-elements__emptybutton-wrap {
-  margin-right: 20px;
+  margin-right: rem(20);
 }
 .form-elements__big-button-wrap {
   position: relative;
-  left: -1px;
-  margin-top: 30px;
+  left: rem(-1);
+  margin-top: rem(30);
 }
+
+
 .form-elements__pagination-wrap {
-  margin-top: 40px;
+  margin-bottom: rem(20);
 }
-.form-elements__pagination-element-wrap {
-  margin-top: 17px;
+.form-elements__pagination-tytle {
+  margin-bottom: rem(16);
 }
+
+// section 2
 .form-elements__dropdowns-wrap {
-  position: relative;
-  & > .dropdown__wrp {
-    position: relative;
-    top: -2px;
-  }
+  min-height: rem(250);
 }
-
+.form-elements__dropdowns-tytle {
+  margin-bottom: rem(4);
+}
 .form-elements__dropdown-wrap {
-  position: relative;
-  margin-top: 19px;
-
-  & > .dropdown__wrp {
-    position: relative;
-    top: -1px;
-  }
+  margin-top: rem(19);
 }
+
 .form-elements__dropdown-company-wrap {
   position: relative;
-  top: -2px;
-  margin-left: 53px;
+  top: rem(-1);
+  margin-left: rem(55);
 }
-.form-elements__dropdown-expanded-company-wrap {
-  position: relative;
-  top: -2px;
-}
-.form-elements__checkbox-additional-list-wrap {
-  margin-top: 2px;
-}
-.form-elements__opened-checkbox-additional-list-wrap {
-  margin-top: 50px;
-}
-.form-elements__checkbox-accessibility-wrap {
-  margin-top: 2px;
-  margin-left: 27px;
-}
-.form-elements__bullet-wrap {
-  margin-top: 2px;
-  
-  .bullet__title {
-    margin-left: -22px;
-  }
 
-  .bullet__list {
-    margin-top: 15px;
-  }
-  .bullet__item {
-    margin-top: 10px;
-  }
+.form-elements__dropdown-company-filled-wrap {
+  position: relative;
+  left: rem(-1);
+}
+.form-elements__dropdown-company-filled-tytle {
+  margin-bottom: rem(4);
+}
+
+
+// section 3
+.form-elements__opened-checkbox-additional-list-wrap {
+  margin-top: rem(49);
+}
+
+
+.form-elements__checkbox-accessibility-wrap {
+  
+  margin-left: rem(27);
 }
 
 .form-elements__comment-wrap {
-  margin-top: 9px;
+  margin-top: rem(9);
 }
