@@ -18,11 +18,11 @@
   margin-top: rem(38);
   margin-bottom: rem(21);
   color: #1F2041;
-  font-weight: 600;
+  font-weight: 500;
   font-size: rem(25);
   font-family: Quicksand;
   line-height: rem(30);
-  letter-spacing: rem(0.1);
+  letter-spacing: rem(0.7);
 }
 
 .registration__text-field {
@@ -48,7 +48,7 @@
 .registration__small-title {
   margin-bottom: rem(5);
   color: #1F2041;
-  font-weight: bold;
+  font-weight: 600;
   font-size: rem(12);
   font-family: Montserrat;
   line-height: rem(15);
@@ -67,10 +67,7 @@
   display: flex;
   align-items: center;
   color: black;
-  font-weight: normal;
   font-size: rem(14);
   font-family: Montserrat;
-  font-style: normal;
   line-height: rem(18);
-  text-align: center;
 }
