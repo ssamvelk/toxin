@@ -97,7 +97,7 @@
 .search__comfort-title {
   margin-bottom: rem(5);
   color: #1f2041;
-  font-weight: bold;
+  font-weight: 700;
   font-size: rem(12);
   font-family: Montserrat;
   line-height: rem(15);
@@ -127,6 +127,7 @@
   font-size: rem(25);
   font-family: Quicksand;
   line-height: rem(29);
+  letter-spacing: rem(0.4);
 }
 
 .search__rooms {

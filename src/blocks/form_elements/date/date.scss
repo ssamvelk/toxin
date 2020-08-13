@@ -52,7 +52,7 @@
   width: rem(150);
   padding-right: rem(45);
   color: $Dark75;
-  font-weight: normal;
+  font-weight: 400;
   font-size: rem(14);
   font-family: Montserrat;
   font-style: normal;
@@ -87,7 +87,7 @@
 
 .date__search-title {
   color: $Dark;
-  font-weight: bold;
+  font-weight: 700;
   font-size: rem(12);
   font-family: Montserrat;
   line-height: rem(15);
@@ -128,7 +128,7 @@
   height: rem(73);
   padding: 0 rem(3) rem(12) rem(5);
   color: $Dark;
-  font-weight: bold;
+  font-weight: 700;
   font-size: rem(19);
   font-family: Quicksand;
   font-style: normal;
@@ -171,7 +171,7 @@
 
 .datepicker--days-names > .datepicker--day-name {
   color: $Purple;
-  font-weight: bold;
+  font-weight: 700;
   font-size: rem(12);
   font-family: Montserrat;
   font-style: normal;
@@ -191,16 +191,15 @@
 //---------------------вставка
 .datepicker--cells > .datepicker--cell {
   color: $Dark50;
-  font-weight: normal;
+  font-weight: 400;
   font-size: rem(12);
-  //день
   font-family: Montserrat;
   font-style: normal;
   line-height: rem(15);
 
   &.-current- {
     color: #fff;
-    font-weight: bold;
+    font-weight: 700;
     font-size: rem(12);
     font-family: Montserrat;
     font-style: normal;
@@ -218,7 +217,7 @@
   &.-selected-.-current-,
   &.-selected-.-current-.-focus- {
     color: #fff;
-    font-weight: bold;
+    font-weight: 700;
     font-size: rem(12);
     font-family: Montserrat;
     font-style: normal;
@@ -325,7 +324,7 @@
 
 .date__clean,
 .date__apply {
-  font-weight: bold;
+  font-weight: 700;
   font-size: rem(12);
   font-family: Montserrat;
   font-style: normal;

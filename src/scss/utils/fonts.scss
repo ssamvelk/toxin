@@ -7,6 +7,14 @@
 }
 
 @font-face{
+  font-weight: 700;
+  font-family: 'Montserrat';
+  font-style: normal;
+  src: url('../fonts/montserrat-bold.woff2') format('woff2'),
+    url('../fonts/montserrat-bold.woff') format('woff');
+}
+
+@font-face{
   font-weight: 400;
   font-family: 'Quicksand';
   font-style: normal;
@@ -15,7 +23,7 @@
 }
 
 @font-face{
-  font-weight: 500;
+  font-weight: 700;
   font-family: 'Quicksand';
   font-style: normal;
   src: url('../fonts/quicksand-bold.woff2') format('woff2'),

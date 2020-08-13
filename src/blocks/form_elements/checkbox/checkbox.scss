@@ -13,7 +13,7 @@
   position: relative;
   max-width: rem(192);
   color: $Dark50;
-  font-weight: normal;
+  font-weight: 400;
   font-size: rem(14);
   font-family: Montserrat;
   font-style: normal;
@@ -67,9 +67,9 @@
   box-sizing: border-box;
   color: #1f2041;
   font-weight: 700;
-  font-size: 0.85714rem;
+  font-size: rem(12);
   font-family: Montserrat;
-  line-height: 1.07143rem;
+  line-height: rem(15);
   text-transform: uppercase;
 }
 
@@ -87,9 +87,9 @@
   box-sizing: border-box;
   color: #1f2041;
   font-weight: 700;
-  font-size: 0.85714rem;
+  font-size: rem(12);
   font-family: Montserrat;
-  line-height: 1.07143rem;
+  line-height: rem(15);
   text-transform: uppercase;
 }
 
@@ -132,7 +132,7 @@
   font-weight: 700;
   font-size: rem(12);
   font-family: Montserrat;
-  line-height: 1.07143rem;
+  line-height: rem(15);
   text-transform: uppercase;
 }
 
@@ -157,7 +157,7 @@
 .checkbox-accessibility__inner-title {
   margin-top: rem(1);
   color: $Dark75;
-  font-weight: bold;
+  font-weight: 700;
   font-size: rem(14);
   font-family: Montserrat;
   font-style: normal;
@@ -168,7 +168,7 @@
 .checkbox-accessibility__inner-info {
   margin-top: rem(5);
   color: $Dark50;
-  font-weight: normal;
+  font-weight: 400;
   font-size: rem(12);
   font-family: Montserrat;
   font-style: normal;

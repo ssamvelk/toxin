@@ -95,20 +95,20 @@
 .room-det__left-info-title {
   margin-bottom: rem(20);
   color: #1f2041;
-  font-weight: bold;
+  font-weight: 700;
   font-size: rem(19);
   font-family: Quicksand;
   line-height: rem(24);
-  letter-spacing: rem(0.5);
+  letter-spacing: rem(0.7);
 }
 .room-det__left-waaay-title {
   margin-bottom: rem(20);
   color: #1f2041;
-  font-weight: bold;
+  font-weight: 700;
   font-size: rem(19);
   font-family: Quicksand;
   line-height: rem(24);
-  letter-spacing: rem(0.5);
+  letter-spacing: rem(1);
 }
 .room-det__rools-title {
   margin-bottom: rem(18);
@@ -132,6 +132,7 @@
   top: rem(27);
   right: rem(38);
   color: $Dark75;
+  font-weight: 400;
   font-size: rem(14);
   font-family: Montserrat;
   line-height: rem(24);
@@ -172,18 +173,18 @@
 .room-det__recall {
   position: relative;
   margin-top: rem(14);
-  margin-bottom: 1.42857rem;
+  margin-bottom: rem(20);
   color: #1f2041;
-  font-weight: bold;
+  font-weight: 700;
   font-size: rem(19);
   font-family: Quicksand;
   line-height: rem(24);
-  letter-spacing: 0.65px;
+  letter-spacing: rem(1);
   &::after {
     position: absolute;
     right: 0;
     color: $Dark25;
-    font-weight: normal;
+    font-weight: 400;
     font-size: rem(14);
     font-family: Montserrat;
     font-style: normal;
@@ -202,7 +203,7 @@
   margin-bottom: 1.42857rem;
   margin-left: rem(20.43);
   color: #1f2041;
-  font-weight: bold;
+  font-weight: 700;
   font-size: rem(19);
   font-family: Quicksand;
   line-height: rem(24);
@@ -213,7 +214,7 @@
   top: rem(-2);
   padding-left: rem(20.86);
   color: $Dark75;
-
+  font-weight: 400;
   font-size: rem(14);
   font-family: Montserrat;
   line-height: rem(24);
@@ -240,7 +241,7 @@
 .room-det__cancel-title {
   margin-bottom: rem(18);
   color: #1f2041;
-  font-weight: bold;
+  font-weight: 700;
   font-size: rem(19);
   font-family: Quicksand;
   line-height: rem(24);
@@ -248,6 +249,7 @@
 }
 .room-det__cancel-info {
   color: $Dark75;
+  font-weight: 400;
   font-size: rem(14);
   font-family: Montserrat;
   line-height: rem(24);

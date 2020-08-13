@@ -20,7 +20,7 @@
 
 .reserve__num {
   color: $Dark;
-  font-weight: 600;
+  font-weight: 700;
   font-size: rem(14);
   font-family: Quicksand;
   line-height: rem(30);
@@ -29,7 +29,7 @@
 .reserve__number-i {
   margin-left: rem(2);
   color: $Dark;
-  font-weight: bold;
+  font-weight: 700;
   font-size: rem(24);
   font-family: Quicksand;
   line-height: rem(21);
@@ -40,7 +40,7 @@
 .reserve__type-i {
   margin-left: rem(5);
   color: $Purple;
-  font-weight: bold;
+  font-weight: 700;
   font-size: rem(12);
   font-family: Montserrat;
   font-style: normal;
@@ -51,7 +51,7 @@
 .reserve__cost {
   margin-left: auto;
   color: $Dark50;
-  font-weight: bold;
+  font-weight: 700;
   font-size: rem(14);
   font-family: Montserrat;
   line-height: rem(30);
@@ -70,7 +70,7 @@
 .reserve__company-title {
   margin-bottom: rem(5);
   color: #1f2041;
-  font-weight: bold;
+  font-weight: 700;
   font-size: rem(12);
   font-family: Montserrat;
   line-height: rem(15);
@@ -91,6 +91,7 @@
   margin-top: rem(5);
   margin-bottom: rem(15);
   color: $Dark75;
+  font-weight: 400;
   font-size: rem(14);
   font-family: Montserrat;
   line-height: rem(18);
@@ -115,7 +116,7 @@
   margin-top: rem(31);
   margin-bottom: rem(20);
   color: $Dark;
-  font-weight: bold;
+  font-weight: 700;
   font-size: rem(19);
   font-family: Quicksand;
   font-style: normal;
