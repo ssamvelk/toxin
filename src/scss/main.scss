@@ -3,17 +3,16 @@
 @import "utils/fonts.scss";
 @import "utils/mixins.scss";
 
-@import "demo-page.scss";
-@import "index.scss";
-@import "colors-and-types.scss";
-@import "headers-and-footers.scss";
-@import "cards.scss";
-@import "form-elements.scss";
-@import "registration.scss";
-@import "room_details.scss";
-@import "search_room.scss";
-@import "sign_in.scss";
-@import "main-ui-kit.scss";
+@import "../pages/index/index.scss";
+@import "../pages/main/main.scss";
+@import "../pages/colors-and-types/colors-and-types.scss";
+@import "../pages/headers-and-footers/headers-and-footers.scss";
+@import "../pages/cards/cards.scss";
+@import "../pages/form-elements/form-elements.scss";
+@import "../pages/registration/registration.scss";
+@import "../pages/room-details/room-details.scss";
+@import "../pages/search-room/search-room.scss";
+@import "../pages/sign-in/sign-in.scss";
 
 @import "../blocks/form_elements/text_field/text_field.scss";
 @import "../blocks/form_elements/dropdown/dropdown.scss";

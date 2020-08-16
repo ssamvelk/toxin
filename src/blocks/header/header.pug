@@ -1,5 +1,4 @@
 include ../form_elements/buttons/buttons.pug
-//- include ../../static/sprite.svg
 
 mixin mainheader(options)
   -var isAuthorized = (options.authorized) ? 'header__inner-wrap_authorized': ''
@@ -70,7 +69,7 @@ mixin mainheader(options)
       
       .header__btns-wrp
         .header__inter-btn
-          +button({white:true, text: 'Войти', w87: true, href: 'sign_in.html'})
+          +button({white:true, text: 'Войти', w87: true, href: 'sign-in.html'})
         .header__registration-btn
           +button({text:'зарегистрироваться', w196: true, href: 'registration.html'})
       

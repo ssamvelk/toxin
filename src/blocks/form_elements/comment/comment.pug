@@ -1,7 +1,7 @@
 include ../like/like.pug
 
 mixin comment(options)
-  -var img=(options.img) ? options.img : '../static/source/image_murad48.png'
+  -var img=(options.img) ? options.img : '../../static/source/image_murad48.png' // ../../static/source/image_murad48.png
   -var name=(options.name) ? options.name : 'Мурад Сарафанов'
   -var days=(options.days) ? options.days : '5'
   -var comment=(options.comment) ? options.comment : 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'

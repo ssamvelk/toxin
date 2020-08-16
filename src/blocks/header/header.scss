@@ -90,10 +90,9 @@
   line-height: rem(17);
   vertical-align: middle;
 
-  &_active,
-  &:hover {
+  &_active {
     color: $Dark75;
-    font-weight: bold;
+    font-weight: 700;
   }
 }
 

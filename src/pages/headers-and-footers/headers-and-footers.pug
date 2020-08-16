@@ -1,6 +1,6 @@
-include ../blocks/header/header.pug
-include ../blocks/footer/footer.pug
-include ../static/sprite.svg
+include ../../blocks/header/header.pug
+include ../../blocks/footer/footer.pug
+include ../../static/sprite.svg
 
 <!DOCTYPE html>
 html(lang="en")
@@ -14,7 +14,7 @@ html(lang="en")
     title Headers & Footers
   body
     main.headers-and-footers__wrap
-      img.headers-and-footers__logo(src='../static/source/logo-gray.png' alt='logo' width=48 height=48)
+      img.headers-and-footers__logo(src='../../static/source/logo-gray.png' alt='logo' width=48 height=48)
       .headers-and-footers__inner-wrap
         .headers-and-footers__header-wrap
           +mainheader({authorized: false})

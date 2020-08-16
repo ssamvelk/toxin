@@ -120,7 +120,7 @@
 
   &:hover {
     color: $Dark75;
-    font-weight: bold;
+    
   }
 }
 
@@ -130,7 +130,7 @@
 .footer__subscribe-title {
   margin-bottom: rem(21);
   color: $Dark;
-  font-weight: bold;
+  font-weight: 700;
   font-size: rem(12);
   line-height: rem(15);
   text-transform: uppercase;

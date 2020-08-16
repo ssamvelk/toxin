@@ -1,26 +1,26 @@
-include ../static/sprite.svg
-include ../blocks/form_elements/text_field/text_field.pug
-include ../blocks/form_elements/dropdown/dropdown.pug
-include ../blocks/form_elements/date/date.pug
-include ../blocks/form_elements/checkbox/checkbox.pug
-include ../blocks/form_elements/radio/radio.pug
-include ../blocks/form_elements/toggle/toggle.pug
-include ../blocks/form_elements/like/like.pug
-include ../blocks/form_elements/comment/comment.pug
-include ../blocks/form_elements/rate/rate.pug
-include ../blocks/form_elements/slider/slider.pug
-include ../blocks/form_elements/buttons/buttons.pug
-include ../blocks/form_elements/pagination/pagination.pug
-include ../blocks/form_elements/bullet_list/bullet_list.pug
-include ../blocks/form_elements/room_info/room_info.pug
-include ../blocks/cards/search/search.pug
-include ../blocks/cards/registration/registration.pug
-include ../blocks/cards/reserve/reserve.pug
-include ../blocks/cards/inter/inter.pug
-include ../blocks/cards/rooms/rooms.pug
-include ../blocks/header/header.pug
-include ../blocks/footer/footer.pug
-include ../blocks/form_elements/percent_pie/percent_pie.pug
+include ../../static/sprite.svg
+include ../../blocks/form_elements/text_field/text_field.pug
+include ../../blocks/form_elements/dropdown/dropdown.pug
+include ../../blocks/form_elements/date/date.pug
+include ../../blocks/form_elements/checkbox/checkbox.pug
+include ../../blocks/form_elements/radio/radio.pug
+include ../../blocks/form_elements/toggle/toggle.pug
+include ../../blocks/form_elements/like/like.pug
+include ../../blocks/form_elements/comment/comment.pug
+include ../../blocks/form_elements/rate/rate.pug
+include ../../blocks/form_elements/slider/slider.pug
+include ../../blocks/form_elements/buttons/buttons.pug
+include ../../blocks/form_elements/pagination/pagination.pug
+include ../../blocks/form_elements/bullet_list/bullet_list.pug
+include ../../blocks/form_elements/room_info/room_info.pug
+include ../../blocks/cards/search/search.pug
+include ../../blocks/cards/registration/registration.pug
+include ../../blocks/cards/reserve/reserve.pug
+include ../../blocks/cards/inter/inter.pug
+include ../../blocks/cards/rooms/rooms.pug
+include ../../blocks/header/header.pug
+include ../../blocks/footer/footer.pug
+include ../../blocks/form_elements/percent_pie/percent_pie.pug
 
 <!DOCTYPE html>
 html(lang="en")
@@ -38,10 +38,10 @@ html(lang="en")
     main.main__room-det-wrapper
       section.room-det__img
         .room-det__main-img-wrp
-          img(class='room-det__main-img',  src="../static/source/room-det-big.jpg", alt="img-big")
+          img(class='room-det__main-img',  src="../../static/source/room-det-big.jpg", alt="img-big")
         .room-det__img-small
-          img(class='room-det__small-img', src="../static/source/room-det-1.jpg",  alt="img1")
-          img(class='room-det__small-img', src="../static/source/room-det-2.jpg", alt="img2")
+          img(class='room-det__small-img', src="../../static/source/room-det-1.jpg",  alt="img1")
+          img(class='room-det__small-img', src="../../static/source/room-det-2.jpg", alt="img2")
 
       section.wrapper.room-det-wrp
         .room-det__left
@@ -63,7 +63,7 @@ html(lang="en")
             .room-det__comment
               +comment({})
             .room-det__comment
-              +comment({name: 'Патрисия Стёклышкова', img:'../static/source/image_patrisia48.png', days: 7, comment: 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент'})
+              +comment({name: 'Патрисия Стёклышкова', img:'../../static/source/image_patrisia48.png', days: 7, comment: 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент'})
 
           .room-det__flex-wrp.room-det__flex-wrp--mtop
             .room-det__rools

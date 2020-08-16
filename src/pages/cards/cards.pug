@@ -1,10 +1,10 @@
-include ../static/sprite.svg
-include ../blocks/cards/search/search.pug
-include ../blocks/cards/reserve/reserve.pug
-include ../blocks/cards/registration/registration.pug
-include ../blocks/cards/inter/inter.pug
-include ../blocks/cards/rooms/rooms.pug
-include ../blocks/form_elements/date/date.pug
+include ../../static/sprite.svg
+include ../../blocks/cards/search/search.pug
+include ../../blocks/cards/reserve/reserve.pug
+include ../../blocks/cards/registration/registration.pug
+include ../../blocks/cards/inter/inter.pug
+include ../../blocks/cards/rooms/rooms.pug
+include ../../blocks/form_elements/date/date.pug
 
 <!DOCTYPE html>
 html(lang="en")
@@ -18,7 +18,7 @@ html(lang="en")
     title Cards
   body.cards__body
     main
-      img.cards__logo(src='../static/source/logo-gray.png' alt='logo' width=48 height=48)
+      img.cards__logo(src='../../static/source/logo-gray.png' alt='logo' width=48 height=48)
       .cards__inner-wrap
         +search-card({})
 
@@ -35,8 +35,8 @@ html(lang="en")
 
         .cards__rooms-wrap
           .cards__first-room
-            +rooms({bg : '../static/source/room_1.jpg', number : '888', notlux: false, cost: '9 990', arrows: true})
-          +rooms({bg : '../static/source/room_2.jpg', number : '840', notlux: true, cost: '9 990', likes: 65, rating: 4})
+            +rooms({bg : '../../static/source/room_1.jpg', number : '888', notlux: false, cost: '9 990', arrows: true})
+          +rooms({bg : '../../static/source/room_2.jpg', number : '840', notlux: true, cost: '9 990', likes: 65, rating: 4})
 
 
 

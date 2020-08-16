@@ -1,0 +1,69 @@
+include ../../static/sprite.svg
+include ../../blocks/form_elements/text_field/text_field.pug
+include ../../blocks/form_elements/dropdown/dropdown.pug
+include ../../blocks/form_elements/date/date.pug
+include ../../blocks/form_elements/checkbox/checkbox.pug
+include ../../blocks/form_elements/radio/radio.pug
+include ../../blocks/form_elements/toggle/toggle.pug
+include ../../blocks/form_elements/like/like.pug
+include ../../blocks/form_elements/rate/rate.pug
+include ../../blocks/form_elements/slider/slider.pug
+include ../../blocks/form_elements/buttons/buttons.pug
+include ../../blocks/form_elements/pagination/pagination.pug
+include ../../blocks/form_elements/bullet_list/bullet_list.pug
+include ../../blocks/form_elements/room_info/room_info.pug
+include ../../blocks/cards/search/search.pug
+include ../../blocks/cards/registration/registration.pug
+include ../../blocks/cards/reserve/reserve.pug
+include ../../blocks/cards/inter/inter.pug
+include ../../blocks/cards/rooms/rooms.pug
+include ../../blocks/header/header.pug
+include ../../blocks/footer/footer.pug
+
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    meta(name="keywords" content="Toxin, отель, отдых")
+    meta(name="description" content="Toxin - Лучшие номера для вашей работы, отдыха и просто вдохновения.")
+    link(rel="icon", href="img/favicon.ico" type="image/ico")
+    title Search room
+  body
+    +mainheader({})
+
+    main.main__search-wrapper
+      .search__wrapper      
+        section.search__left
+          h3.search__date-title даты пребывания в отеле
+          +date-filter-dropdown({})
+          h3.search__guests-title гости
+          +dropdownCompany({small:true, count1: 3, count3: 1, text: '3 гостя, 1 младенец'})
+          +slider({})
+          +checkbox-list({})
+          +checkbox-accessibility({})
+          h3.search__comfort-title удобства номера
+          .search__dropdown-list
+            +dropdown({small: true, count1: 2, count2: 2})
+          +checkbox-additional-list({})
+        
+        section.search__right
+          h1.search__rooms-title Номера, которые мы для вас подобрали
+          .search__rooms
+            +rooms({bg : '../../static/source/room_1.jpg', number : '888', notlux: false, cost: '9 990', arrows: true})
+            +rooms({bg : '../../static/source/room_2.png', rating : '4', number : '840', notlux: true, cost: '9 990',likes: '65'})
+            +rooms({bg : '../../static/source/room_3.png', rating : '3', number : '980', cost: '8 500', likes: '35'})
+            +rooms({bg : '../../static/source/room_4.png', rating : '5', number : '856', notlux: true, cost: '7 300',likes: '19'})
+            +rooms({bg : '../../static/source/room_5.png', rating : '4', number : '740', notlux: true, cost: '6 000', likes: '44'})
+            +rooms({bg : '../../static/source/room_6.png', rating : '3', number : '982', notlux: true, cost: '5 800',likes: '56'})
+            +rooms({bg : '../../static/source/room_7.png', number : '678', notlux: true, cost: '5 500',likes: '45'})
+            +rooms({bg : '../../static/source/room_8.png', rating : '4', number : '450', notlux: true, cost: '5 300',likes: '39'})
+            +rooms({bg : '../../static/source/room_9.png', rating : '3', number : '350', notlux: true, cost: '5 000',likes: '77'})
+            +rooms({bg : '../../static/source/room_10.png', number : '666', notlux: true, cost: '5 000',likes: '25'})
+            +rooms({bg : '../../static/source/room_11.png', rating : '3', number : '444', notlux: true, cost: '5 000',likes: '15'})
+            +rooms({bg : '../../static/source/room_12.png', rating : '3', number : '352', notlux: true, cost: '5 000',likes: '55'})
+        .search__pagination
+          +pagination({})
+    
+    +footer({})
