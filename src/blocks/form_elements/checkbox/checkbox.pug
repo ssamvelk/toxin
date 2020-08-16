@@ -1,7 +1,7 @@
 mixin checkbox(options)
   -var checked = options.checked ? options.checked : false
   -var first = options.first ? 'checkbox_first' : ''
-  -var text = options.text, id = (options.id)? options.id :''
+  -var text = options.text, id = (options.id)? options.id : ''
   .checkbox(class=first)
     label(class="checkbox__item-name")=text
       if (checked)

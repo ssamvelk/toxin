@@ -1,27 +1,29 @@
-.main__reg-wrapper {
-  min-width: rem(1160);
-  background: url("../static/source/bg_reg.jpg") no-repeat 50% rem(-70), white;
-}
-@media screen and (max-width: 1200px) {
-  .main__reg-wrapper{
-    min-width: 100%;
+.registration-page {
+  &__wrapper {
+    min-width: rem(1160);
+    background: url("../static/source/bg_reg.jpg") no-repeat 50% rem(-70), white;
+  
+    @media screen and (max-width: 1200px) {
+      min-width: 100%;
+    }
   }
-}
-.reg-wrapper {
-  position: relative;
-  width: rem(1160);
-  margin: 0 auto;
-  padding-top: rem(19);
-  padding-bottom: rem(19);
-}
-@media screen and (max-width: 1200px){
-  .reg-wrapper {
-    width: 100%;
-    min-width: rem(420);
+  
+  &__inner-wrapper {
+    position: relative;
+    width: rem(1160);
+    margin: 0 auto;
+    padding-top: rem(19);
+    padding-bottom: rem(19);
+    
+    @media screen and (max-width: 1200px){
+      width: 100%;
+      min-width: rem(420);
+    }
   }
-}
-.reg-wrapper__registration-card {
-  width: 1160px;
-  margin: 0;
-  margin-left: rem(393);
+  
+  &__registration-card {
+    width: 1160px;
+    margin: 0;
+    margin-left: rem(393);
+  }
 }

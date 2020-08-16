@@ -1,139 +1,143 @@
-.dropdown__wrp {
-  position: relative;
-  box-sizing: border-box;
-  min-width: rem(266);
-  background: white;
-  border-radius: rem(4);
-}
-
-.dropdown__wrp_320 {
-  width: rem(320);
-}
-
-.dropdown__wrp_266 {
-  width: rem(266);
-}
-  
-.dropdown__main-svg {
-  position: absolute;
-  top: rem(14);
-  right: rem(16);
-}
-  
-.dropdown__main {
-  display: flex;
-  justify-content: space-between;
-  box-sizing: border-box;
-  width: 100%;
-  height: rem(44);
-  min-height: rem(44);
-  padding-right: rem(7);
-  padding-left: rem(15);
-  color: $Dark75;
-  font-weight: 400;
-  font-size: rem(14);
-  font-family: Montserrat;
-  font-style: normal;
-  line-height: rem(43);
-  border: rem(1) solid $Dark25;
-  border-top-left-radius: rem(2);
-  border-top-right-radius: rem(2);
-
-  svg {
-    margin-top: rem(15);
+.dropdown {
+  &__wrp {
+    position: relative;
+    box-sizing: border-box;
+    min-width: rem(266);
+    background: white;
+    border-radius: rem(4);
+    
+    &_320 {
+      width: rem(320);
+    }
+    
+    &_266 {
+      width: rem(266);
+    }
   }
 
-  &_expanded {
-    border-color: $Dark50;
-  }
-}
-
-.dropdown__list {
-  display: none;
-  box-sizing: border-box;
-  width: 100%;
-  min-height: rem(119);
-  padding-top: rem(5);
-  padding-right: rem(6);
-  padding-left: rem(15);
-  color: $Dark;
-  font-weight: 700;
-  font-size: rem(12);
-  font-family: Montserrat;
-  font-style: normal;
-  line-height: rem(15);
-  text-transform: uppercase;
-  list-style: none;
-  border: rem(1) solid $Dark25;
-  border-top: 0;
-  border-bottom-right-radius: rem(2);
-  border-bottom-left-radius: rem(2);
-  
-}
-.dropdown__list_expanded {
-  position: absolute;
-  z-index: 99;
-  display: block;
-  background: white;
-  border-color: $Dark50;
-}
-.dropdown__list-company {
-  min-height: rem(158);
-}
-
-
-.dropdown__item {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  height: rem(30);
-  margin-bottom: rem(7);
-  line-height: rem(30);
-}
-
-.dropdown__item-footer {
-  margin-top: rem(14);
-  margin-bottom: 0;
-}
-
-.dropdown__item-name {
-  max-width: rem(140);
-}
-
-.dropdown__item-box {
-  display: flex;
-  justify-content: space-between;
-  width: rem(92);
-  height: rem(30);
-  text-align: center;
-  vertical-align: middle;
-}
-
-.dropdown__item-clean-btn {
-  color: $Dark50;
-  cursor: pointer;
-}
-
-.dropdown__item-apply-btn {
-  position: absolute;
-  right: 0;
-  color: $Purple;
-  cursor: pointer;
-}
-
-.dropdown__item-clean_disable {
-  display: none;
-}
-
-.dropdown__wrp-company {
-
-  .dropdown__main-svg {
+  &__main-svg {
+    position: absolute;
     top: rem(14);
     right: rem(16);
   }
 
-  .dropdown__main_company {
-    padding-left: rem(14);
-    line-height: rem(40);
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    height: rem(44);
+    min-height: rem(44);
+    padding-right: rem(7);
+    padding-left: rem(15);
+    color: $Dark75;
+    font-weight: 400;
+    font-size: rem(14);
+    font-family: Montserrat;
+    font-style: normal;
+    line-height: rem(43);
+    border: rem(1) solid $Dark25;
+    border-top-left-radius: rem(2);
+    border-top-right-radius: rem(2);
+  
+    svg {
+      margin-top: rem(15);
+    }
+  
+    &_expanded {
+      border-color: $Dark50;
+    }
+  }
+
+  &__list {
+    display: none;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: rem(119);
+    padding-top: rem(5);
+    padding-right: rem(6);
+    padding-left: rem(15);
+    color: $Dark;
+    font-weight: 700;
+    font-size: rem(12);
+    font-family: Montserrat;
+    font-style: normal;
+    line-height: rem(15);
+    text-transform: uppercase;
+    list-style: none;
+    border: rem(1) solid $Dark25;
+    border-top: 0;
+    border-bottom-right-radius: rem(2);
+    border-bottom-left-radius: rem(2);
+    
+    &_expanded {
+      position: absolute;
+      z-index: 99;
+      display: block;
+      background: white;
+      border-color: $Dark50;
+    }
+  }
+
+  &__list-company {
+    min-height: rem(158);
+  }
+  
+  &__item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: rem(30);
+    margin-bottom: rem(7);
+    line-height: rem(30);
+  }
+  
+  &__item-footer {
+    margin-top: rem(14);
+    margin-bottom: 0;
+  }
+  
+  &__item-name {
+    max-width: rem(140);
+  }
+  
+  &__item-box {
+    display: flex;
+    justify-content: space-between;
+    width: rem(92);
+    height: rem(30);
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  &__item-clean-btn {
+    color: $Dark50;
+    cursor: pointer;
+  }
+  
+  
+  &__item-apply-btn {
+    position: absolute;
+    right: 0;
+    color: $Purple;
+    cursor: pointer;
+  }
+  
+  &__item-clean_disable {
+    display: none;
+  }
+  
+  &__wrp-company {
+  
+    .dropdown__main-svg {
+      top: rem(14);
+      right: rem(16);
+    }
+  
+    .dropdown__main_company {
+      padding-left: rem(14);
+      line-height: rem(40);
+    }
   }
 }
+

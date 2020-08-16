@@ -8,59 +8,59 @@
   &_reverse {
     flex-direction: row-reverse;
   }
-}
 
-.rate__stars {
-  display: flex;
-  justify-content: space-between;
-  width: rem(116);
-  list-style: none;
-}
-
-
-.rate__star {
-  display: none;
-}
-
-.rate__star-lbl {
-  display: block;
-  width: rem(20);
-  height: rem(19);
-  cursor: pointer;
-
-  &::before {
-    position: absolute;
-    width: rem(20);
-    height: rem(19);
-    background: url(../static/source/star_border.svg) no-repeat;
-    content: "";
+  &__stars {
+    display: flex;
+    justify-content: space-between;
+    width: rem(116);
+    list-style: none;
   }
 
-  &::after {
-    position: absolute;
+  &__star {
+    display: none;
+  }
+
+  &__star-lbl {
+    display: block;
     width: rem(20);
     height: rem(19);
-    background: url(../static/source/star.svg) no-repeat;
-    opacity: 0;
-    transition: 0.5s;
-    content: "";
-  }
+    cursor: pointer;
   
-  &:hover::after {
+    &::before {
+      position: absolute;
+      width: rem(20);
+      height: rem(19);
+      background: url(../static/source/star_border.svg) no-repeat;
+      content: "";
+    }
+  
+    &::after {
+      position: absolute;
+      width: rem(20);
+      height: rem(19);
+      background: url(../static/source/star.svg) no-repeat;
+      opacity: 0;
+      transition: 0.5s;
+      content: "";
+    }
+    
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+
+  .rate__star-lbl:hover ~ .rate__star-lbl::after,
+  .rate__star:checked ~ .rate__star-lbl::after {
     opacity: 1;
   }
-}
-.rate .rate__star-lbl:hover ~ .rate__star-lbl::after,
-.rate .rate__star:checked ~ .rate__star-lbl::after {
-  opacity: 1;
-}
 
+  &__item {
+    width: rem(20);
+    height: rem(20);
+    background: url(../static/source/star_border.svg) no-repeat;
+  }
 
-.rate__item {
-  width: rem(20);
-  height: rem(20);
-  background: url(../static/source/star_border.svg) no-repeat;
-}
-.rate__item--full {
-  background: url(../static/source/star.svg) no-repeat;
+  &__item--full {
+    background: url(../static/source/star.svg) no-repeat;
+  }
 }

@@ -6,17 +6,17 @@
   margin: 0;
   padding: 0;
   list-style: none;
-}
 
-.carousel__item{
-  box-sizing: border-box;
-  width: rem(7.5);
-  height: rem(7.5);
-  border: rem(1) solid white;
-  border-radius: 50%;
-  box-shadow: 0 rem(5) rem(5) rgba(31, 32, 65, 0.3);
-}
-
-.carousel__item_active{
-  background: white;
+  &__item{
+    box-sizing: border-box;
+    width: rem(7.5);
+    height: rem(7.5);
+    border: rem(1) solid white;
+    border-radius: 50%;
+    box-shadow: 0 rem(5) rem(5) rgba(31, 32, 65, 0.3);
+  }
+  
+  &__item_active{
+    background: white;
+  }
 }

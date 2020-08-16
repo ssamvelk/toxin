@@ -8,34 +8,34 @@
   border: rem(1) solid rgba(0, 0, 0, 0.12);
   border-radius: rem(4);
   box-shadow: 0 0 rem(25) rgba(0, 0, 0, 0.2);
-}
 
-.inter__title {
-  box-sizing: border-box;
-  margin-top: rem(38);
-  margin-bottom: rem(21);
-  color: #1f2041;
-  font-weight: 700;
-  font-size: rem(25);
-  font-family: Quicksand;
-  line-height: rem(30);
-  letter-spacing: rem(1);
-}
+  &__title {
+    box-sizing: border-box;
+    margin-top: rem(38);
+    margin-bottom: rem(21);
+    color: #1f2041;
+    font-weight: 700;
+    font-size: rem(25);
+    font-family: Quicksand;
+    line-height: rem(30);
+    letter-spacing: rem(1);
+  }
 
-.inter__text-field-wrp {
-  margin-bottom: rem(10);
-}
+  &__text-field-wrp {
+    margin-bottom: rem(10);
+  }
 
-.inter__button-wrp {
-  margin-top: rem(20);
-}
+  &__button-wrp {
+    margin-top: rem(20);
+  }
 
-.inter__footer {
-  display: flex;
-  justify-content: space-between;
-  margin-top: rem(30);
-}
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: rem(30);
+  }
 
-.inter__question {
-  line-height: rem(44);
+  &__question {
+    line-height: rem(44);
+  }
 }

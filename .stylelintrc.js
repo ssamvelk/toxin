@@ -14,6 +14,8 @@ module.exports = {
     "color-hex-length": "short",
     "color-no-invalid-hex": true,
     "declaration-colon-space-after": "always",
-    "max-empty-lines": 2
+    "max-empty-lines": 2,
+    "max-nesting-depth": 4,
+    "selector-max-id": 1
   }
 };

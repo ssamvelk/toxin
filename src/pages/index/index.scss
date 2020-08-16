@@ -1,15 +1,19 @@
-.demo-page__wrap {
-  width: 100vw;
-  max-width: rem(1440);
-  padding: rem(50) rem(50) 0;
-}
-.demo-page__list {
-  min-width: rem(380);
-  list-style: none;
-}
-.demo-page__item {
-  margin-top: rem(30);
-  font-size: rem(30);
-  line-height: rem(45);
-  text-align: center;
+.demo-page {
+  &__wrap {
+    width: 100vw;
+    max-width: rem(1440);
+    padding: rem(50) rem(50) 0;
+  }
+
+  &__list {
+    min-width: rem(380);
+    list-style: none;
+  }
+  
+  &__item {
+    margin-top: rem(30);
+    font-size: rem(30);
+    line-height: rem(45);
+    text-align: center;
+  }
 }

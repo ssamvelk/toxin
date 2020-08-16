@@ -35,15 +35,15 @@ html(lang="en")
   body
     +mainheader({})
     
-    main.main__room-det-wrapper
-      section.room-det__img
+    main.room-det__main-wrapper
+      section.room-det__img-box
         .room-det__main-img-wrp
           img(class='room-det__main-img',  src="../../static/source/room-det-big.jpg", alt="img-big")
         .room-det__img-small
           img(class='room-det__small-img', src="../../static/source/room-det-1.jpg",  alt="img1")
           img(class='room-det__small-img', src="../../static/source/room-det-2.jpg", alt="img2")
 
-      section.wrapper.room-det-wrp
+      section.wrapper.room-det__content-wrapper
         .room-det__left
           .room-det__flex-wrp
             .room-det__room-info
@@ -54,10 +54,10 @@ html(lang="en")
               .room-det__flex-wrp
                 +circle-pie2({percents: [25, 25, 50, 0]}) 
                 ul.room-det__list
-                  li.room-det__item.room-det__item--best Великолепно 
-                  li.room-det__item.room-det__item--good Хорошо
-                  li.room-det__item.room-det__item--passably Удовлетворительно 
-                  li.room-det__item.room-det__item--poorly Разочарован
+                  li.room-det__item.room-det__item_best Великолепно 
+                  li.room-det__item.room-det__item_good Хорошо
+                  li.room-det__item.room-det__item_passably Удовлетворительно 
+                  li.room-det__item.room-det__item_poorly Разочарован
           .room-det__recall-wrp
             h2.room-det__recall Отзывы посетителей номера
             .room-det__comment

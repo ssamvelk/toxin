@@ -4,107 +4,109 @@
   background: #fff;
   border-radius: rem(4);
   box-shadow: 0 rem(10) rem(20) rgba(31, 32, 65, 0.05);
-}
 
-.rooms__img-wrp {
-  position: relative;
-  height: rem(150);
-}
-
-.rooms__img {
-  border-top-left-radius: rem(4);
-  border-top-right-radius: rem(4);
-}
-
-.rooms__img-prev {
-  position: absolute;
-  top: rem(69.5);
-  left: rem(18);
-  transform: rotate(90deg);
-}
-
-.rooms__img-next {
-  position: absolute;
-  top: rem(69.5);
-  right: rem(18);
-  transform: rotate(-90deg);
-}
-
-.rooms__carousel {
-  position: absolute;
-  right: rem(15);
-  bottom: rem(14);
-}
-
-.rooms__info {
-  display: flex;
-  box-sizing: border-box;
-  height: rem(55);
-  margin: 0 rem(20);
-  padding-top: rem(20);
-  border-bottom: rem(1) solid rgba(31, 32, 65, 0.1);
-}
-
-.rooms__room-link {
-  color: $Dark;
-  font-weight: 700;
-  font-size: rem(17);
-  font-family: "Quicksand";
-  line-height: rem(29);
-}
-
-.rooms__symbol {
-  font-weight: 700;
-  font-size: rem(14);
-  font-family: "Quicksand";
-}
-.rooms__room-number {
-  font-weight: 700;
-  font-size: rem(18);
-  font-family: "Quicksand";
-  line-height: rem(24);
-  letter-spacing: rem(0.4);
-}
-
-.rooms__room-type {
-  margin-left: rem(5);
-  color: #bc9cff;
-  font-weight: 700;
-  font-size: rem(12);
-  font-family: Montserrat;
-  font-style: normal;
-  line-height: rem(33);
-  text-transform: uppercase;
-}
-
-.rooms__room-cost {
-  margin-left: auto;
-  color: rgba(31, 32, 65, 0.5);
-  font-weight: 700;
-  font-size: rem(14);
-  font-family: Montserrat;
-  line-height: rem(30);
-
-  &::after {
-    font-weight: 400;
-    font-size: rem(12);
-    content: " в сутки";
+  &__img-wrp {
+    position: relative;
+    height: rem(150);
   }
-}
 
-.rooms__rating {
-  display: flex;
-  justify-content: space-between;
-  box-sizing: border-box;
-  padding: rem(12) rem(20) 0;
-}
+  &__img {
+    border-top-left-radius: rem(4);
+    border-top-right-radius: rem(4);
+  }
 
-.rooms__rating-count {
-  color: $Dark50;
-  font-weight: 700;
-  font-size: rem(14);
-  font-family: Montserrat;
-  font-style: normal;
-  line-height: rem(18);
-  text-align: right;
+  &__img-prev {
+    position: absolute;
+    top: rem(69.5);
+    left: rem(18);
+    transform: rotate(90deg);
+  }
+
+  
+  &__img-next {
+    position: absolute;
+    top: rem(69.5);
+    right: rem(18);
+    transform: rotate(-90deg);
+  }
+
+  &__carousel {
+    position: absolute;
+    right: rem(15);
+    bottom: rem(14);
+  }
+
+  &__info {
+    display: flex;
+    box-sizing: border-box;
+    height: rem(55);
+    margin: 0 rem(20);
+    padding-top: rem(20);
+    border-bottom: rem(1) solid rgba(31, 32, 65, 0.1);
+  }
+  
+  &__room-link {
+    color: $Dark;
+    font-weight: 700;
+    font-size: rem(17);
+    font-family: "Quicksand";
+    line-height: rem(29);
+  }
+
+  &__symbol {
+    font-weight: 700;
+    font-size: rem(14);
+    font-family: "Quicksand";
+  }
+
+  &__room-number {
+    font-weight: 700;
+    font-size: rem(18);
+    font-family: "Quicksand";
+    line-height: rem(24);
+    letter-spacing: rem(0.4);
+  }
+  
+  &__room-type {
+    margin-left: rem(5);
+    color: #bc9cff;
+    font-weight: 700;
+    font-size: rem(12);
+    font-family: Montserrat;
+    font-style: normal;
+    line-height: rem(33);
+    text-transform: uppercase;
+  }
+
+  &__room-cost {
+    margin-left: auto;
+    color: rgba(31, 32, 65, 0.5);
+    font-weight: 700;
+    font-size: rem(14);
+    font-family: Montserrat;
+    line-height: rem(30);
+  
+    &::after {
+      font-weight: 400;
+      font-size: rem(12);
+      content: " в сутки";
+    }
+  }
+
+  &__rating {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: rem(12) rem(20) 0;
+  }
+
+  &__rating-count {
+    color: $Dark50;
+    font-weight: 700;
+    font-size: rem(14);
+    font-family: Montserrat;
+    font-style: normal;
+    line-height: rem(18);
+    text-align: right;
+  }
 }

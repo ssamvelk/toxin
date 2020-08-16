@@ -1,4 +1,3 @@
-/* eslint-disable no-plusplus */
 document.addEventListener('DOMContentLoaded', () => {
   const dropdowns = document.querySelectorAll('.dropdown__wrp');
 
@@ -6,12 +5,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const { target, currentTarget } = event;
     const mainFild = currentTarget.querySelector('.dropdown__main');
     const list = currentTarget.querySelector('.dropdown__list');
-    // скрытие\раскрытие
+
     if (target.classList.contains('dropdown__main-svg')) {
       mainFild.classList.toggle('dropdown__main_expanded');
       list.classList.toggle('dropdown__list_expanded');
     }
-    // подсчет
+
     const itemCounts = currentTarget.querySelectorAll('.dropdown__item-value');
 
     let value = Number(itemCounts[0].innerHTML) + Number(itemCounts[1].innerHTML);
@@ -42,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         mainFild.innerHTML = 'Сколько гостей';
         this.classList.add('dropdown__item-clean_disable');
       };
-      // }
+
       applyBtn.onclick = function () {
         mainFild.classList.toggle('dropdown__main_expanded');
         list.classList.toggle('dropdown__list_expanded');
@@ -52,7 +51,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (currentTarget.classList.contains('js-dropdown__wrp-comfort')) {
       const bedroom = currentTarget.querySelector('#js-bedroom');
       const bed = currentTarget.querySelector('#js-bed');
-      // const bathroom = currentTarget.querySelector('#js-bathroom');
 
       if (
         target.classList.contains('js-plus-btn')
@@ -68,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// ---------------------------------кнопки +\-
+
 document.addEventListener('DOMContentLoaded', () => {
   const dropdownItems = document.querySelectorAll('.dropdown__item-box');
 
@@ -76,19 +74,19 @@ document.addEventListener('DOMContentLoaded', () => {
     dropdownItems[i].addEventListener('click', function (event) {
       const { target } = event;
       const item = this.querySelector('.dropdown__item-value');
-      let itemValue = item.innerHTML;
+      let itemValue = +item.innerHTML;
 
       if (target.tagName !== 'svg') return;
 
       if (target.classList.contains('js-minus-btn')) {
         if (itemValue > 0) {
-          itemValue--;
+          itemValue -= 1;
           item.innerHTML = itemValue;
         }
       }
 
       if (target.classList.contains('js-plus-btn')) {
-        itemValue++;
+        itemValue += 1;
         item.innerHTML = itemValue;
       }
     });

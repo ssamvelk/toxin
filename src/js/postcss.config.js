@@ -1,12 +1,12 @@
 module.exports = {
   plugins: [
     require('autoprefixer'),
-    // require('css-mqpacker'),    // сжимает все медиазапросы в 1файл
-    require('cssnano')({ // минифицирует код
+    require('cssnano')({
       preset: [
-        'default', {
+        'default',
+        {
           discardComments: {
-            removeAll: true, // удаляет все комменты
+            removeAll: true,
           },
         },
       ],

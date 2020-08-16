@@ -8,6 +8,5 @@ import '../blocks/form_elements/checkbox/checkbox';
 import '../blocks/form_elements/carousel/carousel';
 
 require('air-datepicker');
-// require('air-datepicker/dist/css/datepicker.min.css');
 require('webpack-jquery-ui/slider');
 require('webpack-jquery-ui/css');

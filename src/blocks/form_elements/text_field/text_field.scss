@@ -32,19 +32,14 @@
       width: rem(267);
     }
   }
+
+  &-send-svg {
+    position: absolute;
+    top: rem(13);
+    right: rem(13);
+    box-sizing: border-box;
+  }
 }
   
-.footer__subscribe-send {
-  position: relative;
-  box-sizing: border-box;
-  width: rem(260);
-  padding-right: rem(44);
-}
-  
-.subscribe-send-svg {
-  position: absolute;
-  top: rem(13);
-  right: rem(13);
-  box-sizing: border-box;
-}
+
   

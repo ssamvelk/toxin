@@ -1,71 +1,72 @@
 .pagination {
   width: rem(240);
   min-height: rem(65);
-}
 
-.pagination__list {
-  display: flex;
-  justify-content: space-between;
-  color: $Dark50;
-  font-weight: 400;
-  font-size: rem(12);
-  font-family: Montserrat;
-  font-style: normal;
-  line-height: rem(15);
-  text-align: center;
-  list-style: none;
-}
-
-.pagination__item {
-  position: relative;
-  width: rem(40);
-  height: rem(40);
-  line-height: rem(40);
-  border-radius: rem(22);
-
-  .pagination-arrow-svg {
-    position: absolute;
-    top: rem(12);
-    left: rem(12);
-    cursor: pointer;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    color: $Dark50;
+    font-weight: 400;
+    font-size: rem(12);
+    font-family: Montserrat;
+    font-style: normal;
+    line-height: rem(15);
+    text-align: center;
+    list-style: none;
   }
-}
-
-.pagination__first-item {
-  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
-  a {
-    display: none;
-  }
-  svg {
-    transform: rotate(180deg);
-  }
-  &.pagination__item_active {
-    a {
-      display: block;
+  
+  &__item {
+    position: relative;
+    width: rem(40);
+    height: rem(40);
+    line-height: rem(40);
+    border-radius: rem(22);
+  
+    .pagination-arrow-svg {
+      position: absolute;
+      top: rem(12);
+      left: rem(12);
+      cursor: pointer;
     }
   }
-}
-
-.pagination__first-item,
-.pagination__last-item {
-  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
-}
-
-.pagination__item_active {
-  color: white;
-  font-weight: 700;
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  a {
+  
+  &__first-item {
+    background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+    a {
+      display: none;
+    }
+    svg {
+      transform: rotate(180deg);
+    }
+    &.pagination__item_active {
+      a {
+        display: block;
+      }
+    }
+  }
+  
+  &__first-item,
+  &__last-item {
+    background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+  }
+  
+  &__item_active {
     color: white;
+    font-weight: 700;
+    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+    a {
+      color: white;
+    }
+    svg {
+      display: none;
+    }
   }
-  svg {
-    display: none;
+  &__item-link {
+    color: $Dark50;
   }
-}
-.pagination__item-link {
-  color: $Dark50;
-}
-.pagination__footer {
-  margin-top: rem(10.56);
-  margin-left: rem(5);
+  &__footer {
+    margin-top: rem(10.56);
+    margin-left: rem(5);
+  }
+  
 }

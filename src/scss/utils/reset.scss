@@ -9,7 +9,6 @@
 a,
 a:hover,
 a:active {
-  // color: #000000;
   text-decoration: none;
 }
 
@@ -35,11 +34,11 @@ body {
   position: relative;
   max-width: 1440px;
   margin: 0 auto;
-  // width: 100vw;
 }
 
 .visually-hidden {
   position: absolute;
+  display: none;
   width: 1px;
   height: 1px;
   margin: -1px;

@@ -25,76 +25,75 @@
       color: $Dark50;
     }
   }
-}
 
-.button_big {
-  width: rem(320);
-}
-
-.button_w196 {
-  width: rem(196);
-  height: rem(34);
-  line-height: rem(34);
-}
-
-.button_w87 {
-  width: rem(87);
-  height: rem(34);
-}
-
-.button_white {
-  display: flex;
-  justify-content: center;
-  color: $Purple;
-  vertical-align: middle;
-
-  .button__text {
-    position: relative;
-    top: rem(2);
-    display: inline-block;
-    box-sizing: border-box;
-    width: rem(95);
-    height: rem(40);
-    color: $Purple;
-    line-height: rem(40);
-    background-color: white;
-    border-radius: rem(22);
-    opacity: 1;
+  &_big {
+    width: rem(320);
   }
-
-  &.button_w87 {
+  
+  &_w196 {
+    width: rem(196);
+    height: rem(34);
+    line-height: rem(34);
+  }
+  
+  &_w87 {
+    width: rem(87);
+    height: rem(34);
+  }
+  
+  &_white {
+    display: flex;
+    justify-content: center;
+    color: $Purple;
+    vertical-align: middle;
+  
     .button__text {
+      position: relative;
       top: rem(2);
-      width: rem(83);
-      height: rem(30);
-      line-height: rem(30);
+      display: inline-block;
+      box-sizing: border-box;
+      width: rem(95);
+      height: rem(40);
+      color: $Purple;
+      line-height: rem(40);
+      background-color: white;
       border-radius: rem(22);
+      opacity: 1;
+    }
+  
+    &.button_w87 {
+      .button__text {
+        top: rem(2);
+        width: rem(83);
+        height: rem(30);
+        line-height: rem(30);
+        border-radius: rem(22);
+      }
     }
   }
-}
 
-.button__arrow-svg {
-  position: absolute;
-  top: rem(13);
-  right: rem(13);
-}
+  &__arrow-svg {
+    position: absolute;
+    top: rem(13);
+    right: rem(13);
+  }
 
-
-.button_empty {
-  color: #BC9CFF;
-  font-weight: 700;
-  font-size: rem(12);
-  font-family: Montserrat;
-  font-style: normal;
-  line-height: rem(15);
-  text-align: center;
-  text-transform: uppercase;
-  cursor: pointer;
-
-  &:active,
-  &:hover {
-    .button__text {
-      color: $Dark50;
+  &_empty {
+    color: #BC9CFF;
+    font-weight: 700;
+    font-size: rem(12);
+    font-family: Montserrat;
+    font-style: normal;
+    line-height: rem(15);
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+  
+    &:active,
+    &:hover {
+      .button__text {
+        color: $Dark50;
+      }
     }
   }
 }

@@ -10,39 +10,39 @@
   border: rem(1) solid rgba(0, 0, 0, 0.12);
   border-radius: rem(4);
   box-shadow: 0 0 rem(25) rgba(0, 0, 0, 0.2);
-}
 
-.search__title {
-  box-sizing: border-box;
-  margin: 0;
-  margin-top: rem(39);
-  color: #1f2041;
-  font-weight: 700;
-  font-size: rem(25);
-  font-family: Quicksand;
-  line-height: rem(29);
-  letter-spacing: rem(0.8);
-}
+  &__title {
+    box-sizing: border-box;
+    margin: 0;
+    margin-top: rem(39);
+    color: #1f2041;
+    font-weight: 700;
+    font-size: rem(25);
+    font-family: Quicksand;
+    line-height: rem(29);
+    letter-spacing: rem(0.8);
+  }
 
-.search__date {
-  margin-top: rem(22);
-}
+  &__date {
+    margin-top: rem(22);
+  }
 
-.search__company-title {
-  margin: 0;
-  margin-top: rem(16);
-  color: #1F2041;
-  font-weight: 700;
-  font-size: rem(12);
-  font-family: Montserrat;
-  line-height: rem(15);
-  text-transform: uppercase;
-}
+  &__company-title {
+    margin: 0;
+    margin-top: rem(16);
+    color: #1F2041;
+    font-weight: 700;
+    font-size: rem(12);
+    font-family: Montserrat;
+    line-height: rem(15);
+    text-transform: uppercase;
+  }
 
-.search__company {
-  margin-top: rem(4);
-}
+  &__company {
+    margin-top: rem(4);
+  }
 
-.search__button {
-  margin-top: rem(31);
+  &__button {
+    margin-top: rem(31);
+  }
 }

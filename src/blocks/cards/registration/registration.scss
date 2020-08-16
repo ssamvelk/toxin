@@ -10,65 +10,65 @@
   border: rem(1) solid rgba(0, 0, 0, 0.12);
   border-radius: rem(4);
   box-shadow: 0 0 rem(25)rgba(0, 0, 0, 0.2);
-}
 
-.registration__title {
-  box-sizing: border-box;
-  margin: 0;
-  margin-top: rem(38);
-  margin-bottom: rem(21);
-  color: #1F2041;
-  font-weight: 700;
-  font-size: rem(25);
-  font-family: Quicksand;
-  line-height: rem(30);
-  letter-spacing: rem(0.7);
-}
+  &__title {
+    box-sizing: border-box;
+    margin: 0;
+    margin-top: rem(38);
+    margin-bottom: rem(21);
+    color: #1F2041;
+    font-weight: 700;
+    font-size: rem(25);
+    font-family: Quicksand;
+    line-height: rem(30);
+    letter-spacing: rem(0.7);
+  }
 
-.registration__text-field {
-  margin-bottom: rem(10);
-}
+  &__text-field {
+    margin-bottom: rem(10);
+  }
 
-.registration__radio {
-  margin-bottom: rem(24);
-}
+  &__radio {
+    margin-bottom: rem(24);
+  }
 
-.registration__date-field {
-  margin-bottom: rem(20);
-}
+  &__date-field {
+    margin-bottom: rem(20);
+  }
 
-.registration__toggle-field {
-  margin-bottom: rem(24);
-}
+  &__toggle-field {
+    margin-bottom: rem(24);
+  }
 
-.registration__button-field {
-  margin-bottom: rem(30);
-}
+  &__button-field {
+    margin-bottom: rem(30);
+  }
 
-.registration__small-title {
-  margin-bottom: rem(5);
-  color: #1F2041;
-  font-weight: 700;
-  font-size: rem(12);
-  font-family: Montserrat;
-  line-height: rem(15);
-  text-transform: uppercase;
-}
+  &__small-title {
+    margin-bottom: rem(5);
+    color: #1F2041;
+    font-weight: 700;
+    font-size: rem(12);
+    font-family: Montserrat;
+    line-height: rem(15);
+    text-transform: uppercase;
+  }
 
-.registration__footer {
-  display: flex;
-  justify-content: space-between;
-  box-sizing: border-box;
-  width: rem(320);
-  height: rem(44);
-}
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: rem(320);
+    height: rem(44);
+  }
 
-.registration__have-account {
-  display: flex;
-  align-items: center;
-  color: black;
-  font-weight: 400;
-  font-size: rem(14);
-  font-family: Montserrat;
-  line-height: rem(18);
+  &__have-account {
+    display: flex;
+    align-items: center;
+    color: black;
+    font-weight: 400;
+    font-size: rem(14);
+    font-family: Montserrat;
+    line-height: rem(18);
+  }
 }

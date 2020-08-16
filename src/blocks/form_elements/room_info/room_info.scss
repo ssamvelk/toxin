@@ -5,54 +5,55 @@
   :last-child {
     margin-bottom: 0;
   }
-}
 
-.room-info__item {
-  display: flex;
-  box-sizing: border-box;
-  width: rem(280);
-  height: rem(68);
-  margin-bottom: rem(20);
-  border-bottom: rem(1) solid rgba(31, 32, 65, 0.1);
-
-  &_without-border {
-    border: none;
+  &__item {
+    display: flex;
+    box-sizing: border-box;
+    width: rem(280);
+    height: rem(68);
+    margin-bottom: rem(20);
+    border-bottom: rem(1) solid rgba(31, 32, 65, 0.1);
+  
+    &_without-border {
+      border: none;
+    }
   }
-}
 
-.room-info__smile {
-  margin-top: rem(4);
-  margin-left: rem(4);
-}
-
-.room-info__house {
-  margin-top: rem(5);
-  margin-left: rem(6);
-}
-
-.room-info__fire {
-  margin-top: rem(3);
-  margin-left: rem(6);
-}
-
-.room-info__information {
-  margin-left: rem(14);
-  line-height: rem(24);
-
-  span {
-    color: $Dark75;
-    font-weight: 700;
-    font-size: rem(14);
-    font-family: Montserrat;
-    font-style: normal;
-    
+  &__smile {
+    margin-top: rem(4);
+    margin-left: rem(4);
   }
-}
+  
+  &__house {
+    margin-top: rem(5);
+    margin-left: rem(6);
+  }
+  
+  &__fire {
+    margin-top: rem(3);
+    margin-left: rem(6);
+  }
+  
+  &__information {
+    margin-left: rem(14);
+    line-height: rem(24);
+  
+    & > .room-info__title {
+      color: $Dark75;
+      font-weight: 700;
+      font-size: rem(14);
+      font-family: Montserrat;
+      font-style: normal;
+      
+    }
+  }
+  
+  &__information-facilities {
+    margin-left: rem(16);
+  }
+  &__information-cosiness {
+    margin-top: rem(1);
+    margin-left: rem(17);
+  }
 
-.room-info__information-facilities {
-  margin-left: rem(16);
-}
-.room-info__information-cosiness {
-  margin-top: rem(1);
-  margin-left: rem(17);
 }
