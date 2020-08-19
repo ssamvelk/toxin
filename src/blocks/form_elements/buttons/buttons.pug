@@ -1,11 +1,12 @@
 mixin button(options)
-  -var isBig = (options.big)? ' button_big' : '',
-  -w196 = (options.w196) ? ' button_w196' : '',
-  -w87 = (options.w87) ? ' button_w87' : '',
-  -isWhite = (options.white) ? ' button_white' : '',
-  -text = (options.text) ? options.text : 'перейти к оплате',
-  -text2 = (options.text) ? options.text : 'click me',
-  -href = (options.href) ? options.href : '' 
+  - const isBig = options.big ? ' button_big' : ''
+  - const w196 = options.w196 ? ' button_w196' : ''
+  - const w87 = options.w87 ? ' button_w87' : ''
+  - const isWhite = options.white ? ' button_white' : ''
+  - const text = options.text ? options.text : 'перейти к оплате'
+  - const text2 = options.text ? options.text : 'click me'
+  - const href = options.href ? options.href : ''
+   
   if (options.big)
     a(class="button"+isBig+w196+w87 href=href)
       span(class="button__text")=text
@@ -17,7 +18,7 @@ mixin button(options)
       span(class="button__text")=text2
 
 mixin emptybutton(options)
-  -var text = (options.text) ? options.text : 'click me';
+  -const text = options.text ? options.text : 'click me';
 
   a(class="button_empty" href='mock')
       span(class="button__text")=text

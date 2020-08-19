@@ -1,5 +1,6 @@
 mixin date-calendar(options)
-  -var ClassName = (options.isDisable) ? ' datepicker--disable' : ' ';
+  - const ClassName = options.isDisable ? ' datepicker--disable' : ' ';
+
   div(class='datepicker-here'+ClassName)
     .date__datepicker-footer
       .date__clean-wrap
@@ -18,8 +19,8 @@ mixin date-filter-dropdown(options)
     +date-calendar({isDisable: true})
 
 mixin date-search-filds(options)
-  - var tytle1 = options.tytle1 ? options.tytle1 : 'Прибытие'
-  - var tytle2 = options.tytle2 ? options.tytle2 : 'Выезд'
+  - const tytle1 = options.tytle1 ? options.tytle1 : 'Прибытие'
+  - const tytle2 = options.tytle2 ? options.tytle2 : 'Выезд'
 
   .date__search-wrp  
     .date__search-inner-wrp

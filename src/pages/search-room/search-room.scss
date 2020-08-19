@@ -1,7 +1,6 @@
 .search {
   &__main-wrapper {
     position: relative;
-    box-sizing: border-box;
     min-width: rem(1160);
     background: white;
   
@@ -118,7 +117,6 @@
 
 
   &__rooms-title {
-    box-sizing: border-box;
     margin-bottom: rem(0.5);
     color: #1f2041;
     font-weight: 700;
@@ -132,7 +130,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    box-sizing: border-box;
     padding-top: rem(21);
     .rooms {
       margin-bottom: rem(21);

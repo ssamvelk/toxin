@@ -1,7 +1,6 @@
 .button {
   position: relative;
   display: block;
-  box-sizing: border-box;
   width: rem(99);
   height: rem(44);
   color: white;
@@ -51,7 +50,6 @@
       position: relative;
       top: rem(2);
       display: inline-block;
-      box-sizing: border-box;
       width: rem(95);
       height: rem(40);
       color: $Purple;

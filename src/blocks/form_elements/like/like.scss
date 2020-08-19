@@ -1,7 +1,6 @@
 .like {
   display: flex;
   flex-shrink: 0;
-  box-sizing: border-box;
   min-width: rem(40);
   height: rem(20);
   padding-right: rem(5);
@@ -15,7 +14,6 @@
   }
   
   &__value {
-    box-sizing: border-box;
     margin-left: rem(4);
     color: $Dark25;
     font-weight: 400;

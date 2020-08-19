@@ -1,5 +1,6 @@
 mixin slider(options)
-  -var tytle = options.tytle ? options.tytle : 'диапазон цены'
+  - const tytle = options.tytle ? options.tytle : 'диапазон цены'
+  
   .slider__wrp
     .slider__info-wrp
       h3.slider__info-title #{tytle}

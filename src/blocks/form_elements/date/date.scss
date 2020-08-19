@@ -8,7 +8,6 @@
   &__wrap {
   
     position: relative;
-    box-sizing: border-box;
     width: rem(266);
     height: rem(44);
     padding: 0 rem(15);
@@ -27,7 +26,6 @@
   
     &_w150 {
       position: relative;
-      box-sizing: border-box;
       width: rem(150);
       height: rem(44);
       padding: 0;
@@ -146,7 +144,6 @@
 .datepicker-here {
   position: relative;
   z-index: 100;
-  box-sizing: border-box;
   width: rem(320);
   height: max-content;
   padding: 0 rem(20);
@@ -171,7 +168,6 @@
 
 .datepicker > .datepicker--nav {
   position: relative;
-  box-sizing: border-box;
   height: rem(73);
   padding: 0 rem(3) rem(12) rem(5);
   color: $Dark;
@@ -205,7 +201,6 @@
 }
 
 .datepicker > .datepicker--content {
-  box-sizing: border-box;
   min-height: rem(240);
   padding: 0;
 }

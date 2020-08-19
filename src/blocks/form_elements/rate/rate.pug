@@ -1,7 +1,8 @@
 mixin rate(options)
-  -var value = (options.rating)? options.rating : '0'
-  -var i=0
-  -var j=0
+  - const value = (options.rating) ? options.rating : '0'
+  - let i=0
+  - let j=0
+  
   if (options.isClickable)
     .rate.rate_reverse
       input.rate__star#star1(type="radio" name="stars")

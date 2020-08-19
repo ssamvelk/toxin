@@ -24,7 +24,6 @@
     position: absolute;
     top: rem(-1);
     left: rem(-30);
-    box-sizing: border-box;
     width: rem(20);
     height: rem(20);
     border: rem(1) solid rgba(31, 32, 65, 0.25);
@@ -54,7 +53,6 @@
 }
 
 .checkbox-list {
-  box-sizing: border-box;
   width: rem(266);
 
   &__item-wrp {
@@ -63,7 +61,6 @@
   }
   
   &__title {
-    box-sizing: border-box;
     color: #1f2041;
     font-weight: 700;
     font-size: rem(12);
@@ -74,16 +71,13 @@
 }
 
 .checkbox-additional-list {
-  box-sizing: border-box;
   width: rem(266);
 
   &__header {
     position: relative;
-    box-sizing: border-box;
   }
   
   &__title {
-    box-sizing: border-box;
     color: #1f2041;
     font-weight: 700;
     font-size: rem(12);
@@ -108,7 +102,6 @@
     position: relative;
     top: rem(7);
     z-index: 98;
-    box-sizing: border-box;
     width: rem(260);
   }
   &__body_disabled {
@@ -123,7 +116,6 @@
   margin-bottom: rem(25);
 
   &__title {
-    box-sizing: border-box;
     margin: 0;
     margin-bottom: rem(16);
     color: #1f2041;

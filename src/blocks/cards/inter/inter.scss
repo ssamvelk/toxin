@@ -1,6 +1,5 @@
 .inter {
   position: relative;
-  box-sizing: border-box;
   width: rem(380);
   height: rem(358);
   padding: 0 rem(29);
@@ -10,7 +9,6 @@
   box-shadow: 0 0 rem(25) rgba(0, 0, 0, 0.2);
 
   &__title {
-    box-sizing: border-box;
     margin-top: rem(38);
     margin-bottom: rem(21);
     color: #1f2041;

@@ -1,5 +1,6 @@
 mixin dropdownItem(options)
-  -var value = options.value ? options.value.toString() : '0'
+  - const value = options.value ? options.value.toString() : '0'
+
   .dropdown__item-box
     <svg class='js-minus-btn' cl width="30" height="31" viewBox="0 0 30 31" version="1.1" preserveAspectRatio="xMinYMin">
     <use xlink:href="#img-group-"></use>
@@ -10,7 +11,8 @@ mixin dropdownItem(options)
     </svg>
 
 mixin dropdownMainSVG(options)
-  -var opacity = options.opacity ? options.opacity : 50
+  - const opacity = options.opacity ? options.opacity : 50
+
   if (opacity === 50)
     <svg class="dropdown__main-svg" width="12" height="12" viewBox="0 -4 12 12"  version="1.1" preserveAspectRatio="xMinYMin">
     <use xlink:href="#img-expand-more"></use>   
@@ -21,12 +23,12 @@ mixin dropdownMainSVG(options)
     </svg>
 
 mixin dropdown(options)
-  - var isExpandedList = (options.expanded) ? ' dropdown__list_expanded' : ''
-  - var isExpandedMain = (options.expanded) ? ' dropdown__main_expanded' : ''
-  - var small = (options.small) ? ' dropdown__wrp_266': '' 
-  - var count1 = options.count1 ? options.count1.toString() : '0'
-  - var count2 = options.count2 ? options.count2.toString() : '0'
-  - var count3 = options.count3 ? options.count3.toString() : '0'
+  - const isExpandedList = options.expanded ? ' dropdown__list_expanded' : ''
+  - const isExpandedMain = options.expanded ? ' dropdown__main_expanded' : ''
+  - const small = options.small ? ' dropdown__wrp_266': '' 
+  - const count1 = options.count1 ? options.count1.toString() : '0'
+  - const count2 = options.count2 ? options.count2.toString() : '0'
+  - const count3 = options.count3 ? options.count3.toString() : '0'
 
   .dropdown__wrp.dropdown__wrp-comfort.js-dropdown__wrp-comfort(class= small)
     +dropdownMainSVG({opacity: 75})
@@ -44,15 +46,15 @@ mixin dropdown(options)
         +dropdownItem({id:'js-bathroom', value: count3}) 
 
 mixin dropdownCompany(options)
-  - var small = (options.small) ? ' dropdown__wrp_266': ''
-  - var isExpandedList = (options.expanded) ? ' dropdown__list_expanded' : ''
-  - var isExpandedMain = (options.expanded) ? ' dropdown__main_expanded' : ''
-  - var count1 = options.count1 ? options.count1 : 0
-  - var count2 = options.count2 ? options.count2 : 0
-  - var count3 = options.count3 ? options.count3 : 0
-  - var text = options.text ? options.text : 'Сколько гостей'
-
-  - var cleanButtonClass = (count1 > 0 || count2 > 0 || count3 > 0) ? '' : 'dropdown__item-clean_disable'
+  - const small = options.small ? ' dropdown__wrp_266': ''
+  - const isExpandedList = (options.expanded) ? ' dropdown__list_expanded' : ''
+  - const isExpandedMain = (options.expanded) ? ' dropdown__main_expanded' : ''
+  - const count1 = options.count1 ? options.count1 : 0
+  - const count2 = options.count2 ? options.count2 : 0
+  - const count3 = options.count3 ? options.count3 : 0
+  - const text = options.text ? options.text : 'Сколько гостей'
+  - const cleanButtonClass = (count1 > 0 || count2 > 0 || count3 > 0) ? '' : 'dropdown__item-clean_disable'
+  
   div(class='dropdown__wrp dropdown__wrp_320 dropdown__wrp-company js-dropdown__wrp-company'+small)
     +dropdownMainSVG({opacity: 75})
     p(class='dropdown__main dropdown__main_company'+isExpandedMain) #{text}

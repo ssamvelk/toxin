@@ -38,7 +38,6 @@
 
   &__info {
     display: flex;
-    box-sizing: border-box;
     height: rem(55);
     margin: 0 rem(20);
     padding-top: rem(20);
@@ -96,7 +95,6 @@
   &__rating {
     display: flex;
     justify-content: space-between;
-    box-sizing: border-box;
     padding: rem(12) rem(20) 0;
   }
 

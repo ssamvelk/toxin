@@ -78,7 +78,6 @@
   &__nav,
   &__about,
   &__support {
-    box-sizing: border-box;
     margin-top: rem(5);
     color: $Dark50;
     font-weight: 400;
@@ -272,7 +271,6 @@
 
   &__subscribe-send {
     position: relative;
-    box-sizing: border-box;
     width: rem(260);
     padding-right: rem(44);
   }

@@ -1,12 +1,12 @@
 mixin text_field(options)
   -
-    var isType = options.type ? options.type : 'text'
-    var placeHolder = ''
-    var className = ''
-    var isClassName = options.class
-    var isID = options.id
-    var regExp = "(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d"
-    var isReadOnly = options.readonly
+    let isType = options.type ? options.type : 'text'
+    let placeHolder = ''
+    let className = ''
+    const isClassName = options.class
+    const isID = options.id
+    const regExp = "(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d"
+    const isReadOnly = options.readonly
 
     if (isType == "email") {placeHolder = 'Email'}
     else if (isType == 'password') placeHolder = 'Пароль'
@@ -23,7 +23,7 @@ mixin text_field(options)
 
 
 mixin subscribe(options)
-  -var w267 = options.w267 ? 'subscribe_w267' : ''
+  - const w267 = options.w267 ? 'subscribe_w267' : ''
   .subscribe(class=w267)
     input(class="text-field footer__subscribe-send" type='email' placeHolder = 'Email')
     <svg class="subscribe-send-svg" width="18" height="18" viewBox="0 0 18 18">

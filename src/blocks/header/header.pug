@@ -1,12 +1,12 @@
 include ../form_elements/buttons/buttons.pug
 
 mixin mainheader(options)
-  -var isAuthorized = (options.authorized) ? 'header__inner-wrap_authorized': ''
-  -var isName = options.name ? options.name : 'Cosmin Negoita'
-  -var activeLink = options.activeLink ? options.activeLink : 1
+  - const isAuthorized = options.authorized ? 'header__inner-wrap_authorized': ''
+  - const isName = options.name ? options.name : 'Cosmin Negoita'
+  - const activeLink = options.activeLink ? options.activeLink : 1
 
   header.header__wrap
-    div(class="header__inner-wrap "+isAuthorized )
+    div(class="header__inner-wrap "+isAuthorized)
       
       a.header__logotype(href='main.html')
         <svg  class="header__logo" width="106" height="40" viewBox="0 0 106 40" fill="none">

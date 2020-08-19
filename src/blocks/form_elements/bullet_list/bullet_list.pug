@@ -1,5 +1,6 @@
 mixin bullet(options)
-    -var title = (options.title)? options.title: 'Bullet list'
+    - const title = options.title ? options.title: 'Bullet list'
+    
     .bullet
         h3.bullet__title=title
         ul.bullet__list
