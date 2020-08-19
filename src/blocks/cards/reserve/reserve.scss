@@ -16,7 +16,7 @@
     margin-bottom: rem(15);
   }
 
-  &__num {
+  &__symbol-num {
     color: $Dark;
     font-weight: 700;
     font-size: rem(14);
@@ -24,7 +24,7 @@
     line-height: rem(30);
   }
 
-  &__number-i {
+  &__number {
     margin-left: rem(2);
     color: $Dark;
     font-weight: 700;
@@ -34,8 +34,7 @@
     letter-spacing: rem(0.9);
   }
 
-  &__type,
-  &__type-i {
+  &__type {
     margin-left: rem(5);
     color: $Purple;
     font-weight: 700;
