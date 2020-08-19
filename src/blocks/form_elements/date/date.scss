@@ -39,7 +39,7 @@
     color: $Dark75;
     font-weight: 400;
     font-size: rem(14);
-    font-family: Montserrat;
+    font-family: Montserrat, Arial, sans-serif;
     font-style: normal;
     line-height: rem(44);
     
@@ -73,7 +73,7 @@
     color: $Dark;
     font-weight: 700;
     font-size: rem(12);
-    font-family: Montserrat;
+    font-family: Montserrat, Arial, sans-serif;
     line-height: rem(15);
     text-transform: uppercase;
   }
@@ -103,7 +103,7 @@
   &__apply {
     font-weight: 700;
     font-size: rem(12);
-    font-family: Montserrat;
+    font-family: Montserrat, Arial, sans-serif;
     font-style: normal;
     line-height: rem(15);
     text-transform: uppercase;
@@ -173,7 +173,7 @@
   color: $Dark;
   font-weight: 700;
   font-size: rem(19);
-  font-family: Quicksand;
+  font-family: Quicksand, Arial, sans-serif;
   font-style: normal;
   line-height: rem(24);
   border: 0;
@@ -214,7 +214,7 @@
   color: $Purple;
   font-weight: 700;
   font-size: rem(12);
-  font-family: Montserrat;
+  font-family: Montserrat, Arial, sans-serif;
   font-style: normal;
   line-height: rem(15);
   text-transform: capitalize;
@@ -232,7 +232,7 @@
   color: $Dark50;
   font-weight: 400;
   font-size: rem(12);
-  font-family: Montserrat;
+  font-family: Montserrat, Arial, sans-serif;
   font-style: normal;
   line-height: rem(15);
 
@@ -240,7 +240,7 @@
     color: #fff;
     font-weight: 700;
     font-size: rem(12);
-    font-family: Montserrat;
+    font-family: Montserrat, Arial, sans-serif;
     font-style: normal;
     line-height: rem(15);
     background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
@@ -258,7 +258,7 @@
     color: #fff;
     font-weight: 700;
     font-size: rem(12);
-    font-family: Montserrat;
+    font-family: Montserrat, Arial, sans-serif;
     font-style: normal;
     line-height: rem(15);
     background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);

@@ -48,20 +48,20 @@
     color: $Dark;
     font-weight: 700;
     font-size: rem(17);
-    font-family: "Quicksand";
+    font-family: "Quicksand, Arial, sans-serif";
     line-height: rem(29);
   }
 
   &__symbol {
     font-weight: 700;
     font-size: rem(14);
-    font-family: "Quicksand";
+    font-family: "Quicksand, Arial, sans-serif";
   }
 
   &__room-number {
     font-weight: 700;
     font-size: rem(18);
-    font-family: "Quicksand";
+    font-family: "Quicksand, Arial, sans-serif";
     line-height: rem(24);
     letter-spacing: rem(0.4);
   }
@@ -71,7 +71,7 @@
     color: #bc9cff;
     font-weight: 700;
     font-size: rem(12);
-    font-family: Montserrat;
+    font-family: Montserrat, Arial, sans-serif;
     font-style: normal;
     line-height: rem(33);
     text-transform: uppercase;
@@ -82,7 +82,7 @@
     color: rgba(31, 32, 65, 0.5);
     font-weight: 700;
     font-size: rem(14);
-    font-family: Montserrat;
+    font-family: Montserrat, Arial, sans-serif;
     line-height: rem(30);
   
     &::after {
@@ -102,7 +102,7 @@
     color: $Dark50;
     font-weight: 700;
     font-size: rem(14);
-    font-family: Montserrat;
+    font-family: Montserrat, Arial, sans-serif;
     font-style: normal;
     line-height: rem(18);
     text-align: right;
