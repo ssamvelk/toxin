@@ -1,4 +1,4 @@
-.room-det {
+.room-details {
   &__main-wrapper {
     position: relative;
     min-width: rem(1440);
@@ -16,6 +16,8 @@
     width: rem(1440);
     height: rem(485);
     margin: 0 auto;
+    line-height: 0;
+    outline: none;
   }
   
   &__main-img {

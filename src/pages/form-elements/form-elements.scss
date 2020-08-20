@@ -160,22 +160,27 @@
   &__blue-button-wrap {
     margin-right: rem(19);
   }
+
   &__white-buttons-wrap {
     position: relative;
     left: rem(-1);
     display: flex;
     margin-top: rem(30);
   }
+  
   &__white-button-wrap {
     margin-right: rem(20);
   }
-  &__white-emptybuttons-wrap {
+
+  &__emptybuttons-wrap {
     display: flex;
     margin-top: rem(31);
+    
+    :first-child {
+      margin-right: rem(10);
+    }
   }
-  &__emptybutton-wrap {
-    margin-right: rem(20);
-  }
+
   &__big-button-wrap {
     position: relative;
     left: rem(-1);

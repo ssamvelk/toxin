@@ -5,7 +5,11 @@
   width: rem(266);
   height: rem(6);
   margin-bottom: rem(17);
-
+  
+  &.ui-slider-horizontal {
+    height: 6px;
+  }
+  
   .ui-slider-handle.ui-corner-all.ui-state-default {
     width: rem(14);
     height: rem(14);

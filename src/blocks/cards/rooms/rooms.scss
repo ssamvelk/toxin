@@ -48,20 +48,24 @@
     color: $Dark;
     font-weight: 700;
     font-size: rem(17);
-    font-family: "Quicksand, Arial, sans-serif";
+    font-family: Quicksand, Arial, sans-serif;
     line-height: rem(29);
   }
 
   &__symbol {
+    position: relative;
+    top: rem(-1);
     font-weight: 700;
     font-size: rem(14);
-    font-family: "Quicksand, Arial, sans-serif";
+    font-family: Quicksand, Arial, sans-serif;
   }
 
   &__room-number {
+    position: relative;
+    top: rem(-1);
     font-weight: 700;
     font-size: rem(18);
-    font-family: "Quicksand, Arial, sans-serif";
+    font-family: Quicksand, Arial, sans-serif;
     line-height: rem(24);
     letter-spacing: rem(0.4);
   }

@@ -28,48 +28,48 @@ block content
   body
     +mainheader({})
     
-    main.room-det__main-wrapper
-      section.room-det__img-box
-        .room-det__main-img-wrp
-          img(class='room-det__main-img',  src="../../static/source/room-det-big.jpg", alt="img-big")
-        .room-det__img-small
-          img(class='room-det__small-img', src="../../static/source/room-det-1.jpg",  alt="img1")
-          img(class='room-det__small-img', src="../../static/source/room-det-2.jpg", alt="img2")
+    main.room-details__main-wrapper
+      section.room-details__img-box
+        .room-details__main-img-wrp
+          img(class='room-details__main-img',  src="../../static/source/room-det-big.jpg", alt="img-big")
+        .room-details__small-img-rwp
+          img(class='room-details__small-img', src="../../static/source/room-det-1.jpg", alt="room image")
+          img(class='room-details__small-img', src="../../static/source/room-det-2.jpg" alt="room image")
 
-      section.wrapper.room-det__content-wrapper
-        .room-det__left
-          .room-det__flex-wrp
-            .room-det__room-info
-              h2.room-det__left-info-title Сведения о номере
+      section.wrapper.room-details__content-wrapper
+        .room-details__left
+          .room-details__flex-wrp
+            .room-details__room-info
+              h2.room-details__left-info-title Сведения о номере
               +room_info({})
-            .room-det__pie-wrp
-              h2.room-det__left-waaay-title Впечатления от номера
-              .room-det__flex-wrp
+            .room-details__pie-wrp
+              h2.room-details__left-waaay-title Впечатления от номера
+              .room-details__flex-wrp
                 +circle-pie2({percents: [25, 25, 50, 0]}) 
-                ul.room-det__list
-                  li.room-det__item.room-det__item_best Великолепно 
-                  li.room-det__item.room-det__item_good Хорошо
-                  li.room-det__item.room-det__item_passably Удовлетворительно 
-                  li.room-det__item.room-det__item_poorly Разочарован
-          .room-det__recall-wrp
-            h2.room-det__recall Отзывы посетителей номера
-            .room-det__comment
+                ul.room-details__list
+                  li.room-details__item.room-details__item_best Великолепно 
+                  li.room-details__item.room-details__item_good Хорошо
+                  li.room-details__item.room-details__item_passably Удовлетворительно 
+                  li.room-details__item.room-details__item_poorly Разочарован
+          .room-details__recall-wrp
+            h2.room-details__recall Отзывы посетителей номера
+            .room-details__comment
               +comment({})
-            .room-det__comment
+            .room-details__comment
               +comment({name: 'Патрисия Стёклышкова', img:'../../static/source/image_patrisia48.png', days: 7, comment: 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент'})
 
-          .room-det__flex-wrp.room-det__flex-wrp--mtop
-            .room-det__rools
-              h2.room-det__rools-title Правила
-              ul.room-det__rools-list
-                li.room-det__rools-item Нельзя с питомцами
-                li.room-det__rools-item Без вечеринок и мероприятий
-                li.room-det__rools-item Время прибытия — после 13:00,<br>а выезд до 12:00
-            .room-det__cancel
-              h2.room-det__cancel-title Отмена
-              p.room-det__cancel-info Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+          .room-details__flex-wrp.room-details__flex-wrp--mtop
+            .room-details__rools
+              h2.room-details__rools-title Правила
+              ul.room-details__rools-list
+                li.room-details__rools-item Нельзя с питомцами
+                li.room-details__rools-item Без вечеринок и мероприятий
+                li.room-details__rools-item Время прибытия — после 13:00,<br>а выезд до 12:00
+            .room-details__cancel
+              h2.room-details__cancel-title Отмена
+              p.room-details__cancel-info Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
 
-        .room-det__right
+        .room-details__right
           +reserve-card({})
 
     +footer({})
