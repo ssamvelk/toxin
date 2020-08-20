@@ -1,35 +1,28 @@
-include ../../static/sprite.svg
-include ../../blocks/form_elements/text_field/text_field.pug
-include ../../blocks/form_elements/dropdown/dropdown.pug
-include ../../blocks/form_elements/date/date.pug
-include ../../blocks/form_elements/checkbox/checkbox.pug
-include ../../blocks/form_elements/radio/radio.pug
-include ../../blocks/form_elements/toggle/toggle.pug
-include ../../blocks/form_elements/like/like.pug
-include ../../blocks/form_elements/rate/rate.pug
-include ../../blocks/form_elements/slider/slider.pug
-include ../../blocks/form_elements/buttons/buttons.pug
-include ../../blocks/form_elements/pagination/pagination.pug
-include ../../blocks/form_elements/bullet_list/bullet_list.pug
-include ../../blocks/form_elements/room_info/room_info.pug
-include ../../blocks/cards/search/search.pug
-include ../../blocks/cards/registration/registration.pug
-include ../../blocks/cards/reserve/reserve.pug
-include ../../blocks/cards/inter/inter.pug
-include ../../blocks/cards/rooms/rooms.pug
-include ../../blocks/header/header.pug
-include ../../blocks/footer/footer.pug
-
-<!DOCTYPE html>
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    meta(name="keywords" content="Toxin, отель, отдых")
-    meta(name="description" content="Toxin - Лучшие номера для вашей работы, отдыха и просто вдохновения.")
-    link(rel="icon", href="img/favicon.ico" type="image/ico")
-    title Toxin
+extends ../base.pug
+block title
+  title Toxin
+block content
+  include ../../static/sprite.svg
+  include ../../blocks/form_elements/text_field/text_field.pug
+  include ../../blocks/form_elements/dropdown/dropdown.pug
+  include ../../blocks/form_elements/date/date.pug
+  include ../../blocks/form_elements/checkbox/checkbox.pug
+  include ../../blocks/form_elements/radio/radio.pug
+  include ../../blocks/form_elements/toggle/toggle.pug
+  include ../../blocks/form_elements/like/like.pug
+  include ../../blocks/form_elements/rate/rate.pug
+  include ../../blocks/form_elements/slider/slider.pug
+  include ../../blocks/form_elements/buttons/buttons.pug
+  include ../../blocks/form_elements/pagination/pagination.pug
+  include ../../blocks/form_elements/bullet_list/bullet_list.pug
+  include ../../blocks/form_elements/room_info/room_info.pug
+  include ../../blocks/cards/search/search.pug
+  include ../../blocks/cards/registration/registration.pug
+  include ../../blocks/cards/reserve/reserve.pug
+  include ../../blocks/cards/inter/inter.pug
+  include ../../blocks/cards/rooms/rooms.pug
+  include ../../blocks/header/header.pug
+  include ../../blocks/footer/footer.pug
   body
     +mainheader({})
 

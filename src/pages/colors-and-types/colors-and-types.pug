@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Colors & Type
-  body
+extends ../base.pug
+block title
+  title Colors & Type
+block content  
+  body  
     main.colors-and-types__wrap
       img.colors-and-types__logo(src='../../static/source/logo-gray.png' alt='logo' width=48 height=48)
       .colors-and-types__inner-wrap
@@ -12,31 +10,30 @@ html(lang="en")
           article.colors-and-types__item
             .colors-and-types__rectangle.colors-and-types__rectangle_dark-100
             p.colors-and-types__text <b>Dark Shade 100%</b> #1F2041
-          
+
           article.colors-and-types__item
             .colors-and-types__rectangle.colors-and-types__rectangle_dark-75
             p.colors-and-types__text <b>Dark Shade 75%</b> #1F2041
-          
+
           article.colors-and-types__item
             .colors-and-types__rectangle.colors-and-types__rectangle_dark-50
             p.colors-and-types__text <b>Dark Shade 50%</b> #1F2041
-          
+
           article.colors-and-types__item
             .colors-and-types__rectangle.colors-and-types__rectangle_dark-25
             p.colors-and-types__text <b>Dark Shade 25%</b> #1F2041
-          
+
           article.colors-and-types__item
             .colors-and-types__rectangle.colors-and-types__rectangle_dark-5
             p.colors-and-types__text <b>Dark Shade 5%</b> #1F2041
-          
+
           article.colors-and-types__item
             .colors-and-types__rectangle.colors-and-types__rectangle_purple
             p.colors-and-types__text <b>Purple</b><br>#BC9CFF
-          
+
           article.colors-and-types__item.colors-and-types__item_last
             .colors-and-types__rectangle.colors-and-types__rectangle_green
             p.colors-and-types__text <b>Green</b><br>#6FCF97
-
         .colors-and-types__right-side
           h1.colors-and-types__tytle-h1 This one is the sub-section or widget title
           h2.colors-and-types__tytle-h2 Next one is the item title inside widgets

@@ -1,17 +1,10 @@
-include ../../blocks/header/header.pug
-include ../../blocks/footer/footer.pug
-include ../../static/sprite.svg
-
-<!DOCTYPE html>
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    meta(name="keywords" content="Toxin, отель, отдых")
-    meta(name="description" content="Toxin - Лучшие номера для вашей работы, отдыха и просто вдохновения.")
-    link(rel="icon", href="img/favicon.ico" type="image/ico")
-    title Headers & Footers
+extends ../base.pug
+block title
+  title Headers & Footers
+block content
+  include ../../blocks/header/header.pug
+  include ../../blocks/footer/footer.pug
+  include ../../static/sprite.svg
   body
     main.headers-and-footers__wrap
       img.headers-and-footers__logo(src='../../static/source/logo-gray.png' alt='logo' width=48 height=48)
