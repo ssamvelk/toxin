@@ -1,7 +1,7 @@
 mixin date-calendar(options)
-  - const ClassName = options.isDisable ? ' datepicker--disable' : ' ';
+  - const ClassName = options.isDisable ? 'datepicker--disable' : '';
 
-  div(class='datepicker-here'+ClassName)
+  div(class=`datepicker-here ${ClassName}`)
     .date__datepicker-footer
       .date__clean-wrap
         a.date__clean.date__clean_disabled Очистить
@@ -9,8 +9,8 @@ mixin date-calendar(options)
 
 mixin date-filter-dropdown(options)
   .date__wrap
-    <svg class="date-dropdawn__svg date-dropdawn__svg_in-filter" width="12" height="12" viewBox="0 -4 12 12"  version="1.1" preserveAspectRatio="xMinYMin">
-    <use xlink:href="#img-expand-more"></use>   
+    <svg class='date-dropdawn__svg date-dropdawn__svg_in-filter' width='12' height='12' viewBox='0 -4 12 12'  version='1.1' preserveAspectRatio='xMinYMin'>
+    <use xlink:href='#img-expand-more'></use>   
     </svg>
     p.date__info.date__info_no-padding
       span.date__info-start 19 авг 
@@ -19,22 +19,22 @@ mixin date-filter-dropdown(options)
     +date-calendar({isDisable: true})
 
 mixin date-search-filds(options)
-  - const tytle1 = options.tytle1 ? options.tytle1 : 'Прибытие'
-  - const tytle2 = options.tytle2 ? options.tytle2 : 'Выезд'
+  - const title1 = options.title1 ? options.title1 : 'Прибытие'
+  - const title2 = options.title2 ? options.title2 : 'Выезд'
 
   .date__search-wrp  
     .date__search-inner-wrp
-      h3.date__search-title #{tytle1}
+      h3.date__search-title #{title1}
       .date__wrap_w150
-        <svg class="date-dropdawn__svg" width="12" height="12" viewBox="0 -4 12 12"  version="1.1" preserveAspectRatio="xMinYMin">
-        <use xlink:href="#img-expand-more"></use>   
+        <svg class='date-dropdawn__svg' width='12' height='12' viewBox='0 -4 12 12'  version='1.1' preserveAspectRatio='xMinYMin'>
+        <use xlink:href='#img-expand-more'></use>   
         </svg>
-        +text_field({type:'date', class:'date__info', id:'date__prib', readonly: true})
+        +text-field({type: 'date', class: 'date__info', id: 'date__prib', readonly: true})
     .date__search-inner-wrp
-      h3.date__search-title #{tytle2}    
+      h3.date__search-title #{title2}    
       .date__wrap_w150
-        <svg class="date-dropdawn__svg" width="12" height="12" viewBox="0 -4 12 12"  version="1.1" preserveAspectRatio="xMinYMin">
-        <use xlink:href="#img-expand-more"></use>   
+        <svg class='date-dropdawn__svg' width='12' height='12' viewBox='0 -4 12 12'  version='1.1' preserveAspectRatio='xMinYMin'>
+        <use xlink:href='#img-expand-more'></use>   
         </svg>
-        +text_field({type:'date', class:'date__info', id:'date__viezd', readonly: true})
+        +text-field({type: 'date', class: 'date__info', id: 'date__viezd', readonly: true})
     +date-calendar({isDisable: true})

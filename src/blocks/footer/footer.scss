@@ -40,6 +40,17 @@
     }
   }
 
+  &__logo-wrp {
+    @media screen and (max-width: 950px) {
+      display: flex;
+      flex-basis: 100%;
+    }
+    @media screen and (max-width: 768px) {
+      width: max-content;
+      margin: rem(110) auto 0;
+    }
+  }
+
   &__logo-info {
     width: rem(260);
     margin-top: rem(13);
@@ -60,21 +71,7 @@
       display: none;
     }
   }
-
-  @media screen and (max-width: 950px) {
-    &__logo-wrp {
-      display: flex;
-      flex-basis: 100%;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    &__logo-wrp {
-      width: max-content;
-      margin: rem(110) auto 0;
-    }
-  }
-
+  
   &__nav,
   &__about,
   &__support {
@@ -243,19 +240,6 @@
       margin: rem(25) auto 0;
     }
   }
-  
-  &__line {
-    position: relative;
-    bottom: rem(70);
-    max-width: rem(1440);
-    height: rem(1);
-    margin: 0 auto;
-    background-color: #e5e5e5;
-
-    @media screen and (max-width: 768px) {
-      display: none;
-    }
-  }
 
   &__facebook {
     position: relative;
@@ -273,5 +257,18 @@
     position: relative;
     width: rem(260);
     padding-right: rem(44);
+  }
+
+  &__line {
+    position: relative;
+    bottom: rem(70);
+    max-width: rem(1440);
+    height: rem(1);
+    margin: 0 auto;
+    background-color: #e5e5e5;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 }

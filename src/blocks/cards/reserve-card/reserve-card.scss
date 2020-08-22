@@ -1,4 +1,4 @@
-.reserve {
+.reserve-card {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -130,7 +130,7 @@
       width: rem(182);
       height: rem(0);
       border-top: rem(1) dotted $Dark25;
-      content: "";
+      content: '';
     }
   }
 

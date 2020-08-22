@@ -3,7 +3,7 @@ block title
   title Sign in
 block content
   include ../../static/sprite.svg
-  include ../../blocks/form_elements/text_field/text_field.pug
+  include ../../blocks/form_elements/text-field/text-field.pug
   include ../../blocks/form_elements/dropdown/dropdown.pug
   include ../../blocks/form_elements/date/date.pug
   include ../../blocks/form_elements/checkbox/checkbox.pug
@@ -12,15 +12,15 @@ block content
   include ../../blocks/form_elements/like/like.pug
   include ../../blocks/form_elements/rate/rate.pug
   include ../../blocks/form_elements/slider/slider.pug
-  include ../../blocks/form_elements/buttons/buttons.pug
+  include ../../blocks/form_elements/buttons/button/button.pug
   include ../../blocks/form_elements/pagination/pagination.pug
-  include ../../blocks/form_elements/bullet_list/bullet_list.pug
-  include ../../blocks/form_elements/room_info/room_info.pug
-  include ../../blocks/cards/search/search.pug
-  include ../../blocks/cards/registration/registration.pug
-  include ../../blocks/cards/reserve/reserve.pug
-  include ../../blocks/cards/inter/inter.pug
-  include ../../blocks/cards/rooms/rooms.pug
+  include ../../blocks/form_elements/bullet/bullet.pug
+  include ../../blocks/form_elements/room-info/room-info.pug
+  include ../../blocks/cards/search-card/search-card.pug
+  include ../../blocks/cards/registration-card/registration-card.pug
+  include ../../blocks/cards/reserve-card/reserve-card.pug
+  include ../../blocks/cards/inter-card/inter-card.pug
+  include ../../blocks/cards/room-card/room-card.pug
   include ../../blocks/header/header.pug
   include ../../blocks/footer/footer.pug
   body
@@ -29,6 +29,6 @@ block content
     main.sign-in__main-wrapper
       .sign-in__inner-wrapper
         .sign-in__inter-card  
-          +inter({})
+          +inter-card()
     
     +footer({})

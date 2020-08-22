@@ -1,0 +1,18 @@
+.empty-button {
+  color: #BC9CFF;
+  font-weight: 700;
+  font-size: rem(12);
+  font-family: Montserrat, Arial, sans-serif;
+  font-style: normal;
+  line-height: rem(15);
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:active,
+  &:hover {
+    .empty-button__text {
+      color: $Dark50;
+    }
+  }
+}

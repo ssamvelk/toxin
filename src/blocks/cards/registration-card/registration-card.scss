@@ -1,4 +1,4 @@
-.registration {
+.registration-card {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -59,7 +59,7 @@
     height: rem(44);
   }
 
-  &__have-account {
+  &__account {
     display: flex;
     align-items: center;
     color: black;

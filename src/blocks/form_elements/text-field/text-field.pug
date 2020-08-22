@@ -1,0 +1,31 @@
+mixin text-field(options)
+  -
+    let isType = options.type ? options.type : 'text'
+    let placeHolder = ''
+    let className = ''
+    const isClassName = options.class
+    const isID = options.id
+    const regExp = '(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d'
+    const isReadOnly = options.readonly
+
+    if (isType == 'email') {placeHolder = 'Email'}
+    else if (isType == 'password') placeHolder = 'Пароль'
+    else if (isType == 'date'){placeHolder = 'ДД.ММ.ГГГГ', isType = 'text', className = `text-field__date ${isClassName}`}
+    else if (isType == 'text') placeHolder = options.placeholder ? options.placeholder  : 'Имя'
+
+  if (options.type == 'date')
+    if (isReadOnly)
+      input(readonly class=`text-field ${className}` id=isID type=isType placeholder=placeHolder pattern='(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)[0-9][0-9]' )    
+    else 
+      input(class=`text-field ${className}` id=isID type=isType placeholder=placeHolder pattern='(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)[0-9][0-9]' )
+  else
+    input(class=`text-field ${className}` type=isType placeholder=placeHolder)
+
+
+mixin subscribe(options)
+  - const w267 = options.w267 ? 'subscribe_w267' : ''
+  .subscribe(class=w267)
+    input(class='text-field footer__subscribe-send' type='email' placeHolder = 'Email')
+    <svg class='subscribe-send-svg' width='18' height='18' viewBox='0 0 18 18'>
+      <path fill='#BC9CFF' d='M9 0.984375L17.0156 9L9 17.0156L7.59375 15.6094L13.1719 9.98438H0.984375V8.01562H13.1719L7.59375 2.39062L9 0.984375Z'/>
+    </svg>

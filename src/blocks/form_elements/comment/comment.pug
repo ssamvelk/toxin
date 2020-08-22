@@ -8,16 +8,16 @@ mixin comment(options)
   
   .comment
     .comment__user-wrp
-      img(class="comment__user-foto" src=img alt="avatar")
+      img(class='comment__user-foto' src=img alt='avatar')
       p.comment__user 
         span(class='comment__user-name')=name
         <br>
         if (days==7)
           span неделю назад 
         else 
-          span=days+' дней назад'
+          span=`${days} дней назад`
 
     .comment__info-wrp
       .comment__info-like
         +like({liked: true, value: '12'})
-      p.comment__info-text #{comment}
+      p.comment__info-text=comment

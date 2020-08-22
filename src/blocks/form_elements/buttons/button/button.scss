@@ -75,23 +75,4 @@
     top: rem(13);
     right: rem(13);
   }
-
-  &_empty {
-    color: #BC9CFF;
-    font-weight: 700;
-    font-size: rem(12);
-    font-family: Montserrat, Arial, sans-serif;
-    font-style: normal;
-    line-height: rem(15);
-    text-align: center;
-    text-transform: uppercase;
-    cursor: pointer;
-  
-    &:active,
-    &:hover {
-      .button__text {
-        color: $Dark50;
-      }
-    }
-  }
 }

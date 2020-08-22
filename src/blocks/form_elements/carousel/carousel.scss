@@ -13,9 +13,11 @@
     border: rem(1) solid white;
     border-radius: 50%;
     box-shadow: 0 rem(5) rem(5) rgba(31, 32, 65, 0.3);
+    
+    &_active{
+      background: white;
+    }
   }
   
-  &__item_active{
-    background: white;
-  }
+  
 }

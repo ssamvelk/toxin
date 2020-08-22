@@ -2,73 +2,73 @@ mixin dropdownItem(options)
   - const value = options.value ? options.value.toString() : '0'
 
   .dropdown__item-box
-    <svg class='js-minus-btn' cl width="30" height="31" viewBox="0 0 30 31" version="1.1" preserveAspectRatio="xMinYMin">
-    <use xlink:href="#img-group-"></use>
+    <svg class='js-minus-btn' cl width='30' height='31' viewBox='0 0 30 31' version='1.1' preserveAspectRatio='xMinYMin'>
+    <use xlink:href='#img-group-'></use>
     </svg>
     span(class='dropdown__item-value' id=options.id) #{value}
-    <svg class="js-plus-btn" width="30" height="31" viewBox="0 0 30 31" version="1.1" preserveAspectRatio="xMinYMin">
-    <use xlink:href="#img-group+"></use>
+    <svg class='js-plus-btn' width='30' height='31' viewBox='0 0 30 31' version='1.1' preserveAspectRatio='xMinYMin'>
+    <use xlink:href='#img-group+'></use>
     </svg>
 
 mixin dropdownMainSVG(options)
   - const opacity = options.opacity ? options.opacity : 50
 
   if (opacity === 50)
-    <svg class="dropdown__main-svg" width="12" height="12" viewBox="0 -4 12 12"  version="1.1" preserveAspectRatio="xMinYMin">
-    <use xlink:href="#img-expand-more"></use>   
+    <svg class='dropdown__main-svg' width='12' height='12' viewBox='0 -4 12 12'  version='1.1' preserveAspectRatio='xMinYMin'>
+    <use xlink:href='#img-expand-more'></use>   
     </svg>
   else if (opacity === 75)
-    <svg class="dropdown__main-svg" width="12" height="12" viewBox="0 -4 12 12"  version="1.1" preserveAspectRatio="xMinYMin">
-    <use xlink:href="#img-expand-more-75"></use>   
+    <svg class='dropdown__main-svg' width='12' height='12' viewBox='0 -4 12 12'  version='1.1' preserveAspectRatio='xMinYMin'>
+    <use xlink:href='#img-expand-more-75'></use>   
     </svg>
 
 mixin dropdown(options)
-  - const isExpandedList = options.expanded ? ' dropdown__list_expanded' : ''
-  - const isExpandedMain = options.expanded ? ' dropdown__main_expanded' : ''
-  - const small = options.small ? ' dropdown__wrp_266': '' 
+  - const isExpandedList = options.expanded ? 'dropdown__list_expanded' : ''
+  - const isExpandedMain = options.expanded ? 'dropdown__main_expanded' : ''
+  - const small = options.small ? 'dropdown__wrp_small': '' 
   - const count1 = options.count1 ? options.count1.toString() : '0'
   - const count2 = options.count2 ? options.count2.toString() : '0'
   - const count3 = options.count3 ? options.count3.toString() : '0'
 
   .dropdown__wrp.dropdown__wrp-comfort.js-dropdown__wrp-comfort(class= small)
     +dropdownMainSVG({opacity: 75})
-    p(class='dropdown__main'+isExpandedMain) <span class="dropdown-bedroom">#{count1}<span> спальни, <span class="dropdown-bed">#{count2}<span> кровати...
+    p(class=`dropdown__main ${isExpandedMain}`) <span class='dropdown-bedroom'>#{count1}<span> спальни, <span class='dropdown-bed'>#{count2}<span> кровати...
 
-    ul(class='dropdown__list'+isExpandedList)
+    ul(class=`dropdown__list ${isExpandedList}`)
       li.dropdown__item 
         span.dropdown__item-name спальни
-        +dropdownItem({id:'js-bedroom', value: count1})
+        +dropdownItem({id: 'js-bedroom', value: count1})
       li.dropdown__item 
         span.dropdown__item-name кровати
-        +dropdownItem({id:'js-bed', value: count2}) 
+        +dropdownItem({id: 'js-bed', value: count2}) 
       li.dropdown__item 
         span.dropdown__item-name ванные комнаты
-        +dropdownItem({id:'js-bathroom', value: count3}) 
+        +dropdownItem({id: 'js-bathroom', value: count3}) 
 
 mixin dropdownCompany(options)
-  - const small = options.small ? ' dropdown__wrp_266': ''
-  - const isExpandedList = (options.expanded) ? ' dropdown__list_expanded' : ''
-  - const isExpandedMain = (options.expanded) ? ' dropdown__main_expanded' : ''
+  - const small = options.small ? 'dropdown__wrp_small': ''
+  - const isExpandedList = (options.expanded) ? 'dropdown__list_expanded' : ''
+  - const isExpandedMain = (options.expanded) ? 'dropdown__main_expanded' : ''
   - const count1 = options.count1 ? options.count1 : 0
   - const count2 = options.count2 ? options.count2 : 0
   - const count3 = options.count3 ? options.count3 : 0
   - const text = options.text ? options.text : 'Сколько гостей'
   - const cleanButtonClass = (count1 > 0 || count2 > 0 || count3 > 0) ? '' : 'dropdown__item-clean_disable'
   
-  div(class='dropdown__wrp dropdown__wrp_320 dropdown__wrp-company js-dropdown__wrp-company'+small)
+  div(class=`dropdown__wrp dropdown__wrp_big dropdown__wrp-company js-dropdown__wrp-company ${small}`)
     +dropdownMainSVG({opacity: 75})
-    p(class='dropdown__main dropdown__main_company'+isExpandedMain) #{text}
+    p(class=`dropdown__main dropdown__main_company ${isExpandedMain}`) #{text}
 
-    ul(class='dropdown__list dropdown__list-company'+isExpandedList)
+    ul(class=`dropdown__list dropdown__list-company ${isExpandedList}`)
       li.dropdown__item.dropdown__item-fadult 
         span.dropdown__item-name взрослые
-        +dropdownItem({id:'js-fadult', value: count1})
+        +dropdownItem({id: 'js-fadult', value: count1})
       li.dropdown__item.dropdown__item-child 
         span.dropdown__item-name дети
-        +dropdownItem({id:'js-child', value: count2}) 
+        +dropdownItem({id: 'js-child', value: count2}) 
       li.dropdown__item.dropdown__item-baby 
         span.dropdown__item-name младенцы
-        +dropdownItem({id:'js-baby', value: count3})
+        +dropdownItem({id: 'js-baby', value: count3})
       li.dropdown__item.dropdown__item-footer
         a.dropdown__item-clean-btn.js-dropdown__item-clean-btn(class= cleanButtonClass) Очистить
         a.dropdown__item-apply-btn.js-dropdown__item-apply-btn Применить

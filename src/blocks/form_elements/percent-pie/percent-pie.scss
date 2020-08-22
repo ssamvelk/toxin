@@ -1,0 +1,52 @@
+.percent-pie {
+  width: rem(120);
+  height: rem(120);
+
+  &__circle {
+    transform: rotate(-90deg);
+    transform-origin: center center;
+    animation: dash 2s linear;
+    fill: none;
+    stroke: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+    stroke-width: rem(4);
+    stroke-dashoffset: 0;
+    
+    &_perfectly {
+      transform: rotate(90deg);
+    }
+    
+    &_good {
+      border: rem(1) solid black;
+      transform: rotate(1deg);
+    }
+    
+    &_disappointed {
+      transform: rotate(270deg);
+    }
+  }
+
+  &__text {
+    position: relative;
+    font-weight: 700;
+    font-size: rem(24);
+    font-family: Quicksand, Arial, sans-serif;
+    fill: #bc9cff;
+  }
+
+  &__voce-text {
+    font-weight: 700;
+    font-size: rem(12);
+    font-family: Montserrat, Arial, sans-serif;
+    text-transform: uppercase;
+    fill: #bc9cff;
+  }
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}

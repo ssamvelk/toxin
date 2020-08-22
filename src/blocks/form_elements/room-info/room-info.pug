@@ -1,0 +1,14 @@
+mixin room-info(opt)
+  - const elementsCount = opt.num ? opt.num : 3
+  
+  section.room-info
+    article.room-info__item
+      include ./components/smile-svg.pug
+      p.room-info__information.room-info__information-comfort <span class='room-info__title'>Комфорт</span><br>Шумопоглощающие стены
+    article.room-info__item
+      include ./components/house-svg.pug
+      p.room-info__information.room-info__information-facilities <span class='room-info__title'>Удобство</span><br>Окно в каждой из спален
+    if (elementsCount === 3)
+      article.room-info__item.room-info__item_without-border
+        include ./components/fire-svg.pug
+        p.room-info__information.room-info__information-cosiness <span class='room-info__title'>Уют</span><br>Номер оснащён камином

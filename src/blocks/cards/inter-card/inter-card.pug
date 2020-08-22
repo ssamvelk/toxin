@@ -1,0 +1,12 @@
+mixin inter-card(options)
+  form.inter-card
+    h2.inter-card__title Войти
+    .inter-card__text-field-wrp
+      +text-field({type: 'email'})
+    .inter-card__text-field-wrp
+      +text-field({type: 'password'})
+    .inter-card__button-wrp
+      +button({big: true, text: 'Войти'})
+    p.inter-card__footer
+      span.inter-card__question Нет аккаунта на Toxin?
+      +button({white: true, text: 'Создать', href: 'registration.html'})

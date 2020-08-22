@@ -14,7 +14,7 @@
 @import "../pages/search-room/search-room.scss";
 @import "../pages/sign-in/sign-in.scss";
 
-@import "../blocks/form_elements/text_field/text_field.scss";
+@import "../blocks/form_elements/text-field/text-field.scss";
 @import "../blocks/form_elements/dropdown/dropdown.scss";
 @import "../blocks/form_elements/date/date.scss";
 @import "../blocks/form_elements/checkbox/checkbox.scss";
@@ -24,17 +24,18 @@
 @import "../blocks/form_elements/comment/comment.scss";
 @import "../blocks/form_elements/rate/rate.scss";
 @import "../blocks/form_elements/slider/slider.scss";
-@import "../blocks/form_elements/buttons/buttons.scss";
+@import "../blocks/form_elements/buttons/button/button.scss";
+@import "../blocks/form_elements/buttons/empty-button/empty-button.scss";
 @import "../blocks/form_elements/carousel/carousel.scss";
 @import "../blocks/form_elements/pagination/pagination.scss";
-@import "../blocks/form_elements/bullet_list/bullet_list.scss";
-@import "../blocks/form_elements/room_info/room_info.scss";
-@import "../blocks/form_elements/percent_pie/percent_pie.scss";
+@import "../blocks/form_elements/bullet/bullet.scss";
+@import "../blocks/form_elements/room-info/room-info.scss";
+@import "../blocks/form_elements/percent-pie/percent-pie.scss";
 
-@import "../blocks/cards/search/search.scss";
-@import "../blocks/cards/registration/registration.scss";
-@import "../blocks/cards/reserve/reserve.scss";
-@import "../blocks/cards/inter/inter.scss";
-@import "../blocks/cards/rooms/rooms.scss";
+@import "../blocks/cards/search-card/search-card.scss";
+@import "../blocks/cards/registration-card/registration-card.scss";
+@import "../blocks/cards/reserve-card/reserve-card.scss";
+@import "../blocks/cards/inter-card/inter-card.scss";
+@import "../blocks/cards/room-card/room-card.scss";
 @import "../blocks/header/header.scss";
 @import "../blocks/footer/footer.scss";
