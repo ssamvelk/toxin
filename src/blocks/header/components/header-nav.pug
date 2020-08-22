@@ -1,32 +1,32 @@
-ul.header__list
-  li.header__item.header__about
-    if (activeLink === 1)
-      a.header__item-link.header__item-link_active(href='/mock-address/change-me') О нас
-    else
-      a.header__item-link(href='/mock-address/change-me') О нас     
-  li.header__item.header__service
-    if (activeLink === 2)
-      a.header__item-link.header__item-link_active(href='/mock-address/change-me') Услуги
-    else
-      a.header__item-link(href='/mock-address/change-me') Услуги
-    <svg class='header__expand-svg' width='12' height='12' viewBox='0 -4 12 12'  version='1.1' preserveAspectRatio='xMinYMin'>
-      <use xlink:href='#img-expand-more'></use>   
-    </svg>
-  li.header__item.header__vacancy
-    if (activeLink === 3)
-      a.header__item-link.header__item-link_active(href='/mock-address/change-me') Вакансии
-    else
-      a.header__item-link(href='/mock-address/change-me') Вакансии
-  li.header__item.header__news
-    if (activeLink === 4)
-      a.header__item-link.header__item-link_active(href='/mock-address/change-me') Новости
-    else 
-      a.header__item-link(href='/mock-address/change-me') Новости
-  li.header__item.header__agreement
-    if (activeLink === 5)
-      a.header__item-link.header__item-link_active(href='/mock-address/change-me') Соглашения
-    else
-      a.header__item-link(href='/mock-address/change-me') Соглашения
-    <svg class='header__expand-svg' width='12' height='12' viewBox='0 -4 12 12'  version='1.1' preserveAspectRatio='xMinYMin'>
-      <use xlink:href='#img-expand-more'></use>   
-    </svg>
+mixin header__navigation-item(options)
+  -
+    const classNamePrefix = options.class ? options.class : 'default' 
+    const text = options.text ? options.text : 'text'
+    const isActive = options.active ? options.active : false
+    const isDropdownLink = options.dropdawn ? options.dropdawn : false
+
+    const linkClassName =   isActive ? 'header__item-link header__item-link_active' : 'header__item-link'
+    const href = options.href ? options.href : '/mock-address/change-me'
+  
+  li(class=`header__item header__${classNamePrefix}`)
+    a(class=linkClassName href=href)=text
+    if (isDropdownLink)
+      svg(class='header__expand-svg' width='12' height='12' viewBox='0 -4 12 12'  version='1.1' preserveAspectRatio='xMinYMin')
+        use(xlink:href='#img-expand-more')
+
+mixin header__navigation-list(options)
+  -
+    const items = options.items
+    const itemsClassName = options.itemClasses
+    const activeItem = options.activeItem ? options.activeItem : 0
+
+    const itemsWithDropdownLink = options.itemsWithDropdownLink ? options.itemsWithDropdownLink : [1, 4]
+
+  ul.header__list
+    each val, index in items
+      +header__navigation-item({
+        class: itemsClassName[index],
+        text: items[index],
+        active: (activeItem == index) ? true : false,
+        dropdawn: itemsWithDropdownLink.includes(index)
+      })

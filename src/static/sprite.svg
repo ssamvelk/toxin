@@ -1,28 +1,5 @@
 <svg display="none">
 	
-		<linearGradient id="QQQQ" x1="10" x2="10" y1="-2" y2="22" gradientUnits="userSpaceOnUse">
-		<stop stop-color="#BC9CFF"/>
-		<stop offset="1" stop-color="#8BA4F9"/>
-		</linearGradient>
-
-		<linearGradient id="paint0_linear" x1="10" x2="10" y1="-2" y2="22" gradientUnits="userSpaceOnUse">
-		<stop stop-color="#BC9CFF"/>
-		<stop offset="1" stop-color="#8BA4F9"/>
-		</linearGradient>
-
-		<linearGradient id="gr1" x1="15.294" y1="15.2942" x2="15.294" y2="27.0589" gradientUnits="userSpaceOnUse">
-			<stop stop-color="#BC9CFF"/>
-			<stop offset="1" stop-color="#8BA4F9"/>
-		</linearGradient>
-		<linearGradient id="gr2" x1="26.0293" y1="15.2942" x2="26.0293" y2="21.206" gradientUnits="userSpaceOnUse">
-			<stop stop-color="#6FCF97"/>
-			<stop offset="1" stop-color="#66D2EA"/>
-		</linearGradient>
-		<linearGradient id="gr3" x1="20" y1="0" x2="20" y2="40" gradientUnits="userSpaceOnUse">
-			<stop stop-color="#BC9CFF"/>
-			<stop offset="1" stop-color="#8BA4F9"/>
-		</linearGradient>
-	
 	<symbol id="img-vector">
 		<path  fill="#1F2041" fill-opacity=".25" d="M24 48C10.7647 48 0 37.2353 0 24C0 10.7647 10.7647 0 24 0C37.2353 0 48 10.7647 48 24C48 37.2353 37.2353 48 24 48ZM24 2.82353C12.3176 2.82353 2.82353 12.3176 2.82353 24C2.82353 35.6824 12.3176 45.1765 24 45.1765C35.6824 45.1765 45.1765 35.6824 45.1765 24C45.1765 12.3176 35.6824 2.82353 24 2.82353Z"/>
 	</symbol>

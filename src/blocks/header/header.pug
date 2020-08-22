@@ -1,4 +1,5 @@
 include ../form_elements/buttons/button/button.pug
+include ./components/header-nav.pug
 
 mixin mainheader(options)
   - const isAuthorized = options.authorized ? 'header__inner-wrap_authorized' : ''
@@ -10,7 +11,10 @@ mixin mainheader(options)
       
       include ./components/header-logo.pug
       
-      include ./components/header-nav.pug
+      +header__navigation-list({
+        items: ['О нас', 'Услуги', 'Вакансии', 'Новости', 'Соглашения'],
+        itemClasses: ['about', 'service', 'vacancy', 'news', 'agreement']
+      })
       
       include ./components/header-auth.pug
       
