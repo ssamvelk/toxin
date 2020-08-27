@@ -1,39 +1,21 @@
 extends ../base.pug
 block title
   title Colors & Type
-block content  
-  body  
+block content
+  include ./colors-and-types__item.pug  
+  body
     main.colors-and-types__wrap
       img.colors-and-types__logo(src='../../static/source/logo-gray.png' alt='logo' width=48 height=48)
       .colors-and-types__inner-wrap
         .colors-and-types__left-side
-          article.colors-and-types__item
-            .colors-and-types__rectangle.colors-and-types__rectangle_dark-100
-            p.colors-and-types__text <b>Dark Shade 100%</b> #1F2041
-
-          article.colors-and-types__item
-            .colors-and-types__rectangle.colors-and-types__rectangle_dark-75
-            p.colors-and-types__text <b>Dark Shade 75%</b> #1F2041
-
-          article.colors-and-types__item
-            .colors-and-types__rectangle.colors-and-types__rectangle_dark-50
-            p.colors-and-types__text <b>Dark Shade 50%</b> #1F2041
-
-          article.colors-and-types__item
-            .colors-and-types__rectangle.colors-and-types__rectangle_dark-25
-            p.colors-and-types__text <b>Dark Shade 25%</b> #1F2041
-
-          article.colors-and-types__item
-            .colors-and-types__rectangle.colors-and-types__rectangle_dark-5
-            p.colors-and-types__text <b>Dark Shade 5%</b> #1F2041
-
-          article.colors-and-types__item
-            .colors-and-types__rectangle.colors-and-types__rectangle_purple
-            p.colors-and-types__text <b>Purple</b><br>#BC9CFF
-
-          article.colors-and-types__item.colors-and-types__item_last
-            .colors-and-types__rectangle.colors-and-types__rectangle_green
-            p.colors-and-types__text <b>Green</b><br>#6FCF97
+          +colors-and-types__item({})
+          +colors-and-types__item({prefix: 'dark-75', text: 'Dark Shade 75%'})
+          +colors-and-types__item({prefix: 'dark-50', text: 'Dark Shade 50%'})
+          +colors-and-types__item({prefix: 'dark-25', text: 'Dark Shade 25%'})
+          +colors-and-types__item({prefix: 'dark-5', text: 'Dark Shade 5%'})
+          +colors-and-types__item({prefix: 'purple', text: 'Purple', color: '#BC9CFF'})
+          +colors-and-types__item({prefix: 'green ', text: 'Green \n', color: ' #6FCF97'})
+          
         .colors-and-types__right-side
           h1.colors-and-types__title-h1 This one is the sub-section or widget title
           h2.colors-and-types__title-h2 Next one is the item title inside widgets

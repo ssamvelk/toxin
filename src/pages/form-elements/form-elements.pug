@@ -5,8 +5,12 @@ block content
   include ../../static/sprite.svg
   include ../../blocks/form_elements/text-field/text-field.pug
   include ../../blocks/form_elements/dropdown/dropdown.pug
-  include ../../blocks/form_elements/date/date.pug
+  include ../../blocks/form_elements/date-filter/date-filter.pug
+  include ../../blocks/form_elements/date-dropdown/date-dropdown.pug
   include ../../blocks/form_elements/checkbox/checkbox.pug
+  include ../../blocks/form_elements/checkbox/checkbox-accessibility/checkbox-accessibility.pug
+  include ../../blocks/form_elements/checkbox/checkbox-additional-list/checkbox-additional-list.pug
+  include ../../blocks/form_elements/checkbox/checkbox-list/checkbox-list.pug
   include ../../blocks/form_elements/radio/radio.pug
   include ../../blocks/form_elements/toggle/toggle.pug
   include ../../blocks/form_elements/like/like.pug
@@ -18,13 +22,14 @@ block content
   include ../../blocks/form_elements/bullet/bullet.pug
   include ../../blocks/form_elements/comment/comment.pug
   include ../../blocks/form_elements/room-info/room-info.pug
+  include ../../blocks/form_elements/subscribe/subscribe.pug
   body
-    main.form-elements__wrap
+    main.form-elements__wrapper
       img.form-elements__logo(src='../../static/source/logo-gray.png' alt='logo' width=48 height=48)
-      .form-elements__inner-wrap
+      .form-elements__inner-wrapper
 
-        section.form-elements__section.form-elements__section-1
-          .form-elements__col.form-elements__col-11
+        section.form-elements__section.form-elements__section_elements
+          .form-elements__column.form-elements__column_textfields
             .form-elements__text-field-default-wrap
               h6.form-elements__items-title text Field
               +text-field({type: 'email'})
@@ -35,24 +40,24 @@ block content
             
             .form-elements__upper-dropdown-company-wrap 
               h6.form-elements__items-title dropdown
-              +dropdownCompany({})
+              +dropdown-company({big: true})
             
             .form-elements__masked-text-field-wrap
               h6.form-elements__items-title masked text field
               +text-field({type: 'date'})
             
-            .form-elements__date-search-filds-wrap
-              +date-search-filds({title1: 'date Dropdown',  title2: 'date Dropdown'})
+            .form-elements__date-filter-wrap
+              +date-filter({arrival: 'date Dropdown',  departure: 'date Dropdown'})
              
             .form-elements__filter-date-dropdown-wrap
               h6.form-elements__items-title filter date dropdown
-              +date-filter-dropdown({})
+              +date-dropdown({})
              
             .form-elements__subscribe-wrap
               h6.form-elements__items-title subscription text field
-              +subscribe({w267: true})
+              +subscribe({big: true})
 
-          .form-elements__col.form-elements__col-12
+          .form-elements__column.form-elements__column_checkboxs
             .form-elements__checkbox-list-wrap
               +checkbox-list({})
             
@@ -83,7 +88,7 @@ block content
                   +rate({rating: 4})
                 +rate({rating: 5})
 
-          .form-elements__col
+          .form-elements__column
             .form-elements__slider-wrap
               +slider({title : 'Range Slider'})
 
@@ -110,46 +115,46 @@ block content
               h6.form-elements__items-title.form-elements__pagination-title pagination
               +pagination({})
        
-        section.form-elements__section.form-elements__section-2
-          .form-elements__col
+        section.form-elements__section.form-elements__section_dropdowns
+          .form-elements__column
             .form-elements__dropdowns-wrap
               h6.form-elements__items-title.form-elements__dropdowns-title dropdown
-              +dropdown({small: true, count1: 2, count2: 2})
+              +dropdown-comfort({small: true, count1: 2, count2: 2})
               .form-elements__dropdown-wrap
                 h6.form-elements__items-title dropdown
-                +dropdown({expanded: true, small: true, count1: 2, count2: 2})
+                +dropdown-comfort({expanded: true, small: true, count1: 2, count2: 2})
               
-          .form-elements__col
+          .form-elements__column
             .form-elements__dropdown-company-wrap  
               h6.form-elements__items-title dropdown
-              +dropdownCompany({expanded: true})
+              +dropdown-company({big: true, expanded: true})
 
-          .form-elements__col
+          .form-elements__column
             .form-elements__dropdown-company-filled-wrap
               h6.form-elements__items-title.form-elements__dropdown-company-filled-title dropdown
-              +dropdownCompany({expanded: true, count1: 2, count2: 1, text: '3 гостя'})
+              +dropdown-company({big: true, expanded: true, count1: 2, count2: 1, text: '3 гостя'})
         
-        section.form-elements__section.form-elements__section-3
-          .form-elements__col
+        section.form-elements__section.form-elements__section_checkboxs
+          .form-elements__column
             .form-elements__checkbox-additional-list-wrap
               +checkbox-additional-list({title: 'expandable checkbox list'})
 
             .form-elements__opened-checkbox-additional-list-wrap
               +checkbox-additional-list({opened: true, title: 'expandable checkbox list'})
               
-          .form-elements__col
+          .form-elements__column
             .form-elements__checkbox-accessibility-wrap
               +checkbox-accessibility({title: 'Rich Checkbox Buttons'})
 
-          .form-elements__col
+          .form-elements__column
             .form-elements__bullet-wrap
               +bullet({})
 
-        section.form-elements__section.form-elements__section-4
-          .form-elements__col
+        section.form-elements__section.form-elements__section_rest
+          .form-elements__column
             +room-info({num: 2})
 
-          .form-elements__col
+          .form-elements__column
             .form-elements__comment-wrap
               +comment({})
       

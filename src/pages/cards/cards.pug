@@ -10,14 +10,14 @@ block content
     include ../../blocks/cards/registration-card/registration-card.pug
     include ../../blocks/cards/inter-card/inter-card.pug
     include ../../blocks/cards/room-card/room-card.pug
-    include ../../blocks/form_elements/date/date.pug
+    include ../../blocks/form_elements/date-filter/date-filter.pug
     main
       img.cards__logo(src='../../static/source/logo-gray.png' alt='logo' width=48 height=48)
       .cards__inner-wrap
         +search-card({})
         +reserve-card({})
         .cards__calendar-wrap
-          +date-calendar({isDisable: false})
+          +calendar({disable: false})
         .cards__registration-wrap
           +registration-card()
         .cards__inter-wrap

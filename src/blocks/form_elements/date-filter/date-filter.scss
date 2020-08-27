@@ -1,0 +1,48 @@
+.date-filter {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: rem(320);
+  height: rem(70);
+
+  & > .calendar {
+    position: absolute;
+    top: rem(70);
+  }
+
+  &__arrow {
+    position: absolute;
+    top: rem(15);
+    right: rem(16);
+  }
+
+  &__text-field {
+    position: relative;
+    width: rem(150);
+    height: rem(44);
+    padding: 0;
+    border: 0;
+  }
+
+
+  &__title {
+    margin-bottom: rem(5);
+    color: $Dark;
+    font-weight: 700;
+    font-size: rem(12);
+    font-family: Montserrat, Arial, sans-serif;
+    line-height: rem(15);
+    text-transform: uppercase;
+  }
+
+  &__date {
+    width: rem(150);
+    padding-right: rem(45);
+    color: $Dark75;
+    font-weight: 400;
+    font-size: rem(14);
+    font-family: Montserrat, Arial, sans-serif;
+    font-style: normal;
+    line-height: rem(44);
+  }
+}

@@ -1,0 +1,13 @@
+include ../calendar/calendar.pug
+
+mixin date-dropdown(options)
+  .date-dropdown
+    svg(class='date-dropdown__arrow' width='12' height='12' viewBox='0 -4 12 12'  version='1.1' preserveAspectRatio='xMinYMin') 
+      use(xlink:href='#img-expand-more')
+         
+    p.date-dropdown__info.date-dropdown__info_no-padding
+      span.date-dropdown__info-start 19 авг 
+      |-
+      span.date-dropdown__info-end 23 авг
+    .date-dropdown__calendar
+      +calendar({disable: true})

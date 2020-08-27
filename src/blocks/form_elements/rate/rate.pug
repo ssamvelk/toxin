@@ -1,7 +1,8 @@
 mixin rate(options)
-  - const value = options.rating ? options.rating : '0'
-  - let i=0
-  - let j=0
+  -
+    const value = options.rating || '0'
+    let i=0
+    let j=0
   
   if (options.isClickable)
     .rate.rate_reverse

@@ -1,0 +1,17 @@
+mixin checkbox-additional-list(options)
+  - const title = options.title || 'дополнительные удобства'
+  - const isOpened = options.opened ? 'checkbox-additional-list__body' : 'checkbox-additional-list__body checkbox-additional-list__body_disabled'
+  - const svgClass = options.opened ? 'checkbox-additional-list__svg_opened' : ''
+  
+  .checkbox-additional-list.js-checkbox-additional-list
+    .checkbox-additional-list__header
+      h3.checkbox-additional-list__title= title
+      svg(class=`checkbox-additional-list__svg ${svgClass}` width='12' height='12' viewBox='0 -4 12 12'  version='1.1' preserveAspectRatio='xMinYMin')
+        use(xlink:href='#img-expand-more')   
+    div(class=isOpened)
+      +checkbox({text: 'Завтрак', id: 'breackfast', first: true})
+      +checkbox({text: 'Письменный стол', id: 'desk', checked: true})
+      +checkbox({text: 'Стул для кормления', id: 'chair', checked: true})
+      +checkbox({text: 'Кроватка', id: 'cot', checked: true})
+      +checkbox({text: 'Телевизор', id: 'tv'})
+      +checkbox({text: 'Шампунь', id: 'shampoo'})

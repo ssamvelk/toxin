@@ -1,5 +1,5 @@
 .header {
-  &__wrap {
+  &__wrapper {
     max-width: rem(1440);
     min-height: rem(70);
     margin: 0 auto;
@@ -17,7 +17,7 @@
     }
   }
 
-  &__inner-wrap {
+  &__inner-wrapper {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -36,7 +36,7 @@
     }
   
     &_authorized {
-      .header__btns-wrp {
+      .header__autorization {
         display: none;
       }
   
@@ -80,20 +80,20 @@
   &__item {
     position: relative;
     vertical-align: middle;
-  }
-
-  &__item-link {
-    color: $Dark50;
-    font-weight: 400;
-    font-size: rem(14);
-    font-family: Montserrat, Arial, sans-serif;
-    font-style: normal;
-    line-height: rem(17);
-    vertical-align: middle;
-  
-    &_active {
-      color: $Dark75;
-      font-weight: 700;
+    
+    &-link {
+      color: $Dark50;
+      font-weight: 400;
+      font-size: rem(14);
+      font-family: Montserrat, Arial, sans-serif;
+      font-style: normal;
+      line-height: rem(17);
+      vertical-align: middle;
+    
+      &_active {
+        color: $Dark75;
+        font-weight: 700;
+      }
     }
   }
 
@@ -118,7 +118,7 @@
     left: rem(6);
   }
   
-  &__btns-wrp {
+  &__autorization {
     display: flex;
     justify-content: space-between;
     width: rem(303);
@@ -142,7 +142,7 @@
 
   @media screen and (max-width: 950px) {
     &__logotype,
-    &__btns-wrp {
+    &__autorization {
       margin-top: rem(10);
     }
   
@@ -150,11 +150,11 @@
 
   @media screen and (max-width: 520px) {
     &__logotype,
-    &__btns-wrp {
+    &__autorization {
       margin: 0 auto;
     }
     
-    &__btns-wrp {
+    &__autorization {
       flex-basis: 100%;
     }
   }

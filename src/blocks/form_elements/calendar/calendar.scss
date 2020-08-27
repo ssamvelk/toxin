@@ -4,80 +4,13 @@
 @import '../../../../node_modules/air-datepicker/src/sass/navigation.scss';
 @import '../../../../node_modules/air-datepicker/src/sass/timepicker.scss';
 
-.date {
-  &__wrap {
-    position: relative;
-    width: rem(266);
-    height: rem(44);
-    padding: 0 rem(15);
-    border: rem(1) solid $Dark25;
-    border-radius: rem(4);
+.calendar {
   
-    & > .datepicker-here {
-      position: absolute;
-      top: rem(50);
-      left: 0;
-    }
-  
-    & > .datepicker--disable {
-      display: none;
-    }
-  
-    &_w150 {
-      position: relative;
-      width: rem(150);
-      height: rem(44);
-      padding: 0;
-      border: 0;
-    }
+  &_disabled {
+    display: none;
   }
 
-  &__info {
-    width: rem(150);
-    padding-right: rem(45);
-    color: $Dark75;
-    font-weight: 400;
-    font-size: rem(14);
-    font-family: Montserrat, Arial, sans-serif;
-    font-style: normal;
-    line-height: rem(44);
-    
-    &_no-padding {
-      padding-right: rem(0);
-    }
-  }
-  
-  &__search-wrp {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    width: rem(320);
-    height: rem(70);
-  
-    & > .datepicker-here {
-      position: absolute;
-      top: rem(70);
-    }
-  
-    & > .datepicker--disable {
-      display: none;
-    }
-  
-    h3 {
-      margin-bottom: rem(5);
-    }
-  }
-
-  &__search-title {
-    color: $Dark;
-    font-weight: 700;
-    font-size: rem(12);
-    font-family: Montserrat, Arial, sans-serif;
-    line-height: rem(15);
-    text-transform: uppercase;
-  }
-
-  &__datepicker-footer {
+  &__footer {
     position: absolute;
     bottom: rem(-53);
     left: rem(-1);
@@ -94,8 +27,9 @@
     border-top-right-radius: 0;
   }
 
-  &__clean-wrap {
+  &__clean-wrapper {
     min-width: rem(72);
+    line-height: rem(15);
   }
   
   &__clean,
@@ -124,19 +58,6 @@
     &:hover {
       color: rgba(31, 32, 65, 0.5);
     }
-  }
-}
-
-.date-dropdawn {
-  &__svg {
-    position: absolute;
-    top: rem(15);
-    right: rem(16);
-  }
-
-  &__svg_in-filter {
-    top: rem(14);
-    right: rem(15);
   }
 }
 

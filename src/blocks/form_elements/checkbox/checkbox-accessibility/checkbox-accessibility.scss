@@ -1,0 +1,57 @@
+.checkbox-accessibility {
+  position: relative;
+  width: rem(266);
+  min-height: rem(125);
+  margin-bottom: rem(25);
+
+  &__title {
+    margin: 0;
+    margin-bottom: rem(16);
+    color: #1f2041;
+    font-weight: 700;
+    font-size: rem(12);
+    font-family: Montserrat, Arial, sans-serif;
+    line-height: rem(15);
+    text-transform: uppercase;
+  }
+  
+  &__item {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: rem(5);
+  }
+  
+  &__inner-wrapper {
+    width: rem(236);
+    margin-bottom: rem(5);
+  }
+  
+  &__item-name {
+    margin: 0;
+  }
+  
+  &__inner-title {
+    margin-top: rem(1);
+    color: $Dark75;
+    font-weight: 700;
+    font-size: rem(14);
+    font-family: Montserrat, Arial, sans-serif;
+    font-style: normal;
+    line-height: rem(18);
+    text-transform: none;
+  }
+  
+  &__inner-info {
+    margin-top: rem(5);
+    color: $Dark50;
+    font-weight: 400;
+    font-size: rem(12);
+    font-family: Montserrat, Arial, sans-serif;
+    font-style: normal;
+    line-height: rem(14);
+    text-transform: none;
+  }
+}

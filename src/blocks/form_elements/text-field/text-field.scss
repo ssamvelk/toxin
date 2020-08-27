@@ -16,27 +16,3 @@
     border: rem(1) solid $Dark50;
   }
 }
-  
-.subscribe {
-  position: relative;
-  width: rem(260);
-  
-  &_w267 {
-    position: relative;
-    top: rem(-1);
-    width: rem(267);
-
-    & > .text-field.footer__subscribe-send {
-      width: rem(267);
-    }
-  }
-
-  &-send-svg {
-    position: absolute;
-    top: rem(13);
-    right: rem(13);
-  }
-}
-  
-
-  

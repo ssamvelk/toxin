@@ -1,22 +1,12 @@
+include ./pagination__item.pug
+
 mixin pagination(options)
   .pagination
     ul.pagination__list
-      li.pagination__item.pagination__first-item.pagination__item_active
-        <svg class='pagination-arrow-svg' width='18' height='18' viewBox='0 0 18 18'  version='1.1' preserveAspectRatio='xMinYMin'>
-        <use xlink:href='#img-arrow-right'></use>   
-        </svg>
-        a.pagination__item-link(href='/mock-address/change-me') 1
-      li.pagination__item
-        a.pagination__item-link(href='/mock-address/change-me') 2
-      li.pagination__item
-        a.pagination__item-link(href='/mock-address/change-me') 3
-      li.pagination__item
-        a.pagination__item-link(href='/mock-address/change-me') ...
-      li.pagination__item
-        a.pagination__item-link(href='/mock-address/change-me') 15
-      li.pagination__item.pagination__last-item
-        <svg class='pagination-arrow-svg' width='18' height='18' viewBox='0 0 18 18'  version='1.1' preserveAspectRatio='xMinYMin'>
-        <use xlink:href='#img-arrow-right'></use>   
-        </svg>
+      +pagination__item({first: true, active: true, text: 1})
+      +pagination__item({text: 2})
+      +pagination__item({text: 3})
+      +pagination__item({text: '...'})
+      +pagination__item({text: 15})
+      +pagination__item({last: true})
     p.pagination__footer <span>1</span> – 12 из <span>100+</span> вариантов аренды
-

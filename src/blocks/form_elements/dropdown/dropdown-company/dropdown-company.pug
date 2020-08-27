@@ -1,0 +1,30 @@
+include ../__buttons/dropdown__buttons.pug
+
+mixin dropdown-company(options)
+  - const isBig = options.big ? 'dropdown-company_size_big' : ''
+  - const isExpandedList = options.expanded ? 'dropdown-company__list_expanded' : ''
+  - const isExpandedMain = options.expanded ? 'dropdown-company__main_expanded' : ''
+  - const count1 = options.count1 || 0
+  - const count2 = options.count2 || 0
+  - const count3 = options.count3 || 0
+  - const DefultText = options.text || 'Сколько гостей'
+  - const cleanButtonClass = (count1 > 0 || count2 > 0 || count3 > 0) ? '' : 'dropdown-company__clean_disable'
+  
+  div(class=`dropdown-company js-dropdown-company ${isBig}`)
+    .dropdown-company__open
+      +dropdown__open({opacity: 75})
+    p(class=`dropdown-company__main js-dropdown-company__main ${isExpandedMain}`)=DefultText
+
+    ul(class=`dropdown-company__list ${isExpandedList}`)
+      li.dropdown-company__item.dropdown-company__item-fadult 
+        span.dropdown-company__item-name взрослые
+        +dropdown__buttons({id: 'js-fadult', value: count1})
+      li.dropdown-company__item.dropdown-company__item-child 
+        span.dropdown-company__item-name дети
+        +dropdown__buttons({id: 'js-child', value: count2}) 
+      li.dropdown-company__item.dropdown-company__item-baby 
+        span.dropdown-company__item-name младенцы
+        +dropdown__buttons({id: 'js-baby', value: count3})
+      li.dropdown-company__item.dropdown-company__item-footer
+        a.dropdown-company__clean.js-dropdown-company__clean(class= cleanButtonClass) Очистить
+        a.dropdown-company__apply.js-dropdown-company__apply Применить

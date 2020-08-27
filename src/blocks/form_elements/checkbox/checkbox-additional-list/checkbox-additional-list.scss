@@ -1,0 +1,38 @@
+.checkbox-additional-list {
+  width: rem(266);
+
+  &__header {
+    position: relative;
+  }
+  
+  &__title {
+    color: #1f2041;
+    font-weight: 700;
+    font-size: rem(12);
+    font-family: Montserrat, Arial, sans-serif;
+    line-height: rem(15);
+    text-transform: uppercase;
+  }
+  
+  &__svg {
+    position: absolute;
+    top: rem(0);
+    right: rem(15);
+  }
+  
+  &__svg_opened {
+    top: rem(4);
+    right: rem(16);
+    transform: rotate(180deg);
+  }
+  
+  &__body {
+    position: relative;
+    top: rem(7);
+    z-index: 98;
+    width: rem(260);
+  }
+  &__body_disabled {
+    display: none;
+  }
+}

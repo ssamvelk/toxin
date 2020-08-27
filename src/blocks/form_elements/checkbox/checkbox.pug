@@ -1,8 +1,8 @@
 mixin checkbox(options)
-  - const checked = options.checked ? options.checked : false
+  - const checked = options.checked || false
   - const first = options.first ? 'checkbox_first' : ''
-  - const text = options.text ? options.text : ''
-  - const id = options.id ? options.id : ''
+  - const text = options.text || ''
+  - const id = options.id || ''
 
   .checkbox(class=first)
     label(class='checkbox__item-name')=text
@@ -10,53 +10,3 @@ mixin checkbox(options)
         input(class='checkbox__item' type='checkbox' checked='checked')
       else 
         input(class='checkbox__item' type='checkbox')
-
-mixin checkbox-list(options)
-  .checkbox-list
-    h3.checkbox-list__title Checkbox Buttons
-    .checkbox-list__item-wrp 
-      +checkbox({text: 'Можно курить', id: 'smoke', first: true})
-      +checkbox({text: 'Можно с питомцами', id: 'pets', checked: true})
-      +checkbox({text: 'Можно пригласить гостей (до 10 человек)', id: 'frends', checked: true})
-
-mixin checkbox-additional-list(options)
-  - const title = options.title ? options.title : 'дополнительные удобства'
-  - const opened = options.opened ? 'checkbox-additional-list__body' : 'checkbox-additional-list__body checkbox-additional-list__body_disabled'
-  - const svgClass = options.opened ? 'checkbox-additional-list__svg checkbox-additional-list__svg_opened' : 'checkbox-additional-list__svg'
-  
-  .checkbox-additional-list.js-checkbox-additional-list
-    .checkbox-additional-list__header
-      h3.checkbox-additional-list__title #{title}
-      <svg class='#{svgClass}' width='12' height='12' viewBox='0 -4 12 12'  version='1.1' preserveAspectRatio='xMinYMin'>
-        <use xlink:href='#img-expand-more'></use>   
-      </svg>
-    div(class=opened)
-      +checkbox({text: 'Завтрак', id: 'breackfast', first: true})
-      +checkbox({text: 'Письменный стол', id: 'desk', checked: true})
-      +checkbox({text: 'Стул для кормления', id: 'chair', checked: true})
-      +checkbox({text: 'Кроватка', id: 'cot', checked: true})
-      +checkbox({text: 'Телевизор', id: 'tv'})
-      +checkbox({text: 'Шампунь', id: 'shampoo'})
-
-mixin checkbox-accessibility(options)
-  -const title = options.title ? options.title : 'доступность'
-
-  .checkbox-accessibility
-    h3.checkbox-accessibility__title #{title}
-
-    .checkbox-accessibility__item     
-      input(class='checkbox__item checkbox-accessibility__item' type='checkbox' id='wideCorridor')
-      .checkbox-accessibility__inner-wrp
-        label(class='checkbox__item-name checkbox-accessibility__item-name' for='wideCorridor')
-          h6.checkbox-accessibility__inner-title Широкий коридор
-        p.checkbox-accessibility__inner-info Ширина коридоров в номере<br>не менее 91 см.
-    
-    .checkbox-accessibility__item    
-      input(class='checkbox__item checkbox-accessibility__item' type='checkbox' id='assistant')
-      .checkbox-accessibility__inner-wrp
-        label(class='checkbox__item-name checkbox-accessibility__item-name' for='assistant')
-          h6.checkbox-accessibility__inner-title Помощник для инвалидов
-        p.checkbox-accessibility__inner-info На 1 этаже вас встретит специалист<br>и проводит до номера.
-
-
-

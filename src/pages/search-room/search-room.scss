@@ -53,41 +53,22 @@
     @media screen and (max-width: 600px){
       margin: 0 auto;
     }
-  
-    .dropdown__wrp-company {
-      position: relative;
-      top: rem(1);
-    }
-    .slider__info-title {
-      position: relative;
-      top: rem(1);
-    }
-    .date-wrp {
-      margin-bottom: rem(20.44);
-    }
-    .dropdown__wrp {
-      margin-bottom: rem(30.44);
-    }
-    .search__guests-title {
-      position: relative;
-      top: rem(1);
-      margin-top: rem(20);
-    }
-    .slider__wrp {
-      margin-bottom: rem(30);
-    }
-    .checkbox-list {
-      margin-bottom: rem(28);
-    }
-    .checkbox-list-wrp {
-      margin-bottom: rem(30.88);
-    }
-    .search__dropdown-list {
-      margin-bottom: rem(30);
-    }
-    .checkbox-accessibility {
-      margin-bottom: rem(25);
-    }
+  }
+
+  &__date-dropdown {
+    margin-bottom: rem(21);
+  }
+  &__dropdown-company {
+    margin-bottom: rem(29);
+  }
+  &__slider {
+    margin-bottom: rem(29);
+  }
+  &__checkbox-list {
+    margin-bottom: rem(29);
+  }
+  &__dropdown-comfort {
+    margin-bottom: rem(29);
   }
 
   &__date-title,
@@ -130,9 +111,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: rem(21);
-    .rooms {
-      margin-bottom: rem(21);
+  
+    .room-card {
+      margin-top: rem(21);
     }
 
     @media screen and (max-width: 1200px){

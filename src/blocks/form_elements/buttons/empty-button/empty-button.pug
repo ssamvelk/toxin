@@ -1,5 +1,6 @@
 mixin empty-button(options)
-  -const text = options.text ? options.text : 'click me';
+  -
+    const text = options.text || 'click me';
 
   a(class='empty-button' href='mock-address/change-me')
-      span(class='empty-button__text')=text
+    span(class='empty-button__text')=text

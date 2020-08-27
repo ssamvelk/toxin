@@ -5,17 +5,17 @@
   border-radius: rem(4);
   box-shadow: 0 rem(10) rem(20) rgba(31, 32, 65, 0.05);
 
-  &__img-wrp {
+  &__image-wrapper {
     position: relative;
     height: rem(150);
   }
 
-  &__img {
+  &__image {
     border-top-left-radius: rem(4);
     border-top-right-radius: rem(4);
   }
 
-  &__img-prev {
+  &__image-prev {
     position: absolute;
     top: rem(69.5);
     left: rem(18);
@@ -23,7 +23,7 @@
   }
 
   
-  &__img-next {
+  &__image-next {
     position: absolute;
     top: rem(69.5);
     right: rem(18);

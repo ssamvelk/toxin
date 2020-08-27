@@ -1,22 +1,18 @@
 mixin button(options)
-  - const isBig = options.big ? ' button_big' : ''
-  - const w196 = options.w196 ? ' button_w196' : ''
-  - const w87 = options.w87 ? ' button_w87' : ''
-  - const isWhite = options.white ? ' button_white' : ''
-  - const text = options.text ? options.text : 'перейти к оплате'
-  - const text2 = options.text ? options.text : 'click me'
-  - const href = options.href ? options.href : ''
+  -
+    const isBig = options.big ? ' button_size_big' : ''
+    const isMid = options.mid ? ' button_size_mid' : ''
+    const isSmall = options.small ? ' button_size_small' : ''
+    const isWhite = options.white ? ' button_white' : ''
+    const text = options.text || 'перейти к оплате'
+    const whiteButtonText = options.text || 'click me'
+    const href = options.href || ''
    
   if (options.big)
-    a(class=`button${isBig}${w196}${w87}` href=href)
+    a(class=`button${isBig}${isMid}${isSmall}` href=href)
       span(class='button__text')=text
-      <svg class='button__arrow-svg' width='18' height='18' viewBox='0 0 18 18'  version='1.1' preserveAspectRatio='xMinYMin'>
-      <use xlink:href='#img-arrow-right'></use>   
-      </svg>
+      svg(class='button__arrow-svg' width='18' height='18' viewBox='0 0 18 18'  version='1.1' preserveAspectRatio='xMinYMin')
+        use(xlink:href='#img-arrow-right')
   else
-    a(class=`button${isBig}${isWhite}${w196}${w87}` href=href)
-      span(class='button__text')=text2
-  
-
-
-
+    a(class=`button${isBig}${isWhite}${isMid}${isSmall}` href=href)
+      span(class='button__text')=whiteButtonText

@@ -1,0 +1,11 @@
+mixin footer__navigation-list(options)
+  -
+    const className = options.class
+    const title = options.title
+    const items = options.items
+  
+  ul(class=className)
+    li(class=`${className}-item ${className}-title`)= title
+    each val in items
+      li(class=`${className}-item`)
+        a(class='footer__item-link' href='/mock-address/change-me')= val

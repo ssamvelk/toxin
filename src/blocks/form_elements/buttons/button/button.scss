@@ -25,17 +25,17 @@
     }
   }
 
-  &_big {
+  &_size_big {
     width: rem(320);
   }
   
-  &_w196 {
+  &_size_mid {
     width: rem(196);
     height: rem(34);
     line-height: rem(34);
   }
   
-  &_w87 {
+  &_size_small {
     width: rem(87);
     height: rem(34);
   }
@@ -59,7 +59,7 @@
       opacity: 1;
     }
   
-    &.button_w87 {
+    &.button_size_small {
       .button__text {
         top: rem(2);
         width: rem(83);

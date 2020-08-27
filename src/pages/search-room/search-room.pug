@@ -5,8 +5,11 @@ block content
   include ../../static/sprite.svg
   include ../../blocks/form_elements/text-field/text-field.pug
   include ../../blocks/form_elements/dropdown/dropdown.pug
-  include ../../blocks/form_elements/date/date.pug
+  include ../../blocks/form_elements/date-filter/date-filter.pug
   include ../../blocks/form_elements/checkbox/checkbox.pug
+  include ../../blocks/form_elements/checkbox/checkbox-accessibility/checkbox-accessibility.pug
+  include ../../blocks/form_elements/checkbox/checkbox-additional-list/checkbox-additional-list.pug
+  include ../../blocks/form_elements/checkbox/checkbox-list/checkbox-list.pug
   include ../../blocks/form_elements/radio/radio.pug
   include ../../blocks/form_elements/toggle/toggle.pug
   include ../../blocks/form_elements/like/like.pug
@@ -16,6 +19,7 @@ block content
   include ../../blocks/form_elements/pagination/pagination.pug
   include ../../blocks/form_elements/bullet/bullet.pug
   include ../../blocks/form_elements/room-info/room-info.pug
+  include ../../blocks/form_elements/date-dropdown/date-dropdown.pug
   include ../../blocks/cards/search-card/search-card.pug
   include ../../blocks/cards/registration-card/registration-card.pug
   include ../../blocks/cards/reserve-card/reserve-card.pug
@@ -30,15 +34,20 @@ block content
       .search__inner-wrapper      
         section.search__left
           h3.search__date-title даты пребывания в отеле
-          +date-filter-dropdown({})
+          .search__date-dropdown
+            +date-dropdown({})
           h3.search__guests-title гости
-          +dropdownCompany({small:true, count1: 3, count3: 1, text: '3 гостя, 1 младенец'})
-          +slider({})
-          +checkbox-list({})
-          +checkbox-accessibility({})
+          .search__dropdown-company
+            +dropdown-company({count1: 3, count3: 1, text: '3 гостя, 1 младенец'})
+          .search__slider
+            +slider({})
+          .search__checkbox-list
+            +checkbox-list({})
+          .search__checkbox-accessibility
+            +checkbox-accessibility({})
           h3.search__comfort-title удобства номера
-          .search__dropdown-list
-            +dropdown({small: true, count1: 2, count2: 2})
+          .search__dropdown-comfort
+            +dropdown-comfort({small: true, count1: 2, count2: 2})
           +checkbox-additional-list({})
         
         section.search__right

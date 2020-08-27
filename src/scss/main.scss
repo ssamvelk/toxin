@@ -16,8 +16,11 @@
 
 @import "../blocks/form_elements/text-field/text-field.scss";
 @import "../blocks/form_elements/dropdown/dropdown.scss";
-@import "../blocks/form_elements/date/date.scss";
+@import "../blocks/form_elements/date-filter/date-filter.scss";
 @import "../blocks/form_elements/checkbox/checkbox.scss";
+@import '../blocks/form_elements/checkbox/checkbox-accessibility/checkbox-accessibility.scss';
+@import '../blocks/form_elements/checkbox/checkbox-additional-list/checkbox-additional-list.scss';
+@import '../blocks/form_elements/checkbox/checkbox-list/checkbox-list.scss'; 
 @import "../blocks/form_elements/radio/radio.scss";
 @import "../blocks/form_elements/toggle/toggle.scss";
 @import "../blocks/form_elements/like/like.scss";
@@ -31,6 +34,10 @@
 @import "../blocks/form_elements/bullet/bullet.scss";
 @import "../blocks/form_elements/room-info/room-info.scss";
 @import "../blocks/form_elements/percent-pie/percent-pie.scss";
+@import "../blocks/form_elements/subscribe/subscribe.scss";
+@import "../blocks/form_elements/calendar/calendar.scss";
+@import "../blocks/form_elements/date-dropdown/date-dropdown.scss";
+
 
 @import "../blocks/cards/search-card/search-card.scss";
 @import "../blocks/cards/registration-card/registration-card.scss";

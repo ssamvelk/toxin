@@ -6,11 +6,11 @@ mixin reserve-card(options)
       span.reserve-card__type люкс
       span.reserve-card__cost <b>9 990₽ </b>
     .reserve-card__date-search
-      +date-search-filds({})
+      +date-filter({})
     h3.reserve-card__company-title гости
     .reserve-card__company-count
-      +dropdownCompany({expanded: false})
-    .reserve-card__info-wrp
+      +dropdown-company({big: true, expanded: false})
+    .reserve-card__info-wrapper
       .reserve-card__info-item 
         p.reserve-card__info  <span class='reserve__info-cost'>9 990₽</span> х <span class='reserve__info-days'>4</span> суток
         span.reserve-card__info-sum 39 960₽    

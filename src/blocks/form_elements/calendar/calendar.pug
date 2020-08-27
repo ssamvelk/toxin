@@ -1,0 +1,9 @@
+mixin calendar(options)
+  - const isDisable = options.disable ? 'calendar_disabled' : '';
+
+  div(class=`calendar ${isDisable}`)
+    div(class='calendar__datepicker-here datepicker-here')
+      .calendar__footer
+        .calendar__clean-wrapper
+          a.calendar__clean.calendar__clean_disabled Очистить
+        a.calendar__apply Применить

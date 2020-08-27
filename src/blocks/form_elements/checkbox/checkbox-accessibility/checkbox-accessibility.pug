@@ -1,0 +1,19 @@
+mixin checkbox-accessibility(options)
+  -const title = options.title || 'доступность'
+
+  .checkbox-accessibility
+    h3.checkbox-accessibility__title=title
+
+    .checkbox-accessibility__item     
+      input(class='checkbox__item checkbox-accessibility__item' type='checkbox' id='wideCorridor')
+      .checkbox-accessibility__inner-wrapper
+        label(class='checkbox__item-name checkbox-accessibility__item-name' for='wideCorridor')
+          h6.checkbox-accessibility__inner-title Широкий коридор
+        p.checkbox-accessibility__inner-info Ширина коридоров в номере<br>не менее 91 см.
+    
+    .checkbox-accessibility__item    
+      input(class='checkbox__item checkbox-accessibility__item' type='checkbox' id='assistant')
+      .checkbox-accessibility__inner-wrapper
+        label(class='checkbox__item-name checkbox-accessibility__item-name' for='assistant')
+          h6.checkbox-accessibility__inner-title Помощник для инвалидов
+        p.checkbox-accessibility__inner-info На 1 этаже вас встретит специалист<br>и проводит до номера.

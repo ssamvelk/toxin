@@ -1,0 +1,21 @@
+include ../calendar/calendar.pug
+
+mixin date-filter(options)
+  -
+    const arrival = options.arrival || 'Прибытие'
+    const departure = options.departure || 'Выезд'
+     
+  .date-filter
+    .date-filter__inner-wrapper
+      h3.date-filter__title= arrival
+      .date-filter__text-field
+        svg(class='date-filter__arrow' width='12' height='12' viewBox='0 -4 12 12'  version='1.1' preserveAspectRatio='xMinYMin')
+          use(xlink:href='#img-expand-more')
+        +text-field({type: 'date', class: 'date-filter__date js-date-filter__arrival', readonly: true})
+    .date-filter__inner-wrapper
+      h3.date-filter__title= departure    
+      .date-filter__text-field
+        svg(class='date-filter__arrow' width='12' height='12' viewBox='0 -4 12 12'  version='1.1' preserveAspectRatio='xMinYMin') 
+          use(xlink:href='#img-expand-more')
+        +text-field({type: 'date', class: 'date-filter__date js-date-filter__departure', readonly: true})
+    +calendar({disable: true})

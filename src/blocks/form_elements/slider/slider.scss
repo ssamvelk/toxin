@@ -25,12 +25,12 @@
     background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
   }
 
-  &__wrp {
+  &__wrapper {
     width: rem(266);
     min-height: rem(72);
   }
   
-  &__info-wrp {
+  &__info-wrapper {
     position: relative;
     display: flex;
     justify-content: space-between;

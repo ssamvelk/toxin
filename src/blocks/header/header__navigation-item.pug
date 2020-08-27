@@ -13,20 +13,3 @@ mixin header__navigation-item(options)
     if (isDropdownLink)
       svg(class='header__expand-svg' width='12' height='12' viewBox='0 -4 12 12'  version='1.1' preserveAspectRatio='xMinYMin')
         use(xlink:href='#img-expand-more')
-
-mixin header__navigation-list(options)
-  -
-    const items = options.items
-    const itemsClassName = options.itemClasses
-    const activeItem = options.activeItem ? options.activeItem : 0
-
-    const itemsWithDropdownLink = options.itemsWithDropdownLink ? options.itemsWithDropdownLink : [1, 4]
-
-  ul.header__list
-    each val, index in items
-      +header__navigation-item({
-        class: itemsClassName[index],
-        text: items[index],
-        active: (activeItem == index) ? true : false,
-        dropdawn: itemsWithDropdownLink.includes(index)
-      })

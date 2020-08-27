@@ -1,21 +1,25 @@
 include ../form_elements/buttons/button/button.pug
-include ./components/header-nav.pug
+include ./header__navigation-list.pug
 
 mixin mainheader(options)
-  - const isAuthorized = options.authorized ? 'header__inner-wrap_authorized' : ''
-  - const isName = options.name ? options.name : 'Cosmin Negoita'
-  - const activeLink = options.activeLink ? options.activeLink : 1
+  - const isAuthorized = options.authorized ? 'header__inner-wrapper_authorized' : ''
+  - const isUserName = options.name || 'Cosmin Negoita'
+  - const activeLink = options.activeLink || 1
 
-  header.header__wrap
-    div(class=`header__inner-wrap ${isAuthorized}`)
+  header.header__wrapper
+    div(class=`header__inner-wrapper ${isAuthorized}`)
       
-      include ./components/header-logo.pug
+      include ./header__logo.pug
       
       +header__navigation-list({
         items: ['О нас', 'Услуги', 'Вакансии', 'Новости', 'Соглашения'],
         itemClasses: ['about', 'service', 'vacancy', 'news', 'agreement']
       })
       
-      include ./components/header-auth.pug
+      .header__autorization
+        .header__inter
+          +button({white: true, text: 'войти', small: true, href: 'sign-in.html'})
+        .header__registration
+          +button({text: 'зарегистрироваться', mid: true, href: 'registration.html'})
       
-      span.header__user= isName
+      span.header__user= isUserName

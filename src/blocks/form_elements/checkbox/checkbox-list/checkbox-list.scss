@@ -1,0 +1,17 @@
+.checkbox-list {
+  width: rem(266);
+  
+  &__title {
+    color: #1f2041;
+    font-weight: 700;
+    font-size: rem(12);
+    font-family: Montserrat, Arial, sans-serif;
+    line-height: rem(15);
+    text-transform: uppercase;
+  }
+
+  &__items {
+    margin-top: rem(16);
+    padding-right: rem(20);
+  }
+}

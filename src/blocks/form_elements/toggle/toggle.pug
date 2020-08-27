@@ -1,6 +1,7 @@
 mixin toggle(options)
+  - const text = options.text || 'Получать спецпредложения'
   .toggle
-    label(class='toggle__item-name') Получать спецпредложения
+    label(class='toggle__item-name')= text
       if (options.checked)
         input(class='toggle__item' type='checkbox' checked)
       else

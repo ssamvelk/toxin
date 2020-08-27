@@ -1,0 +1,45 @@
+.date-dropdown {
+  position: relative;
+  width: rem(266);
+  height: rem(44);
+  padding: 0 rem(15);
+  border: rem(1) solid $Dark25;
+  border-radius: rem(4);
+
+  // &__svg {
+  //   position: absolute;
+  //   top: rem(15);
+  //   right: rem(16);
+  // }
+
+  &__arrow {
+    position: absolute;
+    top: rem(14);
+    right: rem(15);
+  }
+
+  & > .datepicker--disable {
+    display: none;
+  }
+
+  &__info {
+    width: rem(150);
+    padding-right: rem(45);
+    color: $Dark75;
+    font-weight: 400;
+    font-size: rem(14);
+    font-family: Montserrat, Arial, sans-serif;
+    font-style: normal;
+    line-height: rem(44);
+    
+    &_no-padding {
+      padding-right: rem(0);
+    }
+  }
+  
+  &__calendar {
+    position: absolute;
+    top: rem(50);
+    left: rem(0);
+  }
+}

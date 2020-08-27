@@ -1,5 +1,5 @@
 .form-elements {
-  &__wrap {
+  &__wrapper {
     position: relative;
     width: 100%;
     max-width: rem(1440);
@@ -13,7 +13,7 @@
     z-index: 100;
   }
   
-  &__inner-wrap {
+  &__inner-wrapper {
     max-width: rem(1160);
     height: rem(1853);
     margin: 0 auto;
@@ -25,27 +25,27 @@
     justify-content: space-between;
     margin-bottom: rem(45);
   
-    &-2 {
+    &_dropdowns {
       margin-top: rem(80);
     }
   
-    &-3 {
+    &_checkboxs {
       margin-top: rem(69);
     }
   
-    &-4 {
+    &_rest {
       margin-top: rem(98);
     }
   }
   
-  &__col {
+  &__column {
     min-width: rem(320);
     
-    &-11 {
+    &_textfields {
       padding-left: rem(1);
     }
   
-    &-12 {
+    &_checkboxs {
       padding-left: rem(26);
     }
   }
@@ -65,7 +65,7 @@
     margin-bottom: rem(20);
   }
   
-  &__text-field-hover-wrap{
+  &__text-field-hover-wrap {
     margin-bottom: rem(21);
   }
   &__text-field-hover-title {
@@ -80,7 +80,7 @@
     margin-bottom: rem(40);
   }
   
-  &__date-search-filds-wrap {
+  &__date-filter-wrap {
     margin-bottom: rem(35);
   }
   

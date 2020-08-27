@@ -4,18 +4,7 @@ block title
 block content
   body
     main.demo-page__wrap
-      ul.demo-page__list
+    ul.demo-page__list
+      each value, index in {'main': 'Website', 'colors-and-types': 'Colors & Type', 'cards': 'Cards', 'headers-and-footers': 'Headers & Footers', 'form-elements': 'Form Elements'}
         li.demo-page__item
-          a.demo-page__link(href='main.html') Website
-
-        li.demo-page__item
-          a.demo-page__link(href='colors-and-types.html') Colors & Type
-        
-        li.demo-page__item
-          a.demo-page__link(href='cards.html') Cards
-        
-        li.demo-page__item
-          a.demo-page__link(href='headers-and-footers.html') Headers & Footers
-        
-        li.demo-page__item
-          a.demo-page__link(href='form-elements.html') Form Elements
+          a.demo-page__link(href=`${index}.html`)= value
