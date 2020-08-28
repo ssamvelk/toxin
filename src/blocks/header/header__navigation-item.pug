@@ -1,12 +1,12 @@
 mixin header__navigation-item(options)
   -
-    const classNamePrefix = options.class ? options.class : 'default' 
-    const text = options.text ? options.text : 'text'
-    const isActive = options.active ? options.active : false
-    const isDropdownLink = options.dropdawn ? options.dropdawn : false
+    const classNamePrefix = options.class || 'default' 
+    const text = options.text || 'text'
+    const isActive = options.active || false
+    const isDropdownLink = options.dropdown || false
 
     const linkClassName =   isActive ? 'header__item-link header__item-link_active' : 'header__item-link'
-    const href = options.href ? options.href : '/mock-address/change-me'
+    const href = options.href || '/mock-address/change-me'
   
   li(class=`header__item header__${classNamePrefix}`)
     a(class=linkClassName href=href)=text

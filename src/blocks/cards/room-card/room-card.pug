@@ -2,15 +2,16 @@ include ../../form_elements/carousel/carousel.pug
 include ../../form_elements/rate/rate.pug
 
 mixin room-card(options)
-  - const bg = ['../../static/source/room_1.jpg', '../../static/source/room_2.jpg','../../static/source/room_3.jpg', '../../static/source/room_4.jpg']
-  - const imageBG = options.bg || bg[0]
-  - const href = options.href || 'room-details.html'
-  - const isArrows = options.arrows ? true : false
-  - const roomRating = options.rating || '5'                
-  - const roomNumder = options.number || '888'              
-  - const roomNotLux = options.notlux ? '' : 'люкс'                         
-  - const roomCost = options.cost ? `${options.cost}₽` : '9 999₽'
-  - const roomLikesNum = options.likes || '145'
+  -
+    const bg = ['../../static/source/room_1.jpg', '../../static/source/room_2.jpg','../../static/source/room_3.jpg', '../../static/source/room_4.jpg']
+    const imageBG = options.bg || bg[0]
+    const href = options.href || 'room-details.html'
+    const isArrows = options.arrows ? true : false
+    const roomRating = options.rating || '5'                
+    const roomNumder = options.number || '888'              
+    const roomNotLux = options.notlux ? '' : 'люкс'                         
+    const roomCost = options.cost ? `${options.cost}₽` : '9 999₽'
+    const roomLikesNum = options.likes || '145'
   
   .room-card
     .room-card__image-wrapper

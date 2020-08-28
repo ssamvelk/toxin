@@ -2,9 +2,10 @@ include ../form_elements/buttons/button/button.pug
 include ./header__navigation-list.pug
 
 mixin mainheader(options)
-  - const isAuthorized = options.authorized ? 'header__inner-wrapper_authorized' : ''
-  - const isUserName = options.name || 'Cosmin Negoita'
-  - const activeLink = options.activeLink || 1
+  -
+    const isAuthorized = options.authorized ? 'header__inner-wrapper_authorized' : ''
+    const isUserName = options.name || 'Cosmin Negoita'
+    const activeLink = options.activeLink || 1
 
   header.header__wrapper
     div(class=`header__inner-wrapper ${isAuthorized}`)

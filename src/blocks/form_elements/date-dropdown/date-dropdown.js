@@ -1,5 +1,5 @@
-/* eslint-disable no-loop-func */
-/* eslint-disable no-undef */
+const $ = require('jquery');
+
 $(() => {
   const dateDrop = document.querySelectorAll('.date-dropdown');
 

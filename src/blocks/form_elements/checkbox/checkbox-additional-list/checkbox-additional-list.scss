@@ -14,13 +14,13 @@
     text-transform: uppercase;
   }
   
-  &__svg {
+  &__arrow {
     position: absolute;
     top: rem(0);
     right: rem(15);
   }
   
-  &__svg_opened {
+  &__arrow_opened {
     top: rem(4);
     right: rem(16);
     transform: rotate(180deg);

@@ -1,8 +1,7 @@
 include ../text-field/text-field.pug
 
 mixin subscribe(options)
-  -
-    const isBig = options.big ? 'subscribe_size_big' : ''
+  - const isBig = options.big ? 'subscribe_size_big' : ''
 
   .subscribe(class=isBig)
     +text-field({type: 'email'})

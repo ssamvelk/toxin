@@ -1,8 +1,9 @@
 mixin checkbox(options)
-  - const checked = options.checked || false
-  - const first = options.first ? 'checkbox_first' : ''
-  - const text = options.text || ''
-  - const id = options.id || ''
+  -
+    const checked = options.checked || false
+    const first = options.first ? 'checkbox_first' : ''
+    const text = options.text || ''
+    const id = options.id || ''
 
   .checkbox(class=first)
     label(class='checkbox__item-name')=text

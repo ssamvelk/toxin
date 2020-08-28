@@ -1,4 +1,5 @@
-/* eslint-disable no-undef */
+const $ = require('jquery');
+
 $(() => {
   const changeValue = function () {
     const $rangeStart = $('#slider').slider('values', 0);

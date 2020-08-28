@@ -2,9 +2,18 @@ extends ../base.pug
 block title
   title Demo page
 block content
+  -
+    const linksArray = {
+      'main': 'Website',
+      'colors-and-types': 'Colors & Type',
+      'cards': 'Cards',
+      'headers-and-footers': 'Headers & Footers',
+      'form-elements': 'Form Elements'
+    }
+    
   body
     main.demo-page__wrap
     ul.demo-page__list
-      each value, index in {'main': 'Website', 'colors-and-types': 'Colors & Type', 'cards': 'Cards', 'headers-and-footers': 'Headers & Footers', 'form-elements': 'Form Elements'}
+      each value, index in linksArray
         li.demo-page__item
           a.demo-page__link(href=`${index}.html`)= value
