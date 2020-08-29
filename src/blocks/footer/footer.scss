@@ -72,7 +72,7 @@
     }
   }
   
-  &__nav,
+  &__navigetion,
   &__about,
   &__support {
     margin-top: rem(5);
@@ -94,7 +94,7 @@
     }
   }
 
-  &__nav {
+  &__navigetion {
     width: rem(240);
     min-width: rem(146);
     padding-left: rem(38);
@@ -110,7 +110,7 @@
     min-width: rem(147);
   }
 
-  &__nav-item,
+  &__navigetion-item,
   &__about-item,
   &__support-item {
     margin-bottom: rem(20);
@@ -120,7 +120,7 @@
     }
   }
 
-  &__nav-title,
+  &__navigetion-title,
   &__about-title,
   &__support-title,
   &__subscribe-title {

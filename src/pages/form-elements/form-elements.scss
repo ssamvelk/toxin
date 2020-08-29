@@ -61,34 +61,34 @@
     text-transform: uppercase;
   }
 
-  &__text-field-default-wrap {
+  &__text-field-default-wrapper {
     margin-bottom: rem(20);
   }
   
-  &__text-field-hover-wrap {
+  &__text-field-hover-wrapper {
     margin-bottom: rem(21);
   }
   &__text-field-hover-title {
     margin-bottom: rem(5);
   }
   
-  &__upper-dropdown-company-wrap {
+  &__upper-dropdown-company-wrapper {
     margin-bottom: rem(22);
   }
   
-  &__masked-text-field-wrap {
+  &__masked-text-field-wrapper {
     margin-bottom: rem(40);
   }
   
-  &__date-filter-wrap {
+  &__date-filter-wrapper {
     margin-bottom: rem(35);
   }
   
-  &__filter-date-dropdown-wrap {
+  &__filter-date-dropdown-wrapper {
     margin-bottom: rem(42);
   }
   
-  &__subscribe-wrap {
+  &__subscribe-wrapper {
     margin-bottom: rem(20);
     .subscribe {
       position: relative;
@@ -96,83 +96,83 @@
     }
   }
   
-  &__checkbox-list-wrap {
+  &__checkbox-list-wrapper {
     margin-bottom: rem(39);
   }
   
-  &__radio-wrap  {
+  &__radio-wrapper  {
     margin-bottom: rem(42);
   }
-  &__radio-element-wrap {
+  &__radio-element-wrapper {
     margin-top: rem(15);
   }
     
-  &__toggle-wrap {
+  &__toggle-wrapper {
     position: relative;
     margin-bottom: rem(44);
   
-    &__toggle-element-wrap {
+    &__toggle-element-wrapper {
       position: relative;
       left: rem(-1);
   
-      &_second-el {
+      &_second {
         top: rem(-1);
       }
     }
   }
-  &__toggle-element-wrap {
+  &__toggle-element-wrapper {
     margin-top: rem(15);
   }
   
-  &__like-wrap  {
+  &__like-wrapper  {
     margin-bottom: rem(40);
   }
-  &__like-elements-wrap {
+  &__like-elements-wrapper {
     display: flex;
     margin-top: rem(15);
   }
-  &__like-element-wrap {
+  &__like-element-wrapper {
     margin-right: rem(10);
   }
   
-  &__rate-wrap {
+  &__rate-wrapper {
     margin-bottom: rem(20);
   }
-  &__rate-elements-wrap {
+  &__rate-elements-wrapper {
     display: flex;
     margin-top: rem(18);
   }
-  &__rate-element-wrap {
+  &__rate-element-wrapper {
     margin-right: rem(20);
   }
   
-  &__slider-wrap {
+  &__slider-wrapper {
     margin-bottom: rem(16);
   }
   
-  &__buttons-wrap {
+  &__buttons-wrapper {
     margin-bottom: rem(40);
   }
-  &__blue-buttons-wrap {
+  &__blue-buttons-wrapper {
     display: flex;
     margin-top: rem(15);
   }
-  &__blue-button-wrap {
+  &__blue-button-wrapper {
     margin-right: rem(19);
   }
 
-  &__white-buttons-wrap {
+  &__white-buttons-wrapper {
     position: relative;
     left: rem(-1);
     display: flex;
     margin-top: rem(30);
   }
   
-  &__white-button-wrap {
+  &__white-button-wrapper {
     margin-right: rem(20);
   }
 
-  &__emptybuttons-wrap {
+  &__emptybuttons-wrapper {
     display: flex;
     margin-top: rem(31);
     
@@ -181,36 +181,36 @@
     }
   }
 
-  &__big-button-wrap {
+  &__big-button-wrapper {
     position: relative;
     left: rem(-1);
     margin-top: rem(30);
   }
   
-  &__pagination-wrap {
+  &__pagination-wrapper {
     margin-bottom: rem(20);
   }
   &__pagination-title {
     margin-bottom: rem(16);
   }
   
-  &__dropdowns-wrap {
+  &__dropdowns-wrapper {
     min-height: rem(250);
   }
   &__dropdowns-title {
     margin-bottom: rem(4);
   }
-  &__dropdown-wrap {
+  &__dropdown-wrapper {
     margin-top: rem(19);
   }
   
-  &__dropdown-company-wrap {
+  &__dropdown-company-wrapper {
     position: relative;
     top: rem(-1);
     margin-left: rem(55);
   }
   
-  &__dropdown-company-filled-wrap {
+  &__dropdown-company-filled-wrapper {
     position: relative;
     left: rem(-1);
   }
@@ -218,17 +218,17 @@
     margin-bottom: rem(4);
   }
   
-  &__opened-checkbox-additional-list-wrap {
+  &__opened-checkbox-additional-list-wrapper {
     margin-top: rem(49);
   }
   
   
-  &__checkbox-accessibility-wrap {
+  &__checkbox-accessibility-wrapper {
     
     margin-left: rem(27);
   }
   
-  &__comment-wrap {
+  &__comment-wrapper {
     margin-top: rem(9);
   }
 }

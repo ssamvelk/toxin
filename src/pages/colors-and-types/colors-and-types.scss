@@ -1,5 +1,5 @@
 .colors-and-types {
-  &__wrap {
+  &__wrapper {
     position: relative;
   }
 
@@ -10,7 +10,7 @@
     z-index: 100;
   }
   
-  &__inner-wrap {
+  &__inner-wrapper {
     display: flex;
     justify-content: space-between;
     max-width: rem(1440);
@@ -84,7 +84,7 @@
     padding-left: rem(60);
   }
   
-  &__title-h1 {
+  &__big-title {
     position: relative;
     display: block;
     max-width: rem(340);
@@ -114,7 +114,7 @@
     }
   }
   
-  &__title-h2 {
+  &__middle-title {
     position: relative;
     max-width: rem(282);
     margin-bottom: rem(50);
@@ -143,7 +143,7 @@
     }
   }
   
-  &__title-h3 {
+  &__small-title {
     position: relative;
     max-width: rem(186);
     margin-bottom: rem(48);
@@ -173,7 +173,7 @@
     }
   }
   
-  &__title-body {
+  &__body-text {
     position: relative;
     max-width: rem(301);
     color: rgba(31, 32, 65, 0.75);

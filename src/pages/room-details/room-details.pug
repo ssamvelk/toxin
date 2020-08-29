@@ -29,36 +29,36 @@ block content
     +mainheader({})
     
     main.room-details__main-wrapper
-      section.room-details__img-box
-        .room-details__main-img-wrp
-          img(class='room-details__main-img',  src='../../static/source/room-det-big.jpg', alt='img-big')
-        .room-details__small-img-rwp
-          img(class='room-details__small-img', src='../../static/source/room-det-1.jpg', alt='room image')
-          img(class='room-details__small-img', src='../../static/source/room-det-2.jpg' alt='room image')
+      section.room-details__image-box
+        .room-details__main-image-wrapper
+          img(class='room-details__main-image',  src='../../static/source/room-det-big.jpg', alt='image-big')
+        .room-details__small-image-wrapper
+          img(class='room-details__small-image', src='../../static/source/room-det-1.jpg', alt='room image')
+          img(class='room-details__small-image', src='../../static/source/room-det-2.jpg' alt='room image')
 
       section.wrapper.room-details__content-wrapper
         .room-details__left
-          .room-details__flex-wrp
+          .room-details__flex-wrapper
             .room-details__room-info
               h2.room-details__left-info-title Сведения о номере
               +room-info({})
-            .room-details__pie-wrp
+            .room-details__pie-wrapper
               h2.room-details__left-waaay-title Впечатления от номера
-              .room-details__flex-wrp
+              .room-details__flex-wrapper
                 +percent-pie({percents: [25, 25, 50, 0]}) 
                 ul.room-details__list
                   li.room-details__item.room-details__item_best Великолепно 
                   li.room-details__item.room-details__item_good Хорошо
                   li.room-details__item.room-details__item_passably Удовлетворительно 
                   li.room-details__item.room-details__item_poorly Разочарован
-          .room-details__recall-wrp
+          .room-details__recall-wrapper
             h2.room-details__recall Отзывы посетителей номера
             .room-details__comment
               +comment({})
             .room-details__comment
               +comment({name: 'Патрисия Стёклышкова', img:'../../static/source/image_patrisia48.png', days: 7, comment: 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент'})
 
-          .room-details__flex-wrp.room-details__flex-wrp--mtop
+          .room-details__flex-wrapper.room-details__flex-wrapper--mtop
             .room-details__rools
               h2.room-details__rools-title Правила
               ul.room-details__rools-list

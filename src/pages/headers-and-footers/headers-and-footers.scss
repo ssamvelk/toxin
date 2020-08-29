@@ -1,5 +1,5 @@
 .headers-and-footers {
-  &__wrap {
+  &__wrapper {
     position: relative;
     background: #F4F4F6;
   }
@@ -11,7 +11,7 @@
     z-index: 100;
   }
   
-  &__inner-wrap {
+  &__inner-wrapper {
     position: relative;
     max-width: rem(1440);
     margin: 0 auto;
@@ -19,12 +19,12 @@
     
   }
   
-  &__header-wrap,
-  &__footer-wrap {
+  &__header-wrapper,
+  &__footer-wrapper {
     margin-bottom: rem(40);
   }
   
-  &__footer-wrap_small {
+  &__footer-wrapper_small {
     width: rem(768);
     height: rem(367);
     margin: 0 auto;

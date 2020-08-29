@@ -17,10 +17,10 @@ mixin room-card(options)
     .room-card__image-wrapper
       img.room-card__image.js-room-card__image(width='270' height='151' src=imageBG alt='bg')
       if (isArrows)
-        svg(class='room-card__image-prev' width='12' height='12' viewBox='0 -4 12 12'  version='1.1' preserveAspectRatio='xMinYMin')
+        svg(class='room-card__previous' width='12' height='12' viewBox='0 -4 12 12'  version='1.1' preserveAspectRatio='xMinYMin')
           use(xlink:href='#img-expand-more-right')
 
-        svg(class='room-card__image-next' width='12' height='12' viewBox='0 -4 12 12'  version='1.1' preserveAspectRatio='xMinYMin')
+        svg(class='room-card__next' width='12' height='12' viewBox='0 -4 12 12'  version='1.1' preserveAspectRatio='xMinYMin')
           use(xlink:href='#img-expand-more-right')
 
       .room-card__carousel

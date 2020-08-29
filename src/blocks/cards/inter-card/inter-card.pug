@@ -5,8 +5,8 @@ mixin inter-card(options)
       +text-field({type: 'email'})
     .inter-card__text-field
       +text-field({type: 'password'})
-    .inter-card__button-wrp
-      +button({big: true, text: 'Войти'})
+    .inter-card__button
+      +button({ size: 'big', text: 'Войти'})
     p.inter-card__footer
       span.inter-card__question Нет аккаунта на Toxin?
       +button({white: true, text: 'Создать', href: 'registration.html'})

@@ -11,5 +11,5 @@ mixin header__navigation-item(options)
   li(class=`header__item header__${classNamePrefix}`)
     a(class=linkClassName href=href)=text
     if (isDropdownLink)
-      svg(class='header__expand-svg' width='12' height='12' viewBox='0 -4 12 12'  version='1.1' preserveAspectRatio='xMinYMin')
+      svg(class='header__expand' width='12' height='12' viewBox='0 -4 12 12'  version='1.1' preserveAspectRatio='xMinYMin')
         use(xlink:href='#img-expand-more')
