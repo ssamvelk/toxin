@@ -1,21 +1,20 @@
 .header {
-  &__wrapper {
-    max-width: rem(1440);
-    min-height: rem(70);
-    margin: 0 auto;
-    padding-top: rem(15);
-    background: white;
-    box-shadow: 0 rem(10) rem(20) rgba(31, 32, 65, 0.05);
-  
-    @media screen and (max-width: 1200px) {
-      min-width: rem(380);
-      padding: rem(15) rem(50);
-    }
-  
-    @media screen and (max-width: 950px) {
-      min-height: rem(100);
-    }
+  max-width: rem(1440);
+  min-height: rem(70);
+  margin: 0 auto;
+  padding-top: rem(15);
+  background: white;
+  box-shadow: 0 rem(10) rem(20) rgba(31, 32, 65, 0.05);
+
+  @media screen and (max-width: 1200px) {
+    min-width: rem(380);
+    padding: rem(15) rem(50);
   }
+
+  @media screen and (max-width: 950px) {
+    min-height: rem(100);
+  }
+  
 
   &__inner-wrapper {
     position: relative;
@@ -49,82 +48,7 @@
       }
     }
   }
-
-  &__list {
-    position: relative;
-    left: rem(124);
-    display: flex;
-    justify-content: space-between;
-    width: rem(430);
-    margin-top: rem(10);
-    font-weight: 400;
-    font-size: rem(14);
-    font-family: Montserrat, Arial, sans-serif;
-    font-style: normal;
-    list-style: none;
   
-    @media screen and (max-width: 1200px) {
-      position: static;
-    }
-  
-    @media screen and (max-width: 950px) {
-      flex-basis: 100%;
-      order: -1;
-    }
-  
-    @media screen and (max-width: 520px) {
-      display: none;
-    }
-  }
-
-  &__item {
-    position: relative;
-    vertical-align: middle;
-    
-    &-link {
-      color: $Dark50;
-      font-weight: 400;
-      font-size: rem(14);
-      font-family: Montserrat, Arial, sans-serif;
-      font-style: normal;
-      line-height: rem(17);
-      vertical-align: middle;
-    
-      &_active {
-        color: $Dark75;
-        font-weight: 700;
-      }
-    }
-  }
-
-  &__service {
-    left: rem(-1);
-  }
-  
-  &__vacancy {
-    left: rem(8);
-  }
-  
-  &__news {
-    left: rem(6);
-  }
-  
-  &__agreement {
-    left: rem(4);
-  }
-  
-  &__expand {
-    position: relative;
-    left: rem(6);
-  }
-  
-  &__autorization {
-    display: flex;
-    justify-content: space-between;
-    width: rem(303);
-    padding-top: rem(3);
-  }
-
   &__user {
     position: relative;
     display: none;
@@ -140,23 +64,9 @@
     border-left: 1px solid rgba(31, 32, 65, 0.1);
   }
 
-  @media screen and (max-width: 950px) {
-    &__logotype,
-    &__autorization {
-      margin-top: rem(10);
-    }
-  
-  }
-
-  @media screen and (max-width: 520px) {
-    &__logotype,
-    &__autorization {
-      margin: 0 auto;
-    }
-    
-    &__autorization {
-      flex-basis: 100%;
-    }
-  }
-
 }
+
+@import './__logo/header__logo.scss';
+@import './__autorization/header__autorization.scss';
+@import './__list/header__list.scss';
+@import './__item/header__item.scss';

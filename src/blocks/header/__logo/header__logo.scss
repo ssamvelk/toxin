@@ -1,0 +1,13 @@
+.header {
+  &__logotype {
+
+    @media screen and (max-width: 950px) {
+      margin-top: rem(10); 
+    }
+  
+    @media screen and (max-width: 520px) {
+      margin: 0 auto;
+    }
+  }
+  
+}

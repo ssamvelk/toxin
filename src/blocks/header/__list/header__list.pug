@@ -1,6 +1,6 @@
-include ./header__navigation-item.pug
+include ../__item/header__item.pug
 
-mixin header__navigation-list(options)
+mixin header__list(options)
   -
     const items = options.items
     const itemsClassName = options.itemClasses
@@ -9,9 +9,8 @@ mixin header__navigation-list(options)
 
   ul.header__list
     each val, index in items
-      +header__navigation-item({
-        class: itemsClassName[index],
+      +header__item({
         text: items[index],
         active: (activeItem == index) ? true : false,
         dropdown: itemsWithDropdownLink.includes(index)
-      })
+      })(class= itemsClassName[index])

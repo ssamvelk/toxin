@@ -3,12 +3,12 @@ mixin room-info(options)
   
   section.room-info
     article.room-info__item
-      include ./room-info__smile-svg.pug
+      include ./__smile/room-info__smile.pug
       p.room-info__information.room-info__information-comfort <span class='room-info__title'>Комфорт</span><br>Шумопоглощающие стены
     article.room-info__item
-      include ./room-info__house-svg.pug
+      include ./__house/room-info__house.pug
       p.room-info__information.room-info__information-facilities <span class='room-info__title'>Удобство</span><br>Окно в каждой из спален
     if (elementsCount === 3)
       article.room-info__item.room-info__item_without-border
-        include ./room-info__fire-svg.pug
+        include ./__fire/room-info__fire.pug
         p.room-info__information.room-info__information-cosiness <span class='room-info__title'>Уют</span><br>Номер оснащён камином

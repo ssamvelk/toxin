@@ -17,21 +17,6 @@
       border: none;
     }
   }
-
-  &__smile {
-    margin-top: rem(4);
-    margin-left: rem(4);
-  }
-  
-  &__house {
-    margin-top: rem(5);
-    margin-left: rem(6);
-  }
-  
-  &__fire {
-    margin-top: rem(3);
-    margin-left: rem(6);
-  }
   
   &__information {
     margin-left: rem(14);
@@ -56,3 +41,9 @@
   }
 
 }
+
+@import './__fire/room-info__fire.scss';
+
+@import './__house/room-info__house.scss';
+
+@import './__smile/room-info__smile.scss';

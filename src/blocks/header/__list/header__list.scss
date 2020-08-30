@@ -1,0 +1,28 @@
+.header {
+  &__list {
+    position: relative;
+    left: rem(124);
+    display: flex;
+    justify-content: space-between;
+    width: rem(430);
+    margin-top: rem(10);
+    font-weight: 400;
+    font-size: rem(14);
+    font-family: Montserrat, Arial, sans-serif;
+    font-style: normal;
+    list-style: none;
+  
+    @media screen and (max-width: 1200px) {
+      position: static;
+    }
+  
+    @media screen and (max-width: 950px) {
+      flex-basis: 100%;
+      order: -1;
+    }
+  
+    @media screen and (max-width: 520px) {
+      display: none;
+    }
+  }
+}
