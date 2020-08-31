@@ -1,9 +1,16 @@
 mixin slider(options)
   - const title = options.title || 'диапазон цены'
   
-  .slider__wrapper
+  .slider
     .slider__info-wrapper
       h3.slider__info-title #{title}
-      p.slider__info <span id='js-range-start'>5 000</span>₽ - <span id='js-range-end'>10 000</span>₽
-    .slider#slider
-    p.slider__info Стоимость за сутки пребывания в номере
+
+      p.slider__info
+        span(id='js-range-start') 5 000
+        |₽ - 
+        span(id='js-range-end') 10 000
+        |₽
+
+    .slider__wrapper#slider
+    
+    p.slider__footer Стоимость за сутки пребывания в номере

@@ -14,7 +14,7 @@ $(() => {
     min: 0,
     max: 15000,
     values: [5000, 10000],
-    step: 100,
+    step: 50,
     slide: changeValue,
     change: changeValue,
   });
