@@ -1,7 +1,7 @@
 mixin button(options)
   -
     const size = options.size ? `button_size_${options.size}` : ''
-    const isWhite = options.white ? ' button_white' : ''
+    const theme = options.theme ? `button_theme_${options.theme}` : ''
     const text = options.text || 'click me'
     const href = options.href || '/mock-address/change-me'
    
@@ -11,5 +11,5 @@ mixin button(options)
       svg(class='button__arrow' width='18' height='18' viewBox='0 0 18 18'  version='1.1' preserveAspectRatio='xMinYMin')
         use(xlink:href='#img-arrow-right')
   else
-    a(class=`button ${isWhite} ${size}` href=href)
+    a(class=`button ${theme} ${size}` href=href)
       span(class='button__text')=text
