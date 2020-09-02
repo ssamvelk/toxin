@@ -1,0 +1,25 @@
+.pagination {
+  width: rem(240);
+  min-height: rem(65);
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    color: $Dark50;
+    font-weight: 400;
+    font-size: rem(12);
+    font-family: Montserrat, Arial, sans-serif;
+    font-style: normal;
+    line-height: rem(15);
+    text-align: center;
+    list-style: none;
+  }
+
+  &__footer {
+    margin-top: rem(10.56);
+    margin-left: rem(5);
+  }
+  
+}
+
+@import './item/item.scss';

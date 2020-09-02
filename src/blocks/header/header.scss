@@ -64,9 +64,23 @@
     border-left: 1px solid rgba(31, 32, 65, 0.1);
   }
 
+  &__autorization {
+    display: flex;
+    justify-content: space-between;
+    width: rem(303);
+    padding-top: rem(3);
+
+    @media screen and (max-width: 950px) {
+      margin-top: rem(10);
+    }
+  
+    @media screen and (max-width: 520px) {
+      flex-basis: 100%;
+      margin: 0 auto;
+    }
+  }
 }
 
-@import './__logo/header__logo.scss';
-@import './__autorization/header__autorization.scss';
-@import './__list/header__list.scss';
-@import './__item/header__item.scss';
+@import './logo/logo.scss';
+@import './list/list.scss';
+@import './item/item.scss';

@@ -1,0 +1,66 @@
+.rate {
+  position: relative;
+  display: flex;
+  height: rem(20);
+  padding-right: rem(2);
+  padding-left: rem(2);
+  
+  &_reverse {
+    flex-direction: row-reverse;
+  }
+
+  &__stars {
+    display: flex;
+    justify-content: space-between;
+    width: rem(116);
+    list-style: none;
+  }
+
+  &__star {
+    display: none;
+  }
+
+  &__star-lable {
+    display: block;
+    width: rem(20);
+    height: rem(19);
+    cursor: pointer;
+  
+    &::before {
+      position: absolute;
+      width: rem(20);
+      height: rem(19);
+      background: url(../static/source/star-border.svg) no-repeat;
+      content: '';
+    }
+  
+    &::after {
+      position: absolute;
+      width: rem(20);
+      height: rem(19);
+      background: url(../static/source/star.svg) no-repeat;
+      opacity: 0;
+      transition: 0.5s;
+      content: '';
+    }
+    
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+
+  .rate__star-lable:hover ~ .rate__star-lable::after,
+  .rate__star:checked ~ .rate__star-lable::after {
+    opacity: 1;
+  }
+
+  &__item {
+    width: rem(20);
+    height: rem(20);
+    background: url(../static/source/star-border.svg) no-repeat;
+    
+    &_full {
+      background: url(../static/source/star.svg) no-repeat;
+    }
+  }
+}

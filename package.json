@@ -7,7 +7,7 @@
     "build": "webpack --mode production",
     "deploy": "npm run build && gh-pages -d dist",
     "stylelint": "stylelint ./src/scss/*.scss",
-    "stylelint:fix": "stylelint ./src/blocks/form_elements/checkbox/*.scss --fix",
+    "stylelint:fix": "stylelint ./src/blocks/form-elements/checkbox/*.scss --fix",
     "eslint": "eslint ./src/js/index.js"
   },
   "browserslist": [

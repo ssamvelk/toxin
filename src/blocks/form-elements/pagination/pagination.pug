@@ -1,0 +1,12 @@
+include ./item/item.pug
+
+mixin pagination(options)
+  .pagination
+    ul.pagination__list
+      +item({first: true, active: true, text: 1})
+      +item({text: 2})
+      +item({text: 3})
+      +item({text: '...'})
+      +item({text: 15})
+      +item({last: true})
+    p.pagination__footer <span>1</span> – 12 из <span>100+</span> вариантов аренды

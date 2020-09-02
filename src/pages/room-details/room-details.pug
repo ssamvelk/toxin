@@ -3,20 +3,20 @@ block title
   title Room details
 block content
   include ../../static/sprite.svg
-  include ../../blocks/form_elements/text-field/text-field.pug
-  include ../../blocks/form_elements/dropdown/dropdown.pug
-  include ../../blocks/form_elements/date-filter/date-filter.pug
-  include ../../blocks/form_elements/checkbox/checkbox/checkbox.pug
-  include ../../blocks/form_elements/radio/radio.pug
-  include ../../blocks/form_elements/toggle/toggle.pug
-  include ../../blocks/form_elements/like/like.pug
-  include ../../blocks/form_elements/comment/comment.pug
-  include ../../blocks/form_elements/rate/rate.pug
-  include ../../blocks/form_elements/slider/slider.pug
-  include ../../blocks/form_elements/buttons/button/button.pug
-  include ../../blocks/form_elements/pagination/pagination.pug
-  include ../../blocks/form_elements/bullet/bullet.pug
-  include ../../blocks/form_elements/room-info/room-info.pug
+  include ../../blocks/form-elements/text-field/text-field.pug
+  include ../../blocks/form-elements/dropdown/dropdown.pug
+  include ../../blocks/form-elements/date-filter/date-filter.pug
+  include ../../blocks/form-elements/checkbox/checkbox/checkbox.pug
+  include ../../blocks/form-elements/radio/radio.pug
+  include ../../blocks/form-elements/toggle/toggle.pug
+  include ../../blocks/form-elements/like/like.pug
+  include ../../blocks/form-elements/comment/comment.pug
+  include ../../blocks/form-elements/rate/rate.pug
+  include ../../blocks/form-elements/slider/slider.pug
+  include ../../blocks/form-elements/buttons/button/button.pug
+  include ../../blocks/form-elements/pagination/pagination.pug
+  include ../../blocks/form-elements/bullet/bullet.pug
+  include ../../blocks/form-elements/room-info/room-info.pug
   include ../../blocks/cards/search-card/search-card.pug
   include ../../blocks/cards/registration-card/registration-card.pug
   include ../../blocks/cards/reserve-card/reserve-card.pug
@@ -24,17 +24,17 @@ block content
   include ../../blocks/cards/room-card/room-card.pug
   include ../../blocks/header/header.pug
   include ../../blocks/footer/footer.pug
-  include ../../blocks/form_elements/percent-pie/percent-pie.pug
+  include ../../blocks/form-elements/percent-pie/percent-pie.pug
   body
     +header({})
     
     main.room-details__main-wrapper
       section.room-details__image-box
         .room-details__main-image-wrapper
-          img(class='room-details__main-image',  src='../../static/source/room-det-big.jpg', alt='image-big')
+          img(class='room-details__main-image',  src='../../static/source/room-details-big.jpg', alt='image-big')
         .room-details__small-image-wrapper
-          img(class='room-details__small-image', src='../../static/source/room-det-1.jpg', alt='room image')
-          img(class='room-details__small-image', src='../../static/source/room-det-2.jpg' alt='room image')
+          img(class='room-details__small-image', src='../../static/source/room-details-1.jpg', alt='room image')
+          img(class='room-details__small-image', src='../../static/source/room-details-2.jpg' alt='room image')
 
       section.wrapper.room-details__content-wrapper
         .room-details__left
@@ -56,7 +56,7 @@ block content
             .room-details__comment
               +comment({})
             .room-details__comment
-              +comment({name: 'Патрисия Стёклышкова', img:'../../static/source/image_patrisia48.png', days: 7, comment: 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент'})
+              +comment({name: 'Патрисия Стёклышкова', img:'../../static/source/image-patrisia48.png', days: 7, comment: 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент'})
 
           .room-details__flex-wrapper.room-details__flex-wrapper--mtop
             .room-details__rools

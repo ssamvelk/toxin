@@ -1,0 +1,8 @@
+mixin dropdown-open(options)
+  - const opacity = options.opacity || 50
+
+  svg(class='dropdown-open' width='12' height='12' viewBox='0 -4 12 12'  version='1.1' preserveAspectRatio='xMinYMin')
+    if (opacity === 50)
+      use(xlink:href='#img-expand-more')
+    else if (opacity === 75)
+      use(xlink:href='#img-expand-more-75')
