@@ -1,0 +1,15 @@
+mixin navigation(options)
+  -
+    const items = options.items || {about: 'О нас', service: 'Услуги', vacancy: 'Вакансии', news: 'Новости', agreement: 'Соглашения'}
+    const activeItem = options.activeItem || 'about'
+    const itemsWithDropdownLink = options.itemsWithDropdownLink || ['service', 'agreement']
+ 
+
+  nav.navigation
+    ul.navigation__list
+      each value, key in items
+        li(class=`navigation__item ${key === activeItem ? 'navigation__item_active' : ''} navigation__${key}`)
+          a(class=`navigation__item-link` href='/mock-address/change-me')= value
+          if (itemsWithDropdownLink.includes(key))
+            svg(class='navigation__expand-arrow' width='12' height='12' viewBox='0 -4 12 12'  version='1.1' preserveAspectRatio='xMinYMin')
+              use(xlink:href='#img-expand-more')

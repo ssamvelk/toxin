@@ -13,7 +13,7 @@
 
   &__main {
     display: flex;
-    justify-content: space-between;
+    
     max-width: rem(1160);
     height: rem(372);
     margin: 0 auto;
@@ -39,8 +39,71 @@
     }
   }
 
+  &__logo {
+  
+    @media screen and (max-width: 950px) {
+      display: flex;
+      flex-basis: 100%;
+    }
+    @media screen and (max-width: 768px) {
+      width: max-content;
+      margin: rem(110) auto 0;
+    }
+    
+    &-info {
+      width: rem(260);
+      margin-top: rem(13);
+      color: $Dark75;
+      font-weight: 400;
+      font-size: rem(14);
+      font-family: Montserrat, Arial, sans-serif;
+      font-style: normal;
+      line-height: rem(24);
+    
+      @media screen and (max-width: 950px) {
+        width: auto;
+        margin: 0;
+        margin-top: rem(7);
+        margin-left: rem(5);
+      }
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+
+  &__navigation {
+    position: relative;
+    margin-top: rem(5);
+    margin-left: rem(40);
+
+    @media screen and (max-width: 1200px) {
+      margin-left: 0;
+    }
+  }
+  &__about {
+    position: relative;
+    margin-top: rem(5);
+    margin-left: rem(57);
+
+    @media screen and (max-width: 1200px) {
+      margin-left: 0;
+    }
+  }
+  &__support{
+    position: relative;
+    margin-top: rem(5);
+    margin-left: rem(92);
+    
+    @media screen and (max-width: 1200px) {
+      margin-left: 0;
+    }
+  }
+
+  
   &__subscribe {
     margin-top: rem(5);
+    margin-left: rem(53);
   
     @media screen and (max-width: 1200px) {
       width: auto;
@@ -56,7 +119,12 @@
     }
 
     &-title {
-      margin-bottom: rem(18);
+      margin-bottom: rem(19);
+      color: $Dark;
+      font-weight: 700;
+      font-size: rem(12);
+      line-height: rem(15);
+      text-transform: uppercase;
     }
   
     &-info {
@@ -137,6 +205,18 @@
     }
   }
 
+  &__facebook {
+    position: relative;
+    top: rem(-1);
+    left: rem(-1);
+  }
+  
+  &__instagram {
+    position: relative;
+    top: rem(-1);
+    left: rem(-1);
+  }
+
   &__line {
     position: relative;
     bottom: rem(70);
@@ -150,7 +230,3 @@
     }
   }
 }
-
-@import './logo/logo.scss';
-@import './navigation-list/navigation-list.scss';
-@import './socials-link/socials-link.scss';

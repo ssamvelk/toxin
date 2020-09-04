@@ -1,0 +1,27 @@
+.navigation {
+
+  &__list {
+    display: flex;
+    color: $Dark50;
+    font-weight: 400;
+    font-size: rem(14);
+    font-family: Montserrat, Arial, sans-serif;
+    font-style: normal;
+    list-style: none;
+  }
+
+  &__item {
+    margin-right: rem(20);
+    
+    &_active {
+      color: $Dark75;
+      font-weight: 700;
+    }
+  }
+
+  &__expand-arrow {
+    margin-right: rem(5);
+    margin-left: rem(9);
+  }
+  
+}

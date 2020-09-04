@@ -1,0 +1,16 @@
+include ../date-filter/date-filter.pug
+include ../text-field/text-field.pug
+include ../dropdown/dropdown.pug
+include ../buttons/button/button.pug
+
+mixin search-card(options)
+  form.search-card
+    h2.search-card__title Найдём номера под ваши пожелания
+    .search-card__date
+      +date-filter({})
+    h3.search-card__company-title гости
+    .search-card__company
+      +dropdown-company({big: true, expanded: false})
+    .search-card__button
+      +button({size: 'big', text: 'подобрать номер', href: 'search-room.html'})
+        

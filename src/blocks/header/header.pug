@@ -1,5 +1,6 @@
-include ../form-elements/buttons/button/button.pug
-include ./list/list.pug
+include ../buttons/button/button.pug
+include ../logo/logo.pug
+include ../navigation/navigation.pug
 
 mixin header(options)
   -
@@ -10,14 +11,13 @@ mixin header(options)
   header.header
     div(class=`header__inner-wrapper ${isAuthorized}`)
       
-      include ./logo/logo.pug
+      a.header__logotype(href='main.html')
+        +logo()
+
+      .header__navigation
+        +navigation({})
       
-      +list({
-        items: ['О нас', 'Услуги', 'Вакансии', 'Новости', 'Соглашения'],
-        itemClasses: ['about', 'service', 'vacancy', 'news', 'agreement']
-      })
-      
-      .header__autorization
+      .header__authorization
         .header__inter
           +button({size: 'small', theme: 'white', text: 'войти', href: 'sign-in.html'})
         .header__registration

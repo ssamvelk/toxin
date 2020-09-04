@@ -1,0 +1,20 @@
+.subscribe {
+  position: relative;
+  width: rem(260);
+
+  &_size_big {
+    position: relative;
+    top: rem(-1);
+    width: rem(267);
+  }
+
+  &__text-field {
+    padding-right: rem(44);
+  }
+
+  &__send {
+    position: absolute;
+    top: rem(13);
+    right: rem(13);
+  }
+}

@@ -35,7 +35,7 @@
     }
   
     &_authorized {
-      .header__autorization {
+      .header__authorization {
         display: none;
       }
   
@@ -49,12 +49,16 @@
     }
   }
   
+  .header__navigation {
+    margin-top: rem(10);
+    margin-left: auto;
+  }
+  
   &__user {
     position: relative;
     display: none;
     height: rem(30);
     margin-top: rem(5);
-    margin-left: rem(70);
     padding-left: rem(20);
     font-weight: 400;
     font-size: rem(14);
@@ -64,7 +68,7 @@
     border-left: 1px solid rgba(31, 32, 65, 0.1);
   }
 
-  &__autorization {
+  &__authorization {
     display: flex;
     justify-content: space-between;
     width: rem(303);
@@ -80,7 +84,3 @@
     }
   }
 }
-
-@import './logo/logo.scss';
-@import './list/list.scss';
-@import './item/item.scss';
