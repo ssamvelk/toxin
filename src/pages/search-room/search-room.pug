@@ -34,24 +34,24 @@ block content
             +checkbox-accessibility({})
           h3.search__comfort-title удобства номера
           .search__dropdown-comfort
-            +dropdown-comfort({small: true, count1: 2, count2: 2})
+            +dropdown-comfort({count1: 2, count2: 2})
           +checkbox-additional-list({})
         
         section.search__right
           h1.search__rooms-title Номера, которые мы для вас подобрали
           .search__rooms
-            +room-card({bg : '../../static/source/room-888.jpg', number : '888', notlux: false, cost: '9 990', arrows: true})
-            +room-card({bg : '../../static/source/room-840.jpg', rating : '4', number : '840', notlux: true, cost: '9 990',likes: '65'})
-            +room-card({bg : '../../static/source/room-980.png', rating : '3', number : '980', cost: '8 500', likes: '35'})
-            +room-card({bg : '../../static/source/room-856.png', rating : '5', number : '856', notlux: true, cost: '7 300',likes: '19'})
-            +room-card({bg : '../../static/source/room-740.png', rating : '4', number : '740', notlux: true, cost: '6 000', likes: '44'})
-            +room-card({bg : '../../static/source/room-982.png', rating : '3', number : '982', notlux: true, cost: '5 800',likes: '56'})
-            +room-card({bg : '../../static/source/room-678.png', number : '678', notlux: true, cost: '5 500',likes: '45'})
-            +room-card({bg : '../../static/source/room-450.png', rating : '4', number : '450', notlux: true, cost: '5 300',likes: '39'})
-            +room-card({bg : '../../static/source/room-350.png', rating : '3', number : '350', notlux: true, cost: '5 000',likes: '77'})
-            +room-card({bg : '../../static/source/room-666.png', number : '666', notlux: true, cost: '5 000',likes: '25'})
-            +room-card({bg : '../../static/source/room-444.png', rating : '3', number : '444', notlux: true, cost: '5 000',likes: '15'})
-            +room-card({bg : '../../static/source/room-352.png', rating : '3', number : '352', notlux: true, cost: '5 000',likes: '55'})
+            +room-card({background : '../../static/source/room-888.jpg', number : '888', lux: true, cost: '9 990', arrows: true})
+            +room-card({background : '../../static/source/room-840.jpg', rating : '4', number : '840',  cost: '9 990',likes: '65'})
+            +room-card({background : '../../static/source/room-980.png', rating : '3', lux: true, number : '980', cost: '8 500', likes: '35'})
+            +room-card({background : '../../static/source/room-856.png', rating : '5', number : '856',  cost: '7 300',likes: '19'})
+            +room-card({background : '../../static/source/room-740.png', rating : '4', number : '740',  cost: '6 000', likes: '44'})
+            +room-card({background : '../../static/source/room-982.png', rating : '3', number : '982',  cost: '5 800',likes: '56'})
+            +room-card({background : '../../static/source/room-678.png', number : '678', cost: '5 500',likes: '45'})
+            +room-card({background : '../../static/source/room-450.png', rating : '4', number : '450',  cost: '5 300',likes: '39'})
+            +room-card({background : '../../static/source/room-350.png', rating : '3', number : '350',  cost: '5 000',likes: '77'})
+            +room-card({background : '../../static/source/room-666.png', number : '666', cost: '5 000',likes: '25'})
+            +room-card({background : '../../static/source/room-444.png', rating : '3', number : '444',  cost: '5 000',likes: '15'})
+            +room-card({background : '../../static/source/room-352.png', rating : '3', number : '352',  cost: '5 000',likes: '55'})
         .search__pagination
           +pagination({})
     

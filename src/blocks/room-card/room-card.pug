@@ -3,20 +3,29 @@ include ../rate/rate.pug
 
 mixin room-card(options)
   -
-    const bg = ['../../static/source/room-888.jpg', '../../static/source/room-840.jpg','../../static/source/room_3.jpg', '../../static/source/room_4.jpg']
-    const imageBG = options.bg || bg[0]
-    const href = options.href || 'room-details.html'
-    const isArrows = options.arrows ? true : false
-    const roomRating = options.rating || '5'                
-    const roomNumder = options.number || '888'              
-    const roomNotLux = options.notlux ? '' : 'люкс'                         
-    const roomCost = options.cost ? `${options.cost}₽` : '9 999₽'
-    const roomLikesNum = options.likes || '145'
+    const staticBackgrounds = [
+      '../../static/source/room-888.jpg',
+      '../../static/source/room-840.jpg',
+      '../../static/source/room-3.jpg',
+      '../../static/source/room-4.jpg'
+    ]
+    const {
+      background = staticBackgrounds[0],
+      href = 'room-details.html',
+      arrows = false,
+      rating = '5',
+      number = '888',
+      lux = false,
+      cost,
+      likes = '145'
+      } = options
+    const isLuxRoom = lux ? 'люкс' : ''                         
+    const roomCost = cost ? `${cost}₽` : '9 999₽'
   
   .room-card
     .room-card__image-wrapper
-      img.room-card__image.js-room-card__image(width='270' height='151' src=imageBG alt='bg')
-      if (isArrows)
+      img.room-card__image.js-room-card__image(width='270' height='151' src=background alt='bg')
+      if (arrows)
         svg(class='room-card__previous' width='12' height='12' viewBox='0 -4 12 12'  version='1.1' preserveAspectRatio='xMinYMin')
           use(xlink:href='#img-expand-more-right')
 
@@ -29,11 +38,11 @@ mixin room-card(options)
     .room-card__info
       a(class='room-card__room-link' href=href)
         span.room-card__symbol №
-        span.room-card__room-number=` ${roomNumder}`
-      span.room-card__symbol.room-card__room-type=roomNotLux 
+        span.room-card__room-number=` ${number}`
+      span.room-card__symbol.room-card__room-type=isLuxRoom 
       span.room-card__room-cost
         b=roomCost
         
     .room-card__rating
-      +rate({rating: roomRating, isClickable: false}) 
-      span.room-card__rating-count=`${roomLikesNum} Отзывов`
+      +rate({rating: rating, isClickable: false}) 
+      span.room-card__rating-count=`${likes} Отзывов`
