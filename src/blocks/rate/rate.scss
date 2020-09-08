@@ -20,7 +20,7 @@
     display: none;
   }
 
-  &__star-lable {
+  &__star-label {
     display: block;
     width: rem(20);
     height: rem(19);
@@ -49,8 +49,8 @@
     }
   }
 
-  .rate__star-lable:hover ~ .rate__star-lable::after,
-  .rate__star:checked ~ .rate__star-lable::after {
+  .rate__star-label:hover ~ .rate__star-label::after,
+  .rate__star:checked ~ .rate__star-label::after {
     opacity: 1;
   }
 

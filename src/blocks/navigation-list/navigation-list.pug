@@ -1,7 +1,9 @@
 mixin navigation-list(options)
   -
-    const title = options.title
-    const items = options.items
+    const {
+      title,
+      items
+      } = options
 
   ul.navigation-list
     li(class=`navigation-list__item navigation-list__item_title`)= title

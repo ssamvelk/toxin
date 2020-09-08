@@ -1,7 +1,11 @@
 mixin like(options)
   -
+    
+    const {
+      value = '10',
+      liked = false
+      } = options
     const isLiked = options.liked ? 'heart_liked' : ''
-    const value = options.value || '10'
 
   div(class=`like ${isLiked}`)
     svg(class='like__heart' width='10' height='8' viewBox='0 0 10 8')

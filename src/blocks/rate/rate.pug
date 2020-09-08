@@ -1,31 +1,31 @@
 mixin rate(options)
   -
-    const value = options.rating || '0'
+    const {rating = '0'} = options
     let i=0
     let j=0
   
   if (options.isClickable)
     .rate.rate_reverse
       input.rate__star#star1(type='radio' name='stars')
-      label.rate__star-lable(for='star1')
+      label.rate__star-label(for='star1')
 
       input.rate__star#star2(type='radio' name='stars')
-      label.rate__star-lable(for='star2')
+      label.rate__star-label(for='star2')
 
       input.rate__star#star3(type='radio' name='stars')
-      label.rate__star-lable(for='star3')
+      label.rate__star-label(for='star3')
 
       input.rate__star#star4(type='radio' name='stars')
-      label.rate__star-lable(for='star4')
+      label.rate__star-label(for='star4')
 
       input.rate__star#star5(type='radio' name='stars')
-      label.rate__star-lable(for='star5')
+      label.rate__star-label(for='star5')
   else
     .rate
       ul.rate__stars
-        while (i < value)
+        while (i < rating)
           li.rate__item.rate__item_full
           -i += 1
-        while (j < 5 - value)
+        while (j < 5 - rating)
           li.rate__item
           -j += 1

@@ -1,11 +1,12 @@
 mixin checkbox(options)
   -
-    const checked = options.checked || false
-    const first = options.first ? 'checkbox_first' : ''
-    const text = options.text || ''
-    const id = options.id || ''
+    const {
+      checked = false,
+      text = '',
+      first = false
+    } = options
 
-  .checkbox(class=first)
+  .checkbox(class=`${first ? 'checkbox_first' : ''}`)
     label(class='checkbox__item-name')=text
       if (checked)
         input(class='checkbox__item' type='checkbox' checked='checked')

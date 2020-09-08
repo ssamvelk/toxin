@@ -1,9 +1,9 @@
 mixin bullet(options)
-  - const title = options.title || 'Bullet list'
+  - const {title = 'Bullet list'} = options
 
   .bullet
     h3.bullet__title=title
     ul.bullet__list
       li.bullet__item Нельзя с питомцами
       li.bullet__item Без вечеринок и мероприятий
-      li.bullet__item Время прибытия — после 13:00,<br>а выезд до 12:00
+      li.bullet__item Время прибытия — после 13:00, а выезд до 12:00

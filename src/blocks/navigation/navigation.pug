@@ -1,9 +1,16 @@
 mixin navigation(options)
   -
-    const items = options.items || {about: 'О нас', service: 'Услуги', vacancy: 'Вакансии', news: 'Новости', agreement: 'Соглашения'}
-    const activeItem = options.activeItem || 'about'
-    const itemsWithDropdownLink = options.itemsWithDropdownLink || ['service', 'agreement']
- 
+    const {
+      items = {
+        about: 'О нас',
+        service: 'Услуги',
+        vacancy: 'Вакансии',
+        news: 'Новости',
+        agreement: 'Соглашения'
+      },
+      activeItem = 'about',
+      itemsWithDropdownLink = ['service', 'agreement']
+      } = options
 
   nav.navigation
     ul.navigation__list

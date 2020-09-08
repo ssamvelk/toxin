@@ -1,8 +1,11 @@
 mixin social-media(options)
   -
-    const name = options.name || ''
-    const iconWidth = options.width || 22
-    const iconHeight = options.height || 22
+    const {
+      name = '',
+      width = 22,
+      height = 22
+      } = options
+
     let icon = ''
 
     if (name === 'twitter')
@@ -14,7 +17,7 @@ mixin social-media(options)
   
   .social-media
     a(class=`social-media__${name}` href='/mock-address/change-me' target='_blank' rel='noopener noreferrer')
-      svg(class=`social-media__${name}-icon` width=iconWidth height=iconHeight viewBox=`0 0 ${iconWidth} ${iconHeight}` alt=`${name}-icon`)
+      svg(class=`social-media__${name}-icon` width=width height=height viewBox=`0 0 ${width} ${height}` alt=`${name}-icon`)
         path(fill="url(#paint0_linear)" d=icon)
         defs
           linearGradient(id="paint0_linear" x1="12" y1="-2" x2="12" y2="22" gradientUnits="userSpaceOnUse")

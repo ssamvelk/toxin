@@ -4,9 +4,12 @@ include ../navigation/navigation.pug
 
 mixin header(options)
   -
+    const {
+      authorized = false,
+      name = 'Cosmin Negoita',
+      activeLink = 1
+    } = options
     const isAuthorized = options.authorized ? 'header__inner-wrapper_authorized' : ''
-    const isUserName = options.name || 'Cosmin Negoita'
-    const activeLink = options.activeLink || 1
 
   header.header
     div(class=`header__inner-wrapper ${isAuthorized}`)
@@ -23,4 +26,4 @@ mixin header(options)
         .header__registration
           +button({size: 'middle', text: 'зарегистрироваться',  href: 'registration.html'})
       
-      span.header__user= isUserName
+      span.header__user= name

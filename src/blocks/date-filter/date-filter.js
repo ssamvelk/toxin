@@ -18,20 +18,20 @@ $(() => {
       }
 
       if (target.classList.contains('calendar__clean')) {
-        if (this.querySelector('.js-date-filter__arrival') && this.querySelector('.js-date-filter__departure')) {
-          this.querySelector('.js-date-filter__arrival').value = '';
-          this.querySelector('.js-date-filter__departure').value = '';
+        if (this.querySelector('#js-date-filter__arrival') && this.querySelector('#js-date-filter__departure')) {
+          this.querySelector('#js-date-filter__arrival').value = '';
+          this.querySelector('#js-date-filter__departure').value = '';
         }
       }
 
       if (target.classList.contains('calendar__apply')) {
         if (this.querySelector('.-range-from-') && this.querySelector('.-range-to-')) {
-          if (this.querySelector('.js-date-filter__arrival') && this.querySelector('.js-date-filter__departure')) {
-            this.querySelector('.js-date-filter__arrival').value = dateFrom.toLocaleString(
+          if (this.querySelector('#js-date-filter__arrival') && this.querySelector('#js-date-filter__departure')) {
+            this.querySelector('#js-date-filter__arrival').value = dateFrom.toLocaleString(
               'ru',
               dateOptions,
             );
-            this.querySelector('.js-date-filter__departure').value = dateTo.toLocaleString(
+            this.querySelector('#js-date-filter__departure').value = dateTo.toLocaleString(
               'ru',
               dateOptions,
             );

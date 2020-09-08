@@ -1,14 +1,20 @@
 mixin room-info(options)
-  - const elementsCount = options.num || 3
+  - const {elementsCount = 3} = options
   
   section.room-info
     article.room-info__item
       include ./smile/smile.pug
-      p.room-info__information.room-info__information-comfort <span class='room-info__title'>Комфорт</span><br>Шумопоглощающие стены
+      p.room-info__information.room-info__information-comfort
+        span(class='room-info__title') Комфорт
+        span(class='room-info__text') Шумопоглощающие стены
     article.room-info__item
       include ./house/house.pug
-      p.room-info__information.room-info__information-facilities <span class='room-info__title'>Удобство</span><br>Окно в каждой из спален
+      p.room-info__information.room-info__information-facilities
+        span(class='room-info__title') Удобство
+        span(class='room-info__text') Окно в каждой из спален
     if (elementsCount === 3)
       article.room-info__item.room-info__item_without-border
         include ./fire/fire.pug
-        p.room-info__information.room-info__information-cosiness <span class='room-info__title'>Уют</span><br>Номер оснащён камином
+        p.room-info__information.room-info__information-cosiness
+          span(class='room-info__title') Уют
+          span(class='room-info__text') Номер оснащён камином

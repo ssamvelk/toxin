@@ -40,7 +40,7 @@ block content
             
             .form-elements__upper-dropdown-company-wrapper 
               h6.form-elements__items-title dropdown
-              +dropdown-company({big: true})
+              +dropdown-company({size: 'big'})
             
             .form-elements__masked-text-field-wrapper
               h6.form-elements__items-title masked text field
@@ -55,7 +55,7 @@ block content
              
             .form-elements__subscribe-wrapper
               h6.form-elements__items-title subscription text field
-              +subscribe({big: true})
+              +subscribe({size: 'big'})
 
           .form-elements__column.form-elements__column_checkboxs
             .form-elements__checkbox-list-wrapper
@@ -104,9 +104,9 @@ block content
                   +button({theme: 'white'})
                 +button({theme: 'white'})
               
-              .form-elements__emptybuttons-wrapper 
+              .form-elements__empty-buttons-wrapper 
                 +empty-button({})
-                +empty-button({text: 'click me'})
+                +empty-button({})
 
               .form-elements__big-button-wrapper
                 +button({size: 'big', text: 'перейти к оплате'})
@@ -119,20 +119,20 @@ block content
           .form-elements__column
             .form-elements__dropdowns-wrapper
               h6.form-elements__items-title.form-elements__dropdowns-title dropdown
-              +dropdown-comfort({small: true, count1: 2, count2: 2})
+              +dropdown-comfort({count1: 2, count2: 2})
               .form-elements__dropdown-wrapper
                 h6.form-elements__items-title dropdown
-                +dropdown-comfort({expanded: true, small: true, count1: 2, count2: 2})
+                +dropdown-comfort({open: true, count1: 2, count2: 2})
               
           .form-elements__column
             .form-elements__dropdown-company-wrapper  
               h6.form-elements__items-title dropdown
-              +dropdown-company({big: true, expanded: true})
+              +dropdown-company({size: 'big', open: true})
 
           .form-elements__column
             .form-elements__dropdown-company-filled-wrapper
               h6.form-elements__items-title.form-elements__dropdown-company-filled-title dropdown
-              +dropdown-company({big: true, expanded: true, count1: 2, count2: 1, text: '3 гостя'})
+              +dropdown-company({size: 'big', open: true, count1: 2, count2: 1, text: '3 гостя'})
         
         section.form-elements__section.form-elements__section_checkboxs
           .form-elements__column
@@ -140,7 +140,7 @@ block content
               +checkbox-additional-list({title: 'expandable checkbox list'})
 
             .form-elements__opened-checkbox-additional-list-wrapper
-              +checkbox-additional-list({opened: true, title: 'expandable checkbox list'})
+              +checkbox-additional-list({open: true, title: 'expandable checkbox list'})
               
           .form-elements__column
             .form-elements__checkbox-accessibility-wrapper
@@ -152,7 +152,7 @@ block content
 
         section.form-elements__section.form-elements__section_rest
           .form-elements__column
-            +room-info({num: 2})
+            +room-info({elementsCount: 2})
 
           .form-elements__column
             .form-elements__comment-wrapper

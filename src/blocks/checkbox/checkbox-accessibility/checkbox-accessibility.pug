@@ -1,21 +1,22 @@
 include ../checkbox/checkbox.pug
 
 mixin checkbox-accessibility(options)
-  - const title = options.title || 'доступность'
-
+  -
+    const {
+      title = 'доступность',
+      count = 2,
+      items = [
+        {title: 'Широкий коридор', text: `Ширина коридоров в номере\nне менее 91 см.`, name: 'wideCorridor'},
+        {title: 'Помощник для инвалидов', text: `На 1 этаже вас встретит специалист\nи проводит до номера.`, name: 'assistant'}
+      ]
+      } = options
+  
   .checkbox-accessibility
     h3.checkbox-accessibility__title=title
-
-    .checkbox-accessibility__item     
-      input(class='checkbox__item checkbox-accessibility__item' type='checkbox' id='wideCorridor')
-      .checkbox-accessibility__inner-wrapper
-        label(class='checkbox__item-name checkbox-accessibility__item-name' for='wideCorridor')
-          h6.checkbox-accessibility__inner-title Широкий коридор
-        p.checkbox-accessibility__inner-info Ширина коридоров в номере<br>не менее 91 см.
-    
-    .checkbox-accessibility__item    
-      input(class='checkbox__item checkbox-accessibility__item' type='checkbox' id='assistant')
-      .checkbox-accessibility__inner-wrapper
-        label(class='checkbox__item-name checkbox-accessibility__item-name' for='assistant')
-          h6.checkbox-accessibility__inner-title Помощник для инвалидов
-        p.checkbox-accessibility__inner-info На 1 этаже вас встретит специалист<br>и проводит до номера.
+    each val, index in items
+      .checkbox-accessibility__item
+        input(class='checkbox__item checkbox-accessibility__item' type='checkbox' id=val.name)
+        .checkbox-accessibility__inner-wrapper
+          label(class='checkbox__item-name checkbox-accessibility__item-name' for=val.name)
+            h6.checkbox-accessibility__inner-title=val.title
+          p.checkbox-accessibility__inner-info=val.text

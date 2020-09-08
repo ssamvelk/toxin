@@ -10,7 +10,7 @@ mixin search-card(options)
       +date-filter({})
     h3.search-card__company-title гости
     .search-card__company
-      +dropdown-company({big: true, expanded: false})
+      +dropdown-company({size: 'big', open: false})
     .search-card__button
       +button({size: 'big', text: 'подобрать номер', href: 'search-room.html'})
         

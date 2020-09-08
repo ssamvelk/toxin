@@ -2,9 +2,11 @@ mixin button(options)
   -
     const size = options.size ? `button_size_${options.size}` : ''
     const theme = options.theme ? `button_theme_${options.theme}` : ''
-    const text = options.text || 'click me'
-    const href = options.href || '/mock-address/change-me'
-   
+    const {
+      text='click me',
+      href='/mock-address/change-me'
+      } = options
+
   if (options.size === 'big')
     a(class=`button ${size}` href=href)
       span(class='button__text')=text

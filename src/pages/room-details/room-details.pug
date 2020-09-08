@@ -3,6 +3,7 @@ block title
   title Room details
 block content
   include ../../static/sprite.svg
+  include ../../blocks/bullet/bullet.pug
   include ../../blocks/dropdown/dropdown.pug
   include ../../blocks/room-card/room-card.pug
   include ../../blocks/comment/comment.pug
@@ -45,12 +46,14 @@ block content
               +comment({name: 'Патрисия Стёклышкова', img:'../../static/source/image-patrisia48.png', days: 7, comment: 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент'})
 
           .room-details__flex-wrapper.room-details__flex-wrapper--mtop
-            .room-details__rools
-              h2.room-details__rools-title Правила
-              ul.room-details__rools-list
-                li.room-details__rools-item Нельзя с питомцами
-                li.room-details__rools-item Без вечеринок и мероприятий
-                li.room-details__rools-item Время прибытия — после 13:00,<br>а выезд до 12:00
+            .room-details__specification
+              h2.room-details__specification-title Правила
+              ul.room-details__specification-list
+                li.room-details__specification-item Нельзя с питомцами
+                li.room-details__specification-item Без вечеринок и мероприятий
+                li.room-details__specification-item
+                  |Время прибытия — после 13:00,
+                  |а выезд до 12:00
             .room-details__cancel
               h2.room-details__cancel-title Отмена
               p.room-details__cancel-info Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
