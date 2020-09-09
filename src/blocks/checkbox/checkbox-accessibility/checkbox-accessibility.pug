@@ -4,19 +4,25 @@ mixin checkbox-accessibility(options)
   -
     const {
       title = 'доступность',
-      count = 2,
       items = [
-        {title: 'Широкий коридор', text: `Ширина коридоров в номере\nне менее 91 см.`, name: 'wideCorridor'},
-        {title: 'Помощник для инвалидов', text: `На 1 этаже вас встретит специалист\nи проводит до номера.`, name: 'assistant'}
+        {
+          title: 'Широкий коридор',
+          text: `Ширина коридоров в номере\nне менее 91 см.`,
+          name: 'wideCorridor'
+        },
+        {
+          title: 'Помощник для инвалидов',
+          text: `На 1 этаже вас встретит специалист\nи проводит до номера.`,
+          name: 'assistant'
+        }
       ]
       } = options
   
   .checkbox-accessibility
     h3.checkbox-accessibility__title=title
     each val, index in items
-      .checkbox-accessibility__item
-        input(class='checkbox__item checkbox-accessibility__item' type='checkbox' id=val.name)
-        .checkbox-accessibility__inner-wrapper
-          label(class='checkbox__item-name checkbox-accessibility__item-name' for=val.name)
-            h6.checkbox-accessibility__inner-title=val.title
-          p.checkbox-accessibility__inner-info=val.text
+      .checkbox-accessibility__item-wrapper
+        label(class='checkbox__item-name checkbox-accessibility__item-name')
+          h3.checkbox-accessibility__item-title=val.title
+          input(class='checkbox__item checkbox-accessibility__item' type='checkbox')
+        p.checkbox-accessibility__item-info=val.text

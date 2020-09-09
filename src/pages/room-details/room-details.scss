@@ -227,7 +227,7 @@
   &__specification-item {
     position: relative;
     margin-bottom: rem(10);
-    white-space: pre;
+    white-space: pre-wrap;
 
     &::before {
       position: absolute;

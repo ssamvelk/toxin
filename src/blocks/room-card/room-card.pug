@@ -45,4 +45,6 @@ mixin room-card(options)
         
     .room-card__rating
       +rate({rating: rating, isClickable: false}) 
-      span.room-card__rating-count=`${likes} Отзывов`
+      span.room-card__rating-count
+        b=`${likes} `
+        |Отзывов

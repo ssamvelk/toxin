@@ -1,9 +1,9 @@
 window.addEventListener('load', () => {
-  const allCarousels = document.querySelectorAll('.carousel');
+  const carousels = document.querySelectorAll('.js-carousel');
 
-  if (allCarousels.length > 0) {
-    for (let i = 0; i < allCarousels.length; i += 1) {
-      allCarousels[i].addEventListener('click', (e) => {
+  if (carousels.length > 0) {
+    for (let i = 0; i < carousels.length; i += 1) {
+      carousels[i].addEventListener('click', (e) => {
         if (e.target.classList.contains('carousel__item')) {
           const localTarget = e.target;
           if (!localTarget.classList.contains('carousel__item_active')) {

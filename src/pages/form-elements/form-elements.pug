@@ -31,30 +31,30 @@ block content
         section.form-elements__section.form-elements__section_elements
           .form-elements__column.form-elements__column_textfields
             .form-elements__text-field-default-wrapper
-              h6.form-elements__items-title text Field
+              h3.form-elements__items-title text Field
               +text-field({type: 'email'})
             
             .form-elements__text-field-hover-wrapper
-              h6.form-elements__items-title.form-elements__text-field-hover-title text Field
+              h3.form-elements__items-title.form-elements__text-field-hover-title text Field
               +text-field({type: 'text', placeholder: 'This is pretty awesome'})
             
             .form-elements__upper-dropdown-company-wrapper 
-              h6.form-elements__items-title dropdown
+              h3.form-elements__items-title dropdown
               +dropdown-company({size: 'big'})
             
             .form-elements__masked-text-field-wrapper
-              h6.form-elements__items-title masked text field
+              h3.form-elements__items-title masked text field
               +text-field({type: 'date'})
             
             .form-elements__date-filter-wrapper
               +date-filter({arrival: 'date Dropdown',  departure: 'date Dropdown'})
              
             .form-elements__filter-date-dropdown-wrapper
-              h6.form-elements__items-title filter date dropdown
+              h3.form-elements__items-title filter date dropdown
               +date-dropdown({})
              
             .form-elements__subscribe-wrapper
-              h6.form-elements__items-title subscription text field
+              h3.form-elements__items-title subscription text field
               +subscribe({size: 'big'})
 
           .form-elements__column.form-elements__column_checkboxs
@@ -62,19 +62,19 @@ block content
               +checkbox-list({})
             
             .form-elements__radio-wrapper  
-              h6.form-elements__items-title Radio Buttons
+              h3.form-elements__items-title Radio Buttons
               .form-elements__radio-element-wrapper
                 +radio({})
                         
             .form-elements__toggle-wrapper  
-              h6.form-elements__items-title toggle
+              h3.form-elements__items-title toggle
               .form-elements__toggle-element-wrapper 
                 +toggle({checked: true})
               .form-elements__toggle-element-wrapper.form-elements__toggle-element-wrapper_second
                 +toggle({})
             
             .form-elements__like-wrapper
-              h6.form-elements__items-title like button
+              h3.form-elements__items-title like button
               .form-elements__like-elements-wrapper 
                 .form-elements__like-element-wrapper 
                   +like({value: 2})
@@ -82,7 +82,7 @@ block content
 
             
             .form-elements__rate-wrapper
-              h6.form-elements__items-title rate button
+              h3.form-elements__items-title rate button
               .form-elements__rate-elements-wrapper
                 .form-elements__rate-element-wrapper
                   +rate({rating: 4})
@@ -93,7 +93,7 @@ block content
               +slider({title : 'Range Slider'})
 
             .form-elements__buttons-wrapper
-              h6.form-elements__items-title buttons
+              h3.form-elements__items-title buttons
               .form-elements__blue-buttons-wrapper
                 .form-elements__blue-button-wrapper
                   +button({})
@@ -112,26 +112,26 @@ block content
                 +button({size: 'big', text: 'перейти к оплате'})
             
             .form-elements__pagination-wrapper
-              h6.form-elements__items-title.form-elements__pagination-title pagination
+              h3.form-elements__items-title.form-elements__pagination-title pagination
               +pagination({})
        
         section.form-elements__section.form-elements__section_dropdowns
           .form-elements__column
             .form-elements__dropdowns-wrapper
-              h6.form-elements__items-title.form-elements__dropdowns-title dropdown
+              h3.form-elements__items-title.form-elements__dropdowns-title dropdown
               +dropdown-comfort({count1: 2, count2: 2})
               .form-elements__dropdown-wrapper
-                h6.form-elements__items-title dropdown
+                h3.form-elements__items-title dropdown
                 +dropdown-comfort({open: true, count1: 2, count2: 2})
               
           .form-elements__column
             .form-elements__dropdown-company-wrapper  
-              h6.form-elements__items-title dropdown
+              h3.form-elements__items-title dropdown
               +dropdown-company({size: 'big', open: true})
 
           .form-elements__column
             .form-elements__dropdown-company-filled-wrapper
-              h6.form-elements__items-title.form-elements__dropdown-company-filled-title dropdown
+              h3.form-elements__items-title.form-elements__dropdown-company-filled-title dropdown
               +dropdown-company({size: 'big', open: true, count1: 2, count2: 1, text: '3 гостя'})
         
         section.form-elements__section.form-elements__section_checkboxs

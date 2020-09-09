@@ -1,14 +1,14 @@
 const $ = require('jquery');
 
 $(() => {
-  const dateDrop = document.querySelectorAll('.date-dropdown');
+  const dateDrop = document.querySelectorAll('.js-date-dropdown');
 
   for (let i = 0; i < dateDrop.length; i += 1) {
     dateDrop[i].addEventListener('click', function (e) {
       const { target } = e;
-      const calendar = (this.querySelector('.calendar'));
+      const calendar = (this.querySelector('.js-calendar'));
 
-      const data = $(this.querySelector('.datepicker-here')).data('datepicker');
+      const data = $(this.querySelector('.js-datepicker')).data('datepicker');
       const dateFrom = new Date(data.selectedDates[0]);
       const dateTo = new Date(data.selectedDates[1]);
       const dateOptions = { day: 'numeric', month: 'short' };

@@ -1,13 +1,19 @@
 include ../calendar/calendar.pug
 
 mixin date-dropdown(options)
-  .date-dropdown
+  -
+    const {
+      start = '19 авг',
+      end = '23 авг'
+    } = options
+
+  .date-dropdown.js-date-dropdown
     svg(class='date-dropdown__arrow' width='12' height='12' viewBox='0 -4 12 12'  version='1.1' preserveAspectRatio='xMinYMin') 
       use(xlink:href='#img-expand-more')
          
     p.date-dropdown__info
-      span.date-dropdown__info-start 19 авг 
+      span.date-dropdown__info-start=start 
       |- 
-      span.date-dropdown__info-end 23 авг
+      span.date-dropdown__info-end=end
     .date-dropdown__calendar
       +calendar({disable: true})

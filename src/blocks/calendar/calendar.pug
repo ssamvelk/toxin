@@ -1,9 +1,9 @@
 mixin calendar(options)
   - const isDisable = options.disable ? 'calendar_disabled' : '';
 
-  div(class=`calendar ${isDisable}`)
-    div(class='calendar__datepicker-here datepicker-here')
+  div(class=`calendar js-calendar ${isDisable}`)
+    div(class='calendar__datepicker js-datepicker')
       .calendar__footer
         .calendar__clean-wrapper
-          a.calendar__clean.calendar__clean_disabled Очистить
-        a.calendar__apply Применить
+          a.calendar__clean.js-calendar__clean.calendar__clean_disabled Очистить
+        a.calendar__apply.js-calendar__apply Применить

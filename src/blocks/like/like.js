@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const likes = document.querySelectorAll('.like');
+  const likes = document.querySelectorAll('.js-like');
 
   for (let i = 0; i < likes.length; i += 1) {
     likes[i].addEventListener('click', function () {

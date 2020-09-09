@@ -10,6 +10,21 @@
     display: none;
   }
 
+  &__datepicker {
+    position: relative;
+    z-index: 100;
+    width: rem(320);
+    height: max-content;
+    padding: 0 rem(20);
+    background: white;
+    border: rem(1) solid rgba(31, 32, 65, 0.25);
+    border-bottom: 0;
+    border-radius: rem(4);
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    box-shadow: 0 rem(10) rem(20) rgba(31, 32, 65, 0.05);
+  }
+
   &__footer {
     position: absolute;
     bottom: rem(-53);
@@ -59,21 +74,6 @@
       color: rgba(31, 32, 65, 0.5);
     }
   }
-}
-
-.datepicker-here {
-  position: relative;
-  z-index: 100;
-  width: rem(320);
-  height: max-content;
-  padding: 0 rem(20);
-  background: white;
-  border: rem(1) solid rgba(31, 32, 65, 0.25);
-  border-bottom: 0;
-  border-radius: rem(4);
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  box-shadow: 0 rem(10) rem(20) rgba(31, 32, 65, 0.05);
 }
 
 .datepicker-inline {

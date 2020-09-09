@@ -58,19 +58,27 @@
   &__date-dropdown {
     margin-bottom: rem(21);
   }
+  
   &__dropdown-company {
     margin-bottom: rem(29);
   }
+  
   &__slider {
     margin-bottom: rem(29);
   }
+  
   &__checkbox-list {
     margin-bottom: rem(29);
   }
+  
   &__dropdown-comfort {
     margin-bottom: rem(29);
   }
-
+  
+  &__checkbox-accessibility {
+    margin-bottom: rem(30);
+  }
+  
   &__date-title,
   &__guests-title,
   &__comfort-title {
@@ -82,7 +90,7 @@
     line-height: rem(15);
     text-transform: uppercase;
   }
-
+  
   &__right {
     width: rem(834);
 
