@@ -152,7 +152,11 @@ block content
 
         section.form-elements__section.form-elements__section_rest
           .form-elements__column
-            +room-info({elementsCount: 2})
+            +room-info({
+              items: [
+                {title: 'Комфорт', text: 'Шумопоглощающие стены', image: '../../static/source/emoticon.png'},
+                {title: 'Удобство', text: 'Окно в каждой из спален', image: '../../static/source/city.png'}
+            ]})
 
           .form-elements__column
             .form-elements__comment-wrapper

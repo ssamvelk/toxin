@@ -1,6 +1,13 @@
 mixin carousel(options)
+  -
+    const {
+      activeItem = 0
+    } = options
+
+    let i = 0
+    
+  
   ul.carousel.js-carousel
-    li.carousel__item.carousel__item_active.js-carousel-1
-    li.carousel__item.js-carousel-2
-    li.carousel__item.js-carousel-3
-    li.carousel__item.js-carousel-4
+    while i < 4
+      li.carousel__item(class=`${i === activeItem ? 'carousel__item_active' : ''}`)
+      - i += 1

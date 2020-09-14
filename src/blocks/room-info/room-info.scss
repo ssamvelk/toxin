@@ -4,6 +4,7 @@
 
   :last-child {
     margin-bottom: 0;
+    border: none;
   }
 
   &__item {
@@ -12,41 +13,33 @@
     height: rem(68);
     margin-bottom: rem(20);
     border-bottom: rem(1) solid rgba(31, 32, 65, 0.1);
+  }
+
+  &__image-wrapper {
+    width: rem(48);
+    height: rem(48);
+  }
   
-    &_without-border {
-      border: none;
-    }
+  &__image {
+    display: block;
+    margin: 4px auto;
   }
   
   &__information {
-    margin-left: rem(14);
+    margin-left: rem(10);
     line-height: rem(24);
-  
-    & > .room-info__title {
-      color: $Dark75;
-      font-weight: 700;
-      font-size: rem(14);
-      font-family: Montserrat, Arial, sans-serif;
-      font-style: normal;
-      
-    }
-  }
-  
-  &__information-facilities {
-    margin-left: rem(16);
   }
 
-  &__information-cosiness {
-    margin-top: rem(1);
-    margin-left: rem(17);
+  &__title {
+    color: $Dark75;
+    font-weight: 700;
+    font-size: rem(14);
+    font-family: Montserrat, Arial, sans-serif;
+    font-style: normal;
+    
   }
+
   &__text {
     display: block;
   }
 }
-
-@import './fire/fire.scss';
-
-@import './house/house.scss';
-
-@import './smile/smile.scss';
