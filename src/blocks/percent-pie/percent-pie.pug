@@ -1,9 +1,14 @@
 mixin percent-pie(options)
   -
+    const {
+      values = [25, 25, 50, 0]
+      } = options
+    
     const percents = []
-    percents[0] = options.percents[0] * 3.455
+    
+    percents[0] = values[0] * 3.455
     for (let i = 1; i < 4; i += 1) {
-      percents[i] = options.percents[i] * 3.61 - 2.15
+      percents[i] = values[i] * 3.61 - 2.15
       if (percents[i] < 0) percents[i] = 0
     }
   

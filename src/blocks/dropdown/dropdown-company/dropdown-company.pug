@@ -4,21 +4,21 @@ mixin dropdown-company(options)
   -
     const {
       size = '',
-      open = false,
+      opened = false,
       count1 = '0',
       count2 = '0',
       count3 = '0',
       text = 'Сколько гостей'
     } = options
 
-    const cleanButtonClass = (count1 > 0 || count2 > 0 || count3 > 0) ? '' : 'dropdown-company__clean_disable'
+    const cleanButtonClass = (count1 > 0 || count2 > 0 || count3 > 0) ? '' : 'dropdown-company__clean_disabled'
   
   div(class=`dropdown-company js-dropdown-company ${(size === 'big') ? 'dropdown-company_size_big' : ''}`)
     .dropdown-company__open
       +dropdown-open({opacity: 75})
-    p(class=`dropdown-company__main js-dropdown-company__main ${open ? 'dropdown-company__main_expanded' : ''}`)=text
+    p(class=`dropdown-company__main js-dropdown-company__main ${opened ? 'dropdown-company__main_expanded' : ''}`)=text
 
-    ul(class=`dropdown-company__list ${open ? 'dropdown-company__list_expanded' : ''}`)
+    ul(class=`dropdown-company__list ${opened ? 'dropdown-company__list_expanded' : ''}`)
       li.dropdown-company__item.dropdown-company__item-fadult 
         span.dropdown-company__item-name взрослые
         +dropdown-buttons({id: 'js-fadult', value: count1})

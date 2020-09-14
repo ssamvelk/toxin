@@ -4,16 +4,16 @@ mixin checkbox-additional-list(options)
   -
     const {
       title = 'дополнительные удобства',
-      open = false
+      opened = false
       } = options
   
   .checkbox-additional-list.js-checkbox-additional-list
     .checkbox-additional-list__header
       h3.checkbox-additional-list__title= title
-      svg(class=`checkbox-additional-list__arrow ${open ? 'checkbox-additional-list__arrow_opened' : ''}` width='12' height='12' viewBox='0 -4 12 12'  version='1.1' preserveAspectRatio='xMinYMin')
+      svg(class=`checkbox-additional-list__arrow ${opened ? 'checkbox-additional-list__arrow_opened' : ''}` width='12' height='12' viewBox='0 -4 12 12'  version='1.1' preserveAspectRatio='xMinYMin')
         use(xlink:href='#img-expand-more')   
-    div(class=`checkbox-additional-list__body ${open ? '' : 'checkbox-additional-list__body_disabled'}`)
-      +checkbox({text: 'Завтрак', id: 'breakfast', first: true})
+    div(class=`checkbox-additional-list__body ${opened ? '' : 'checkbox-additional-list__body_disabled'}`)
+      +checkbox({text: 'Завтрак', id: 'breakfast', isFirst: true})
       +checkbox({text: 'Письменный стол', id: 'desk', checked: true})
       +checkbox({text: 'Стул для кормления', id: 'chair', checked: true})
       +checkbox({text: 'Кроватка', id: 'cot', checked: true})

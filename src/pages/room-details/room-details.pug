@@ -25,19 +25,20 @@ block content
 
       section.wrapper.room-details__content-wrapper
         .room-details__left
-          .room-details__flex-wrapper
+          .room-details__showing-wrapper
             .room-details__room-info
               h2.room-details__left-info-title Сведения о номере
               +room-info({})
             .room-details__pie-wrapper
-              h2.room-details__left-waaay-title Впечатления от номера
-              .room-details__flex-wrapper
-                +percent-pie({percents: [25, 25, 50, 0]}) 
+              h2.room-details__left-impression-title Впечатления от номера
+              .room-details__percent-pie-wrapper
+                +percent-pie({}) 
                 ul.room-details__list
                   li.room-details__item.room-details__item_best Великолепно 
                   li.room-details__item.room-details__item_good Хорошо
                   li.room-details__item.room-details__item_passably Удовлетворительно 
                   li.room-details__item.room-details__item_poorly Разочарован
+          
           .room-details__recall-wrapper
             h2.room-details__recall Отзывы посетителей номера
             .room-details__comment
@@ -45,7 +46,7 @@ block content
             .room-details__comment
               +comment({name: 'Патрисия Стёклышкова', img:'../../static/source/image-patrisia48.png', days: 7, comment: 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент'})
 
-          .room-details__flex-wrapper.room-details__flex-wrapper--mtop
+          .room-details__specification-wrapper
             .room-details__specification
               h2.room-details__specification-title Правила
               ul.room-details__specification-list

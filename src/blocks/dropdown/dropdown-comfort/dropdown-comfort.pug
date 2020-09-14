@@ -1,7 +1,7 @@
 mixin dropdown-comfort(options)
   -
     const {
-      open = false,
+      opened = false,
       count1 = '0',
       count2 = '0',
       count3 = '0'
@@ -10,10 +10,10 @@ mixin dropdown-comfort(options)
   .dropdown-comfort.js-dropdown-comfort
     .dropdown-comfort__open
       +dropdown-open({opacity: 75})
-    p(class=`dropdown-comfort__main ${open ? 'dropdown-comfort__main_expanded' : ''}`)= `${count1} спальни, ${count2}  кровати...` 
+    p(class=`dropdown-comfort__main ${opened ? 'dropdown-comfort__main_expanded' : ''}`)= `${count1} спальни, ${count2}  кровати...` 
       
 
-    ul(class=`dropdown-comfort__list ${open ? 'dropdown-comfort__list_expanded' : ''}`)
+    ul(class=`dropdown-comfort__list ${opened ? 'dropdown-comfort__list_expanded' : ''}`)
       li.dropdown-comfort__item 
         span.dropdown-comfort__item-name спальни
         +dropdown-buttons({id: 'js-bedroom', value: count1})

@@ -29,7 +29,7 @@ block content
       .form-elements__inner-wrapper
 
         section.form-elements__section.form-elements__section_elements
-          .form-elements__column.form-elements__column_textfields
+          .form-elements__column.form-elements__column_text-fields
             .form-elements__text-field-default-wrapper
               h3.form-elements__items-title text Field
               +text-field({type: 'email'})
@@ -57,7 +57,7 @@ block content
               h3.form-elements__items-title subscription text field
               +subscribe({size: 'big'})
 
-          .form-elements__column.form-elements__column_checkboxs
+          .form-elements__column.form-elements__column_checkboxes
             .form-elements__checkbox-list-wrapper
               +checkbox-list({})
             
@@ -122,25 +122,25 @@ block content
               +dropdown-comfort({count1: 2, count2: 2})
               .form-elements__dropdown-wrapper
                 h3.form-elements__items-title dropdown
-                +dropdown-comfort({open: true, count1: 2, count2: 2})
+                +dropdown-comfort({opened: true, count1: 2, count2: 2})
               
           .form-elements__column
             .form-elements__dropdown-company-wrapper  
               h3.form-elements__items-title dropdown
-              +dropdown-company({size: 'big', open: true})
+              +dropdown-company({size: 'big', opened: true})
 
           .form-elements__column
             .form-elements__dropdown-company-filled-wrapper
               h3.form-elements__items-title.form-elements__dropdown-company-filled-title dropdown
-              +dropdown-company({size: 'big', open: true, count1: 2, count2: 1, text: '3 гостя'})
+              +dropdown-company({size: 'big', opened: true, count1: 2, count2: 1, text: '3 гостя'})
         
-        section.form-elements__section.form-elements__section_checkboxs
+        section.form-elements__section.form-elements__section_checkboxes
           .form-elements__column
             .form-elements__checkbox-additional-list-wrapper
               +checkbox-additional-list({title: 'expandable checkbox list'})
 
             .form-elements__opened-checkbox-additional-list-wrapper
-              +checkbox-additional-list({open: true, title: 'expandable checkbox list'})
+              +checkbox-additional-list({opened: true, title: 'expandable checkbox list'})
               
           .form-elements__column
             .form-elements__checkbox-accessibility-wrapper

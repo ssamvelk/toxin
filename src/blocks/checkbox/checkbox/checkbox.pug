@@ -3,10 +3,10 @@ mixin checkbox(options)
     const {
       checked = false,
       text = '',
-      first = false
+      isFirst = false
     } = options
 
-  .checkbox(class=`${first ? 'checkbox_first' : ''}`)
+  .checkbox(class=`${isFirst ? 'checkbox_first' : ''}`)
     label(class='checkbox__item-name')=text
       if (checked)
         input(class='checkbox__item' type='checkbox' checked='checked')

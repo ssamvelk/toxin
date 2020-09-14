@@ -91,7 +91,7 @@
     letter-spacing: rem(0.7);
   }
   
-  &__left-waaay-title {
+  &__left-impression-title {
     margin-bottom: rem(20);
     color: #1f2041;
     font-weight: 700;
@@ -109,7 +109,7 @@
     width: rem(349);
   }
   
-  &__flex-wrapper {
+  &__showing-wrapper {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -119,7 +119,24 @@
       margin: 0 auto;
     }
   }
+
+  &__percent-pie-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__specification-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: rem(30);
   
+    @media screen and (max-width: 1200px){
+      flex-wrap: wrap;
+      margin: 0 auto;
+    }
+  }
   
   &__list {
     position: relative;
@@ -191,10 +208,6 @@
       letter-spacing: 0;
       content: "2 отзыва";
     }
-  }
-  
-  &__flex-wrapper--mtop {
-    margin-top: rem(30);
   }
 
   &__specification {

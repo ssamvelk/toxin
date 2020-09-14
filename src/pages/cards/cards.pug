@@ -19,12 +19,12 @@ block content
         +search-card({})
         +reserve-card({})
         .cards__calendar-wrapper
-          +calendar({disable: false})
+          +calendar({disabled: false})
         .cards__registration-wrapper
           +registration-card()
         .cards__inter-wrapper
           +inter-card()
         .cards__rooms-wrapper
           .cards__first-room
-            +room-card({background : '../../static/source/room-888.jpg', number : '888', lux: true, cost: '9 990', arrows: true})
+            +room-card({background : '../../static/source/room-888.jpg', number : '888', isLux: true, cost: '9 990', hasArrows: true})
           +room-card({background : '../../static/source/room-840.jpg', number : '840', cost: '9 990', likes: 65, rating: 4})

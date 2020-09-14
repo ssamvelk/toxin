@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const cleanBtn = dropdowns[i].querySelector('.js-dropdown-company__clean');
       const applyBtn = dropdowns[i].querySelector('.js-dropdown-company__apply');
 
-      if (value !== 0) cleanBtn.classList.remove('dropdown-company__clean_disable');
+      if (value !== 0) cleanBtn.classList.remove('dropdown-company__clean_disabled');
 
       if (value === 0) main.innerHTML = 'Cколько гостей';
       else if (value === 1) main.innerHTML = '1 гость';
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         itemCounts[1].innerHTML = 0;
         itemCounts[2].innerHTML = 0;
         main.innerHTML = 'Сколько гостей';
-        this.classList.add('dropdown-company__clean_disable');
+        this.classList.add('dropdown-company__clean_disabled');
       };
 
       applyBtn.onclick = function () {

@@ -12,20 +12,20 @@ mixin room-card(options)
     const {
       background = staticBackgrounds[0],
       href = 'room-details.html',
-      arrows = false,
+      hasArrows = false,
       rating = '5',
       number = '888',
-      lux = false,
+      isLux = false,
       cost,
       likes = '145'
       } = options
-    const isLuxRoom = lux ? 'люкс' : ''                         
+    const isLuxRoom = isLux ? 'люкс' : ''                         
     const roomCost = cost ? `${cost}₽` : '9 999₽'
   
   .room-card
     .room-card__image-wrapper
       img.room-card__image.js-room-card__image(width='270' height='151' src=background alt='bg')
-      if (arrows)
+      if (hasArrows)
         svg(class='room-card__previous' width='12' height='12' viewBox='0 -4 12 12'  version='1.1' preserveAspectRatio='xMinYMin')
           use(xlink:href='#img-expand-more-right')
 
