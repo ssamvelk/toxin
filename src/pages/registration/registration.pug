@@ -6,12 +6,12 @@ block content
   include ../../blocks/registration-card/registration-card.pug
   include ../../blocks/header/header.pug
   include ../../blocks/footer/footer.pug
-  body
-    +header({})
 
-    main.registration-page__wrapper
-      section.registration-page__inner-wrapper
-        .registration-page__registration-card
-          +registration-card({})
-    
-    +footer({})
+  +header({})
+  
+  main.registration-page__wrapper
+    section.registration-page__inner-wrapper
+      .registration-page__registration-card
+        +registration-card({})
+  
+  +footer({})

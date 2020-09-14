@@ -12,54 +12,50 @@ block content
   include ../../blocks/footer/footer.pug
   include ../../blocks/percent-pie/percent-pie.pug
   include ../../blocks/room-info/room-info.pug
-  body
-    +header({})
+
+  +header({})
     
-    main.room-details__main-wrapper
-      section.room-details__image-box
-        .room-details__main-image-wrapper
-          img(class='room-details__main-image',  src='../../static/source/room-details-big.jpg', alt='image-big')
-        .room-details__small-image-wrapper
-          img(class='room-details__small-image', src='../../static/source/room-details-1.jpg', alt='room image')
-          img(class='room-details__small-image', src='../../static/source/room-details-2.jpg' alt='room image')
-
-      section.wrapper.room-details__content-wrapper
-        .room-details__left
-          .room-details__showing-wrapper
-            .room-details__room-info
-              h2.room-details__left-info-title Сведения о номере
-              +room-info({})
-            .room-details__pie-wrapper
-              h2.room-details__left-impression-title Впечатления от номера
-              .room-details__percent-pie-wrapper
-                +percent-pie({}) 
-                ul.room-details__list
-                  li.room-details__item.room-details__item_best Великолепно 
-                  li.room-details__item.room-details__item_good Хорошо
-                  li.room-details__item.room-details__item_passably Удовлетворительно 
-                  li.room-details__item.room-details__item_poorly Разочарован
-          
-          .room-details__recall-wrapper
-            h2.room-details__recall Отзывы посетителей номера
-            .room-details__comment
-              +comment({})
-            .room-details__comment
-              +comment({name: 'Патрисия Стёклышкова', img:'../../static/source/image-patrisia48.png', days: 7, comment: 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент'})
-
-          .room-details__specification-wrapper
-            .room-details__specification
-              h2.room-details__specification-title Правила
-              ul.room-details__specification-list
-                li.room-details__specification-item Нельзя с питомцами
-                li.room-details__specification-item Без вечеринок и мероприятий
-                li.room-details__specification-item
-                  |Время прибытия — после 13:00,
-                  |а выезд до 12:00
-            .room-details__cancel
-              h2.room-details__cancel-title Отмена
-              p.room-details__cancel-info Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
-
-        .room-details__right
-          +reserve-card({})
-
-    +footer({})
+  main.room-details__main-wrapper
+    section.room-details__image-box
+      .room-details__main-image-wrapper
+        img(class='room-details__main-image',  src='../../static/source/room-details-big.jpg', alt='image-big')
+      .room-details__small-image-wrapper
+        img(class='room-details__small-image', src='../../static/source/room-details-1.jpg', alt='room image')
+        img(class='room-details__small-image', src='../../static/source/room-details-2.jpg' alt='room image')
+    section.wrapper.room-details__content-wrapper
+      .room-details__left
+        .room-details__showing-wrapper
+          .room-details__room-info
+            h2.room-details__left-info-title Сведения о номере
+            +room-info({})
+          .room-details__pie-wrapper
+            h2.room-details__left-impression-title Впечатления от номера
+            .room-details__percent-pie-wrapper
+              +percent-pie({}) 
+              ul.room-details__list
+                li.room-details__item.room-details__item_best Великолепно 
+                li.room-details__item.room-details__item_good Хорошо
+                li.room-details__item.room-details__item_passably Удовлетворительно 
+                li.room-details__item.room-details__item_poorly Разочарован
+        
+        .room-details__recall-wrapper
+          h2.room-details__recall Отзывы посетителей номера
+          .room-details__comment
+            +comment({})
+          .room-details__comment
+            +comment({name: 'Патрисия Стёклышкова', img:'../../static/source/image-patrisia48.png', days: 7, comment: 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент'})
+        .room-details__specification-wrapper
+          .room-details__specification
+            h2.room-details__specification-title Правила
+            ul.room-details__specification-list
+              li.room-details__specification-item Нельзя с питомцами
+              li.room-details__specification-item Без вечеринок и мероприятий
+              li.room-details__specification-item
+                |Время прибытия — после 13:00,
+                |а выезд до 12:00
+          .room-details__cancel
+            h2.room-details__cancel-title Отмена
+            p.room-details__cancel-info Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+      .room-details__right
+        +reserve-card({})
+  +footer({})

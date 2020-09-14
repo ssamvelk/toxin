@@ -4,27 +4,26 @@ block title
   title Cards
   
 block content
-  body.cards__body
-    include ../../static/sprite.svg
-    include ../../blocks/search-card/search-card.pug
-    include ../../blocks/reserve-card/reserve-card.pug
-    include ../../blocks/registration-card/registration-card.pug
-    include ../../blocks/inter-card/inter-card.pug
-    include ../../blocks/room-card/room-card.pug
-    include ../../blocks/date-filter/date-filter.pug
-    
-    main
-      img.cards__logo(src='../../static/source/logo-gray.png' alt='logo' width=48 height=48)
-      .cards__inner-wrapper
-        +search-card({})
-        +reserve-card({})
-        .cards__calendar-wrapper
-          +calendar({disabled: false})
-        .cards__registration-wrapper
-          +registration-card()
-        .cards__inter-wrapper
-          +inter-card()
-        .cards__rooms-wrapper
-          .cards__first-room
-            +room-card({background : '../../static/source/room-888.jpg', number : '888', isLux: true, cost: '9 990', hasArrows: true})
-          +room-card({background : '../../static/source/room-840.jpg', number : '840', cost: '9 990', likes: 65, rating: 4})
+  include ../../static/sprite.svg
+  include ../../blocks/search-card/search-card.pug
+  include ../../blocks/reserve-card/reserve-card.pug
+  include ../../blocks/registration-card/registration-card.pug
+  include ../../blocks/inter-card/inter-card.pug
+  include ../../blocks/room-card/room-card.pug
+  include ../../blocks/date-filter/date-filter.pug
+  
+  main
+    img.cards__logo(src='../../static/source/logo-gray.png' alt='logo' width=48 height=48)
+    .cards__inner-wrapper
+      +search-card({})
+      +reserve-card({})
+      .cards__calendar-wrapper
+        +calendar({disabled: false})
+      .cards__registration-wrapper
+        +registration-card()
+      .cards__inter-wrapper
+        +inter-card()
+      .cards__rooms-wrapper
+        .cards__first-room
+          +room-card({background : '../../static/source/room-888.jpg', number : '888', isLux: true, cost: '9 990', hasArrows: true})
+        +room-card({background : '../../static/source/room-840.jpg', number : '840', cost: '9 990', likes: 65, rating: 4})
