@@ -106,7 +106,7 @@
     right: 0;
   }
 
-  &__summury-info-item {
+  &__total-info-item {
     display: flex;
     justify-content: space-between;
     margin-top: rem(31);
@@ -119,7 +119,7 @@
     line-height: rem(24);
   }
 
-  &__summury-info {
+  &__total-info {
     position: relative;
     font-size: rem(20);
   

@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (value !== 0) cleanBtn.classList.remove('dropdown-company__clean_disabled');
 
-      if (value === 0) main.innerHTML = 'Cколько гостей';
+      if (value === 0) main.innerHTML = 'Сколько гостей';
       else if (value === 1) main.innerHTML = '1 гость';
       else if (value === 2) main.innerHTML = '2 гостя';
       else if (value === 3) main.innerHTML = '3 гостя';
