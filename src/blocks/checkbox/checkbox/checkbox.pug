@@ -8,7 +8,4 @@ mixin checkbox(options)
 
   .checkbox(class=`${isFirst ? 'checkbox_first' : ''}`)
     label(class='checkbox__item-name')=text
-      if (checked)
-        input(class='checkbox__item' type='checkbox' checked='checked')
-      else 
-        input(class='checkbox__item' type='checkbox')
+      input(class='checkbox__item' type='checkbox' checked=checked)

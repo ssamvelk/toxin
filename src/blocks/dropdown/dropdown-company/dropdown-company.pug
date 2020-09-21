@@ -11,7 +11,7 @@ mixin dropdown-company(options)
       text = 'Сколько гостей'
     } = options
 
-    const cleanButtonClass = (count1 > 0 || count2 > 0 || count3 > 0) ? '' : 'dropdown-company__clean_disabled'
+    const cleanButtonClass = (count1 > 0 || count2 > 0 || count3 > 0) ? '' : 'dropdown-company__clean-button_disabled'
   
   div(class=`dropdown-company js-dropdown-company ${(size === 'big') ? 'dropdown-company_size_big' : ''}`)
     .dropdown-company__open
@@ -29,5 +29,5 @@ mixin dropdown-company(options)
         span.dropdown-company__item-name младенцы
         +dropdown-buttons({id: 'js-baby', value: count3})
       li.dropdown-company__item.dropdown-company__item-footer
-        a.dropdown-company__clean.js-dropdown-company__clean(class= cleanButtonClass) Очистить
-        a.dropdown-company__apply.js-dropdown-company__apply Применить
+        a.dropdown-company__clean-button.js-dropdown-company__clean-button(class= cleanButtonClass) Очистить
+        a.dropdown-company__apply-button.js-dropdown-company__apply-button Применить

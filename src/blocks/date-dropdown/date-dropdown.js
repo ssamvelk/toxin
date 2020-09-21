@@ -17,7 +17,7 @@ $(() => {
         calendar.classList.toggle('calendar_disabled');
       }
 
-      if (target.classList.contains('calendar__apply')) {
+      if (target.classList.contains('calendar__apply-button')) {
         if (this.querySelector('.-range-from-') && this.querySelector('.-range-to-')) {
           if (this.querySelector('.date-dropdown__info')) {
             this.querySelector('.date-dropdown__info-start').innerHTML = `${dateFrom.toLocaleString('ru', dateOptions)} `;

@@ -18,10 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
       let value = Number(itemCounts[0].innerHTML) + Number(itemCounts[1].innerHTML);
       const babiesValue = Number(itemCounts[2].innerHTML);
 
-      const cleanBtn = dropdowns[i].querySelector('.js-dropdown-company__clean');
-      const applyBtn = dropdowns[i].querySelector('.js-dropdown-company__apply');
+      const cleanBtn = dropdowns[i].querySelector('.js-dropdown-company__clean-button');
+      const applyBtn = dropdowns[i].querySelector('.js-dropdown-company__apply-button');
 
-      if (value !== 0) cleanBtn.classList.remove('dropdown-company__clean_disabled');
+      if (value !== 0) cleanBtn.classList.remove('dropdown-company__clean-button_disabled');
 
       if (value === 0) main.innerHTML = 'Сколько гостей';
       else if (value === 1) main.innerHTML = '1 гость';
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         itemCounts[1].innerHTML = 0;
         itemCounts[2].innerHTML = 0;
         main.innerHTML = 'Сколько гостей';
-        this.classList.add('dropdown-company__clean_disabled');
+        this.classList.add('dropdown-company__clean-button_disabled');
       };
 
       applyBtn.onclick = function () {

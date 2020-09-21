@@ -17,18 +17,18 @@ $(() => {
 
   for (let i = 0; i < calendars.length; i += 1) {
     calendars[i].addEventListener('click', function (e) {
-      const cleanBtn = this.querySelector('.js-calendar__clean');
+      const cleanBtn = this.querySelector('.js-calendar__clean-button');
       const data = $(this.querySelector('.js-datepicker')).data('datepicker');
 
       if (data.selectedDates.length > 0) {
-        cleanBtn.classList.remove('calendar__clean_disabled');
+        cleanBtn.classList.remove('calendar__clean-button_disabled');
       } else if (data.selectedDates.length === 0) {
-        cleanBtn.classList.add('calendar__clean_disabled');
+        cleanBtn.classList.add('calendar__clean-button_disabled');
       }
 
-      if (e.target.classList.contains('calendar__clean')) {
+      if (e.target.classList.contains('calendar__clean-button')) {
         data.clear();
-        cleanBtn.classList.add('calendar__clean_disabled');
+        cleanBtn.classList.add('calendar__clean-button_disabled');
       }
     });
   }

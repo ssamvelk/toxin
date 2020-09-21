@@ -17,14 +17,14 @@ $(() => {
         calendar.classList.toggle('calendar_disabled');
       }
 
-      if (target.classList.contains('calendar__clean')) {
+      if (target.classList.contains('calendar__clean-button')) {
         if (this.querySelector('#js-date-filter__arrival') && this.querySelector('#js-date-filter__departure')) {
           this.querySelector('#js-date-filter__arrival').value = '';
           this.querySelector('#js-date-filter__departure').value = '';
         }
       }
 
-      if (target.classList.contains('calendar__apply')) {
+      if (target.classList.contains('calendar__apply-button')) {
         if (this.querySelector('.-range-from-') && this.querySelector('.-range-to-')) {
           if (this.querySelector('#js-date-filter__arrival') && this.querySelector('#js-date-filter__departure')) {
             this.querySelector('#js-date-filter__arrival').value = dateFrom.toLocaleString(

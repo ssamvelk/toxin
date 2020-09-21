@@ -47,8 +47,8 @@
     line-height: rem(15);
   }
   
-  &__clean,
-  &__apply {
+  &__clean-button,
+  &__apply-button {
     font-weight: 700;
     font-size: rem(12);
     font-family: Montserrat, Arial, sans-serif;
@@ -59,7 +59,7 @@
     appearance: button;
   }
   
-  &__clean {
+  &__clean-button {
     color: $Dark50;
 
     &_disabled {
@@ -67,7 +67,7 @@
     }
   }
 
-  &__apply {
+  &__apply-button {
     color: $Purple;
 
     &:hover {
