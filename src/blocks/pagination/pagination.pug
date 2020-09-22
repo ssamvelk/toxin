@@ -9,4 +9,8 @@ mixin pagination(options)
       +item({text: '...'})
       +item({text: 15})
       +item({isLast: true})
-    p.pagination__footer <span>1</span> – 12 из <span>100+</span> вариантов аренды
+    p.pagination__footer
+      span.pagination__current-page 1
+      = ` – 12 из ` 
+      span.pagination__all-pages 100+
+      = ` вариантов аренды`
