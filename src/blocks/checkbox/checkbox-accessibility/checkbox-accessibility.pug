@@ -20,10 +20,9 @@ mixin checkbox-accessibility(options)
   
   .checkbox-accessibility
     h3.checkbox-accessibility__title=title
-    each value, index in items
-      -const {text, title} = value
+    each val, index in items
       .checkbox-accessibility__item-wrapper
         label(class='checkbox__item-name checkbox-accessibility__item-name')
-          h3.checkbox-accessibility__item-title=title
+          h3.checkbox-accessibility__item-title=val.title
           input(class='checkbox__item checkbox-accessibility__item' type='checkbox')
-        p.checkbox-accessibility__item-info=text
+        p.checkbox-accessibility__item-info=val.text
