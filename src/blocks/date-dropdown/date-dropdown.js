@@ -8,7 +8,7 @@ $(() => {
       const { target } = e;
       const calendar = (this.querySelector('.js-calendar'));
 
-      const data = $(this.querySelector('.js-datepicker')).data('datepicker');
+      const data = $(this.querySelector('.js-calendar__datepicker')).data('datepicker');
       const dateFrom = new Date(data.selectedDates[0]);
       const dateTo = new Date(data.selectedDates[1]);
       const dateOptions = { day: 'numeric', month: 'short' };

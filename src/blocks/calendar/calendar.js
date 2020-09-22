@@ -1,7 +1,7 @@
 /* eslint-disable no-loop-func */
 /* eslint-disable no-undef */
 $(() => {
-  $('.js-datepicker').datepicker({
+  $('.js-calendar__datepicker').datepicker({
     range: true,
     minDate: new Date(),
     toggleSelected: true,
@@ -18,7 +18,7 @@ $(() => {
   for (let i = 0; i < calendars.length; i += 1) {
     calendars[i].addEventListener('click', function (e) {
       const cleanBtn = this.querySelector('.js-calendar__clean-button');
-      const data = $(this.querySelector('.js-datepicker')).data('datepicker');
+      const data = $(this.querySelector('.js-calendar__datepicker')).data('datepicker');
 
       if (data.selectedDates.length > 0) {
         cleanBtn.classList.remove('calendar__clean-button_disabled');

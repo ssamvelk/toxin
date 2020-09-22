@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         list.classList.toggle('dropdown-comfort__list_expanded');
       }
 
-      if (target.classList.contains('js-plus-button') || target.classList.contains('js-minus-button')) {
+      if (target.classList.contains('js-dropdown-buttons__button_operation_plus') || target.classList.contains('js-dropdown-buttons__button_operation_minus')) {
         main.innerHTML = `${bedroom.innerHTML} спальни, ${bed.innerHTML} кровати...`;
       }
     });

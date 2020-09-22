@@ -19,15 +19,15 @@ mixin dropdown-company(options)
     p(class=`dropdown-company__main js-dropdown-company__main ${opened ? 'dropdown-company__main_expanded' : ''}`)=text
 
     ul(class=`dropdown-company__list ${opened ? 'dropdown-company__list_expanded' : ''}`)
-      li.dropdown-company__item.dropdown-company__item-fadult 
+      li.dropdown-company__item
         span.dropdown-company__item-name взрослые
-        +dropdown-buttons({id: 'js-fadult', value: count1})
-      li.dropdown-company__item.dropdown-company__item-child 
+        +dropdown-buttons({value: count1})
+      li.dropdown-company__item
         span.dropdown-company__item-name дети
-        +dropdown-buttons({id: 'js-child', value: count2}) 
-      li.dropdown-company__item.dropdown-company__item-baby 
+        +dropdown-buttons({value: count2}) 
+      li.dropdown-company__item
         span.dropdown-company__item-name младенцы
-        +dropdown-buttons({id: 'js-baby', value: count3})
-      li.dropdown-company__item.dropdown-company__item-footer
+        +dropdown-buttons({value: count3})
+      li.dropdown-company__item.dropdown-company__item_theme_footer
         a.dropdown-company__clean-button.js-dropdown-company__clean-button(class= cleanButtonClass) Очистить
         a.dropdown-company__apply-button.js-dropdown-company__apply-button Применить

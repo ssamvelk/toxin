@@ -1,4 +1,5 @@
 .navigation {
+  text-decoration: none;
 
   &__list {
     display: flex;
@@ -8,6 +9,7 @@
     font-family: Montserrat, Arial, sans-serif;
     font-style: normal;
     list-style: none;
+    text-decoration: none;
   }
 
   &__item {

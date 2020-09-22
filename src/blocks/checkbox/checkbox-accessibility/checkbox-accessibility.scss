@@ -15,8 +15,20 @@
  
   &__item-wrapper {
     position: relative;
-    margin-bottom: 11px;
-    padding-left: 30px;
+    margin-bottom: rem(11);
+    padding-left: rem(30);
+  }
+
+  &__item-name {
+    position: relative;
+    max-width: rem(192);
+    color: $Dark50;
+    font-weight: 400;
+    font-size: rem(14);
+    font-family: Montserrat, Arial, sans-serif;
+    font-style: normal;
+    line-height: rem(20);
+    cursor: pointer;
   }
 
   &__item-title {
@@ -30,8 +42,33 @@
   
   &__item {
     position: absolute;
-    top: 13px;
-    left: -30px;
+    top: rem(13);
+    left: rem(-30);
+    width: rem(20);
+    height: rem(20);
+    border: rem(1) solid rgba(31, 32, 65, 0.25);
+    border-radius: rem(4);
+    outline: none;
+    cursor: pointer;
+    appearance: none;
+
+    &:checked {
+      border: rem(1) solid $Purple;
+  
+      &::before {
+        position: absolute;
+        top: rem(4);
+        left: rem(6);
+        width: rem(4);
+        height: rem(6);
+        border-right: rem(2) solid transparent;
+        border-bottom: rem(2) solid transparent;
+        border-image: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+        border-image-slice: 1;
+        transform: rotate(45deg);
+        content: '';
+      }
+    }
   }
 
   &__item-info {

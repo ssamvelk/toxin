@@ -9,14 +9,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (target.tagName !== 'svg') return;
 
-      if (target.classList.contains('js-minus-button')) {
+      if (target.classList.contains('js-dropdown-buttons__button_operation_minus')) {
         if (itemValue > 0) {
           itemValue -= 1;
           item.innerHTML = itemValue;
         }
       }
 
-      if (target.classList.contains('js-plus-button')) {
+      if (target.classList.contains('js-dropdown-buttons__button_operation_plus')) {
         itemValue += 1;
         item.innerHTML = itemValue;
       }

@@ -41,17 +41,13 @@
   }
   
   &_theme_white {
-    display: flex;
-    justify-content: center;
+    padding-top: rem(2);
     color: $Purple;
-    vertical-align: middle;
   
     .button__text {
-      position: relative;
-      top: rem(2);
-      display: inline-block;
+      display: block;
       width: rem(95);
-      height: rem(40);
+      margin: 0 auto;
       color: $Purple;
       line-height: rem(40);
       background-color: white;

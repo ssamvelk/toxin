@@ -6,10 +6,10 @@ mixin dropdown-buttons(options)
     } = options
   
   .dropdown-buttons.js-dropdown-buttons
-    svg(class='dropdown-buttons__button js-minus-button' cl width='30' height='31' viewBox='0 0 30 31' version='1.1' preserveAspectRatio='xMinYMin')
+    svg(class='dropdown-buttons__button js-dropdown-buttons__button_operation_minus' cl width='30' height='31' viewBox='0 0 30 31' version='1.1' preserveAspectRatio='xMinYMin')
       use(xlink:href='#img-group-')
     
     span(class='dropdown-buttons__value js-dropdown-buttons__value' id=id)=value
     
-    svg(class='dropdown-buttons__button js-plus-button' width='30' height='31' viewBox='0 0 30 31' version='1.1' preserveAspectRatio='xMinYMin')
+    svg(class='dropdown-buttons__button js-dropdown-buttons__button_operation_plus' width='30' height='31' viewBox='0 0 30 31' version='1.1' preserveAspectRatio='xMinYMin')
       use(xlink:href='#img-group+')
