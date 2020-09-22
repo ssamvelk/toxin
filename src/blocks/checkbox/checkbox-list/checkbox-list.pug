@@ -1,11 +1,16 @@
 include ../checkbox/checkbox.pug
 
 mixin checkbox-list(options)
-  - const title = options.title || 'Checkbox Buttons'
+  -
+    const {
+      title = 'Checkbox Buttons',
+      items = ['Можно курить', 'Можно с питомцами', 'Можно пригласить гостей (до 10 человек)'],
+      checkedItems = [1,2]
+    } = options
   
   .checkbox-list
     h3.checkbox-list__title= title
     .checkbox-list__items
-      +checkbox({text: 'Можно курить', id: 'smoke', isFirst: true})
-      +checkbox({text: 'Можно с питомцами', id: 'pets', checked: true})
-      +checkbox({text: 'Можно пригласить гостей (до 10 человек)', id: 'friends', checked: true})
+      each item, index in items
+        .checkbox-list__checkbox
+          +checkbox({text: item, checked: checkedItems.includes(index)})

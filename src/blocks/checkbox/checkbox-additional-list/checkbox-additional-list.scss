@@ -31,8 +31,14 @@
     top: rem(7);
     z-index: 98;
     width: rem(260);
+
+    &_disabled {
+      display: none;
+    }
   }
-  &__body_disabled {
-    display: none;
+  
+
+  &__checkbox {
+    margin: rem(10) 0;
   }
 }

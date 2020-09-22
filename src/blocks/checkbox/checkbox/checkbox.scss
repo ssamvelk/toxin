@@ -1,12 +1,7 @@
 .checkbox {
   position: relative;
   min-height: rem(20);
-  margin: rem(10) 0;
   padding-left: rem(30);
-
-  &_first {
-    margin-bottom: rem(10.56);
-  }
   
   &__item-name {
     position: relative;
