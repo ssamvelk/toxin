@@ -11,9 +11,10 @@ mixin room-info(options)
   
   section.room-info
     each value in items
+      -const {image, title, text} = value
       article.room-info__item
         .room-info__image-wrapper
-          img(class='room-info__image' src=value.image)
+          img(class='room-info__image' src=image)
         p.room-info__information
-          span(class='room-info__title')= value.title
-          span(class='room-info__text')= value.text
+          span(class='room-info__title')= title
+          span(class='room-info__text')= text
