@@ -1,6 +1,6 @@
 .text-field {
   width: rem(320);
-  height: rem(44);
+  min-height: rem(44);
   padding: 0 rem(15);
   color: $Dark25;
   font-weight: 400;

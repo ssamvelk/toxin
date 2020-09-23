@@ -9,8 +9,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: rem(44);
-    min-height: rem(44);
+    max-height: rem(44);
     padding-right: rem(7);
     padding-left: rem(15);
     color: $Dark75;
@@ -67,7 +66,7 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    height: rem(30);
+    max-height: rem(30);
     margin-bottom: rem(7);
     line-height: rem(30);
   }

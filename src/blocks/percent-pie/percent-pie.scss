@@ -1,6 +1,6 @@
 .percent-pie {
   width: rem(120);
-  height: rem(120);
+  max-height: rem(120);
 
   &__circle {
     transform: rotate(-90deg);

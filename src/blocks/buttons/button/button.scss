@@ -2,7 +2,7 @@
   position: relative;
   display: block;
   width: rem(99);
-  height: rem(44);
+  max-height: rem(44);
   color: white;
   font-weight: 700;
   font-size: rem(12);
@@ -31,17 +31,16 @@
   
   &_size_middle {
     width: rem(196);
-    height: rem(34);
     line-height: rem(34);
   }
   
   &_size_small {
     width: rem(87);
-    height: rem(34);
   }
   
   &_theme_white {
     padding-top: rem(2);
+    padding-bottom: rem(2);
     color: $Purple;
   
     .button__text {
@@ -59,7 +58,6 @@
       .button__text {
         top: rem(2);
         width: rem(83);
-        height: rem(30);
         line-height: rem(30);
         border-radius: rem(22);
       }

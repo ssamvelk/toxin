@@ -18,6 +18,21 @@
     &_active {
       color: $Dark75;
       font-weight: 700;
+
+      .navigation__item-link {
+        color: $Dark75;
+        font-weight: 700;
+      }
+
+    }
+  }
+  
+  &__item-link {
+    color: $Dark50;
+
+    &:hover {
+      color: $Dark75;
+      font-weight: 700;
     }
   }
 

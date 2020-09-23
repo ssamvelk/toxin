@@ -1,7 +1,6 @@
 .rate {
   position: relative;
   display: flex;
-  height: rem(20);
   padding-right: rem(2);
   padding-left: rem(2);
 
@@ -15,7 +14,7 @@
 
   &__item {
     width: rem(20);
-    height: rem(20);
+    min-height: rem(20);
     background: url(../static/source/star-border.svg) no-repeat;
     
     &_full {

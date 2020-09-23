@@ -1,20 +1,20 @@
 mixin item(options)
   -
     const {
-      isFirst = false,
-      isLast = false,
+      initial = false,
+      final = false,
       active = false,
       text = ''
     } = options
     
     let additionalClasses = ['pagination__item']
     
-    if (isFirst) additionalClasses.push('pagination__item_first')
-    if (isLast) additionalClasses.push('pagination__item_last')
+    if (initial) additionalClasses.push('pagination__item_initial')
+    if (final) additionalClasses.push('pagination__item_last')
     if (active) additionalClasses.push('pagination__item_active')
 
   li(class=additionalClasses)
     a(class='pagination__item-link' href='/mock-address/change-me')= text
-    if (isFirst || isLast)
+    if (initial || final)
       svg(class='pagination__arrow' width='18' height='18' viewBox='0 0 18 18'  version='1.1' preserveAspectRatio='xMinYMin')
         use(xlink:href='#img-arrow-right')

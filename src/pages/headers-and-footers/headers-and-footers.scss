@@ -26,7 +26,7 @@
   
   &__footer-wrapper_small {
     width: rem(768);
-    height: rem(367);
+    min-height: rem(367);
     margin: 0 auto;
     border: rem(1) rebeccapurple solid;
   }

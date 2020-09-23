@@ -10,14 +10,13 @@
   &__item {
     display: flex;
     width: rem(280);
-    height: rem(68);
+    min-height: rem(68);
     margin-bottom: rem(20);
     border-bottom: rem(1) solid rgba(31, 32, 65, 0.1);
   }
 
   &__image-wrapper {
     width: rem(48);
-    height: rem(48);
   }
   
   &__image {

@@ -25,7 +25,7 @@
       bottom: 0;
       left: rem(-140);
       width: rem(1440);
-      height: rem(1);
+      min-height: rem(1);
       background: $Dark25;
       content: '';
     }

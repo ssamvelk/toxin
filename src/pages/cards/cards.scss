@@ -17,33 +17,49 @@
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: rem(1440);
-    height: rem(1350);
+    min-height: rem(1350);
     margin: 0 auto;
     padding: rem(150) rem(140) 0;
-    
   }
   
+  &__search-wrapper {
+    align-self: baseline;
+  }
+  
+  &__reserve-wrapper {
+    align-self: baseline;
+  }
+  
+  &__calendar-wrapper {
+    position: relative;
+    top: rem(-24);
+    align-self: baseline;
+  }
+
   &__registration-wrapper {
     position: relative;
-    top: rem(-119);
+    top: rem(-185);
+    align-self: baseline;
   }
   
   &__inter-wrapper {
     position: relative;
-    top: rem(18);
+    top: rem(-48);
     left: rem(-25);
-    height: max-content;
+    align-self: baseline;
+    max-height: max-content;
   }
   
   &__rooms-wrapper {
     position: relative;
-    top: rem(-124);
+    top: rem(-102);
     left: rem(-50);
-    height: max-content;
+    align-self: baseline;
+    max-height: max-content;
   }
   
-  &__first-room {
-    height: max-content;
+  &__room-wrapper {
+    max-height: max-content;
     margin-bottom: rem(40);
   }
 }

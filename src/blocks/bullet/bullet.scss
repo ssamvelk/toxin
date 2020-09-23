@@ -35,7 +35,7 @@
       top: rem(5);
       left: rem(-21);
       width: rem(10.43);
-      height: rem(10);
+      min-height: rem(10);
       background-color: $Dark25;
       border-radius: rem(10);
       content: '';

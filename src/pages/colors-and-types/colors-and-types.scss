@@ -35,7 +35,7 @@
   &__rectangle {
     flex-shrink: 0;
     width: rem(70);
-    height: rem(70);
+    min-height: rem(70);
     margin-right: rem(40);
     border-radius: rem(6);
   
@@ -101,7 +101,7 @@
       top: 0;
       left: rem(-60);
       width: rem(30);
-      height: rem(30);
+      min-height: rem(30);
       color: rgba(31, 32, 65, 0.25);
       font-weight: 400;
       font-size: rem(24);
@@ -130,7 +130,7 @@
       top: 0;
       left: rem(-60);
       width: rem(30);
-      height: rem(30);
+      min-height: rem(30);
       color: rgba(31, 32, 65, 0.25);
       font-weight: 400;
       font-size: rem(19);
@@ -160,7 +160,7 @@
       top: 0;
       left: rem(-60);
       width: rem(30);
-      height: rem(30);
+      min-height: rem(30);
       color: rgba(31, 32, 65, 0.25);
       font-weight: 400;
       font-size: rem(12);
@@ -188,7 +188,7 @@
       top: 0;
       left: rem(-67);
       width: rem(30);
-      height: rem(30);
+      min-height: rem(30);
       color: rgba(31, 32, 65, 0.25);
       font-weight: 400;
       font-size: rem(14);

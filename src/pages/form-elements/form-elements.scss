@@ -15,7 +15,7 @@
   
   &__inner-wrapper {
     max-width: rem(1160);
-    height: rem(1853);
+    min-height: rem(1853);
     margin: 0 auto;
     padding-top: rem(143);
   }

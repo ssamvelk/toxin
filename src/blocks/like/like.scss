@@ -2,7 +2,7 @@
   display: flex;
   flex-shrink: 0;
   min-width: rem(40);
-  height: rem(20);
+  max-height: rem(20);
   padding-right: rem(5);
   vertical-align: middle;
   border: rem(1) solid $Dark25;

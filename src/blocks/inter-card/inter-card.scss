@@ -1,7 +1,7 @@
 .inter-card {
   position: relative;
   width: rem(380);
-  height: rem(358);
+  min-height: rem(358);
   padding: 0 rem(29);
   background: white;
   border: rem(1) solid rgba(0, 0, 0, 0.12);

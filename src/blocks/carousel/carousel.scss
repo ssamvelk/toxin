@@ -2,14 +2,13 @@
   display: flex;
   justify-content: space-between;
   width: rem(41.25);
-  height: rem(7.5);
+  min-height: rem(7.5);
   margin: 0;
   padding: 0;
   list-style: none;
 
   &__item{
     width: rem(7.5);
-    height: rem(7.5);
     border: rem(1) solid white;
     border-radius: 50%;
     box-shadow: 0 rem(5) rem(5) rgba(31, 32, 65, 0.3);

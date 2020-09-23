@@ -1,13 +1,13 @@
 .room-card {
   width: rem(270);
-  height: rem(257);
+  min-height: rem(257);
   background: #fff;
   border-radius: rem(4);
   box-shadow: 0 rem(10) rem(20) rgba(31, 32, 65, 0.05);
 
   &__image-wrapper {
     position: relative;
-    height: rem(150);
+    max-height: rem(151);
   }
 
   &__image {
@@ -38,9 +38,7 @@
 
   &__info {
     display: flex;
-    height: rem(55);
-    margin: 0 rem(20);
-    padding-top: rem(20);
+    margin: rem(20) rem(20) 0;
     border-bottom: rem(1) solid rgba(31, 32, 65, 0.1);
   }
   

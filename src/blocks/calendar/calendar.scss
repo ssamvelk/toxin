@@ -5,16 +5,17 @@
 @import '../../../node_modules/air-datepicker/src/sass/timepicker.scss';
 
 .calendar {
-  
+  position: relative;
+  z-index: 100;
+  box-shadow: 0 rem(10) rem(20) rgba(31, 32, 65, 0.05);
+
   &_disabled {
     display: none;
   }
 
   &__datepicker {
     position: relative;
-    z-index: 100;
     width: rem(320);
-    height: max-content;
     padding: 0 rem(20);
     background: white;
     border: rem(1) solid rgba(31, 32, 65, 0.25);
@@ -22,19 +23,15 @@
     border-radius: rem(4);
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
-    box-shadow: 0 rem(10) rem(20) rgba(31, 32, 65, 0.05);
   }
 
   &__footer {
-    position: absolute;
-    bottom: rem(-53);
-    left: rem(-1);
+    
     display: flex;
     justify-content: space-between;
-    width: calc(100% + 2px);
-    height: rem(53);
+    min-height: rem(53);
     padding: rem(18) rem(20) 0;
-    background-color: #fff;
+    background: #fff;
     border: rem(1) solid rgba(31, 32, 65, 0.25);
     border-top: 0;
     border-radius: rem(4);
@@ -88,7 +85,7 @@
 
 .datepicker > .datepicker--nav {
   position: relative;
-  height: rem(73);
+  min-height: rem(73);
   padding: 0 rem(3) rem(12) rem(5);
   color: $Dark;
   font-weight: 700;
@@ -101,7 +98,7 @@
 
 .datepicker--nav > .datepicker--nav-action svg {
   width: rem(17);
-  height: rem(18);
+  max-height: rem(18);
 }
 
 .datepicker--nav > .datepicker--nav-action path {
@@ -126,7 +123,7 @@
 }
 
 .datepicker--days > .datepicker--days-names {
-  height: rem(40);
+  min-height: rem(40);
   margin: 0;
 }
 
@@ -195,7 +192,7 @@
 .datepicker--cells > .datepicker--cell-day {
   position: relative;
   width: rem(40);
-  height: rem(40);
+  min-height: rem(40);
 }
 
 .datepicker--cells > .-range-from- {
@@ -208,7 +205,7 @@
     right: 0;
     z-index: -1;
     width: rem(20);
-    height: rem(40);
+    min-height: rem(40);
     background: linear-gradient(180deg,rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 259, 0.25) 100%);
     content: '';
   }
@@ -224,7 +221,7 @@
     left: 0;
     z-index: -1;
     width: rem(20);
-    height: rem(40);
+    min-height: rem(40);
     background: linear-gradient(180deg,rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 259, 0.25) 100%);
     content: '';
   }
@@ -259,7 +256,7 @@
     right: 0;
     z-index: -1;
     width: rem(20);
-    height: rem(40);
+    min-height: rem(40);
     background: linear-gradient(180deg,rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 259, 0.25) 100%);
     content: '';
   }

@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   width: rem(380);
-  height: rem(646);
+  min-height: rem(646);
   padding: 0 rem(29);
   background: #fff;
   border: rem(1) solid rgba(0, 0, 0, 0.12);
@@ -56,7 +56,6 @@
     display: flex;
     justify-content: space-between;
     width: rem(320);
-    height: rem(44);
   }
 
   &__account {

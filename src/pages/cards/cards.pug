@@ -15,8 +15,10 @@ block content
   main
     img.cards__logo(src='../../static/source/logo-gray.png' alt='logo' width=48 height=48)
     .cards__inner-wrapper
-      +search-card({})
-      +reserve-card({})
+      .cards__search-wrapper
+        +search-card({})
+      .cards__reserve-wrapper
+        +reserve-card({})
       .cards__calendar-wrapper
         +calendar({disabled: false})
       .cards__registration-wrapper
@@ -24,6 +26,6 @@ block content
       .cards__inter-wrapper
         +inter-card()
       .cards__rooms-wrapper
-        .cards__first-room
+        .cards__room-wrapper
           +room-card({background : '../../static/source/room-888.jpg', number : '888', isLux: true, cost: '9 990', hasArrows: true})
         +room-card({background : '../../static/source/room-840.jpg', number : '840', cost: '9 990', likes: 65, rating: 4})

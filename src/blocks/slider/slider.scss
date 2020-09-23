@@ -7,17 +7,13 @@
     top: rem(3);
     left: rem(-1);
     width: rem(266);
-    height: rem(6);
+    max-height: rem(6);
     margin-bottom: rem(17);
-  }
-  
-  .ui-slider-horizontal {
-    height: rem(6);
   }
   
   .ui-slider-handle.ui-corner-all.ui-state-default {
     width: rem(14);
-    height: rem(14);
+    max-height: rem(14);
     background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
     border: rem(2) solid #fff;
     border-radius: rem(10);
@@ -25,8 +21,8 @@
 
   .ui-slider-range.ui-corner-all.ui-widget-header {
     position: relative;
-    top: -1;
-    height: rem(6);
+    top: rem(-1);
+    min-height: rem(6);
     background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
   }
   
@@ -34,7 +30,6 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    height: rem(15);
     margin-bottom: rem(20);
   }
   

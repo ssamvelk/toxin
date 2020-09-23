@@ -2,11 +2,10 @@
   &__item {
     position: relative;
     width: rem(40);
-    height: rem(40);
     line-height: rem(40);
     border-radius: rem(22);
     
-    &_first {
+    &_initial {
       background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
       
       .pagination__item-link {

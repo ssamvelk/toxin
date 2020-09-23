@@ -2,12 +2,11 @@
   display: flex;
   justify-content: space-between;
   width: rem(220);
-  height: rem(20);
 
   &__item {
     position: relative;
     width: rem(20);
-    height: rem(20);
+    min-height: rem(20);
     margin-right: rem(10);
     border: rem(1) solid $Dark25;
     border-radius: rem(10);
@@ -22,7 +21,7 @@
         top: rem(3);
         left: rem(3);
         width: rem(12);
-        height: rem(12);
+        min-height: rem(12);
         background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
         border-radius: rem(10);
         content: '';
