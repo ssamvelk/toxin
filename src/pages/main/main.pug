@@ -7,12 +7,12 @@ block content
   include ../../blocks/header/header.pug
   include ../../blocks/footer/footer.pug
   
-  +header({})
+  +header({activeLink: 2})
   
-  main.main__wrapper
+  main.main
     h1.visually-hidden Toxin - Лучшие номера для вашей работы, отдыха и просто вдохновения.
-    section.wrapper
+    section.main__wrapper
       +search-card({})
-      p.slogan Лучшие номера для вашей работы, отдыха и просто вдохновения
+      p.main__slogan Лучшие номера для вашей работы, отдыха и просто вдохновения
   
   +footer({})

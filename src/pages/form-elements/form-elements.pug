@@ -24,140 +24,141 @@ block content
   include ../../blocks/room-info/room-info.pug
   include ../../blocks/subscribe/subscribe.pug
 
-  main.form-elements__wrapper
-    img.form-elements__logo(src='../../static/source/logo-gray.png' alt='logo' width=48 height=48)
-    .form-elements__inner-wrapper
+  main
+    .form-elements
+      img.form-elements__logo(src='../../static/source/logo-gray.png' alt='logo' width=48 height=48)
+      .form-elements__inner-wrapper
 
-      section.form-elements__section.form-elements__section_elements
-        .form-elements__column.form-elements__column_text-fields
-          .form-elements__text-field-default-wrapper
-            h3.form-elements__items-title text Field
-            +text-field({type: 'email'})
+        section.form-elements__section.form-elements__section_elements
+          .form-elements__column.form-elements__column_text-fields
+            .form-elements__text-field-default-wrapper
+              h3.form-elements__items-title text Field
+              +text-field({type: 'email'})
 
-          .form-elements__text-field-hover-wrapper
-            h3.form-elements__items-title.form-elements__text-field-hover-title text Field
-            +text-field({type: 'text', placeholder: 'This is pretty awesome'})
+            .form-elements__text-field-hover-wrapper
+              h3.form-elements__items-title.form-elements__text-field-hover-title text Field
+              +text-field({type: 'text', placeholder: 'This is pretty awesome'})
 
-          .form-elements__upper-dropdown-company-wrapper 
-            h3.form-elements__items-title dropdown
-            +dropdown-company({size: 'big'})
-
-          .form-elements__masked-text-field-wrapper
-            h3.form-elements__items-title masked text field
-            +text-field({type: 'date'})
-
-          .form-elements__date-filter-wrapper
-            +date-filter({arrival: 'date Dropdown',  departure: 'date Dropdown'})
-
-          .form-elements__filter-date-dropdown-wrapper
-            h3.form-elements__items-title filter date dropdown
-            +date-dropdown({})
-
-          .form-elements__subscribe-wrapper
-            h3.form-elements__items-title subscription text field
-            +subscribe({size: 'big'})
-
-        .form-elements__column.form-elements__column_checkboxes
-          .form-elements__checkbox-list-wrapper
-            +checkbox-list({})
-
-          .form-elements__radio-wrapper  
-            h3.form-elements__items-title Radio Buttons
-            .form-elements__radio-element-wrapper
-              +radio({})
-
-          .form-elements__toggle-wrapper  
-            h3.form-elements__items-title toggle
-            .form-elements__toggle-element-wrapper 
-              +toggle({checked: true})
-            .form-elements__toggle-element-wrapper.form-elements__toggle-element-wrapper_second
-              +toggle({})
-
-          .form-elements__like-wrapper
-            h3.form-elements__items-title like button
-            .form-elements__like-elements-wrapper 
-              .form-elements__like-element-wrapper 
-                +like({value: 2})
-              +like({liked: true, value: 12})
-
-
-          .form-elements__rate-wrapper
-            h3.form-elements__items-title rate button
-            .form-elements__rate-elements-wrapper
-              .form-elements__rate-element-wrapper
-                +rate({rating: 4})
-              +rate({rating: 5})
-
-        .form-elements__column
-          .form-elements__slider-wrapper
-            +slider({title : 'Range Slider'})
-
-          .form-elements__buttons-wrapper
-            h3.form-elements__items-title buttons
-            .form-elements__blue-buttons-wrapper
-              .form-elements__blue-button-wrapper
-                +button({})
-              +button({})
-
-            .form-elements__white-buttons-wrapper
-              .form-elements__white-button-wrapper
-                +button({theme: 'white'})
-              +button({theme: 'white'})
-
-            .form-elements__empty-buttons-wrapper 
-              +empty-button({})
-              +empty-button({})
-
-            .form-elements__big-button-wrapper
-              +button({size: 'big', text: 'перейти к оплате'})
-
-          .form-elements__pagination-wrapper
-            h3.form-elements__items-title.form-elements__pagination-title pagination
-            +pagination({})
-
-      section.form-elements__section.form-elements__section_dropdowns
-        .form-elements__column
-          .form-elements__dropdowns-wrapper
-            h3.form-elements__items-title.form-elements__dropdowns-title dropdown
-            +dropdown-comfort({count1: 2, count2: 2})
-            .form-elements__dropdown-wrapper
+            .form-elements__upper-dropdown-company-wrapper 
               h3.form-elements__items-title dropdown
-              +dropdown-comfort({opened: true, count1: 2, count2: 2})
+              +dropdown-company({size: 'big'})
 
-        .form-elements__column
-          .form-elements__dropdown-company-wrapper  
-            h3.form-elements__items-title dropdown
-            +dropdown-company({size: 'big', opened: true})
+            .form-elements__masked-text-field-wrapper
+              h3.form-elements__items-title masked text field
+              +text-field({type: 'date'})
 
-        .form-elements__column
-          .form-elements__dropdown-company-filled-wrapper
-            h3.form-elements__items-title.form-elements__dropdown-company-filled-title dropdown
-            +dropdown-company({size: 'big', opened: true, count1: 2, count2: 1, text: '3 гостя'})
+            .form-elements__date-filter-wrapper
+              +date-filter({arrival: 'date Dropdown',  departure: 'date Dropdown'})
 
-      section.form-elements__section.form-elements__section_checkboxes
-        .form-elements__column
-          .form-elements__checkbox-additional-list-wrapper
-            +checkbox-additional-list({title: 'expandable checkbox list'})
+            .form-elements__filter-date-dropdown-wrapper
+              h3.form-elements__items-title filter date dropdown
+              +date-dropdown({})
 
-          .form-elements__opened-checkbox-additional-list-wrapper
-            +checkbox-additional-list({opened: true, title: 'expandable checkbox list'})
+            .form-elements__subscribe-wrapper
+              h3.form-elements__items-title subscription text field
+              +subscribe({size: 'big'})
 
-        .form-elements__column
-          .form-elements__checkbox-accessibility-wrapper
-            +checkbox-accessibility({title: 'Rich Checkbox Buttons'})
+          .form-elements__column.form-elements__column_checkboxes
+            .form-elements__checkbox-list-wrapper
+              +checkbox-list({})
 
-        .form-elements__column
-          .form-elements__bullet-wrapper
-            +bullet({})
+            .form-elements__radio-wrapper  
+              h3.form-elements__items-title Radio Buttons
+              .form-elements__radio-element-wrapper
+                +radio({})
 
-      section.form-elements__section.form-elements__section_rest
-        .form-elements__column
-          +room-info({
-            items: [
-              {title: 'Комфорт', text: 'Шумопоглощающие стены', image: '../../static/source/emoticon.png'},
-              {title: 'Удобство', text: 'Окно в каждой из спален', image: '../../static/source/city.png'}
-          ]})
+            .form-elements__toggle-wrapper  
+              h3.form-elements__items-title toggle
+              .form-elements__toggle-element-wrapper 
+                +toggle({checked: true})
+              .form-elements__toggle-element-wrapper.form-elements__toggle-element-wrapper_second
+                +toggle({})
 
-        .form-elements__column
-          .form-elements__comment-wrapper
-            +comment({})
+            .form-elements__like-wrapper
+              h3.form-elements__items-title like button
+              .form-elements__like-elements-wrapper 
+                .form-elements__like-element-wrapper 
+                  +like({value: 2})
+                +like({liked: true, value: 12})
+
+
+            .form-elements__rate-wrapper
+              h3.form-elements__items-title rate button
+              .form-elements__rate-elements-wrapper
+                .form-elements__rate-element-wrapper
+                  +rate({rating: 4})
+                +rate({rating: 5})
+
+          .form-elements__column
+            .form-elements__slider-wrapper
+              +slider({title : 'Range Slider'})
+
+            .form-elements__buttons-wrapper
+              h3.form-elements__items-title buttons
+              .form-elements__blue-buttons-wrapper
+                .form-elements__blue-button-wrapper
+                  +button({})
+                +button({})
+
+              .form-elements__white-buttons-wrapper
+                .form-elements__white-button-wrapper
+                  +button({theme: 'white'})
+                +button({theme: 'white'})
+
+              .form-elements__empty-buttons-wrapper 
+                +empty-button({})
+                +empty-button({})
+
+              .form-elements__big-button-wrapper
+                +button({size: 'big', text: 'перейти к оплате'})
+
+            .form-elements__pagination-wrapper
+              h3.form-elements__items-title.form-elements__pagination-title pagination
+              +pagination({})
+
+        section.form-elements__section.form-elements__section_dropdowns
+          .form-elements__column
+            .form-elements__dropdowns-wrapper
+              h3.form-elements__items-title.form-elements__dropdowns-title dropdown
+              +dropdown-comfort({count1: 2, count2: 2})
+              .form-elements__dropdown-wrapper
+                h3.form-elements__items-title dropdown
+                +dropdown-comfort({opened: true, count1: 2, count2: 2})
+
+          .form-elements__column
+            .form-elements__dropdown-company-wrapper  
+              h3.form-elements__items-title dropdown
+              +dropdown-company({size: 'big', opened: true})
+
+          .form-elements__column
+            .form-elements__dropdown-company-filled-wrapper
+              h3.form-elements__items-title.form-elements__dropdown-company-filled-title dropdown
+              +dropdown-company({size: 'big', opened: true, count1: 2, count2: 1, text: '3 гостя'})
+
+        section.form-elements__section.form-elements__section_checkboxes
+          .form-elements__column
+            .form-elements__checkbox-additional-list-wrapper
+              +checkbox-additional-list({title: 'expandable checkbox list'})
+
+            .form-elements__opened-checkbox-additional-list-wrapper
+              +checkbox-additional-list({opened: true, title: 'expandable checkbox list'})
+
+          .form-elements__column
+            .form-elements__checkbox-accessibility-wrapper
+              +checkbox-accessibility({title: 'Rich Checkbox Buttons'})
+
+          .form-elements__column
+            .form-elements__bullet-wrapper
+              +bullet({})
+
+        section.form-elements__section.form-elements__section_rest
+          .form-elements__column
+            +room-info({
+              items: [
+                {title: 'Комфорт', text: 'Шумопоглощающие стены', image: '../../static/source/emoticon.png'},
+                {title: 'Удобство', text: 'Окно в каждой из спален', image: '../../static/source/city.png'}
+            ]})
+
+          .form-elements__column
+            .form-elements__comment-wrapper
+              +comment({})

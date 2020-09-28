@@ -1,9 +1,7 @@
 .demo-page {
-  &__wrapper {
-    width: 100vw;
-    max-width: rem(1440);
-    padding: rem(50) rem(50) 0;
-  }
+  width: 100vw;
+  max-width: rem(1440);
+  padding: rem(50) rem(50) 0;
 
   &__list {
     min-width: rem(380);

@@ -1,12 +1,11 @@
 .sign-in {
-  &__wrapper{
-    min-width: rem(1160);
-    background: url('../static/source/registration-background.jpg') no-repeat 50% rem(-70), white;
-  
-    @media screen and (max-width: 1200px){
-      min-width: 100%;
-    }
+  min-width: rem(1160);
+  background: url('../static/source/registration-background.jpg') no-repeat 50% rem(-70), white;
+
+  @media screen and (max-width: 1200px){
+    min-width: 100%;
   }
+
 
   &__inner-wrapper {
     position: relative;

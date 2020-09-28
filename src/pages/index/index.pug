@@ -11,8 +11,9 @@ block content
       'form-elements': 'Form Elements'
     }
     
-  main.demo-page__wrapper
-    ul.demo-page__list
-      each value, index in linksArray
-        li.demo-page__item
-          a.demo-page__link(href=`${index}.html`)= value
+  main
+    .demo-page
+      ul.demo-page__list
+        each value, index in linksArray
+          li.demo-page__item
+            a.demo-page__link(href=`${index}.html`)= value

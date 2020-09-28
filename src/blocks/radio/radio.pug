@@ -1,7 +1,7 @@
 mixin radio(options)
 	.radio
-		label(class='radio__item-name' ) Мужчина
-			input(class='radio__item' type='radio' name='radio' checked)
+		label(class='radio__item-name radio__item-name_checked js-radio__item-name_men' data-gender='men') Мужчина
+			input(class='radio__item js-radio__item_men' type='radio' name='radio' data-gender='men' checked)
 
-		label(class='radio__item-name' ) Женщина
-			input(class='radio__item' type='radio' name='radio')
+		label(class='radio__item-name js-radio__item-name_women' data-gender='women') Женщина
+			input(class='radio__item js-radio__item_men' type='radio' name='radio' data-gender='women')

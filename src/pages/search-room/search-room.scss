@@ -1,14 +1,12 @@
 .search {
-  &__main-wrapper {
-    position: relative;
-    min-width: rem(1160);
-    background: white;
-  
-    @media screen and (max-width: 1200px){
-      width: 100vw;
-      min-width: rem(380);
-      padding: 0 rem(10);
-    }
+  position: relative;
+  min-width: rem(1160);
+  background: white;
+
+  @media screen and (max-width: 1200px){
+    width: 100vw;
+    min-width: rem(380);
+    padding: 0 rem(10);
   }
   
   &__inner-wrapper {

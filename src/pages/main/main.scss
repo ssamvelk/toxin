@@ -1,4 +1,4 @@
-.main__wrapper {
+.main {
   min-width: rem(1160);
   max-width: rem(1440);
   margin: 0 auto;
@@ -9,52 +9,50 @@
     min-width: rem(380);
     padding: 0 rem(50);
   }
-}
 
-.wrapper {
-  position: relative;
-  width: rem(1160);
-  min-height: rem(830);
-  margin: 0 auto;
-  padding-top: rem(70);
-  padding-bottom: rem(18);
-
-  @media screen and (max-width: 1200px){
-    width: 100%;
-    min-width: rem(380);
-    max-width: rem(1160);
-    min-height: rem(420);
-  }
-
-  @media screen and (max-width: 950px){
-    padding-top: rem(25);
-  }
-}
-
-.slogan {
-  position: absolute;
-  right: rem(-5.5);
-  bottom: rem(20);
-  width: rem(297);
-  color: $Dark75;
-  font-weight: 400;
-  font-size: rem(14);
-  font-family: Montserrat, Arial, sans-serif;
-  font-style: normal;
-  line-height: rem(24);
-  text-align: right;
-
-  @media screen and (max-width: 1200px){
-    position: static;
-    margin-top: 22.5vw;
-    margin-left: auto;
-    
-  }
+  &__wrapper {
+    position: relative;
+    width: rem(1160);
+    min-height: rem(830);
+    margin: 0 auto;
+    padding-top: rem(70);
+    padding-bottom: rem(18);
   
-  @media screen and (max-width: 950px){
-    margin-top: 22.5vw;
-    margin-left: auto;
+    @media screen and (max-width: 1200px){
+      width: 100%;
+      min-width: rem(380);
+      max-width: rem(1160);
+      min-height: rem(420);
+    }
+  
+    @media screen and (max-width: 950px){
+      padding-top: rem(25);
+    }
+  }
+
+  &__slogan {
+    position: absolute;
+    right: rem(-5.5);
+    bottom: rem(20);
+    width: rem(297);
+    color: $Dark75;
+    font-weight: 400;
+    font-size: rem(14);
+    font-family: Montserrat, Arial, sans-serif;
+    font-style: normal;
+    line-height: rem(24);
+    text-align: right;
+  
+    @media screen and (max-width: 1200px){
+      position: static;
+      margin-top: 22.5vw;
+      margin-left: auto;
+    }
     
+    @media screen and (max-width: 950px){
+      margin-top: 22.5vw;
+      margin-left: auto;
+    }
   }
 }
 
