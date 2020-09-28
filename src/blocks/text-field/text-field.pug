@@ -7,7 +7,8 @@ mixin text-field(options)
       } = options
     
     const size = options.size ? `text-field_size_${options.size}` : ''
-    
+    const pattern='(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)[0-9][0-9]'
+
     let {type = 'text'} = options
     let placeHolder = ''
     let className = ''
@@ -25,10 +26,4 @@ mixin text-field(options)
       className += `text-field__date-filter`
     }
 
-  if (options.type == 'date' || options.type == 'date-filter')
-    if (readonly)
-      input(readonly class=`text-field ${className}` id=id type=`${type}` placeholder=placeHolder pattern='(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)[0-9][0-9]' )    
-    else 
-      input(class=`text-field ${className}` id=id type=`${type}` placeholder=placeHolder pattern='(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)[0-9][0-9]' )
-  else
-    input(class=`text-field ${className} ${size}` id=id type=`${type}` placeholder=placeHolder)
+  input(readonly=readonly class=`text-field ${className} ${size}` id=id type=`${type}` placeholder=placeHolder pattern=pattern)
