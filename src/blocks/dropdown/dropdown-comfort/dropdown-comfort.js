@@ -1,25 +1,46 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const dropdowns = document.querySelectorAll('.js-dropdown-comfort');
+window.addEventListener('load', () => {
+  class DropdownComfort {
+    constructor() {
+      this.dropdownComfortList = this.findAll();
+      this.bindEventListeners();
+    }
 
-  for (let i = 0; i < dropdowns.length; i += 1) {
-    const main = dropdowns[i].querySelector('.dropdown-comfort__main');
-    const list = dropdowns[i].querySelector('.dropdown-comfort__list');
+    findAll() {
+      const dropdownComfortList = [];
+      const dropdownComfort = document.querySelectorAll('.js-dropdown-comfort');
+      dropdownComfortList.push(...dropdownComfort);
+      return dropdownComfortList;
+    }
 
-    const bedroom = dropdowns[i].querySelector('#js-bedroom');
-    const bed = dropdowns[i].querySelector('#js-bed');
-    const bathroom = dropdowns[i].querySelector('#js-bathroom');
+    bindEventListeners() {
+      this.dropdownComfortList.forEach((element) => {
+        element.addEventListener('click', this.handleDropdownComfort);
+      });
+    }
 
-    dropdowns[i].addEventListener('click', (e) => {
-      const { target } = e;
+    handleDropdownComfort(e) {
+      const { target, currentTarget } = e;
+
+      const main = currentTarget.querySelector('.dropdown-comfort__main');
+      const list = currentTarget.querySelector('.dropdown-comfort__list');
+
+      const bedroom = currentTarget.querySelector('#js-bedroom');
+      const bed = currentTarget.querySelector('#js-bed');
+      const bathroom = currentTarget.querySelector('#js-bathroom');
 
       if (target.classList.contains('dropdown-open')) {
         main.classList.toggle('dropdown-comfort__main_expanded');
         list.classList.toggle('dropdown-comfort__list_expanded');
       }
 
-      if (target.classList.contains('js-dropdown-buttons__button_operation_plus') || target.classList.contains('js-dropdown-buttons__button_operation_minus')) {
+      const isOperationButton = target.classList.contains('js-dropdown-buttons__button_operation_plus') || target.classList.contains('js-dropdown-buttons__button_operation_minus');
+      
+      if (isOperationButton) {
         main.innerHTML = `${bedroom.innerHTML} спальни, ${bed.innerHTML} кровати...`;
       }
-    });
+    }
   }
+
+  const dropdownComfort = new DropdownComfort();
+
 });

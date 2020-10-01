@@ -13,7 +13,7 @@ mixin date-dropdown(options)
          
     p.date-dropdown__info
       span.date-dropdown__info-start=start 
-      |- 
+      =' - ' 
       span.date-dropdown__info-end=end
     .date-dropdown__calendar
       +calendar({disabled: true})

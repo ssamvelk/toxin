@@ -1,37 +1,58 @@
 const $ = require('jquery');
 
-$(() => {
-  const filterDate = document.querySelectorAll('.js-date-filter');
+window.addEventListener('load', () => {
+  class DateFilter {
+    constructor() {
+      this.dateFilterList = this.findItems();
+      this.bindEventListeners();
+    }
 
-  for (let i = 0; i < filterDate.length; i += 1) {
-    filterDate[i].addEventListener('click', function (e) {
-      const { target } = e;
-      const calendar = (this.querySelector('.js-calendar'));
+    findItems() {
+      const dateFilterList = [];
+      const dateFilter = document.querySelectorAll('.js-date-filter');
+      dateFilterList.push(...dateFilter);
+      return dateFilterList;
+    }
 
-      const data = $(this.querySelector('.js-calendar__datepicker')).data('datepicker');
-      const dateFrom = new Date(data.selectedDates[0]);
-      const dateTo = new Date(data.selectedDates[1]);
+    bindEventListeners() {
+      this.dateFilterList.forEach((element) => {
+        element.addEventListener('click', this.handleDateFilter);
+      });
+    }
+
+    handleDateFilter(e) {
+      const { target, currentTarget } = e;
+      const calendar = (currentTarget.querySelector('.js-calendar'));
+
+      const $data = $(currentTarget.querySelector('.js-calendar__datepicker')).data('datepicker');
+      const dateFrom = new Date($data.selectedDates[0]);
+      const dateTo = new Date($data.selectedDates[1]);
       const dateOptions = { day: 'numeric', month: 'numeric', year: 'numeric' };
+
+      const arrival = currentTarget.querySelector('#js-date-filter__arrival');
+      const departure = currentTarget.querySelector('#js-date-filter__departure');
+      const hasRangeFields = arrival && departure;
+      const isRangeSelected = currentTarget.querySelector('.-range-from-') && currentTarget.querySelector('.-range-to-');
 
       if (target.classList.contains('date-filter__arrow')) {
         calendar.classList.toggle('calendar_disabled');
       }
 
       if (target.classList.contains('calendar__clean-button')) {
-        if (this.querySelector('#js-date-filter__arrival') && this.querySelector('#js-date-filter__departure')) {
-          this.querySelector('#js-date-filter__arrival').value = '';
-          this.querySelector('#js-date-filter__departure').value = '';
+        if (hasRangeFields) {
+          arrival.value = '';
+          departure.value = '';
         }
       }
 
       if (target.classList.contains('calendar__apply-button')) {
-        if (this.querySelector('.-range-from-') && this.querySelector('.-range-to-')) {
-          if (this.querySelector('#js-date-filter__arrival') && this.querySelector('#js-date-filter__departure')) {
-            this.querySelector('#js-date-filter__arrival').value = dateFrom.toLocaleString(
+        if (isRangeSelected) {
+          if (hasRangeFields) {
+            arrival.value = dateFrom.toLocaleString(
               'ru',
               dateOptions,
             );
-            this.querySelector('#js-date-filter__departure').value = dateTo.toLocaleString(
+            departure.value = dateTo.toLocaleString(
               'ru',
               dateOptions,
             );
@@ -39,6 +60,8 @@ $(() => {
         }
         calendar.classList.toggle('calendar_disabled');
       }
-    });
+    }
   }
+
+  const dateFilter = new DateFilter();
 });

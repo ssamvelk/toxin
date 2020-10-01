@@ -1,25 +1,40 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const dropdowns = document.querySelectorAll('.js-dropdown-company');
+window.addEventListener('load', () => {
+  class DropdownCompany {
+    constructor() {
+      this.dropdownCompanyList = this.findAll();
+      this.bindEventListeners();
+    }
 
+    findAll() {
+      const dropdownCompanyList = [];
+      const dropdownCompany = document.querySelectorAll('.js-dropdown-company');
+      dropdownCompanyList.push(...dropdownCompany);
+      return dropdownCompanyList;
+    }
 
-  for (let i = 0; i < dropdowns.length; i += 1) {
-    const main = dropdowns[i].querySelector('.dropdown-company__main');
-    const list = dropdowns[i].querySelector('.dropdown-company__list');
+    bindEventListeners() {
+      this.dropdownCompanyList.forEach((element) => {
+        element.addEventListener('click', this.handleDropdownCompany);
+      });
+    }
 
-    dropdowns[i].addEventListener('click', (e) => {
-      const { target } = e;
+    handleDropdownCompany(e) {
+      const { target, currentTarget } = e;
 
+      const main = currentTarget.querySelector('.dropdown-company__main');
+      const list = currentTarget.querySelector('.dropdown-company__list');
+      
       if (target.classList.contains('dropdown-open')) {
         main.classList.toggle('dropdown-company__main_expanded');
         list.classList.toggle('dropdown-company__list_expanded');
       }
 
-      const itemCounts = dropdowns[i].querySelectorAll('.dropdown-buttons__value');
+      const itemCounts = currentTarget.querySelectorAll('.dropdown-buttons__value');
       let value = Number(itemCounts[0].innerHTML) + Number(itemCounts[1].innerHTML);
       const babiesValue = Number(itemCounts[2].innerHTML);
 
-      const cleanBtn = dropdowns[i].querySelector('.js-dropdown-company__clean-button');
-      const applyBtn = dropdowns[i].querySelector('.js-dropdown-company__apply-button');
+      const cleanBtn = currentTarget.querySelector('.js-dropdown-company__clean-button');
+      const applyBtn = currentTarget.querySelector('.js-dropdown-company__apply-button');
 
       if (value !== 0) cleanBtn.classList.remove('dropdown-company__clean-button_disabled');
 
@@ -46,6 +61,9 @@ document.addEventListener('DOMContentLoaded', () => {
         main.classList.toggle('dropdown-company__main_expanded');
         list.classList.toggle('dropdown-company__list_expanded');
       };
-    });
+    };
+
   }
+
+  const dropdownCompany = new DropdownCompany();
 });

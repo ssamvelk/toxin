@@ -1,7 +1,6 @@
 import '../scss/main.scss';
 
 import '../blocks/dropdown/dropdown';
-import '../blocks/dropdown/dropdown-buttons/dropdown-buttons';
 import '../blocks/calendar/calendar';
 import '../blocks/date-filter/date-filter';
 import '../blocks/date-dropdown/date-dropdown';

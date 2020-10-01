@@ -1,15 +1,35 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const likes = document.querySelectorAll('.js-like');
+window.addEventListener('load', () => {
+  class Like {
+    constructor() {
+      this.likeList = this.findAll();
+      this.bindEventListeners();
+    }
 
-  for (let i = 0; i < likes.length; i += 1) {
-    likes[i].addEventListener('click', function () {
-      let value = +this.querySelector('.like__value').innerHTML;
+    findAll() {
+      const likeList = [];
+      const like = document.querySelectorAll('.js-like');
+      likeList.push(...like);
+      return likeList;
+    }
 
-      if (this.classList.contains('like_liked')) value -= 1;
+    bindEventListeners() {
+      this.likeList.forEach((element) => {
+        element.addEventListener('click', this.handleLike);
+      });
+    }
+
+    handleLike(e) {
+      const { target, currentTarget } = e;
+      const valueField = currentTarget.querySelector('.like__value');
+
+      let value = +valueField.innerHTML;
+
+      if (currentTarget.classList.contains('like_liked')) value -= 1;
       else value += 1;
 
-      this.querySelector('.like__value').innerHTML = value;
-      this.classList.toggle('like_liked');
-    });
+      valueField.innerHTML = value;
+      currentTarget.classList.toggle('like_liked');
+    }
   }
+  const like = new Like();
 });

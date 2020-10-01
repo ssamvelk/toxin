@@ -1,21 +1,35 @@
 const $ = require('jquery');
 
-$(() => {
-  const changeValue = function () {
-    const $rangeStart = $('#slider').slider('values', 0);
-    const $rangeEnd = $('#slider').slider('values', 1);
+window.addEventListener('load', () => {
+  class Slider {
+    constructor() {
+      this.sliderList = this.findAll();
+      this.init();
+    }
 
-    $('#js-range-start').html($rangeStart);
-    $('#js-range-end').html($rangeEnd);
-  };
+    findAll() {
+      return $('.js-slider');
+    }
 
-  $('#slider').slider({
-    range: true,
-    min: 0,
-    max: 15000,
-    values: [5000, 10000],
-    step: 50,
-    slide: changeValue,
-    change: changeValue,
-  });
+    init() {
+      this.sliderList.find('#slider').slider({
+        range: true,
+        min: 0,
+        max: 15000,
+        values: [5000, 10000],
+        step: 50,
+        slide: this.changeValue,
+        change: this.changeValue,
+      });
+    }
+
+    changeValue(e) {
+      const $rangeStart = $('#slider').slider('values', 0);
+      const $rangeEnd = $('#slider').slider('values', 1);
+      $('#js-range-start').html($rangeStart);
+      $('#js-range-end').html($rangeEnd);
+    }
+  }
+
+  const slider = new Slider();
 });

@@ -1,10 +1,27 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const dropdownItems = document.querySelectorAll('.js-dropdown-buttons');
+window.addEventListener('load', () => {
+  class DropDownButtons {
+    constructor() {
+      this.dropDownButtonsList = this.findItems();
+      this.bindEventListeners();
+    }
 
-  for (let i = 0; i < dropdownItems.length; i += 1) {
-    dropdownItems[i].addEventListener('click', function (event) {
-      const { target } = event;
-      const item = this.querySelector('.js-dropdown-buttons__value');
+    findItems() {
+      const dropDownButtonsList = [];
+      const dropDownButtons = document.querySelectorAll('.js-dropdown-buttons');
+      dropDownButtonsList.push(...dropDownButtons);
+      return dropDownButtonsList;
+    }
+
+    bindEventListeners() {
+      this.dropDownButtonsList.forEach((element) => {
+        element.addEventListener('click', this.handleDropDownButtons);
+      });
+    }
+
+    handleDropDownButtons(e) {
+      const { target, currentTarget } = e;
+
+      const item = currentTarget.querySelector('.js-dropdown-buttons__value');
       let itemValue = +item.innerHTML;
 
       if (target.tagName !== 'svg') return;
@@ -20,6 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
         itemValue += 1;
         item.innerHTML = itemValue;
       }
-    });
+    }
   }
+
+  const dropDownButtons = new DropDownButtons();
 });

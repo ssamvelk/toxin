@@ -1,11 +1,26 @@
 window.addEventListener('load', () => {
-  const checkboxAdditionalList = document.querySelectorAll(
-    '.js-checkbox-additional-list',
-  );
+  class CheckboxAdditionalList {
+    constructor() {
+      this.checkboxAdditionalList = this.findItems();
+      this.bindEventListeners();
+    }
 
-  for (let i = 0; i < checkboxAdditionalList.length; i += 1) {
-    checkboxAdditionalList[i].addEventListener('click', function (event) {
-      const { target } = event;
+    findItems() {
+      const arrayCheckboxAdditionalList = [];
+      const checkboxAdditionalLists = document.querySelectorAll('.js-checkbox-additional-list');
+      arrayCheckboxAdditionalList.push(...checkboxAdditionalLists);
+      return arrayCheckboxAdditionalList;
+    }
+
+    bindEventListeners() {
+      this.checkboxAdditionalList.forEach((element) => {
+        element.addEventListener('click', this.openHandler);
+      });
+    }
+
+    openHandler(e) {
+      const { target } = e;
+
       if (target.classList.contains('checkbox-additional-list__arrow')) {
         this.querySelector('.checkbox-additional-list__arrow').classList.toggle(
           'checkbox-additional-list__arrow_opened',
@@ -15,6 +30,8 @@ window.addEventListener('load', () => {
           'checkbox-additional-list__body_disabled',
         );
       }
-    });
+    }
   }
+
+  const checkboxAdditionalList = new CheckboxAdditionalList();
 });

@@ -1,18 +1,36 @@
 window.addEventListener('load', () => {
-  const carousels = document.querySelectorAll('.js-carousel');
+  class Carousel {
+    constructor() {
+      this.carousels = this.findAll();
+      this.bindEventListeners();
+    }
 
-  if (carousels.length > 0) {
-    for (let i = 0; i < carousels.length; i += 1) {
-      carousels[i].addEventListener('click', (e) => {
-        if (e.target.classList.contains('carousel__item')) {
-          const localTarget = e.target;
-          if (!localTarget.classList.contains('carousel__item_active')) {
-            const localActiveTarget = e.currentTarget.querySelector('.carousel__item_active');
-            localActiveTarget.classList.remove('carousel__item_active');
-            localTarget.classList.add('carousel__item_active');
-          }
-        }
+    findAll() {
+      const arrayCarousels = [];
+      const carousels = document.querySelectorAll('.js-carousel');
+      arrayCarousels.push(...carousels);
+      return arrayCarousels;
+    }
+
+    bindEventListeners() {
+      this.carousels.forEach((element) => {
+        element.addEventListener('click', this.changeActiveItem);
       });
     }
+
+    changeActiveItem(e) {
+      const { target, currentTarget } = e;
+
+      if (target.classList.contains('carousel__item')) {
+        if (!target.classList.contains('carousel__item_active')) {
+          const activeTarget = currentTarget.querySelector('.carousel__item_active');
+          activeTarget.classList.remove('carousel__item_active');
+          target.classList.add('carousel__item_active');
+        }
+      }
+    }
   }
+
+  // eslint-disable-next-line no-unused-vars
+  const carousel = new Carousel();
 });
