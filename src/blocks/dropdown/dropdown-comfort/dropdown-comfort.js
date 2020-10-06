@@ -2,7 +2,7 @@ window.addEventListener('load', () => {
   class DropdownComfort {
     constructor() {
       this.dropdownComfortList = this.findAll();
-      this.bindEventListeners();
+      this.handleDropdownComfortBindEventListeners();
     }
 
     findAll() {
@@ -12,7 +12,7 @@ window.addEventListener('load', () => {
       return dropdownComfortList;
     }
 
-    bindEventListeners() {
+    handleDropdownComfortBindEventListeners() {
       this.dropdownComfortList.forEach((element) => {
         element.addEventListener('click', this.handleDropdownComfort);
       });

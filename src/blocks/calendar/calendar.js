@@ -5,7 +5,7 @@ window.addEventListener('load', () => {
     constructor() {
       this.calendars = this.findItems();
       this.initCalendars();
-      this.bindEventListeners();
+      this.handleCalendarBindEventListeners();
     }
 
     findItems() {
@@ -15,7 +15,7 @@ window.addEventListener('load', () => {
       return arrayCalendars;
     }
 
-    bindEventListeners() {
+    handleCalendarBindEventListeners() {
       this.calendars.forEach((element) => {
         element.addEventListener('click', this.handleCleanButton);
       });

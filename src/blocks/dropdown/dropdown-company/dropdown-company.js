@@ -2,7 +2,7 @@ window.addEventListener('load', () => {
   class DropdownCompany {
     constructor() {
       this.dropdownCompanyList = this.findAll();
-      this.bindEventListeners();
+      this.handleDropdownCompanyBindEventListeners();
     }
 
     findAll() {
@@ -12,7 +12,7 @@ window.addEventListener('load', () => {
       return dropdownCompanyList;
     }
 
-    bindEventListeners() {
+    handleDropdownCompanyBindEventListeners() {
       this.dropdownCompanyList.forEach((element) => {
         element.addEventListener('click', this.handleDropdownCompany);
       });

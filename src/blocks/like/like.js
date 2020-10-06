@@ -2,7 +2,7 @@ window.addEventListener('load', () => {
   class Like {
     constructor() {
       this.likeList = this.findAll();
-      this.bindEventListeners();
+      this.handleLikeBindEventListeners();
     }
 
     findAll() {
@@ -12,7 +12,7 @@ window.addEventListener('load', () => {
       return likeList;
     }
 
-    bindEventListeners() {
+    handleLikeBindEventListeners() {
       this.likeList.forEach((element) => {
         element.addEventListener('click', this.handleLike);
       });

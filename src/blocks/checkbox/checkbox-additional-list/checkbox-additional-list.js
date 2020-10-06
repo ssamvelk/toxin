@@ -2,7 +2,7 @@ window.addEventListener('load', () => {
   class CheckboxAdditionalList {
     constructor() {
       this.checkboxAdditionalList = this.findItems();
-      this.bindEventListeners();
+      this.handleCheckboxAdditionalListBindEventListeners();
     }
 
     findItems() {
@@ -12,7 +12,7 @@ window.addEventListener('load', () => {
       return arrayCheckboxAdditionalList;
     }
 
-    bindEventListeners() {
+    handleCheckboxAdditionalListBindEventListeners() {
       this.checkboxAdditionalList.forEach((element) => {
         element.addEventListener('click', this.openHandler);
       });

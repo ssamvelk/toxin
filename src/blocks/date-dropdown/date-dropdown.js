@@ -4,7 +4,7 @@ window.addEventListener('load', () => {
   class DateDropdown {
     constructor() {
       this.dateDropdownList = this.findItems();
-      this.bindEventListeners();
+      this.handleDateDropdownBindEventListeners();
     }
 
     findItems() {
@@ -14,7 +14,7 @@ window.addEventListener('load', () => {
       return dateDropdownList;
     }
 
-    bindEventListeners() {
+    handleDateDropdownBindEventListeners() {
       this.dateDropdownList.forEach((element) => {
         element.addEventListener('click', this.handleDateDropdown);
       });

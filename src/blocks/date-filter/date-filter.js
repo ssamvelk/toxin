@@ -4,7 +4,7 @@ window.addEventListener('load', () => {
   class DateFilter {
     constructor() {
       this.dateFilterList = this.findItems();
-      this.bindEventListeners();
+      this.handleDateFilterBindEventListeners();
     }
 
     findItems() {
@@ -14,7 +14,7 @@ window.addEventListener('load', () => {
       return dateFilterList;
     }
 
-    bindEventListeners() {
+    handleDateFilterBindEventListeners() {
       this.dateFilterList.forEach((element) => {
         element.addEventListener('click', this.handleDateFilter);
       });

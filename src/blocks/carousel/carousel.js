@@ -2,7 +2,7 @@ window.addEventListener('load', () => {
   class Carousel {
     constructor() {
       this.carousels = this.findAll();
-      this.bindEventListeners();
+      this.handleCarouselBindEventListeners();
     }
 
     findAll() {
@@ -12,7 +12,7 @@ window.addEventListener('load', () => {
       return arrayCarousels;
     }
 
-    bindEventListeners() {
+    handleCarouselBindEventListeners() {
       this.carousels.forEach((element) => {
         element.addEventListener('click', this.changeActiveItem);
       });
