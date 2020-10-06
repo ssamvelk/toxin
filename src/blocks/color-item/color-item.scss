@@ -1,0 +1,51 @@
+.color-item {
+  display: flex;
+  min-width: rem(270);
+
+  &__rectangle {
+    flex-shrink: 0;
+    width: rem(70);
+    min-height: rem(70);
+    margin-right: rem(40);
+    border-radius: rem(6);
+  
+    &_theme_dark-100 {
+      background-color: #1F2041;
+    }
+    &_theme_dark-75 {
+      background-color: rgba(31, 32, 65, 0.75);
+    }
+    &_theme_dark-50 {
+      background-color: rgba(31, 32, 65, 0.5);
+    }
+    &_theme_dark-25 {
+      background-color: rgba(31, 32, 65, 0.25);
+    }
+    &_theme_dark-5 {
+      background-color: rgba(31, 32, 65, 0.05);
+    }
+    &_theme_purple {
+      background-color: #BC9CFF;
+    }
+    &_theme_green {
+      background-color: #6FCF97;
+    }
+  }
+
+  &__text {
+    align-items: center;
+    padding-top: rem(5);
+    color: #1F2041;
+    font-weight: 400;
+    font-size: rem(19);
+    font-family: Quicksand, Arial, sans-serif;
+    font-style: normal;
+    line-height: rem(29);
+  }
+
+  &__color-text {
+    font-weight: 700;
+    letter-spacing: rem(0.3);
+    white-space: pre-wrap;
+  }
+}

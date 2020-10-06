@@ -2,19 +2,26 @@ extends ../base.pug
 block title
   title Colors & Type
 block content
-  include ./colors-and-types__item.pug  
+  include ../../blocks/color-item/color-item.pug
   main
     .colors-and-types
       img.colors-and-types__logo(src='../../static/source/logo-gray.png' alt='logo' width=48 height=48)
       .colors-and-types__inner-wrapper
         .colors-and-types__left-side
-          +colors-and-types__item({})
-          +colors-and-types__item({prefix: 'dark-75', text: 'Dark Shade 75%'})
-          +colors-and-types__item({prefix: 'dark-50', text: 'Dark Shade 50%'})
-          +colors-and-types__item({prefix: 'dark-25', text: 'Dark Shade 25%'})
-          +colors-and-types__item({prefix: 'dark-5', text: 'Dark Shade 5%'})
-          +colors-and-types__item({prefix: 'purple', text: 'Purple', color: '#BC9CFF'})
-          +colors-and-types__item({prefix: 'green ', text: 'Green \n', color: ' #6FCF97'})
+          .colors-and-types__item
+            +color-item({})
+          .colors-and-types__item
+            +color-item({prefix: 'dark-75', text: 'Dark Shade 75%'})
+          .colors-and-types__item
+            +color-item({prefix: 'dark-50', text: 'Dark Shade 50%'})
+          .colors-and-types__item
+            +color-item({prefix: 'dark-25', text: 'Dark Shade 25%'})
+          .colors-and-types__item
+            +color-item({prefix: 'dark-5', text: 'Dark Shade 5%'})
+          .colors-and-types__item
+            +color-item({prefix: 'purple', text: 'Purple\n', color: '#BC9CFF'})
+          .colors-and-types__item
+            +color-item({prefix: 'green ', text: 'Green\n', color: ' #6FCF97'})
 
         .colors-and-types__right-side
           h1.colors-and-types__big-title This one is the sub-section or widget title

@@ -1,0 +1,13 @@
+mixin color-item(options)
+  -
+    const {
+      text = 'Dark Shade 100%',
+      color = '#1F2041',
+      prefix = 'dark-100'
+    } = options
+  
+  article.color-item
+    .color-item__rectangle(class=`color-item__rectangle_theme_${prefix}`)
+    p.color-item__text 
+      b.color-item__color-text= `${text}`
+      =`\n${color}`
