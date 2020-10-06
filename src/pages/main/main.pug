@@ -10,9 +10,10 @@ block content
   +header({activeLink: 2})
   
   main.main
-    h1.visually-hidden Toxin - Лучшие номера для вашей работы, отдыха и просто вдохновения.
-    section.main__wrapper
-      +search-card({})
-      p.main__slogan Лучшие номера для вашей работы, отдыха и просто вдохновения
+    .main__inner-wrapper
+      h1.visually-hidden Toxin - Лучшие номера для вашей работы, отдыха и просто вдохновения.
+      section.main__content
+        +search-card({})
+        p.main__slogan Лучшие номера для вашей работы, отдыха и просто вдохновения
   
   +footer({})

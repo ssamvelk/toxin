@@ -1,10 +1,8 @@
 .search {
   position: relative;
-  min-width: rem(1160);
   background: white;
 
   @media screen and (max-width: 1200px){
-    width: 100vw;
     min-width: rem(380);
     padding: 0 rem(10);
   }
@@ -88,7 +86,15 @@
     line-height: rem(15);
     text-transform: uppercase;
   }
-  
+
+  &__date-title {
+    margin-bottom: rem(3);
+  }
+
+  &__guests-title {
+
+  }
+
   &__right {
     width: rem(834);
 

@@ -1,9 +1,11 @@
 .form-elements {
-  position: relative;
-  width: 100%;
-  max-width: rem(1440);
-  margin: 0 auto;
-  
+
+  &__wrapper {
+    position: relative;
+    max-width: rem(1440);
+    margin: 0 auto;
+  }
+
   &__logo {
     position: absolute;
     top: rem(30);
@@ -23,27 +25,27 @@
     justify-content: space-between;
     margin-bottom: rem(45);
   
-    &_dropdowns {
-      margin-top: rem(80);
+    &_block_dropdowns {
+      margin-top: rem(100);
     }
   
-    &_checkboxes {
+    &_block_checkboxes {
       margin-top: rem(69);
     }
   
-    &_rest {
-      margin-top: rem(98);
+    &_block_rest {
+      margin-top: rem(99);
     }
   }
   
   &__column {
     min-width: rem(320);
     
-    &_text-fields {
+    &_block_text-fields {
       padding-left: rem(1);
     }
   
-    &_checkboxes {
+    &_block_checkboxes {
       padding-left: rem(26);
     }
   }
@@ -66,11 +68,8 @@
   &__text-field-hover-wrapper {
     margin-bottom: rem(21);
   }
-  &__text-field-hover-title {
-    margin-bottom: rem(5);
-  }
-  
-  &__upper-dropdown-company-wrapper {
+   
+  &__company-wrapper {
     margin-bottom: rem(22);
   }
   
@@ -83,11 +82,11 @@
   }
   
   &__filter-date-dropdown-wrapper {
-    margin-bottom: rem(42);
+    margin-bottom: rem(40);
   }
   
   &__subscribe-wrapper {
-    margin-bottom: rem(20);
+    
     .subscribe {
       position: relative;
       left: rem(-1);
@@ -101,6 +100,7 @@
   &__radio-wrapper  {
     margin-bottom: rem(42);
   }
+  
   &__radio-element-wrapper {
     margin-top: rem(15);
   }
@@ -108,16 +108,8 @@
   &__toggle-wrapper {
     position: relative;
     margin-bottom: rem(44);
-  
-    &__toggle-element-wrapper {
-      position: relative;
-      left: rem(-1);
-  
-      &_second {
-        top: rem(-1);
-      }
-    }
   }
+    
   &__toggle-element-wrapper {
     margin-top: rem(15);
   }
@@ -125,10 +117,12 @@
   &__like-wrapper  {
     margin-bottom: rem(40);
   }
+
   &__like-elements-wrapper {
     display: flex;
     margin-top: rem(15);
   }
+
   &__like-element-wrapper {
     margin-right: rem(10);
   }
@@ -136,10 +130,12 @@
   &__rate-wrapper {
     margin-bottom: rem(20);
   }
+
   &__rate-elements-wrapper {
     display: flex;
     margin-top: rem(18);
   }
+
   &__rate-element-wrapper {
     margin-right: rem(20);
   }
@@ -151,10 +147,12 @@
   &__buttons-wrapper {
     margin-bottom: rem(40);
   }
+
   &__blue-buttons-wrapper {
     display: flex;
     margin-top: rem(15);
   }
+
   &__blue-button-wrapper {
     margin-right: rem(19);
   }
@@ -185,21 +183,26 @@
     margin-top: rem(30);
   }
   
-  &__pagination-wrapper {
-    margin-bottom: rem(20);
+  &__pagination {
+    &-wrapper{
+      margin-bottom: rem(20);
+    }
+
+    &-item {
+      margin-top: rem(16);
+    }
   }
-  &__pagination-title {
-    margin-bottom: rem(16);
-  }
-  
+   
   &__dropdowns-wrapper {
     min-height: rem(250);
+
+    .form-elements__items-title {
+      margin-bottom: rem(4);
+    }
   }
-  &__dropdowns-title {
-    margin-bottom: rem(4);
-  }
+  
   &__dropdown-wrapper {
-    margin-top: rem(19);
+    margin-top: rem(20);
   }
   
   &__dropdown-company-wrapper {
@@ -211,9 +214,10 @@
   &__dropdown-company-filled-wrapper {
     position: relative;
     left: rem(-1);
-  }
-  &__dropdown-company-filled-title {
-    margin-bottom: rem(4);
+
+    .form-elements__items-title {
+      margin-bottom: rem(4);
+    }
   }
   
   &__opened-checkbox-additional-list-wrapper {
