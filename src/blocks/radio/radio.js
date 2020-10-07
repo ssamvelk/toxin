@@ -2,7 +2,7 @@ window.addEventListener('load', () => {
   class Radio {
     constructor() {
       this.radioList = this.findAll();
-      this.handleRadioBindEventListeners();
+      this.bindEventListeners();
     }
 
     findAll() {
@@ -12,13 +12,13 @@ window.addEventListener('load', () => {
       return radioList;
     }
 
-    handleRadioBindEventListeners() {
+    bindEventListeners() {
       this.radioList.forEach((element) => {
-        element.addEventListener('click', this.handleRadio);
+        element.addEventListener('click', this.handleRadioClick);
       });
     }
 
-    handleRadio(e) {
+    handleRadioClick(e) {
       const { target, currentTarget } = e;
 
       const men = currentTarget.querySelector('.js-radio__item-name_men');

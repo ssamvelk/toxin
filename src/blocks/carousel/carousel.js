@@ -2,7 +2,7 @@ window.addEventListener('load', () => {
   class Carousel {
     constructor() {
       this.carousels = this.findAll();
-      this.handleCarouselBindEventListeners();
+      this.bindEventListeners();
     }
 
     findAll() {
@@ -12,13 +12,13 @@ window.addEventListener('load', () => {
       return arrayCarousels;
     }
 
-    handleCarouselBindEventListeners() {
+    bindEventListeners() {
       this.carousels.forEach((element) => {
-        element.addEventListener('click', this.changeActiveItem);
+        element.addEventListener('click', this.handleCarouselClick);
       });
     }
 
-    changeActiveItem(e) {
+    handleCarouselClick(e) {
       const { target, currentTarget } = e;
 
       if (target.classList.contains('carousel__item')) {

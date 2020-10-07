@@ -4,8 +4,8 @@ window.addEventListener('load', () => {
   class Calendar {
     constructor() {
       this.calendars = this.findItems();
-      this.initCalendars();
-      this.handleCalendarBindEventListeners();
+      this.init();
+      this.bindEventListeners();
     }
 
     findItems() {
@@ -15,13 +15,13 @@ window.addEventListener('load', () => {
       return arrayCalendars;
     }
 
-    handleCalendarBindEventListeners() {
+    bindEventListeners() {
       this.calendars.forEach((element) => {
-        element.addEventListener('click', this.handleCleanButton);
+        element.addEventListener('click', this.handleCleanButtonClick);
       });
     }
 
-    initCalendars() {
+    init() {
       $('.js-calendar__datepicker').datepicker({
         range: true,
         minDate: new Date(),
@@ -34,7 +34,7 @@ window.addEventListener('load', () => {
       });
     }
 
-    handleCleanButton(e) {
+    handleCleanButtonClick(e) {
       const { target } = e;
       const cleanBtn = this.querySelector('.js-calendar__clean-button');
       const data = $(this.querySelector('.js-calendar__datepicker')).data('datepicker');

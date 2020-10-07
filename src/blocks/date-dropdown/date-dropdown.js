@@ -4,7 +4,7 @@ window.addEventListener('load', () => {
   class DateDropdown {
     constructor() {
       this.dateDropdownList = this.findItems();
-      this.handleDateDropdownBindEventListeners();
+      this.bindEventListeners();
     }
 
     findItems() {
@@ -14,13 +14,13 @@ window.addEventListener('load', () => {
       return dateDropdownList;
     }
 
-    handleDateDropdownBindEventListeners() {
+    bindEventListeners() {
       this.dateDropdownList.forEach((element) => {
-        element.addEventListener('click', this.handleDateDropdown);
+        element.addEventListener('click', this.handleDateDropdownClick);
       });
     }
 
-    handleDateDropdown(e) {
+    handleDateDropdownClick(e) {
       const { target, currentTarget } = e;
 
       const calendar = (currentTarget.querySelector('.js-calendar'));

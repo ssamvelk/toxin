@@ -2,7 +2,7 @@ window.addEventListener('load', () => {
   class DropDownButtons {
     constructor() {
       this.dropDownButtonsList = this.findItems();
-      this.handleDropDownButtonsBindEventListeners();
+      this.bindEventListeners();
     }
 
     findItems() {
@@ -12,13 +12,13 @@ window.addEventListener('load', () => {
       return dropDownButtonsList;
     }
 
-    handleDropDownButtonsBindEventListeners() {
+    bindEventListeners() {
       this.dropDownButtonsList.forEach((element) => {
-        element.addEventListener('click', this.handleDropDownButtons);
+        element.addEventListener('click', this.handleDropDownButtonsClick);
       });
     }
 
-    handleDropDownButtons(e) {
+    handleDropDownButtonsClick(e) {
       const { target, currentTarget } = e;
 
       const item = currentTarget.querySelector('.js-dropdown-buttons__value');

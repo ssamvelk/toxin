@@ -2,7 +2,7 @@ window.addEventListener('load', () => {
   class Like {
     constructor() {
       this.likeList = this.findAll();
-      this.handleLikeBindEventListeners();
+      this.bindEventListeners();
     }
 
     findAll() {
@@ -12,13 +12,13 @@ window.addEventListener('load', () => {
       return likeList;
     }
 
-    handleLikeBindEventListeners() {
+    bindEventListeners() {
       this.likeList.forEach((element) => {
-        element.addEventListener('click', this.handleLike);
+        element.addEventListener('click', this.handleLikeClick);
       });
     }
 
-    handleLike(e) {
+    handleLikeClick(e) {
       const { target, currentTarget } = e;
       const valueField = currentTarget.querySelector('.like__value');
 

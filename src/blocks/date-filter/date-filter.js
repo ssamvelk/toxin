@@ -4,7 +4,7 @@ window.addEventListener('load', () => {
   class DateFilter {
     constructor() {
       this.dateFilterList = this.findItems();
-      this.handleDateFilterBindEventListeners();
+      this.bindEventListeners();
     }
 
     findItems() {
@@ -14,13 +14,13 @@ window.addEventListener('load', () => {
       return dateFilterList;
     }
 
-    handleDateFilterBindEventListeners() {
+    bindEventListeners() {
       this.dateFilterList.forEach((element) => {
-        element.addEventListener('click', this.handleDateFilter);
+        element.addEventListener('click', this.handleDateFilterClick);
       });
     }
 
-    handleDateFilter(e) {
+    handleDateFilterClick(e) {
       const { target, currentTarget } = e;
       const calendar = (currentTarget.querySelector('.js-calendar'));
 

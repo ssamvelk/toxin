@@ -2,7 +2,7 @@ window.addEventListener('load', () => {
   class CheckboxAdditionalList {
     constructor() {
       this.checkboxAdditionalList = this.findItems();
-      this.handleCheckboxAdditionalListBindEventListeners();
+      this.bindEventListeners();
     }
 
     findItems() {
@@ -12,13 +12,13 @@ window.addEventListener('load', () => {
       return arrayCheckboxAdditionalList;
     }
 
-    handleCheckboxAdditionalListBindEventListeners() {
+    bindEventListeners() {
       this.checkboxAdditionalList.forEach((element) => {
-        element.addEventListener('click', this.openHandler);
+        element.addEventListener('click', this.handleCheckboxAdditionalListClick);
       });
     }
 
-    openHandler(e) {
+    handleCheckboxAdditionalListClick(e) {
       const { target } = e;
 
       if (target.classList.contains('checkbox-additional-list__arrow')) {
