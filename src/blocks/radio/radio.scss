@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   width: rem(220);
+  
 
   &__item {
     position: relative;
@@ -11,8 +12,9 @@
     border: rem(1) solid $Dark25;
     border-radius: rem(10);
     outline: none;
+    cursor: pointer;
     appearance: none;
-  
+
     &:checked {
       border-color: $Purple;
   
@@ -38,7 +40,8 @@
     font-family: Montserrat, Arial, sans-serif;
     font-style: normal;
     line-height: rem(20);
-
+    cursor: pointer;
+    
     &_checked {
       color: $Dark75;
     }

@@ -17,13 +17,12 @@ mixin text-field(options)
     else if (type == 'email') placeHolder = 'Email' 
     else if (type == 'password') placeHolder = 'Пароль'
     else if (type == 'date') {
-      placeHolder = 'ДД.ММ.ГГГГ',
       type = 'text',
-      className += `text-field__date`
+      className += `text-field__date js-text-field__date`
     } else if (type == 'date-filter') {
       placeHolder = 'ДД.ММ.ГГГГ',
       type = 'text',
       className += `text-field__date-filter`
     }
 
-  input(readonly=readonly class=`text-field ${className} ${size}` id=id type=`${type}` placeholder=placeHolder pattern=pattern)
+  input(readonly=readonly class=`text-field ${className} ${size}` id=id type=`${type}` placeholder=placeHolder )

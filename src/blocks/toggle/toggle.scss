@@ -1,6 +1,7 @@
 .toggle {
   display: flex;
   width: rem(260);
+  cursor: pointer;
 
   &__item-name {
     display: flex;
@@ -12,6 +13,7 @@
     font-family: Montserrat, Arial, sans-serif;
     font-style: normal;
     line-height: rem(20);
+    cursor: pointer;
   }
   
   &__item {
@@ -22,8 +24,9 @@
     border: rem(1) solid $Dark25;
     border-radius: rem(10);
     outline: none;
+    cursor: pointer;
     appearance: none;
-  
+
     &::before {
       position: absolute;
       top: rem(3);

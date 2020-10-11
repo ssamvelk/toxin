@@ -28,6 +28,8 @@
 
 <a href="https://www.npmjs.com/package/air-datepicker">air-datepicker</a>
 
+<a href="https://imask.js.org/">imask</a>
+
 <a href="https://www.npmjs.com/package/jquery">jquery</a>
 
 <a href="https://www.npmjs.com/package/webpack-jquery-ui">webpack-jquery-ui</a>

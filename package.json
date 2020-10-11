@@ -60,6 +60,7 @@
   },
   "dependencies": {
     "air-datepicker": "^2.2.3",
+    "imask": "^6.0.5",
     "jquery": "^3.5.1",
     "webpack-jquery-ui": "^2.0.1"
   }

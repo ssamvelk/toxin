@@ -1,6 +1,7 @@
 .slider {
   width: rem(266);
   min-height: rem(72);
+  cursor: pointer;
   
   &__wrapper {
     position: relative;
@@ -10,13 +11,16 @@
     max-height: rem(6);
     margin-bottom: rem(17);
   }
+
   
+
   .ui-slider-handle.ui-corner-all.ui-state-default {
     width: rem(14);
     max-height: rem(14);
     background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
     border: rem(2) solid #fff;
     border-radius: rem(10);
+    cursor: pointer;
   }
 
   .ui-slider-range.ui-corner-all.ui-widget-header {

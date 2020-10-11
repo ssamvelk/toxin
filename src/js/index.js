@@ -9,6 +9,7 @@ import '../blocks/slider/slider';
 import '../blocks/checkbox/checkbox-additional-list/checkbox-additional-list';
 import '../blocks/carousel/carousel';
 import '../blocks/radio/radio';
+import '../blocks/text-field/text-field';
 
 require('air-datepicker');
 require('webpack-jquery-ui/slider');
