@@ -132,6 +132,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'pages/index/index.pug',
       filename: 'index.html',
+      // favicon: 'static/favicon/',
     }),
     new HtmlWebpackPlugin({
       template: 'pages/main/main.pug',
@@ -177,7 +178,10 @@ module.exports = {
     new CleanWebpackPlugin({}),
 
     new CopyWebpackPlugin({
-      patterns: [{ from: 'static/favicon.ico', to: 'img' }],
+      patterns: [
+        { from: 'static/favicon.ico', to: 'img' },
+        { from: 'static/favicon/', to: 'img/favicon/' },
+      ],
     }),
 
     new webpack.ProvidePlugin({
