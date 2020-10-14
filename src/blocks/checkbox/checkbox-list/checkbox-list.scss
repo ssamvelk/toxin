@@ -1,8 +1,11 @@
+@import '../../../scss/utils/vars.scss';
+@import '../../../scss/utils/mixins.scss';
+
 .checkbox-list {
   width: rem(266);
   
   &__title {
-    color: #1f2041;
+    color: $Dark;
     font-weight: 700;
     font-size: rem(12);
     font-family: Montserrat, Arial, sans-serif;

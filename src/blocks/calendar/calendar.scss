@@ -3,6 +3,8 @@
 @import '../../../node_modules/air-datepicker/src/sass/cell.scss';
 @import '../../../node_modules/air-datepicker/src/sass/navigation.scss';
 @import '../../../node_modules/air-datepicker/src/sass/timepicker.scss';
+@import '../../scss/utils/vars.scss';
+@import '../../scss/utils/mixins.scss';
 
 .calendar {
   position: relative;

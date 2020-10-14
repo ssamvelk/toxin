@@ -1,3 +1,6 @@
+@import '../../scss/utils/vars.scss';
+@import '../../scss/utils/mixins.scss';
+
 .color-item {
   display: flex;
   min-width: rem(270);
@@ -10,25 +13,25 @@
     border-radius: rem(6);
   
     &_theme_dark-100 {
-      background-color: #1F2041;
+      background-color: $Dark;
     }
     &_theme_dark-75 {
-      background-color: rgba(31, 32, 65, 0.75);
+      background-color: $Dark75;
     }
     &_theme_dark-50 {
-      background-color: rgba(31, 32, 65, 0.5);
+      background-color: $Dark50;
     }
     &_theme_dark-25 {
-      background-color: rgba(31, 32, 65, 0.25);
+      background-color: $Dark25;
     }
     &_theme_dark-5 {
-      background-color: rgba(31, 32, 65, 0.05);
+      background-color: $Dark5;
     }
     &_theme_purple {
-      background-color: #BC9CFF;
+      background-color: $Purple;
     }
     &_theme_green {
-      background-color: #6FCF97;
+      background-color: $Green;
     }
   }
 

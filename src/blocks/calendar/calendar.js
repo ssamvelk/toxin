@@ -1,3 +1,4 @@
+require('air-datepicker');
 const $ = require('jquery');
 
 window.addEventListener('load', () => {

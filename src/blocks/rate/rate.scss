@@ -1,3 +1,6 @@
+@import '../../scss/utils/vars.scss';
+@import '../../scss/utils/mixins.scss';
+
 .rate {
   position: relative;
   display: flex;
@@ -15,10 +18,10 @@
   &__item {
     width: rem(20);
     min-height: rem(20);
-    background: url(../static/source/star-border.svg) no-repeat;
+    background: url(../../static/source/star-border.svg) no-repeat;
     
     &_full {
-      background: url(../static/source/star.svg) no-repeat;
+      background: url(../../static/source/star.svg) no-repeat;
     }
   }
 }
