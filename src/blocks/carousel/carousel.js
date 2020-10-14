@@ -1,24 +1,24 @@
 window.addEventListener('load', () => {
   class Carousel {
     constructor() {
-      this.carousels = this.findAll();
-      this.bindEventListeners();
+      this.carousels = this.getAll();
+      this._bindEventListeners();
     }
 
-    findAll() {
+    getAll() {
       const arrayCarousels = [];
       const carousels = document.querySelectorAll('.js-carousel');
       arrayCarousels.push(...carousels);
       return arrayCarousels;
     }
 
-    bindEventListeners() {
+    _bindEventListeners() {
       this.carousels.forEach((element) => {
-        element.addEventListener('click', this.handleCarouselClick);
+        element.addEventListener('click', this._handleCarouselClick);
       });
     }
 
-    handleCarouselClick(e) {
+    _handleCarouselClick(e) {
       const { target, currentTarget } = e;
 
       if (target.classList.contains('carousel__item')) {

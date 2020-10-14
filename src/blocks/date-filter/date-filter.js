@@ -3,24 +3,24 @@ const $ = require('jquery');
 window.addEventListener('load', () => {
   class DateFilter {
     constructor() {
-      this.dateFilterList = this.findItems();
-      this.bindEventListeners();
+      this.dateFilterList = this.getAll();
+      this._bindEventListeners();
     }
 
-    findItems() {
+    getAll() {
       const dateFilterList = [];
       const dateFilter = document.querySelectorAll('.js-date-filter');
       dateFilterList.push(...dateFilter);
       return dateFilterList;
     }
 
-    bindEventListeners() {
+    _bindEventListeners() {
       this.dateFilterList.forEach((element) => {
-        element.addEventListener('click', this.handleDateFilterClick);
+        element.addEventListener('click', this._handleDateFilterClick);
       });
     }
 
-    handleDateFilterClick(e) {
+    _handleDateFilterClick(e) {
       const { target, currentTarget } = e;
       const calendar = (currentTarget.querySelector('.js-calendar'));
 

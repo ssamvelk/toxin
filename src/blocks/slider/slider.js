@@ -5,27 +5,27 @@ const $ = require('jquery');
 window.addEventListener('load', () => {
   class Slider {
     constructor() {
-      this.sliderList = this.findAll();
-      this.init();
+      this.sliderList = this.getAll();
+      this._init();
     }
 
-    findAll() {
+    getAll() {
       return $('.js-slider');
     }
 
-    init() {
+    _init() {
       this.sliderList.find('#slider').slider({
         range: true,
         min: 0,
         max: 15000,
         values: [5000, 10000],
         step: 50,
-        slide: this.changeValue,
-        change: this.changeValue,
+        slide: this._changeValue,
+        change: this._changeValue,
       });
     }
 
-    changeValue(e) {
+    _changeValue(e) {
       const $rangeStart = $('#slider').slider('values', 0);
       const $rangeEnd = $('#slider').slider('values', 1);
       $('#js-range-start').html($rangeStart);

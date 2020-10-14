@@ -1,24 +1,24 @@
 window.addEventListener('load', () => {
   class Radio {
     constructor() {
-      this.radioList = this.findAll();
-      this.bindEventListeners();
+      this.radioList = this.getAll();
+      this._bindEventListeners();
     }
 
-    findAll() {
+    getAll() {
       const radioList = [];
       const radio = document.querySelectorAll('.js-radio');
       radioList.push(...radio);
       return radioList;
     }
 
-    bindEventListeners() {
+    _bindEventListeners() {
       this.radioList.forEach((element) => {
-        element.addEventListener('click', this.handleRadioClick);
+        element.addEventListener('click', this._handleRadioClick);
       });
     }
 
-    handleRadioClick(e) {
+    _handleRadioClick(e) {
       const { target, currentTarget } = e;
 
       const men = currentTarget.querySelector('.js-radio__item-name_men');

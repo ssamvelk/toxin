@@ -4,25 +4,25 @@ const $ = require('jquery');
 window.addEventListener('load', () => {
   class Calendar {
     constructor() {
-      this.calendars = this.findItems();
-      this.init();
-      this.bindEventListeners();
+      this.calendars = this.getAll();
+      this._init();
+      this._bindEventListeners();
     }
 
-    findItems() {
+    getAll() {
       const arrayCalendars = [];
       const calendars = document.querySelectorAll('.js-calendar');
       arrayCalendars.push(...calendars);
       return arrayCalendars;
     }
 
-    bindEventListeners() {
+    _bindEventListeners() {
       this.calendars.forEach((element) => {
-        element.addEventListener('click', this.handleCleanButtonClick);
+        element.addEventListener('click', this._handleCleanButtonClick);
       });
     }
 
-    init() {
+    _init() {
       $('.js-calendar__datepicker').datepicker({
         range: true,
         minDate: new Date(),
@@ -35,7 +35,7 @@ window.addEventListener('load', () => {
       });
     }
 
-    handleCleanButtonClick(e) {
+    _handleCleanButtonClick(e) {
       const { target } = e;
       const cleanBtn = this.querySelector('.js-calendar__clean-button');
       const data = $(this.querySelector('.js-calendar__datepicker')).data('datepicker');

@@ -3,18 +3,18 @@ import IMask from 'imask';
 window.addEventListener('load', () => {
   class TextField {
     constructor() {
-      this.textFieldList = this.findAll();
-      this.init();
+      this.textFieldList = this.getAll();
+      this._init();
     }
 
-    findAll() {
+    getAll() {
       const textFieldList = [];
       const textField = document.querySelectorAll('.js-text-field__date');
       textFieldList.push(...textField);
       return textFieldList;
     }
 
-    init() {
+    _init() {
       this.textFieldList.forEach((element) => {
         IMask(element, {
           mask: Date,

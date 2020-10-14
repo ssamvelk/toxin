@@ -1,24 +1,24 @@
 window.addEventListener('load', () => {
   class DropdownCompany {
     constructor() {
-      this.dropdownCompanyList = this.findAll();
-      this.bindEventListeners();
+      this.dropdownCompanyList = this.getAll();
+      this._bindEventListeners();
     }
 
-    findAll() {
+    getAll() {
       const dropdownCompanyList = [];
       const dropdownCompany = document.querySelectorAll('.js-dropdown-company');
       dropdownCompanyList.push(...dropdownCompany);
       return dropdownCompanyList;
     }
 
-    bindEventListeners() {
+    _bindEventListeners() {
       this.dropdownCompanyList.forEach((element) => {
-        element.addEventListener('click', this.handleDropdownCompanyClick);
+        element.addEventListener('click', this._handleDropdownCompanyClick);
       });
     }
 
-    handleDropdownCompanyClick(e) {
+    _handleDropdownCompanyClick(e) {
       const { target, currentTarget } = e;
 
       const main = currentTarget.querySelector('.dropdown-company__main');

@@ -1,24 +1,24 @@
 window.addEventListener('load', () => {
   class Like {
     constructor() {
-      this.likeList = this.findAll();
-      this.bindEventListeners();
+      this.likeList = this.getAll();
+      this._bindEventListeners();
     }
 
-    findAll() {
+    getAll() {
       const likeList = [];
       const like = document.querySelectorAll('.js-like');
       likeList.push(...like);
       return likeList;
     }
 
-    bindEventListeners() {
+    _bindEventListeners() {
       this.likeList.forEach((element) => {
-        element.addEventListener('click', this.handleLikeClick);
+        element.addEventListener('click', this._handleLikeClick);
       });
     }
 
-    handleLikeClick(e) {
+    _handleLikeClick(e) {
       const { target, currentTarget } = e;
       const valueField = currentTarget.querySelector('.like__value');
 

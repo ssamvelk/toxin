@@ -1,24 +1,24 @@
 window.addEventListener('load', () => {
   class DropDownButtons {
     constructor() {
-      this.dropDownButtonsList = this.findItems();
-      this.bindEventListeners();
+      this.dropDownButtonsList = this.getAll();
+      this._bindEventListeners();
     }
 
-    findItems() {
+    getAll() {
       const dropDownButtonsList = [];
       const dropDownButtons = document.querySelectorAll('.js-dropdown-buttons');
       dropDownButtonsList.push(...dropDownButtons);
       return dropDownButtonsList;
     }
 
-    bindEventListeners() {
+    _bindEventListeners() {
       this.dropDownButtonsList.forEach((element) => {
-        element.addEventListener('click', this.handleDropDownButtonsClick);
+        element.addEventListener('click', this._handleDropDownButtonsClick);
       });
     }
 
-    handleDropDownButtonsClick(e) {
+    _handleDropDownButtonsClick(e) {
       const { target, currentTarget } = e;
 
       const item = currentTarget.querySelector('.js-dropdown-buttons__value');

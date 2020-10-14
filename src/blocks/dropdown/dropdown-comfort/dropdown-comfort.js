@@ -1,24 +1,24 @@
 window.addEventListener('load', () => {
   class DropdownComfort {
     constructor() {
-      this.dropdownComfortList = this.findAll();
-      this.bindEventListeners();
+      this.dropdownComfortList = this.getAll();
+      this._bindEventListeners();
     }
 
-    findAll() {
+    getAll() {
       const dropdownComfortList = [];
       const dropdownComfort = document.querySelectorAll('.js-dropdown-comfort');
       dropdownComfortList.push(...dropdownComfort);
       return dropdownComfortList;
     }
 
-    bindEventListeners() {
+    _bindEventListeners() {
       this.dropdownComfortList.forEach((element) => {
-        element.addEventListener('click', this.handleDropdownComfortClick);
+        element.addEventListener('click', this._handleDropdownComfortClick);
       });
     }
 
-    handleDropdownComfortClick(e) {
+    _handleDropdownComfortClick(e) {
       const { target, currentTarget } = e;
 
       const main = currentTarget.querySelector('.dropdown-comfort__main');

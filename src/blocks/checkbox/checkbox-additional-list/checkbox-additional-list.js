@@ -1,24 +1,24 @@
 window.addEventListener('load', () => {
   class CheckboxAdditionalList {
     constructor() {
-      this.checkboxAdditionalList = this.findItems();
-      this.bindEventListeners();
+      this.checkboxAdditionalList = this.getAll();
+      this._bindEventListeners();
     }
 
-    findItems() {
+    getAll() {
       const arrayCheckboxAdditionalList = [];
       const checkboxAdditionalLists = document.querySelectorAll('.js-checkbox-additional-list');
       arrayCheckboxAdditionalList.push(...checkboxAdditionalLists);
       return arrayCheckboxAdditionalList;
     }
 
-    bindEventListeners() {
+    _bindEventListeners() {
       this.checkboxAdditionalList.forEach((element) => {
-        element.addEventListener('click', this.handleCheckboxAdditionalListClick);
+        element.addEventListener('click', this._handleCheckboxAdditionalListClick);
       });
     }
 
-    handleCheckboxAdditionalListClick(e) {
+    _handleCheckboxAdditionalListClick(e) {
       const { target } = e;
 
       if (target.classList.contains('checkbox-additional-list__arrow')) {

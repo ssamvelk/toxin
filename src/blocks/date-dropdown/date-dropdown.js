@@ -3,24 +3,24 @@ const $ = require('jquery');
 window.addEventListener('load', () => {
   class DateDropdown {
     constructor() {
-      this.dateDropdownList = this.findItems();
-      this.bindEventListeners();
+      this.dateDropdownList = this.getAll();
+      this._bindEventListeners();
     }
 
-    findItems() {
+    getAll() {
       const dateDropdownList = [];
       const dateDropdown = document.querySelectorAll('.js-date-dropdown');
       dateDropdownList.push(...dateDropdown);
       return dateDropdownList;
     }
 
-    bindEventListeners() {
+    _bindEventListeners() {
       this.dateDropdownList.forEach((element) => {
-        element.addEventListener('click', this.handleDateDropdownClick);
+        element.addEventListener('click', this._handleDateDropdownClick);
       });
     }
 
-    handleDateDropdownClick(e) {
+    _handleDateDropdownClick(e) {
       const { target, currentTarget } = e;
 
       const calendar = (currentTarget.querySelector('.js-calendar'));
