@@ -61,7 +61,7 @@ window.addEventListener('load', () => {
         main.classList.toggle('dropdown-company__main_expanded');
         list.classList.toggle('dropdown-company__list_expanded');
       };
-    };
+    }
 
   }
 
