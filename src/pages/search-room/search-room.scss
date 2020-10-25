@@ -9,6 +9,11 @@
     min-width: rem(380);
     padding: 0 rem(10);
   }
+
+  &__header,
+  &__footer {
+    margin: 0 auto;
+  }
   
   &__inner-wrapper {
     position: relative;

@@ -15,7 +15,8 @@ block content
   include ../../blocks/header/header.pug
   include ../../blocks/footer/footer.pug
 
-  +header({})
+  .search__header
+    +header({})
   
   main.search
     .search__inner-wrapper      
@@ -55,4 +56,5 @@ block content
       .search__pagination
         +pagination({})
   
-  +footer({})
+  .search__footer
+    +footer({})

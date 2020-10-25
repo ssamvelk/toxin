@@ -6,12 +6,13 @@ block content
   include ../../blocks/inter-card/inter-card.pug
   include ../../blocks/header/header.pug
   include ../../blocks/footer/footer.pug
-
-  +header({})
+  
+  .sign-in__header
+    +header({})
   
   main.sign-in
     .sign-in__inner-wrapper
       .sign-in__inter-card  
         +inter-card()
-  
-  +footer({})
+  .sign-in__footer
+    +footer({})

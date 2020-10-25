@@ -7,7 +7,8 @@ block content
   include ../../blocks/header/header.pug
   include ../../blocks/footer/footer.pug
   
-  +header({activeLink: 2})
+  .main__header
+    +header({activeLink: 2})
   
   main.main
     .main__inner-wrapper
@@ -15,5 +16,5 @@ block content
       section.main__content
         +search-card({})
         p.main__slogan Лучшие номера для вашей работы, отдыха и просто вдохновения
-  
-  +footer({})
+  .main__footer
+    +footer({})

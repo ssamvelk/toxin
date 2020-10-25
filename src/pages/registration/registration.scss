@@ -2,6 +2,11 @@
 @import '../../scss/utils/mixins.scss';
 
 .registration-page {
+  
+  &__header,
+  &__footer {
+    margin: 0 auto;
+  }
 
   &__inner-wrapper {
     position: relative;

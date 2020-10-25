@@ -1,7 +1,13 @@
 @import '../../scss/utils/vars.scss';
 @import '../../scss/utils/mixins.scss';
 
-.main { 
+.main {
+  
+  &__header,
+  &__footer {
+    margin: 0 auto;
+  }
+
   &__inner-wrapper {
     min-width: rem(1160);
     max-width: rem(1440);

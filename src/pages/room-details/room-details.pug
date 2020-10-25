@@ -12,8 +12,9 @@ block content
   include ../../blocks/footer/footer.pug
   include ../../blocks/percent-pie/percent-pie.pug
   include ../../blocks/room-info/room-info.pug
-
-  +header({})
+  
+  .room-details__header
+    +header({})
     
   main.room-details
     section.room-details__image-box
@@ -59,4 +60,6 @@ block content
             p.room-details__cancel-info Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
       .room-details__right
         +reserve-card({})
-  +footer({})
+  
+  .room-details__footer
+    +footer({})

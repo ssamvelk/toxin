@@ -4,6 +4,11 @@
 .sign-in {
   background: url('../../static/source/registration-background.jpg') no-repeat 50% rem(-70), white;
 
+  &__header,
+  &__footer {
+    margin: 0 auto;
+  }
+
   &__inner-wrapper {
     position: relative;
     width: 100%;

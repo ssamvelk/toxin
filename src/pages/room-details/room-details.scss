@@ -10,6 +10,11 @@
     padding: 0 rem(10);
   }
 
+  &__header,
+  &__footer {
+    margin: 0 auto;
+  }
+
   &__image-box {
     display: flex;
     max-width: rem(1440);
