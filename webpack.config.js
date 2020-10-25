@@ -132,7 +132,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'pages/index/index.pug',
       filename: 'index.html',
-      // favicon: 'static/favicon/',
     }),
     new HtmlWebpackPlugin({
       template: 'pages/main/main.pug',
