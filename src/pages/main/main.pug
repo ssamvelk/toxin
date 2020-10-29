@@ -7,14 +7,15 @@ block content
   include ../../blocks/header/header.pug
   include ../../blocks/footer/footer.pug
   
-  .main__header
-    +header({activeLink: 2})
-  
-  main.main
-    .main__inner-wrapper
-      h1.visually-hidden Toxin - Лучшие номера для вашей работы, отдыха и просто вдохновения.
-      section.main__content
-        +search-card({})
-        p.main__slogan Лучшие номера для вашей работы, отдыха и просто вдохновения
-  .main__footer
-    +footer({})
+  .main
+    .main__header
+      +header({activeLink: 2})
+
+    main.main__wrapper
+      .main__inner-wrapper
+        h1.visually-hidden Toxin - Лучшие номера для вашей работы, отдыха и просто вдохновения.
+        section.main__content
+          +search-card({})
+          p.main__slogan Лучшие номера для вашей работы, отдыха и просто вдохновения
+    .main__footer
+      +footer({})

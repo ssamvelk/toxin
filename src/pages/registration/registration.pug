@@ -7,13 +7,14 @@ block content
   include ../../blocks/header/header.pug
   include ../../blocks/footer/footer.pug
   
-  .registration-page__header
-    +header({})
-  
-  main.registration-page
-    section.registration-page__inner-wrapper
-      .registration-page__registration-card
-        +registration-card({})
-  
-  .registration-page__footer
-    +footer({})
+  .registration-page
+    .registration-page__header
+      +header({})
+
+    main.registration-page__wrapper
+      section.registration-page__inner-wrapper
+        .registration-page__registration-card
+          +registration-card({})
+
+    .registration-page__footer
+      +footer({})

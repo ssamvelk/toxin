@@ -15,46 +15,47 @@ block content
   include ../../blocks/header/header.pug
   include ../../blocks/footer/footer.pug
 
-  .search__header
-    +header({})
-  
-  main.search
-    .search__inner-wrapper      
-      section.search__left
-        h3.search__date-title даты пребывания в отеле
-        .search__date-dropdown
-          +date-dropdown({})
-        h3.search__guests-title гости
-        .search__dropdown-company
-          +dropdown-company({count1: 3, count3: 1, text: '3 гостя, 1 младенец'})
-        .search__slider
-          +slider({})
-        .search__checkbox-list
-          +checkbox-list({})
-        .search__checkbox-accessibility
-          +checkbox-accessibility({})
-        h3.search__comfort-title удобства номера
-        .search__dropdown-comfort
-          +dropdown-comfort({count1: 2, count2: 2})
-        +checkbox-additional-list({})
-      
-      section.search__right
-        h1.search__rooms-title Номера, которые мы для вас подобрали
-        .search__rooms
-          +room-card({background : '../../static/source/room-888.jpg', number : '888', isLux: true, cost: '9 990', hasArrows: true})
-          +room-card({background : '../../static/source/room-840.jpg', rating : '4', number : '840',  cost: '9 990',likes: '65'})
-          +room-card({background : '../../static/source/room-980.png', rating : '3', isLux: true, number : '980', cost: '8 500', likes: '35'})
-          +room-card({background : '../../static/source/room-856.png', rating : '5', number : '856',  cost: '7 300',likes: '19'})
-          +room-card({background : '../../static/source/room-740.png', rating : '4', number : '740',  cost: '6 000', likes: '44'})
-          +room-card({background : '../../static/source/room-982.png', rating : '3', number : '982',  cost: '5 800',likes: '56'})
-          +room-card({background : '../../static/source/room-678.png', number : '678', cost: '5 500',likes: '45'})
-          +room-card({background : '../../static/source/room-450.png', rating : '4', number : '450',  cost: '5 300',likes: '39'})
-          +room-card({background : '../../static/source/room-350.png', rating : '3', number : '350',  cost: '5 000',likes: '77'})
-          +room-card({background : '../../static/source/room-666.png', number : '666', cost: '5 000',likes: '25'})
-          +room-card({background : '../../static/source/room-444.png', rating : '3', number : '444',  cost: '5 000',likes: '15'})
-          +room-card({background : '../../static/source/room-352.png', rating : '3', number : '352',  cost: '5 000',likes: '55'})
-      .search__pagination
-        +pagination({})
-  
-  .search__footer
-    +footer({})
+  .search
+    .search__header
+      +header({})
+
+    main.search__wrapper
+      .search__inner-wrapper      
+        section.search__left
+          h3.search__date-title даты пребывания в отеле
+          .search__date-dropdown
+            +date-dropdown({})
+          h3.search__guests-title гости
+          .search__dropdown-company
+            +dropdown-company({count1: 3, count3: 1, text: '3 гостя, 1 младенец'})
+          .search__slider
+            +slider({})
+          .search__checkbox-list
+            +checkbox-list({})
+          .search__checkbox-accessibility
+            +checkbox-accessibility({})
+          h3.search__comfort-title удобства номера
+          .search__dropdown-comfort
+            +dropdown-comfort({count1: 2, count2: 2})
+          +checkbox-additional-list({})
+
+        section.search__right
+          h1.search__rooms-title Номера, которые мы для вас подобрали
+          .search__rooms
+            +room-card({background : '../../static/source/room-888.jpg', number : '888', isLux: true, cost: '9 990', hasArrows: true})
+            +room-card({background : '../../static/source/room-840.jpg', rating : '4', number : '840',  cost: '9 990',likes: '65'})
+            +room-card({background : '../../static/source/room-980.png', rating : '3', isLux: true, number : '980', cost: '8 500', likes: '35'})
+            +room-card({background : '../../static/source/room-856.png', rating : '5', number : '856',  cost: '7 300',likes: '19'})
+            +room-card({background : '../../static/source/room-740.png', rating : '4', number : '740',  cost: '6 000', likes: '44'})
+            +room-card({background : '../../static/source/room-982.png', rating : '3', number : '982',  cost: '5 800',likes: '56'})
+            +room-card({background : '../../static/source/room-678.png', number : '678', cost: '5 500',likes: '45'})
+            +room-card({background : '../../static/source/room-450.png', rating : '4', number : '450',  cost: '5 300',likes: '39'})
+            +room-card({background : '../../static/source/room-350.png', rating : '3', number : '350',  cost: '5 000',likes: '77'})
+            +room-card({background : '../../static/source/room-666.png', number : '666', cost: '5 000',likes: '25'})
+            +room-card({background : '../../static/source/room-444.png', rating : '3', number : '444',  cost: '5 000',likes: '15'})
+            +room-card({background : '../../static/source/room-352.png', rating : '3', number : '352',  cost: '5 000',likes: '55'})
+        .search__pagination
+          +pagination({})
+
+    .search__footer
+      +footer({})

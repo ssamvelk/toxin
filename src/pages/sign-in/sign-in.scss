@@ -2,7 +2,9 @@
 @import '../../scss/utils/mixins.scss';
 
 .sign-in {
-  background: url('../../static/source/registration-background.jpg') no-repeat 50% rem(-70), white;
+  &__wrapper {
+    background: url('../../static/source/registration-background.jpg') no-repeat 50% rem(-70), white;
+  }
 
   &__header,
   &__footer {

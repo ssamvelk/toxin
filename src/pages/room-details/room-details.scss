@@ -2,8 +2,10 @@
 @import '../../scss/utils/mixins.scss';
 
 .room-details {
-  position: relative;
-  background: white;
+  &__wrapper {
+    position: relative;
+    background: white;
+  }
 
   &__header,
   &__footer {

@@ -6,14 +6,12 @@ block content
   include ../../blocks/footer/footer.pug
   include ../../static/sprite.svg
 
-  main
-    .headers-and-footers
-      img.headers-and-footers__logo(src='../../static/source/logo-gray.png' alt='logo' width=48 height=48)
-      .headers-and-footers__inner-wrapper
-        .headers-and-footers__header-wrapper
-          +header({authorized: false})
-        .headers-and-footers__header-wrapper
-          +header({authorized: true, name: 'Юлий Цезарь'})
-
-        .headers-and-footers__footer-wrapper
-          +footer({})
+  main.headers-and-footers
+    img.headers-and-footers__logo(src='../../static/source/logo-gray.png' alt='logo' width=48 height=48)
+    .headers-and-footers__inner-wrapper
+      .headers-and-footers__header-wrapper
+        +header({authorized: false})
+      .headers-and-footers__header-wrapper
+        +header({authorized: true, name: 'Юлий Цезарь'})
+      .headers-and-footers__footer-wrapper
+        +footer({})

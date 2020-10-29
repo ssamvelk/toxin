@@ -2,8 +2,11 @@
 @import '../../scss/utils/mixins.scss';
 
 .demo-page {
-  max-width: rem(1440);
-  padding: rem(50) rem(50) 0;
+
+  &__wrapper {
+    max-width: rem(1440);
+    padding: rem(50) rem(50) 0;
+  }
 
   &__list {
     min-width: rem(380);
