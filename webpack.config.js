@@ -178,7 +178,6 @@ module.exports = {
 
     new CopyWebpackPlugin({
       patterns: [
-        { from: 'static/favicon.ico', to: 'img' },
         { from: 'static/favicon/', to: 'img/favicon/' },
       ],
     }),
