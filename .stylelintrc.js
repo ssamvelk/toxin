@@ -16,6 +16,14 @@ module.exports = {
     "declaration-colon-space-after": "always",
     "max-empty-lines": 2,
     "max-nesting-depth": 4,
-    "selector-max-id": 1
+    "selector-max-id": 1,
+    "scss/dollar-variable-pattern": /.+/,
+    "order/order": [
+      "custom-properties",
+      "dollar-variables",
+      "declarations",
+      "rules",
+      "at-rules"
+    ]
   }
 };

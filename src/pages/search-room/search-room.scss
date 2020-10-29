@@ -5,11 +5,6 @@
   position: relative;
   background: white;
 
-  @media screen and (max-width: 1200px){
-    min-width: rem(380);
-    padding: 0 rem(10);
-  }
-
   &__header,
   &__footer {
     margin: 0 auto;
@@ -23,7 +18,7 @@
     margin: 0 auto;
     padding-top: rem(30);
     padding-bottom: rem(18);
-  
+
     &::after {
       position: absolute;
       bottom: 0;
@@ -49,6 +44,7 @@
     @media screen and (max-width: 600px){
       display: block;
     }
+  
   }
   
   &__left {
@@ -100,7 +96,7 @@
   }
 
   &__guests-title {
-
+    box-sizing: inherit;
   }
 
   &__right {
@@ -131,11 +127,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  
+    
     .room-card {
       margin-top: rem(21);
     }
-
+  
     @media screen and (max-width: 1200px){
       justify-content: space-around;
 
@@ -143,6 +139,7 @@
         margin-bottom: rem(100);
       }
     }
+
   }
 
 
@@ -158,5 +155,10 @@
     @media screen and (max-width: 600px){
       left: 30%;
     }
+  }
+
+  @media screen and (max-width: 1200px){
+    min-width: rem(380);
+    padding: 0 rem(10);
   }
 }
